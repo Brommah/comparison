@@ -1,0 +1,16 @@
+{
+  "name": "competitive-analysis-matrix",
+  "version": "1.0.0",
+  "description": "Interactive competitive analysis matrix for AI agent platforms",
+  "main": "competitive_analysis_matrix.html",
+  "scripts": {
+    "start": "npx serve .",
+    "deploy": "vercel --prod"
+  },
+  "keywords": ["competitive-analysis", "ai-agents", "databricks", "sierra", "fin", "nice", "snowflake"],
+  "author": "Martijn Blue",
+  "license": "MIT",
+  "devDependencies": {
+    "vercel": "^38.0.0"
+  }
+}
