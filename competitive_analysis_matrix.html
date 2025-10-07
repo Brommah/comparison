@@ -1,0 +1,2238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Competitive Analysis Matrix</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background-color: #ffffff;
+            color: #333333;
+            line-height: 1.4;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding: 20px 0;
+            border-bottom: 2px solid #e0e0e0;
+        }
+
+        .header h1 {
+            font-size: 28px;
+            font-weight: 600;
+            color: #222222;
+            margin-bottom: 8px;
+        }
+
+        .header p {
+            color: #666666;
+            font-size: 14px;
+        }
+
+        .controls {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 8px 16px;
+            border: 1px solid #cccccc;
+            background: #ffffff;
+            color: #333333;
+            cursor: pointer;
+            border-radius: 4px;
+            font-size: 13px;
+            transition: all 0.2s;
+        }
+
+        .btn:hover {
+            background: #f5f5f5;
+            border-color: #999999;
+        }
+
+        .btn.active {
+            background: #333333;
+            color: #ffffff;
+            border-color: #333333;
+        }
+
+        .export-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 30px;
+        }
+
+        .export-btn {
+            padding: 10px 20px;
+            border: 1px solid #333333;
+            background: #333333;
+            color: #ffffff;
+            cursor: pointer;
+            border-radius: 4px;
+            font-size: 14px;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .export-btn:hover {
+            background: #555555;
+        }
+
+        .matrix {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 30px;
+            background: #ffffff;
+            border: 1px solid #e0e0e0;
+        }
+
+        .matrix th {
+            background: #f8f8f8;
+            padding: 12px 8px;
+            text-align: left;
+            font-weight: 600;
+            font-size: 13px;
+            border: 1px solid #e0e0e0;
+            color: #333333;
+        }
+
+        .matrix td {
+            padding: 10px 8px;
+            border: 1px solid #e0e0e0;
+            font-size: 13px;
+            vertical-align: top;
+            max-width: 200px;
+            position: relative;
+        }
+
+        .editable {
+            cursor: pointer;
+            transition: background-color 0.2s;
+        }
+
+        .editable:hover {
+            background-color: #f8f8f8;
+        }
+
+        .editable.editing {
+            background-color: #ffffff;
+            border: 2px solid #333333;
+        }
+
+        .edit-input {
+            width: 100%;
+            height: 100%;
+            border: none;
+            background: transparent;
+            font-size: 13px;
+            font-family: inherit;
+            resize: none;
+            outline: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .edit-save-btn {
+            position: absolute;
+            top: 2px;
+            right: 2px;
+            background: #333333;
+            color: white;
+            border: none;
+            padding: 2px 6px;
+            font-size: 10px;
+            cursor: pointer;
+            border-radius: 2px;
+            display: none;
+        }
+
+        .editable.editing .edit-save-btn {
+            display: block;
+        }
+
+        .format-btn {
+            background: #f8f9fa;
+            border: 1px solid #dee2e6;
+            padding: 4px 8px;
+            margin: 2px;
+            border-radius: 3px;
+            cursor: pointer;
+            font-size: 12px;
+            font-weight: bold;
+        }
+
+        .format-btn:hover {
+            background: #e9ecef;
+        }
+
+        .format-btn.save {
+            background: #28a745;
+            color: white;
+            border-color: #28a745;
+        }
+
+        .format-btn.cancel {
+            background: #dc3545;
+            color: white;
+            border-color: #dc3545;
+        }
+
+        .formatting-toolbar {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: white;
+            border: 2px solid #007bff;
+            border-radius: 8px;
+            padding: 15px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+            z-index: 1000;
+            min-width: 400px;
+        }
+
+        .formatting-controls {
+            display: flex;
+            flex-wrap: wrap;
+            margin-bottom: 10px;
+            border-bottom: 1px solid #dee2e6;
+            padding-bottom: 10px;
+        }
+
+        .formatting-actions {
+            display: flex;
+            justify-content: flex-end;
+            gap: 10px;
+        }
+
+        .formatting-textarea {
+            width: 100%;
+            min-height: 150px;
+            border: 1px solid #dee2e6;
+            border-radius: 4px;
+            padding: 10px;
+            font-family: inherit;
+            font-size: 14px;
+            margin-bottom: 10px;
+            resize: vertical;
+        }
+
+        .status-indicator {
+            position: absolute;
+            top: 2px;
+            left: 2px;
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: #cccccc;
+            display: none;
+        }
+
+        .status-indicator.saving {
+            background: #ffa500;
+            display: block;
+        }
+
+        .status-indicator.saved {
+            background: #00aa00;
+            display: block;
+        }
+
+        .status-indicator.error {
+            background: #ff0000;
+            display: block;
+        }
+
+        .version-tracker {
+            margin-bottom: 20px;
+            padding: 15px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #e0e0e0;
+        }
+
+        .version-tracker h3 {
+            margin-bottom: 10px;
+            color: #333;
+            font-size: 14px;
+        }
+
+        .version-log {
+            max-height: 200px;
+            overflow-y: auto;
+            padding-right: 5px;
+        }
+
+        .version-log::-webkit-scrollbar {
+            width: 6px;
+        }
+
+        .version-log::-webkit-scrollbar-track {
+            background: #f1f1f1;
+            border-radius: 3px;
+        }
+
+        .version-log::-webkit-scrollbar-thumb {
+            background: #c1c1c1;
+            border-radius: 3px;
+        }
+
+        .version-log::-webkit-scrollbar-thumb:hover {
+            background: #a8a8a8;
+        }
+
+
+        .version-entry {
+            padding: 8px 0;
+            border-bottom: 1px solid #f0f0f0;
+            font-size: 12px;
+        }
+
+        .version-entry:last-child {
+            border-bottom: none;
+        }
+
+        .version-timestamp {
+            color: #666666;
+            font-weight: 600;
+        }
+
+        .version-author {
+            color: #333333;
+            font-weight: 600;
+        }
+
+        .version-changes {
+            color: #555555;
+            margin-top: 4px;
+        }
+
+        .change-item {
+            margin-left: 10px;
+            margin-top: 2px;
+        }
+
+        .change-item::before {
+            content: "• ";
+            color: #333333;
+        }
+
+        .name-prompt {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: #ffffff;
+            padding: 20px;
+            border: 2px solid #333333;
+            border-radius: 8px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+            z-index: 1000;
+            display: none;
+        }
+
+        .name-prompt h4 {
+            margin-bottom: 15px;
+            color: #222222;
+        }
+
+        .name-input {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #cccccc;
+            border-radius: 4px;
+            margin-bottom: 15px;
+            font-size: 14px;
+        }
+
+        .name-prompt-buttons {
+            display: flex;
+            gap: 10px;
+            justify-content: flex-end;
+        }
+
+        .name-prompt-btn {
+            padding: 8px 16px;
+            border: 1px solid #333333;
+            background: #333333;
+            color: #ffffff;
+            cursor: pointer;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+
+        .name-prompt-btn:hover {
+            background: #555555;
+        }
+
+        .name-prompt-btn.cancel {
+            background: #ffffff;
+            color: #333333;
+        }
+
+        .name-prompt-btn.cancel:hover {
+            background: #f5f5f5;
+        }
+
+        .overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.5);
+            z-index: 999;
+            display: none;
+        }
+
+        .search-container {
+            margin-bottom: 20px;
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .search-input {
+            flex: 1;
+            min-width: 200px;
+            padding: 8px 12px;
+            border: 1px solid #cccccc;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+
+        .search-clear {
+            padding: 8px 12px;
+            border: 1px solid #cccccc;
+            background: #ffffff;
+            color: #333333;
+            cursor: pointer;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+
+        .search-clear:hover {
+            background: #f5f5f5;
+        }
+
+        .bulk-edit-mode {
+            background: #fff3cd;
+            border: 2px solid #ffc107;
+            padding: 10px;
+            margin-bottom: 20px;
+            border-radius: 4px;
+            display: none;
+        }
+
+        .bulk-edit-mode.active {
+            display: block;
+        }
+
+        .bulk-edit-controls {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .bulk-edit-btn {
+            padding: 6px 12px;
+            border: 1px solid #333333;
+            background: #333333;
+            color: #ffffff;
+            cursor: pointer;
+            border-radius: 4px;
+            font-size: 12px;
+        }
+
+        .bulk-edit-btn:hover {
+            background: #555555;
+        }
+
+        .bulk-edit-btn.cancel {
+            background: #dc3545;
+            border-color: #dc3545;
+        }
+
+        .bulk-edit-btn.cancel:hover {
+            background: #c82333;
+        }
+
+        .loading-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(255,255,255,0.8);
+            z-index: 1001;
+            display: none;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .loading-spinner {
+            width: 40px;
+            height: 40px;
+            border: 4px solid #f3f3f3;
+            border-top: 4px solid #333333;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        .error-message {
+            background: #f8d7da;
+            color: #721c24;
+            padding: 10px;
+            border: 1px solid #f5c6cb;
+            border-radius: 4px;
+            margin-bottom: 20px;
+            display: none;
+        }
+
+        .error-message.show {
+            display: block;
+        }
+
+        .success-message {
+            background: #d4edda;
+            color: #155724;
+            padding: 10px;
+            border: 1px solid #c3e6cb;
+            border-radius: 4px;
+            margin-bottom: 20px;
+            display: none;
+        }
+
+        .success-message.show {
+            display: block;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 10px;
+            }
+
+            .matrix {
+                font-size: 11px;
+            }
+
+            .matrix th, .matrix td {
+                padding: 6px 4px;
+                max-width: 150px;
+            }
+
+            .controls {
+                flex-direction: column;
+                align-items: stretch;
+            }
+
+            .btn {
+                margin-bottom: 5px;
+            }
+
+            .search-container {
+                flex-direction: column;
+            }
+
+            .search-input {
+                min-width: 100%;
+            }
+
+            .export-buttons {
+                flex-direction: column;
+            }
+
+            .export-btn {
+                margin-bottom: 5px;
+            }
+        }
+
+        .section-header {
+            background: #f0f0f0 !important;
+            font-weight: 600;
+            color: #222222;
+            text-align: center;
+        }
+
+        .strength {
+            background: #f0f8f0;
+            border-left: 4px solid #28a745;
+            position: relative;
+        }
+
+        .strength::before {
+            content: "✓";
+            position: absolute;
+            top: 5px;
+            right: 8px;
+            color: #28a745;
+            font-weight: bold;
+            font-size: 14px;
+        }
+
+        .parity {
+            background: #ffffff;
+            border-left: 4px solid #ffc107;
+            position: relative;
+        }
+
+        .parity::before {
+            content: "=";
+            position: absolute;
+            top: 5px;
+            right: 8px;
+            color: #ffc107;
+            font-weight: bold;
+            font-size: 14px;
+        }
+
+        .weakness {
+            background: #fff5f5;
+            border-left: 4px solid #dc3545;
+            position: relative;
+        }
+
+        .weakness::before {
+            content: "⚠";
+            position: absolute;
+            top: 5px;
+            right: 8px;
+            color: #dc3545;
+            font-weight: bold;
+            font-size: 14px;
+        }
+
+        .blank {
+            background: #f8f9fa;
+            color: #6c757d;
+            font-style: italic;
+            border-left: 4px solid #6c757d;
+            position: relative;
+        }
+
+        .blank::before {
+            content: "?";
+            position: absolute;
+            top: 5px;
+            right: 8px;
+            color: #6c757d;
+            font-weight: bold;
+            font-size: 14px;
+        }
+
+        .data-source-initial {
+            background: #e3f2fd;
+            border-left: 4px solid #2196f3;
+        }
+
+        .data-source-deep {
+            background: #fff3e0;
+            border-left: 4px solid #ff9800;
+        }
+
+        .data-source-badge {
+            position: absolute;
+            top: 2px;
+            right: 25px;
+            font-size: 9px;
+            padding: 1px 4px;
+            border-radius: 2px;
+            font-weight: bold;
+            color: #ffffff;
+        }
+
+        .data-source-badge.initial {
+            background: #2196f3;
+        }
+
+        .data-source-badge.deep {
+            background: #ff9800;
+        }
+
+
+        .data-source-section {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .data-source-initial {
+            background: #e3f2fd;
+            border-left: 4px solid #2196f3;
+            padding: 8px;
+            border-radius: 4px;
+            position: relative;
+        }
+
+        .data-source-deep {
+            background: #fff3e0;
+            border-left: 4px solid #ff9800;
+            padding: 8px;
+            border-radius: 4px;
+            position: relative;
+        }
+
+        .data-source-badge {
+            position: absolute;
+            top: 4px;
+            right: 8px;
+            font-size: 9px;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-weight: bold;
+            color: #ffffff;
+        }
+
+        .data-source-badge.initial {
+            background: #2196f3;
+        }
+
+        .data-source-badge.deep {
+            background: #ff9800;
+        }
+
+        .tooltip {
+            position: relative;
+            cursor: help;
+        }
+
+        .tooltip:hover::after {
+            content: attr(data-tooltip);
+            position: absolute;
+            bottom: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #333333;
+            color: #ffffff;
+            padding: 8px 12px;
+            border-radius: 4px;
+            font-size: 12px;
+            white-space: nowrap;
+            z-index: 1000;
+            margin-bottom: 5px;
+        }
+
+        .company-header {
+            font-weight: 600;
+            color: #222222;
+            background: #f8f8f8;
+        }
+
+        .transcript-quote {
+            font-size: 11px;
+            color: #666666;
+            font-style: italic;
+            margin-top: 4px;
+            padding: 4px;
+            background: #f9f9f9;
+            border-left: 2px solid #cccccc;
+        }
+
+        .summary {
+            margin-top: 30px;
+            padding: 20px;
+            background: #f8f8f8;
+            border-radius: 4px;
+            border: 1px solid #e0e0e0;
+        }
+
+        .summary h3 {
+            margin-bottom: 15px;
+            color: #222222;
+            font-size: 16px;
+        }
+
+        .summary ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .summary li {
+            margin-bottom: 8px;
+            padding-left: 15px;
+            position: relative;
+        }
+
+        .summary li::before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: #333333;
+        }
+
+        @media print {
+            .controls, .export-buttons {
+                display: none;
+            }
+            .matrix {
+                font-size: 11px;
+            }
+            .matrix th, .matrix td {
+                padding: 6px 4px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Competitive Analysis Matrix</h1>
+            <p>Strategic positioning analysis: Sierra.ai vs Fin.ai vs Databricks vs CEF</p>
+            <p style="font-size: 12px; color: #666; margin-top: 10px;">
+                <strong>💡 How to Edit:</strong> Click any cell to edit content. Press Ctrl+Enter to save, Escape to cancel. 
+                Changes are automatically saved and shared with your team.
+            </p>
+            <div style="margin-top: 15px; padding: 10px; background: #f8f9fa; border-radius: 4px; border-left: 4px solid #007bff;">
+                <strong>📊 Data Sources:</strong>
+                <span style="background: #e3f2fd; padding: 2px 6px; border-radius: 3px; font-size: 11px;">INITIAL</span> = Website data extraction
+                <span style="background: #fff3e0; padding: 2px 6px; border-radius: 3px; font-size: 11px; margin-left: 8px;">DEEP</span> = Strategic intelligence report
+                <span style="background: linear-gradient(90deg, #e3f2fd 50%, #fff3e0 50%); padding: 2px 6px; border-radius: 3px; font-size: 11px; margin-left: 8px;">BOTH</span> = Combined sources
+            </div>
+            
+        </div>
+
+        <!-- Version Tracker -->
+        <div class="version-tracker">
+            <h3>📝 Change Log</h3>
+            <div class="version-log" id="versionLog">
+                <!-- Version entries will be populated here -->
+            </div>
+        </div>
+
+        <!-- Search and Filter Controls -->
+        <div class="search-container">
+            <input type="text" class="search-input" id="searchInput" placeholder="Search across all content..." onkeyup="searchMatrix()">
+            <button class="search-clear" onclick="clearSearch()">Clear</button>
+        </div>
+
+        <div class="controls">
+            <button class="btn active" onclick="filterMatrix('all')">All Sections</button>
+            <button class="btn" onclick="filterMatrix('strategic')">Strategic</button>
+            <button class="btn" onclick="filterMatrix('technical')">Technical</button>
+            <button class="btn" onclick="filterMatrix('gtm')">Go-to-Market</button>
+            <button class="btn" onclick="filterMatrix('investor')">Investor</button>
+            <button class="btn" onclick="toggleBulkEdit()">Bulk Edit</button>
+        </div>
+
+        <!-- Bulk Edit Mode -->
+        <div class="bulk-edit-mode" id="bulkEditMode">
+            <strong>Bulk Edit Mode Active</strong>
+            <div class="bulk-edit-controls">
+                <span>Select multiple cells to edit them together</span>
+                <button class="bulk-edit-btn" onclick="bulkSaveChanges()">Save All Changes</button>
+                <button class="bulk-edit-btn cancel" onclick="cancelBulkEdit()">Cancel</button>
+            </div>
+        </div>
+
+        <!-- Error/Success Messages -->
+        <div class="error-message" id="errorMessage"></div>
+        <div class="success-message" id="successMessage"></div>
+
+        <!-- Loading Overlay -->
+        <div class="loading-overlay" id="loadingOverlay">
+            <div class="loading-spinner"></div>
+        </div>
+
+        <div class="export-buttons">
+            <button class="export-btn" onclick="exportToPDF()">Export to PDF</button>
+            <button class="export-btn" onclick="exportToCSV()">Export to CSV</button>
+        </div>
+
+        <table class="matrix" id="matrix">
+            <thead>
+                <tr>
+                    <th style="width: 200px;">Dimension</th>
+                    <th style="width: 200px;">CEF</th>
+                    <th style="width: 200px;">Databricks</th>
+                    <th style="width: 200px;">Sierra.ai</th>
+                    <th style="width: 200px;">Fin.ai</th>
+                    <th style="width: 200px;">NICE</th>
+                    <th style="width: 200px;">Snowflake</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="section-header">
+                    <td colspan="7">TECHNICAL DIFFERENTIATION</td>
+                </tr>
+                <tr>
+                    <td class="company-header">Eval & Lineage</td>
+                    <td class="blank editable" data-row="eval-lineage" data-col="cef"><span class="status-indicator"></span><button class="edit-save-btn">Save</button></td>
+                    <td class="parity data-source-initial editable" data-row="eval-lineage" data-col="databricks">MLflow Model Registry: A centralized model store that provides a UI and set of APIs to manage the full lifecycle of MLflow Models. MLflow models logged with comprehensive metadata including metrics and parameters<span class="data-source-badge initial">INITIAL</span><span class="status-indicator"></span><button class="edit-save-btn">Save</button></td>
+                    <td class="parity data-source-deep editable" data-row="eval-lineage" data-col="sierra">"Agent Studio" provides tools to review agent performance against business metrics and audit the reasoning behind actions by viewing knowledge sources accessed.<span class="data-source-badge deep">DEEP</span><span class="status-indicator"></span><button class="edit-save-btn">Save</button></td>
+                    <td class="parity data-source-deep editable" data-row="eval-lineage" data-col="fin">Topics Explorer: Uses AI to group every customer conversation into Topics and Subtopics to spot patterns, track trends, and catch issues before they affect customer experience<span class="data-source-badge deep">DEEP</span><span class="status-indicator"></span><button class="edit-save-btn">Save</button></td>
+                    <td class="parity data-source-mixed editable" data-row="eval-lineage" data-col="nice">
+                        <div class="data-source-section">
+                            <div class="data-source-initial">
+                                Interaction Analytics: Gain AI-powered insights from 100% of interactions to drive continuous improvement. Dashboards & Reporting: Get one source of truth for real-time and historical insights, so every decision is data-driven<span class="data-source-badge initial">INITIAL</span>
+                            </div>
+                            <div class="data-source-deep">
+                                Enlighten Actions: Generative AI-powered analytics interface for CX leaders using natural language to query interaction data, automatically identify trends and root causes<span class="data-source-badge deep">DEEP</span>
+                            </div>
+                        </div>
+                        <span class="status-indicator"></span><button class="edit-save-btn">Save</button>
+                    </td>
+                    <td class="parity data-source-mixed editable" data-row="eval-lineage" data-col="snowflake">
+                        <div class="data-source-section">
+                            <div class="data-source-initial">
+                                Data Science: Offers tools and environments for building and deploying machine learning models. Snowsight: Provides a unified experience for working with your Snowflake data by using SQL or Python<span class="data-source-badge initial">INITIAL</span>
+                            </div>
+                            <div class="data-source-deep">
+                                Snowflake ML: Comprehensive MLOps framework with Feature Store, Model Registry, distributed training, and model observability. Snowflake Horizon provides unified governance<span class="data-source-badge deep">DEEP</span>
+                            </div>
+                        </div>
+                        <span class="status-indicator"></span><button class="edit-save-btn">Save</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="company-header">Memory/Context</td>
+                    <td class="blank editable" data-row="memory-context" data-col="cef"><span class="status-indicator"></span><button class="edit-save-btn">Save</button></td>
+                    <td class="parity data-source-deep editable" data-row="memory-context" data-col="databricks">Delta Lake provides data versioning, enabling time-travel queries and reproducible data states for models.<span class="data-source-badge deep">DEEP</span><span class="status-indicator"></span><button class="edit-save-btn">Save</button></td>
+                    <td class="parity data-source-initial editable" data-row="memory-context" data-col="sierra">Context management for agents to maintain conversational flow and personalization across interactions<span class="data-source-badge initial">INITIAL</span><span class="status-indicator"></span><button class="edit-save-btn">Save</button></td>
+                    <td class="parity data-source-deep editable" data-row="memory-context" data-col="fin">Basic conversation memory integrated with the Intercom helpdesk context and customer interaction history<span class="data-source-badge deep">DEEP</span><span class="status-indicator"></span><button class="edit-save-btn">Save</button></td>
+                    <td class="parity data-source-mixed editable" data-row="memory-context" data-col="nice">
+                        <div class="data-source-section">
+                            <div class="data-source-initial">
+                                Automated Summary: Instantly summarize interactions to accelerate resolution times and efficiency. Voice of the Customer: Unlock customer insights to enhance experiences, drive loyalty, and boost business growth<span class="data-source-badge initial">INITIAL</span>
+                            </div>
+                            <div class="data-source-deep">
+                                Enlighten XM (Experience Memory): Creates persistent, unified memory graph for each customer, capturing interaction history, preferences, sentiment, and behavior across all touchpoints<span class="data-source-badge deep">DEEP</span>
+                            </div>
+                        </div>
+                        <span class="status-indicator"></span><button class="edit-save-btn">Save</button>
+                    </td>
+                    <td class="parity data-source-mixed editable" data-row="memory-context" data-col="snowflake">
+                        <div class="data-source-section">
+                            <div class="data-source-initial">
+                                Centralized Data Management: Consolidate data into a single source of truth. Real-time Analytics: Enable real-time querying and analysis without complex ETL processes<span class="data-source-badge initial">INITIAL</span>
+                            </div>
+                            <div class="data-source-deep">
+                                Snowpark: Developer framework allowing Python, Java, Scala execution within Snowflake's compute engine, pushing computation to data while maintaining security perimeter<span class="data-source-badge deep">DEEP</span>
+                            </div>
+                        </div>
+                        <span class="status-indicator"></span><button class="edit-save-btn">Save</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="company-header">Data Sovereignty</td>
+                    <td class="blank editable" data-row="data-sovereignty" data-col="cef"><span class="status-indicator"></span><button class="edit-save-btn">Save</button></td>
+                    <td class="parity data-source-deep editable" data-row="data-sovereignty" data-col="databricks">High degree of control. Supports deployment in customer's own VPC and customer-managed encryption keys, enabling full data sovereignty.<span class="data-source-badge deep">DEEP</span><span class="status-indicator"></span><button class="edit-save-btn">Save</button></td>
+                    <td class="parity data-source-deep editable" data-row="data-sovereignty" data-col="sierra">High commitment to data governance; customer data is never used to train models and is segregated. Extensive compliance portfolio (GDPR, HIPAA).<span class="data-source-badge deep">DEEP</span><span class="status-indicator"></span><button class="edit-save-btn">Save</button></td>
+                    <td class="parity data-source-deep editable" data-row="data-sovereignty" data-col="fin">Inherits Intercom's infrastructure with options for regional data hosting. Enterprise-grade security through Intercom platform<span class="data-source-badge deep">DEEP</span><span class="status-indicator"></span><button class="edit-save-btn">Save</button></td>
+                    <td class="parity data-source-initial editable" data-row="data-sovereignty" data-col="nice">Trust & Compliance: Securing your trust with every interaction. Global reach, local precision: Operate with speed, security, and scale while delivering experiences that resonate with your customers, wherever they are<span class="data-source-badge initial">INITIAL</span><span class="status-indicator"></span><button class="edit-save-btn">Save</button></td>
+                    <td class="parity data-source-mixed editable" data-row="data-sovereignty" data-col="snowflake">
+                        <div class="data-source-section">
+                            <div class="data-source-initial">
+                                Governed Data Access: Secure, controlled access to enterprise data. Secure Data Sharing: Governed access to extensive interaction data<span class="data-source-badge initial">INITIAL</span>
+                            </div>
+                            <div class="data-source-deep">
+                                Tri-Secret Secure: customer-managed encryption keys. Multi-cloud deployment across AWS, Azure, GCP. Data sovereignty controls for GDPR compliance with regional deployment options<span class="data-source-badge deep">DEEP</span>
+                            </div>
+                        </div>
+                        <span class="status-indicator"></span><button class="edit-save-btn">Save</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="company-header">Security Model</td>
+                    <td class="blank editable" data-row="security-model" data-col="cef"><span class="status-indicator"></span><button class="edit-save-btn">Save</button></td>
+                    <td class="parity editable" data-row="security-model" data-col="databricks">
+                        <div class="data-source-section">
+                            <div class="data-source-initial">
+                                <span class="data-source-badge initial">INITIAL</span>
+                                Customer-managed VPC (provide your VPC ID, security group ID and subnet IDs), IP access lists for workspaces, customer-managed keys, audit logs, enterprise compliance. Develop generative AI applications on your data without sacrificing data privacy or control.
+                            </div>
+                            <div class="data-source-deep">
+                                <span class="data-source-badge deep">DEEP</span>
+                                Customer-managed security at the network (VPC, IP lists) and data (customer-managed keys) levels, providing granular control.
+                            </div>
+                        </div>
+                        <span class="status-indicator"></span><button class="edit-save-btn">Save</button>
+                    </td>
+                    <td class="parity editable" data-row="security-model" data-col="sierra">
+                        <div class="data-source-section">
+                            <div class="data-source-initial">
+                                <span class="data-source-badge initial">INITIAL</span>
+                                Sierra is designed with the highest commitment to trust, security, and compliance. Your data is never used to train models, and we use industry-standard best practices to ensure its security.
+                            </div>
+                            <div class="data-source-deep">
+                                <span class="data-source-badge deep">DEEP</span>
+                                Enterprise-grade security with a full suite of compliance certifications (SOC 2, ISO 27001). Wraps LLMs in "supervisory layers" to control outputs.
+                            </div>
+                        </div>
+                        <span class="status-indicator"></span><button class="edit-save-btn">Save</button>
+                    </td>
+                    <td class="parity data-source-deep editable" data-row="security-model" data-col="fin">Inherits Intercom's established enterprise security infrastructure and protocols. Built on Fin AI Engine™ with patented AI architecture<span class="data-source-badge deep">DEEP</span><span class="status-indicator"></span><button class="edit-save-btn">Save</button></td>
+                    <td class="parity data-source-initial editable" data-row="security-model" data-col="nice">Cloud Architecture: Innovative cloud-native foundation to rapidly scale extraordinary CX. Scale in the cloud: Run customer service on one smart, secure platform built to scale and simplify as you grow<span class="data-source-badge initial">INITIAL</span><span class="status-indicator"></span><button class="edit-save-btn">Save</button></td>
+                    <td class="parity data-source-mixed editable" data-row="security-model" data-col="snowflake">
+                        <div class="data-source-section">
+                            <div class="data-source-initial">
+                                Cloud-Native Platform: Built for scale, security, and performance. Cross-Platform Compatibility: Integrates with existing enterprise systems and workflows<span class="data-source-badge initial">INITIAL</span>
+                            </div>
+                            <div class="data-source-deep">
+                                Snowflake Horizon: unified governance with RBAC, dynamic data masking, object tagging, comprehensive data lineage. End-to-end encryption, private networking, customer-managed keys<span class="data-source-badge deep">DEEP</span>
+                            </div>
+                        </div>
+                        <span class="status-indicator"></span><button class="edit-save-btn">Save</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="company-header">Customization</td>
+                    <td class="blank editable" data-row="customization" data-col="cef"><span class="status-indicator"></span><button class="edit-save-btn">Save</button></td>
+                    <td class="parity data-source-deep editable" data-row="customization" data-col="databricks">Extremely High: As a foundational platform, it offers maximum flexibility via multiple languages, notebooks, and APIs to build any custom AI application.<span class="data-source-badge deep">DEEP</span><span class="status-indicator"></span><button class="edit-save-btn">Save</button></td>
+                    <td class="parity editable" data-row="customization" data-col="sierra">
+                        <div class="data-source-section">
+                            <div class="data-source-initial">
+                                <span class="data-source-badge initial">INITIAL</span>
+                                High - Declaratively define your agent's unique goals and guardrails with our Agent SDK. Rapidly develop highly effective agents with out-of-the-box composable skills, fine-tuning capabilities, and advanced developer tools. Empower customer experience teams to build and manage agents—without writing a line of code. Set up customer journeys, configure knowledge, and define brand guidelines effortlessly within Agent Studio.
+                            </div>
+                            <div class="data-source-deep">
+                                <span class="data-source-badge deep">DEEP</span>
+                                High: Offers both a developer-focused Agent SDK for deep configuration and a no-code Agent Studio for business users.
+                            </div>
+                        </div>
+                        <span class="status-indicator"></span><button class="edit-save-btn">Save</button>
+                    </td>
+                    <td class="parity data-source-deep editable" data-row="customization" data-col="fin">Complete, fully configurable AI Agent System with no-code user experience anyone can manage. Customize, test, and continuously improve Fin<span class="data-source-badge deep">DEEP</span><span class="status-indicator"></span><button class="edit-save-btn">Save</button></td>
+                    <td class="parity data-source-initial editable" data-row="customization" data-col="nice">AI Agents: Instantly create no-code AI agents powered by your data—build once, deploy everywhere. Seamless integrations: Get connected fast with pre-built integrations, open APIs, and simple tools that keep your business moving<span class="data-source-badge initial">INITIAL</span><span class="status-indicator"></span><button class="edit-save-btn">Save</button></td>
+                    <td class="parity data-source-mixed editable" data-row="customization" data-col="snowflake">
+                        <div class="data-source-section">
+                            <div class="data-source-initial">
+                                Data Applications: Enables the development of data-driven applications. Developer Resources: Step-by-step guides and architectures that offer insights into how Snowflake can be used to create data applications<span class="data-source-badge initial">INITIAL</span>
+                            </div>
+                            <div class="data-source-deep">
+                                Snowflake Cortex: managed LLM services for business users. Snowflake ML: full MLOps suite for data scientists. Snowpark: Python/Java/Scala execution framework<span class="data-source-badge deep">DEEP</span>
+                            </div>
+                        </div>
+                        <span class="status-indicator"></span><button class="edit-save-btn">Save</button>
+                    </td>
+                </tr>
+
+                <tr class="section-header">
+                    <td colspan="7">STRATEGIC POSITIONING</td>
+                </tr>
+                <tr>
+                    <td class="company-header">Target Market</td>
+                    <td class="blank editable" data-row="target-market" data-col="cef"><span class="status-indicator"></span><button class="edit-save-btn">Save</button></td>
+                    <td class="parity data-source-deep editable" data-row="target-market" data-col="databricks">Enterprise data teams (engineers, scientists, analysts) across all industries requiring a foundational platform for data and AI workloads<span class="data-source-badge deep">DEEP</span><span class="status-indicator"></span><button class="edit-save-btn">Save</button></td>
+                    <td class="parity data-source-deep editable" data-row="target-market" data-col="sierra">Enterprise clients with high-volume, complex customer interactions (e.g., customer service, commerce) across various industries<span class="data-source-badge deep">DEEP</span><span class="status-indicator"></span><button class="edit-save-btn">Save</button></td>
+                    <td class="parity data-source-deep editable" data-row="target-market" data-col="fin">Primarily existing and new Intercom customers, from startups to enterprises, seeking integrated customer service automation<span class="data-source-badge deep">DEEP</span><span class="status-indicator"></span><button class="edit-save-btn">Save</button></td>
+                    <td class="parity data-source-initial editable" data-row="target-market" data-col="nice">Enterprise contact centers and customer service organizations across all industries. Serves 25,000+ organizations worldwide, powers 15+ billion customer interactions annually<span class="data-source-badge initial">INITIAL</span><span class="status-indicator"></span><button class="edit-save-btn">Save</button></td>
+                    <td class="parity data-source-mixed editable" data-row="target-market" data-col="snowflake">
+                        <div class="data-source-section">
+                            <div class="data-source-initial">
+                                Organizations requiring data consolidation and analytics across financial services, retail, healthcare, and technology. Serves 8,000+ customers worldwide, including many Fortune 500 companies<span class="data-source-badge initial">INITIAL</span>
+                            </div>
+                            <div class="data-source-deep">
+                                751 Forbes Global 2000 companies. Founded 2012, $3.63B revenue, 8,575 employees. Transitioning from data warehouse to AI Data Cloud platform<span class="data-source-badge deep">DEEP</span>
+                            </div>
+                        </div>
+                        <span class="status-indicator"></span><button class="edit-save-btn">Save</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="company-header">Core Value Proposition</td>
+                    <td class="blank editable" data-row="value-prop" data-col="cef"><span class="status-indicator"></span><button class="edit-save-btn">Save</button></td>
+                    <td class="parity editable" data-row="value-prop" data-col="databricks">
+                        <div class="data-source-section">
+                            <div class="data-source-initial">
+                                <span class="data-source-badge initial">INITIAL</span>
+                                Databricks brings AI to your data to help you bring AI to the world.
+                            </div>
+                            <div class="data-source-deep">
+                                <span class="data-source-badge deep">DEEP</span>
+                                A unified Data Intelligence Platform (Lakehouse) that brings AI to a company's existing data, enabling them to build their own custom AI applications.
+                            </div>
+                        </div>
+                        <span class="status-indicator"></span><button class="edit-save-btn">Save</button>
+                    </td>
+                    <td class="parity editable" data-row="value-prop" data-col="sierra">
+                        <div class="data-source-section">
+                            <div class="data-source-initial">
+                                <span class="data-source-badge initial">INITIAL</span>
+                                AI agents mirror the nuances of human communication and deliver helpful, empathetic, omnichannel support, improving customer satisfaction. Best of all, they're always available, always up-to-date, and always on brand.
+                            </div>
+                            <div class="data-source-deep">
+                                <span class="data-source-badge deep">DEEP</span>
+                                AI agents that mirror human communication to deliver empathetic, omnichannel support, representing a company's entire customer experience.
+                            </div>
+                        </div>
+                        <span class="status-indicator"></span><button class="edit-save-btn">Save</button>
+                    </td>
+                    <td class="parity editable" data-row="value-prop" data-col="fin">
+                        <div class="data-source-section">
+                            <div class="data-source-initial">
+                                <span class="data-source-badge initial">INITIAL</span>
+                                Fin is the only complete, fully configurable AI Agent System in customer service—empowering support teams to customize, test, and continuously improve Fin through a no-code user experience anyone can manage.
+                            </div>
+                            <div class="data-source-deep">
+                                <span class="data-source-badge deep">DEEP</span>
+                                A complete, fully configurable AI agent system seamlessly integrated into the Intercom helpdesk, manageable via a no-code UX for ease of adoption.
+                            </div>
+                        </div>
+                        <span class="status-indicator"></span><button class="edit-save-btn">Save</button>
+                    </td>
+                    <td class="parity data-source-initial editable" data-row="value-prop" data-col="nice">CXone Mpower Platform: Complete AI platform for customer service automation. Unify customer engagement across digital, voice, and AI<span class="data-source-badge initial">INITIAL</span><span class="status-indicator"></span><button class="edit-save-btn">Save</button></td>
+                    <td class="parity data-source-mixed editable" data-row="value-prop" data-col="snowflake">
+                        <div class="data-source-section">
+                            <div class="data-source-initial">
+                                AI Data Cloud: Platform that enables organizations to consolidate data into a single source of truth. Snowflake delivers the Data Cloud — mobilize your data with near-unlimited scale and performance<span class="data-source-badge initial">INITIAL</span>
+                            </div>
+                            <div class="data-source-deep">
+                                AI Data Cloud: unified platform for all data and AI workloads. Bring AI to data philosophy with decoupled storage/compute architecture ideal for AI workloads<span class="data-source-badge deep">DEEP</span>
+                            </div>
+                        </div>
+                        <span class="status-indicator"></span><button class="edit-save-btn">Save</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="company-header">Pricing Model</td>
+                    <td class="blank editable" data-row="pricing" data-col="cef"><span class="status-indicator"></span><button class="edit-save-btn">Save</button></td>
+                    <td class="parity data-source-deep editable" data-row="pricing" data-col="databricks">Consumption-based (pay-for-what-you-use compute) plus enterprise-level licensing agreements for the platform.<span class="data-source-badge deep">DEEP</span><span class="status-indicator"></span><button class="edit-save-btn">Save</button></td>
+                    <td class="parity data-source-deep editable" data-row="pricing" data-col="sierra">Hybrid Model: Primarily outcome-based (pay-per-resolution) layered on top of a high-cost annual subscription (starts ~$150k) and significant implementation fees ($50k-$200k). Not publicly disclosed.<span class="data-source-badge deep">DEEP</span><span class="status-indicator"></span><button class="edit-save-btn">Save</button></td>
+                    <td class="parity data-source-deep editable" data-row="pricing" data-col="fin">Transactional pricing model integrated with Intercom subscription. Accessible pricing for startups to enterprises<span class="data-source-badge deep">DEEP</span><span class="status-indicator"></span><button class="edit-save-btn">Save</button></td>
+                    <td class="parity data-source-initial editable" data-row="pricing" data-col="nice">Enterprise pricing model for CCaaS platform with consumption-based components. Public company (NASDAQ: NICE) with over $2 billion annual revenue<span class="data-source-badge initial">INITIAL</span><span class="status-indicator"></span><button class="edit-save-btn">Save</button></td>
+                    <td class="parity data-source-mixed editable" data-row="pricing" data-col="snowflake">
+                        <div class="data-source-section">
+                            <div class="data-source-initial">
+                                Consumption-based pricing for data storage, compute, and data sharing. Public company (NYSE: SNOW) with over $2 billion annual revenue<span class="data-source-badge initial">INITIAL</span>
+                            </div>
+                            <div class="data-source-deep">
+                                Consumption-based model: compute credits per second, storage per TB/month. Pay-as-you-go with 125% net revenue retention indicating strong land-and-expand<span class="data-source-badge deep">DEEP</span>
+                            </div>
+                        </div>
+                        <span class="status-indicator"></span><button class="edit-save-btn">Save</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="company-header">Funding Stage</td>
+                    <td class="blank editable" data-row="funding" data-col="cef"><span class="status-indicator"></span><button class="edit-save-btn">Save</button></td>
+                    <td class="parity editable" data-row="funding" data-col="databricks">
+                        <div class="data-source-section">
+                            <div class="data-source-initial">
+                                <span class="data-source-badge initial">INITIAL</span>
+                                Databricks is raising a Series K Investment at >$100 billion valuation
+                            </div>
+                            <div class="data-source-deep">
+                                <span class="data-source-badge deep">DEEP</span>
+                                Private / Pre-IPO (Series K). Valued at over $100B, making it one of the world's most valuable private tech companies. More than 15,000 organizations worldwide including 60% of Fortune 500 rely on Databricks.
+                            </div>
+                        </div>
+                        <span class="status-indicator"></span><button class="edit-save-btn">Save</button>
+                    </td>
+                    <td class="parity data-source-deep editable" data-row="funding" data-col="sierra">Series A (Launched 2024). Well-capitalized with significant backing.<span class="data-source-badge deep">DEEP</span><span class="status-indicator"></span><button class="edit-save-btn">Save</button></td>
+                    <td class="parity data-source-deep editable" data-row="funding" data-col="fin">Acquired by Intercom. Operates as an integrated product line within a mature, profitable company<span class="data-source-badge deep">DEEP</span><span class="status-indicator"></span><button class="edit-save-btn">Save</button></td>
+                    <td class="parity data-source-initial editable" data-row="funding" data-col="nice">Public company (NASDAQ: NICE) with market capitalization over $10 billion. Founded in 1986, established market leader<span class="data-source-badge initial">INITIAL</span><span class="status-indicator"></span><button class="edit-save-btn">Save</button></td>
+                    <td class="parity data-source-mixed editable" data-row="funding" data-col="snowflake">
+                        <div class="data-source-section">
+                            <div class="data-source-initial">
+                                Public company (NYSE: SNOW) with market capitalization over $50 billion. Founded in 2012, went public in 2020, one of the fastest-growing software companies in history<span class="data-source-badge initial">INITIAL</span>
+                            </div>
+                            <div class="data-source-deep">
+                                Public company (NYSE: SNOW), $79.65B market cap. 2020 IPO was largest software IPO in history. Sridhar Ramaswamy CEO transition signals AI focus<span class="data-source-badge deep">DEEP</span>
+                            </div>
+                        </div>
+                        <span class="status-indicator"></span><button class="edit-save-btn">Save</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="company-header">Team Size</td>
+                    <td class="blank editable" data-row="team-size" data-col="cef"><span class="status-indicator"></span><button class="edit-save-btn">Save</button></td>
+                    <td class="parity data-source-deep editable" data-row="team-size" data-col="databricks">~6,000-8,200 employees globally, reflecting its status as a dominant enterprise software platform.<span class="data-source-badge deep">DEEP</span><span class="status-indicator"></span><button class="edit-save-btn">Save</button></td>
+                    <td class="parity editable" data-row="team-size" data-col="sierra">
+                        <div class="data-source-section">
+                            <div class="data-source-initial">
+                                <span class="data-source-badge initial">INITIAL</span>
+                                Bret Taylor: Co-Founder, previously Co-CEO of Salesforce, founded Quip, CTO of Facebook, co-created Google Maps. Clay Bavor: Co-Founder, spent 18 years at Google, led Google Labs, started Google's AR/VR effort.
+                            </div>
+                            <div class="data-source-deep">
+                                <span class="data-source-badge deep">DEEP</span>
+                                Startup team of ~150-170 employees, indicating significant investment and operational scale for a new company.
+                            </div>
+                        </div>
+                        <span class="status-indicator"></span><button class="edit-save-btn">Save</button>
+                    </td>
+                    <td class="parity data-source-deep editable" data-row="team-size" data-col="fin">An integrated "AI Group" within Intercom. Supported by Intercom's broader organization and professional services team<span class="data-source-badge deep">DEEP</span><span class="status-indicator"></span><button class="edit-save-btn">Save</button></td>
+                    <td class="parity data-source-initial editable" data-row="team-size" data-col="nice">Global workforce: 8,000+ employees serving enterprises worldwide. Established company with 38+ years of experience<span class="data-source-badge initial">INITIAL</span><span class="status-indicator"></span><button class="edit-save-btn">Save</button></td>
+                    <td class="parity data-source-mixed editable" data-row="team-size" data-col="snowflake">
+                        <div class="data-source-section">
+                            <div class="data-source-initial">
+                                Global workforce: 7,000+ employees supporting enterprise data platform. Rapidly growing company with 12+ years of experience<span class="data-source-badge initial">INITIAL</span>
+                            </div>
+                            <div class="data-source-deep">
+                                8,575 employees: 35% Engineering, 32% Sales. Technical and commercial focus reflecting dual innovation and market expansion strategy<span class="data-source-badge deep">DEEP</span>
+                            </div>
+                        </div>
+                        <span class="status-indicator"></span><button class="edit-save-btn">Save</button>
+                    </td>
+                </tr>
+
+                <tr class="section-header">
+                    <td colspan="7">GO-TO-MARKET INSIGHTS</td>
+                </tr>
+                <tr>
+                    <td class="company-header">Customer Stories</td>
+                    <td class="blank editable" data-row="customer-stories" data-col="cef"><span class="status-indicator"></span><button class="edit-save-btn">Save</button></td>
+                    <td class="parity editable" data-row="customer-stories" data-col="databricks">
+                        <div class="data-source-section">
+                            <div class="data-source-initial">
+                                <span class="data-source-badge initial">INITIAL</span>
+                                Mastercard (159 billion transactions a year across 210+ countries), Unilever (25% reduction in overall infrastructure costs), Adidas (30–40% efficiency gains by transforming 2M+ reviews into actionable insights), FOX Sports (Real-time data processing and in-app chatbot powered by Databricks), HSBC, TD Bank
+                            </div>
+                            <div class="data-source-deep">
+                                <span class="data-source-badge deep">DEEP</span>
+                                Over 60% of the Fortune 500, including Mastercard, Unilever, and HSBC, using the platform for a wide range of data, analytics, and AI workloads.
+                            </div>
+                        </div>
+                        <span class="status-indicator"></span><button class="edit-save-btn">Save</button>
+                    </td>
+                    <td class="parity editable" data-row="customer-stories" data-col="sierra">
+                        <div class="data-source-section">
+                            <div class="data-source-initial">
+                                <span class="data-source-badge initial">INITIAL</span>
+                                ADT (Customer inquiries per month: 2 million), SiriusXM (Subscribers: 34 Million), Thrive Market (CSAT: ~90%), CLEAR (4.7/5 customer satisfaction), Sonos (15 million customers), CDW (250,000 customers), WeightWatchers, OluKai
+                            </div>
+                            <div class="data-source-deep">
+                                <span class="data-source-badge deep">DEEP</span>
+                                High-profile enterprise clients like ADT, SiriusXM, and CLEAR, focused on large-scale customer service and commerce automation.
+                            </div>
+                        </div>
+                        <span class="status-indicator"></span><button class="edit-save-btn">Save</button>
+                    </td>
+                    <td class="parity editable" data-row="customer-stories" data-col="fin">
+                        <div class="data-source-section">
+                            <div class="data-source-initial">
+                                <span class="data-source-badge initial">INITIAL</span>
+                                Anthropic: "If you're debating whether to build your own AI solution or buy one, my advice would be to buy – and specifically, buy Fin." Monday.com: "We have been able to close of 50% of conversations with AI and keep an 85% CSAT score." Culture Amp: "Using Fin at RB2B has saved us $30k since April"
+                            </div>
+                            <div class="data-source-deep">
+                                <span class="data-source-badge deep">DEEP</span>
+                                The vast Intercom customer base, primarily focused on customer support automation within SaaS and tech companies.
+                            </div>
+                        </div>
+                        <span class="status-indicator"></span><button class="edit-save-btn">Save</button>
+                    </td>
+                    <td class="parity data-source-initial editable" data-row="customer-stories" data-col="nice">Toyota Group: 75% increase in customer satisfaction. Sony Electronics: 40% automation potential for customers, 34% increase in customer satisfaction. Various Clients: Saves over $1 million in first eight months with NICE EEM and VRS<span class="data-source-badge initial">INITIAL</span><span class="status-indicator"></span><button class="edit-save-btn">Save</button></td>
+                    <td class="parity data-source-mixed editable" data-row="customer-stories" data-col="snowflake">
+                        <div class="data-source-section">
+                            <div class="data-source-initial">
+                                Strategic partnership with NICE for CXone Mpower Data Lake integration. Serves thousands of organizations globally, including many Fortune 500 companies<span class="data-source-badge initial">INITIAL</span>
+                            </div>
+                            <div class="data-source-deep">
+                                Massive customer base including 751 Forbes Global 2000. High net revenue retention (125%) demonstrates successful land-and-expand model<span class="data-source-badge deep">DEEP</span>
+                            </div>
+                        </div>
+                        <span class="status-indicator"></span><button class="edit-save-btn">Save</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="company-header">Use Cases</td>
+                    <td class="blank editable" data-row="use-cases" data-col="cef"><span class="status-indicator"></span><button class="edit-save-btn">Save</button></td>
+                    <td class="parity editable" data-row="use-cases" data-col="databricks">
+                        <div class="data-source-section">
+                            <div class="data-source-initial">
+                                <span class="data-source-badge initial">INITIAL</span>
+                                AI Governance, Warehousing, ETL, Data sharing, Orchestration. Create, tune and deploy your own generative AI models. Automate experiment tracking and governance. Deploy and monitor models at scale. Accelerate ETL, data warehousing, BI and AI.
+                            </div>
+                            <div class="data-source-deep">
+                                <span class="data-source-badge deep">DEEP</span>
+                                Broad platform use cases: AI Governance, Data Warehousing, ETL, Data Sharing, and building custom GenAI models and applications.
+                            </div>
+                        </div>
+                        <span class="status-indicator"></span><button class="edit-save-btn">Save</button>
+                    </td>
+                    <td class="parity editable" data-row="use-cases" data-col="sierra">
+                        <div class="data-source-section">
+                            <div class="data-source-initial">
+                                <span class="data-source-badge initial">INITIAL</span>
+                                Customer service, commerce, and more. Sierra's agents are intricate software systems that simulate a human type of reasoning, decision-making, and creativity. Our agents can solve a wide range of real-world problems, assisting people with tasks that range from the mundanely logistical (like exchanging too-tight shoes) to the surprisingly complex (such as navigating the acoustic idiosyncrasies of setting up premium speakers).
+                            </div>
+                            <div class="data-source-deep">
+                                <span class="data-source-badge deep">DEEP</span>
+                                Customer service automation, e-commerce assistance, and complex task resolution (e.g., subscription management, troubleshooting).
+                            </div>
+                        </div>
+                        <span class="status-indicator"></span><button class="edit-save-btn">Save</button>
+                    </td>
+                    <td class="parity data-source-deep editable" data-row="use-cases" data-col="fin">Customer service automation, conversation analysis, AI-powered insights. Monitor, analyze, and optimize Fin's performance with complete view across customer experience<span class="data-source-badge deep">DEEP</span><span class="status-indicator"></span><button class="edit-save-btn">Save</button></td>
+                    <td class="parity data-source-initial editable" data-row="use-cases" data-col="nice">Workflow Orchestration, Omnichannel Routing, Proactive Engagement, Intelligent Virtual Agent, AI Copilots, Workforce Engagement Management<span class="data-source-badge initial">INITIAL</span><span class="status-indicator"></span><button class="edit-save-btn">Save</button></td>
+                    <td class="parity data-source-mixed editable" data-row="use-cases" data-col="snowflake">
+                        <div class="data-source-section">
+                            <div class="data-source-initial">
+                                Data Warehousing, Data Sharing, Data Engineering, Data Science, Data Applications. Powers data-driven applications for enterprises across all industries<span class="data-source-badge initial">INITIAL</span>
+                            </div>
+                            <div class="data-source-deep">
+                                Custom model development, RAG applications, unstructured data processing, predictive analytics, generative AI apps across any industry<span class="data-source-badge deep">DEEP</span>
+                            </div>
+                        </div>
+                        <span class="status-indicator"></span><button class="edit-save-btn">Save</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="company-header">Channel Strategy</td>
+                    <td class="blank editable" data-row="channel-strategy" data-col="cef"><span class="status-indicator"></span><button class="edit-save-btn">Save</button></td>
+                    <td class="parity editable" data-row="channel-strategy" data-col="databricks">
+                        <div class="data-source-section">
+                            <div class="data-source-initial">
+                                <span class="data-source-badge initial">INITIAL</span>
+                                AWS/Cloud partnerships, direct enterprise sales, partner ecosystem, Data Intelligence Days events
+                            </div>
+                            <div class="data-source-deep">
+                                <span class="data-source-badge deep">DEEP</span>
+                                Multi-channel: Direct enterprise sales, deep strategic partnerships with major cloud providers (AWS, Azure, GCP), and a vast consulting partner ecosystem.
+                            </div>
+                        </div>
+                        <span class="status-indicator"></span><button class="edit-save-btn">Save</button>
+                    </td>
+                    <td class="parity data-source-deep editable" data-row="channel-strategy" data-col="sierra">Primarily a direct, high-touch enterprise sales force, supported by founder-led thought leadership and content marketing.<span class="data-source-badge deep">DEEP</span><span class="status-indicator"></span><button class="edit-save-btn">Save</button></td>
+                    <td class="parity data-source-deep editable" data-row="channel-strategy" data-col="fin">Leverages Intercom's powerful existing GTM engine: direct sales, extensive partner network, and strong brand recognition<span class="data-source-badge deep">DEEP</span><span class="status-indicator"></span><button class="edit-save-btn">Save</button></td>
+                    <td class="parity data-source-initial editable" data-row="channel-strategy" data-col="nice">Direct enterprise sales with global reach and partner ecosystem. Serves 25,000+ organizations worldwide with comprehensive support<span class="data-source-badge initial">INITIAL</span><span class="status-indicator"></span><button class="edit-save-btn">Save</button></td>
+                    <td class="parity data-source-mixed editable" data-row="channel-strategy" data-col="snowflake">
+                        <div class="data-source-section">
+                            <div class="data-source-initial">
+                                Strategic partnerships with enterprise software providers like NICE. Direct enterprise sales with cloud marketplace presence<span class="data-source-badge initial">INITIAL</span>
+                            </div>
+                            <div class="data-source-deep">
+                                Sales-led GTM with 50%+ revenue investment in sales/marketing. Targets technical buyers: CIOs, CDOs, data scientists, ML engineers<span class="data-source-badge deep">DEEP</span>
+                            </div>
+                        </div>
+                        <span class="status-indicator"></span><button class="edit-save-btn">Save</button>
+                    </td>
+                </tr>
+
+                <tr class="section-header">
+                    <td colspan="7">INVESTOR NARRATIVE</td>
+                </tr>
+                <tr>
+                    <td class="company-header">Market Position</td>
+                    <td class="blank editable" data-row="market-position" data-col="cef"><span class="status-indicator"></span><button class="edit-save-btn">Save</button></td>
+                    <td class="parity editable" data-row="market-position" data-col="databricks">
+                        <div class="data-source-section">
+                            <div class="data-source-initial">
+                                <span class="data-source-badge initial">INITIAL</span>
+                                Market leader in unified data analytics and AI platform. The Databricks Data Intelligence Platform brings AI to your data to help you bring AI to the world.
+                            </div>
+                            <div class="data-source-deep">
+                                <span class="data-source-badge deep">DEEP</span>
+                                The market-leading unified Data Intelligence Platform, providing the foundational infrastructure for all enterprise data and AI.
+                            </div>
+                        </div>
+                        <span class="status-indicator"></span><button class="edit-save-btn">Save</button>
+                    </td>
+                    <td class="parity editable" data-row="market-position" data-col="sierra">
+                        <div class="data-source-section">
+                            <div class="data-source-initial">
+                                <span class="data-source-badge initial">INITIAL</span>
+                                At Sierra, we enable companies to build their own branded, customer-facing AI agents for customer service, commerce, and more.
+                            </div>
+                            <div class="data-source-deep">
+                                <span class="data-source-badge deep">DEEP</span>
+                                A premium provider of bespoke, human-like AI agents for complex enterprise challenges.
+                            </div>
+                        </div>
+                        <span class="status-indicator"></span><button class="edit-save-btn">Save</button>
+                    </td>
+                    <td class="parity data-source-deep editable" data-row="market-position" data-col="fin">The leading integrated AI agent for the dominant Intercom customer service ecosystem. Only complete, fully configurable AI Agent System<span class="data-source-badge deep">DEEP</span><span class="status-indicator"></span><button class="edit-save-btn">Save</button></td>
+                    <td class="parity data-source-initial editable" data-row="market-position" data-col="nice">Gartner® Magic Quadrant™ Leader for Contact Center as a Service for the 11th consecutive year. 91% of customers recommend NICE as preferred CCaaS vendor<span class="data-source-badge initial">INITIAL</span><span class="status-indicator"></span><button class="edit-save-btn">Save</button></td>
+                    <td class="parity data-source-mixed editable" data-row="market-position" data-col="snowflake">
+                        <div class="data-source-section">
+                            <div class="data-source-initial">
+                                Leading cloud-based data platform enabling enterprise data consolidation. One of the fastest-growing software companies in history<span class="data-source-badge initial">INITIAL</span>
+                            </div>
+                            <div class="data-source-deep">
+                                Horizontal foundational data platform. Aiming to become center of gravity for all enterprise data and AI workloads<span class="data-source-badge deep">DEEP</span>
+                            </div>
+                        </div>
+                        <span class="status-indicator"></span><button class="edit-save-btn">Save</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="company-header">Competitive Advantage</td>
+                    <td class="blank editable" data-row="competitive-advantage" data-col="cef"><span class="status-indicator"></span><button class="edit-save-btn">Save</button></td>
+                    <td class="parity editable" data-row="competitive-advantage" data-col="databricks">
+                        <div class="data-source-section">
+                            <div class="data-source-initial">
+                                <span class="data-source-badge initial">INITIAL</span>
+                                Unified platform, 12x better price/performance for SQL and BI workloads by moving from legacy cloud data warehouses to a lakehouse, enterprise-grade security and compliance. Great models are built with great data. With Databricks, lineage, quality, control and data privacy are maintained across the entire AI workflow.
+                            </div>
+                            <div class="data-source-deep">
+                                <span class="data-source-badge deep">DEEP</span>
+                                A unified, open-core platform (Lakehouse) that eliminates data silos and provides superior price/performance for all data and AI workloads.
+                            </div>
+                        </div>
+                        <span class="status-indicator"></span><button class="edit-save-btn">Save</button>
+                    </td>
+                    <td class="parity editable" data-row="competitive-advantage" data-col="sierra">
+                        <div class="data-source-section">
+                            <div class="data-source-initial">
+                                <span class="data-source-badge initial">INITIAL</span>
+                                Sierra's agents are intricate software systems that simulate a human type of reasoning, decision-making, and creativity. Our agents can solve a wide range of real-world problems.
+                            </div>
+                            <div class="data-source-deep">
+                                <span class="data-source-badge deep">DEEP</span>
+                                Sophisticated, human-like conversational quality and reasoning capabilities, delivered via a multi-model architecture.
+                            </div>
+                        </div>
+                        <span class="status-indicator"></span><button class="edit-save-btn">Save</button>
+                    </td>
+                    <td class="parity data-source-deep editable" data-row="competitive-advantage" data-col="fin">Seamless, native integration into the Intercom platform, creating powerful moat and lowest friction for massive existing user base<span class="data-source-badge deep">DEEP</span><span class="status-indicator"></span><button class="edit-save-btn">Save</button></td>
+                    <td class="parity data-source-initial editable" data-row="competitive-advantage" data-col="nice">91% of customers recommend NICE as a preferred CCaaS vendor. Named a Leader - Furthest in Completeness of Vision. Highest in Ability to Execute<span class="data-source-badge initial">INITIAL</span><span class="status-indicator"></span><button class="edit-save-btn">Save</button></td>
+                    <td class="parity data-source-mixed editable" data-row="competitive-advantage" data-col="snowflake">
+                        <div class="data-source-section">
+                            <div class="data-source-initial">
+                                AI Data Cloud facilitating meaningful business insights and data application development. Near-unlimited scale and performance for data mobilization<span class="data-source-badge initial">INITIAL</span>
+                            </div>
+                            <div class="data-source-deep">
+                                Unified multi-cloud architecture, robust governance framework, broad ecosystem with data sharing marketplace and partner network<span class="data-source-badge deep">DEEP</span>
+                            </div>
+                        </div>
+                        <span class="status-indicator"></span><button class="edit-save-btn">Save</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="company-header">Differentiation</td>
+                    <td class="blank editable" data-row="differentiation" data-col="cef"><span class="status-indicator"></span><button class="edit-save-btn">Save</button></td>
+                    <td class="parity editable" data-row="differentiation" data-col="databricks">
+                        <div class="data-source-section">
+                            <div class="data-source-initial">
+                                <span class="data-source-badge initial">INITIAL</span>
+                                Databricks brings AI to your data to help you bring AI to the world vs point solutions. The best data warehouse is a lakehouse - achieve 12x better price/performance for SQL and BI workloads.
+                            </div>
+                            <div class="data-source-deep">
+                                <span class="data-source-badge deep">DEEP</span>
+                                Differentiates from point solutions and legacy data warehouses by offering a single, unified platform for all data and AI, from ETL to GenAI.
+                            </div>
+                        </div>
+                        <span class="status-indicator"></span><button class="edit-save-btn">Save</button>
+                    </td>
+                    <td class="parity editable" data-row="differentiation" data-col="sierra">
+                        <div class="data-source-section">
+                            <div class="data-source-initial">
+                                <span class="data-source-badge initial">INITIAL</span>
+                                AI agents mirror the nuances of human communication and deliver helpful, empathetic, omnichannel support vs traditional chatbots
+                            </div>
+                            <div class="data-source-deep">
+                                <span class="data-source-badge deep">DEEP</span>
+                                Differentiates from traditional chatbots through empathetic, omnichannel support and complex reasoning.
+                            </div>
+                        </div>
+                        <span class="status-indicator"></span><button class="edit-save-btn">Save</button>
+                    </td>
+                    <td class="parity data-source-deep editable" data-row="differentiation" data-col="fin">Built on Fin AI Engine™ with patented AI architecture. Complete, fully configurable system vs standalone solutions<span class="data-source-badge deep">DEEP</span><span class="status-indicator"></span><button class="edit-save-btn">Save</button></td>
+                    <td class="parity data-source-initial editable" data-row="differentiation" data-col="nice">One platform connecting every workflow, agent, and answer for seamless customer experiences. The world's best brands trust NICE to power 15B+ interactions a year<span class="data-source-badge initial">INITIAL</span><span class="status-indicator"></span><button class="edit-save-btn">Save</button></td>
+                    <td class="parity data-source-mixed editable" data-row="differentiation" data-col="snowflake">
+                        <div class="data-source-section">
+                            <div class="data-source-initial">
+                                Consolidates data into single source of truth with secure data sharing capabilities. Snowflake delivers the Data Cloud — mobilize your data with near-unlimited scale and performance<span class="data-source-badge initial">INITIAL</span>
+                            </div>
+                            <div class="data-source-deep">
+                                Horizontal platform vs vertical applications. Provides flexible building blocks for any AI use case rather than pre-packaged solutions<span class="data-source-badge deep">DEEP</span>
+                            </div>
+                        </div>
+                        <span class="status-indicator"></span><button class="edit-save-btn">Save</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="summary">
+            <h3>Key Insights from Transcript</h3>
+            <ul>
+                <li><strong>Market Opportunity:</strong> "It's only AI pretty much" - AI dominates Series A & B funding</li>
+                <li><strong>Valuation Premium:</strong> SF valuations 2x higher than national average for AI companies</li>
+                <li><strong>Competitive Gaps:</strong> "Salesforce model broken" + "Databricks needs big teams" = opportunity</li>
+                <li><strong>Your Advantages:</strong> Eval/lineage + memory/privacy + sovereign security ground-up</li>
+                <li><strong>Funding Strategy:</strong> "Probably should take that seed round if we're gonna hit a big seed round"</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Startup Name Prompt Modal -->
+    <div class="overlay" id="overlay"></div>
+    <div class="name-prompt" id="startupNamePrompt">
+        <h4>Welcome! Please enter your name</h4>
+        <p>This will be used to track all your changes in the matrix.</p>
+        <input type="text" class="name-input" id="startupNameInput" placeholder="Enter your name..." maxlength="50">
+        <div class="name-prompt-buttons">
+            <button class="name-prompt-btn" onclick="saveStartupName()">Continue</button>
+        </div>
+    </div>
+
+    <!-- Legacy Name Prompt Modal -->
+    <div class="name-prompt" id="namePrompt">
+        <h4>Who made this change?</h4>
+        <input type="text" class="name-input" id="nameInput" placeholder="Enter your name..." maxlength="50">
+        <div class="name-prompt-buttons">
+            <button class="name-prompt-btn cancel" onclick="cancelNamePrompt()">Cancel</button>
+            <button class="name-prompt-btn" onclick="saveWithName()">Save</button>
+        </div>
+    </div>
+
+    <!-- Formatting Toolbar -->
+    <div class="formatting-toolbar" id="formattingToolbar" style="display: none;">
+        <div class="formatting-controls">
+            <button class="format-btn" onclick="formatText('bold')" title="Bold">B</button>
+            <button class="format-btn" onclick="formatText('italic')" title="Italic">I</button>
+            <button class="format-btn" onclick="formatText('underline')" title="Underline">U</button>
+            <button class="format-btn" onclick="formatText('bullet')" title="Bullet List">•</button>
+            <button class="format-btn" onclick="formatText('number')" title="Numbered List">1.</button>
+            <button class="format-btn" onclick="formatText('link')" title="Add Link">🔗</button>
+            <button class="format-btn" onclick="formatText('clear')" title="Clear Formatting">Clear</button>
+        </div>
+        <div class="formatting-actions">
+            <button class="format-btn save" onclick="saveFormattedText()">Save</button>
+            <button class="format-btn cancel" onclick="cancelFormatting()">Cancel</button>
+        </div>
+    </div>
+
+    <script>
+        // Matrix data storage
+        let matrixData = {};
+        let versionLog = [];
+        let pendingChange = null;
+        let bulkEditMode = false;
+        let selectedCells = new Set();
+        let searchResults = [];
+
+        // Global user name variable
+        let currentUserName = '';
+        let currentEditingCell = null;
+        let formattingTextarea = null;
+
+        // Initialize matrix data from localStorage or create default
+        function initializeMatrixData() {
+            // Check if user name is already set
+            const savedName = localStorage.getItem('competitiveMatrixUserName');
+            if (savedName) {
+                currentUserName = savedName;
+            } else {
+                // Show name prompt on startup
+                showStartupNamePrompt();
+            }
+
+            const saved = localStorage.getItem('competitiveMatrixData');
+            if (saved) {
+                matrixData = JSON.parse(saved);
+            } else {
+                // Initialize with current content
+                matrixData = {};
+            }
+
+            // Initialize version log
+            const savedLog = localStorage.getItem('competitiveMatrixVersionLog');
+            if (savedLog) {
+                versionLog = JSON.parse(savedLog);
+            } else {
+                // Create initial version entry
+                versionLog = [{
+                    timestamp: new Date().toISOString(),
+                    author: 'System',
+                    changes: ['Initial matrix created with scraped competitor data']
+                }];
+                saveVersionLog();
+            }
+            renderVersionLog();
+        }
+
+        // Show startup name prompt
+        function showStartupNamePrompt() {
+            document.getElementById('overlay').style.display = 'block';
+            document.getElementById('startupNamePrompt').style.display = 'block';
+            document.getElementById('startupNameInput').focus();
+        }
+
+        // Save startup name
+        function saveStartupName() {
+            const name = document.getElementById('startupNameInput').value.trim();
+            if (!name) {
+                alert('Please enter your name to continue');
+                return;
+            }
+
+            currentUserName = name;
+            localStorage.setItem('competitiveMatrixUserName', name);
+
+            // Hide prompt
+            document.getElementById('overlay').style.display = 'none';
+            document.getElementById('startupNamePrompt').style.display = 'none';
+        }
+
+        // Save matrix data to localStorage
+        function saveMatrixData() {
+            localStorage.setItem('competitiveMatrixData', JSON.stringify(matrixData));
+        }
+
+        // Save version log to localStorage
+        function saveVersionLog() {
+            localStorage.setItem('competitiveMatrixVersionLog', JSON.stringify(versionLog));
+        }
+
+        // Add version entry
+        function addVersionEntry(author, changes) {
+            const entry = {
+                timestamp: new Date().toISOString(),
+                author: author,
+                changes: changes
+            };
+            versionLog.unshift(entry); // Add to beginning
+            saveVersionLog();
+            renderVersionLog();
+        }
+
+        // Render version log
+        function renderVersionLog() {
+            const logContainer = document.getElementById('versionLog');
+            if (!logContainer) return;
+
+            if (versionLog.length === 0) {
+                logContainer.innerHTML = '<div class="version-entry">No changes recorded yet.</div>';
+                return;
+            }
+
+            // Show latest 5 changes, most recent first
+            const recentChanges = versionLog.slice(-5).reverse();
+            
+            logContainer.innerHTML = recentChanges.map(entry => {
+                const date = new Date(entry.timestamp);
+                const timeStr = date.toLocaleString();
+                
+                return `
+                    <div class="version-entry">
+                        <div class="version-timestamp">${timeStr}</div>
+                        <div class="version-author">by ${entry.author}</div>
+                        <div class="version-changes">
+                            ${entry.changes.map(change => `<div class="change-item">${change}</div>`).join('')}
+                        </div>
+                    </div>
+                `;
+            }).join('');
+        }
+
+        // Show name prompt (legacy - now uses global username)
+        function showNamePrompt(change) {
+            if (currentUserName) {
+                // Use global username directly
+                addVersionEntry(currentUserName, change.changes);
+                if (change.callback) {
+                    change.callback();
+                }
+            } else {
+                // Fallback to old prompt if no global username
+                pendingChange = change;
+                document.getElementById('overlay').style.display = 'block';
+                document.getElementById('namePrompt').style.display = 'block';
+                document.getElementById('nameInput').focus();
+            }
+        }
+
+        // Cancel name prompt
+        function cancelNamePrompt() {
+            document.getElementById('overlay').style.display = 'none';
+            document.getElementById('namePrompt').style.display = 'none';
+            pendingChange = null;
+        }
+
+        // Save with name
+        function saveWithName() {
+            const name = document.getElementById('nameInput').value.trim();
+            if (!name) {
+                alert('Please enter your name');
+                return;
+            }
+
+            // Save name for future use
+            localStorage.setItem('competitiveMatrixUserName', name);
+
+            // Add version entry
+            addVersionEntry(name, pendingChange.changes);
+
+            // Complete the pending change
+            if (pendingChange.callback) {
+                pendingChange.callback();
+            }
+
+            // Hide prompt
+            document.getElementById('overlay').style.display = 'none';
+            document.getElementById('namePrompt').style.display = 'none';
+            pendingChange = null;
+        }
+
+        // Handle Enter key in name input
+        document.addEventListener('DOMContentLoaded', function() {
+            document.getElementById('nameInput').addEventListener('keydown', function(e) {
+                if (e.key === 'Enter') {
+                    saveWithName();
+                } else if (e.key === 'Escape') {
+                    cancelNamePrompt();
+                }
+            });
+
+            document.getElementById('startupNameInput').addEventListener('keydown', function(e) {
+                if (e.key === 'Enter') {
+                    saveStartupName();
+                } else if (e.key === 'Escape') {
+                    // Don't allow escape on startup prompt
+                }
+            });
+        });
+
+        // Formatting functions
+        function openFormattingToolbar(cell) {
+            currentEditingCell = cell;
+            const currentText = cell.textContent.replace(/Save$/, '').trim();
+            
+            // Create textarea if it doesn't exist
+            if (!formattingTextarea) {
+                formattingTextarea = document.createElement('textarea');
+                formattingTextarea.className = 'formatting-textarea';
+                formattingTextarea.placeholder = 'Enter formatted text...';
+                document.getElementById('formattingToolbar').insertBefore(formattingTextarea, document.querySelector('.formatting-controls'));
+            }
+            
+            formattingTextarea.value = currentText;
+            document.getElementById('formattingToolbar').style.display = 'block';
+            formattingTextarea.focus();
+        }
+
+        function formatText(format) {
+            if (!formattingTextarea) return;
+            
+            const textarea = formattingTextarea;
+            const start = textarea.selectionStart;
+            const end = textarea.selectionEnd;
+            const selectedText = textarea.value.substring(start, end);
+            
+            let formattedText = '';
+            
+            switch(format) {
+                case 'bold':
+                    formattedText = `**${selectedText}**`;
+                    break;
+                case 'italic':
+                    formattedText = `*${selectedText}*`;
+                    break;
+                case 'underline':
+                    formattedText = `<u>${selectedText}</u>`;
+                    break;
+                case 'bullet':
+                    formattedText = `• ${selectedText}`;
+                    break;
+                case 'number':
+                    formattedText = `1. ${selectedText}`;
+                    break;
+                case 'link':
+                    const url = prompt('Enter URL:');
+                    if (url) {
+                        formattedText = `[${selectedText}](${url})`;
+                    } else {
+                        return;
+                    }
+                    break;
+                case 'clear':
+                    formattedText = selectedText.replace(/[*_`<>]/g, '');
+                    break;
+            }
+            
+            textarea.value = textarea.value.substring(0, start) + formattedText + textarea.value.substring(end);
+            textarea.focus();
+            textarea.setSelectionRange(start, start + formattedText.length);
+        }
+
+        function saveFormattedText() {
+            if (!currentEditingCell || !formattingTextarea) return;
+            
+            const newText = formattingTextarea.value.trim();
+            const row = currentEditingCell.getAttribute('data-row');
+            const col = currentEditingCell.getAttribute('data-col');
+            
+            // Update cell content
+            currentEditingCell.innerHTML = newText + '<span class="status-indicator"></span><button class="edit-save-btn">Save</button>';
+            
+            // Track change
+            if (currentUserName) {
+                addVersionEntry(currentUserName, [`Updated ${row} for ${col}: ${newText.substring(0, 50)}...`]);
+            }
+            
+            // Hide toolbar
+            document.getElementById('formattingToolbar').style.display = 'none';
+            currentEditingCell = null;
+        }
+
+        function cancelFormatting() {
+            document.getElementById('formattingToolbar').style.display = 'none';
+            currentEditingCell = null;
+        }
+
+        // Get cell content
+        function getCellContent(row, col) {
+            const key = `${row}-${col}`;
+            return matrixData[key] || '';
+        }
+
+        // Set cell content
+        function setCellContent(row, col, content) {
+            const key = `${row}-${col}`;
+            matrixData[key] = content;
+            saveMatrixData();
+        }
+
+        // Make cell editable
+        function makeEditable(cell) {
+            cell.addEventListener('click', function(e) {
+                if (e.target.classList.contains('edit-save-btn')) return;
+                
+                const row = cell.dataset.row;
+                const col = cell.dataset.col;
+                const currentContent = cell.textContent.replace('Save', '').trim();
+                
+                // Create textarea for editing
+                const textarea = document.createElement('textarea');
+                textarea.className = 'edit-input';
+                textarea.value = currentContent;
+                
+                // Replace cell content with textarea
+                cell.innerHTML = '';
+                cell.appendChild(textarea);
+                cell.appendChild(document.createElement('span')).className = 'status-indicator';
+                cell.appendChild(document.createElement('button')).className = 'edit-save-btn';
+                cell.querySelector('.edit-save-btn').textContent = 'Save';
+                
+                cell.classList.add('editing');
+                textarea.focus();
+                textarea.select();
+
+                // Handle save
+                const saveBtn = cell.querySelector('.edit-save-btn');
+                const statusIndicator = cell.querySelector('.status-indicator');
+                
+                function saveContent() {
+                    const newContent = textarea.value.trim();
+                    const oldContent = currentContent;
+                    
+                    if (newContent === oldContent) {
+                        // No changes, just cancel editing
+                        cell.innerHTML = currentContent + '<span class="status-indicator"></span><button class="edit-save-btn">Save</button>';
+                        cell.classList.remove('editing');
+                        makeEditable(cell);
+                        return;
+                    }
+
+                    // Show name prompt for changes
+                    const changeDescription = `Updated ${row} (${col}): "${oldContent}" → "${newContent}"`;
+                    showNamePrompt({
+                        changes: [changeDescription],
+                        callback: function() {
+                            // Complete the save after name is entered
+                            setCellContent(row, col, newContent);
+                            
+                            // Show saving status
+                            statusIndicator.classList.add('saving');
+                            
+                            // Simulate save delay
+                            setTimeout(() => {
+                                statusIndicator.classList.remove('saving');
+                                statusIndicator.classList.add('saved');
+                                
+                                // Update cell content
+                                cell.innerHTML = newContent + '<span class="status-indicator saved"></span><button class="edit-save-btn">Save</button>';
+                                cell.classList.remove('editing');
+                                
+                                // Hide saved status after 2 seconds
+                                setTimeout(() => {
+                                    statusIndicator.classList.remove('saved');
+                                }, 2000);
+                                
+                                // Re-attach event listeners
+                                makeEditable(cell);
+                            }, 500);
+                        }
+                    });
+                }
+
+                saveBtn.addEventListener('click', saveContent);
+                
+                textarea.addEventListener('keydown', function(e) {
+                    if (e.key === 'Enter' && e.ctrlKey) {
+                        e.preventDefault();
+                        saveContent();
+                    } else if (e.key === 'Escape') {
+                        e.preventDefault();
+                        cell.innerHTML = currentContent + '<span class="status-indicator"></span><button class="edit-save-btn">Save</button>';
+                        cell.classList.remove('editing');
+                        makeEditable(cell);
+                    }
+                });
+            });
+        }
+
+        // Initialize all editable cells
+        function initializeEditableCells() {
+            const editableCells = document.querySelectorAll('.editable');
+            editableCells.forEach(makeEditable);
+        }
+
+        // Filter matrix function
+        function filterMatrix(section) {
+            const buttons = document.querySelectorAll('.btn');
+            buttons.forEach(btn => btn.classList.remove('active'));
+            event.target.classList.add('active');
+
+            const rows = document.querySelectorAll('#matrix tbody tr');
+            rows.forEach(row => {
+                if (section === 'all') {
+                    row.style.display = '';
+                } else if (row.classList.contains('section-header')) {
+                    const text = row.textContent.toLowerCase();
+                    if (text.includes(section)) {
+                        row.style.display = '';
+                    } else {
+                        row.style.display = 'none';
+                    }
+                } else {
+                    row.style.display = '';
+                }
+            });
+        }
+
+        // Export functions
+        function exportToPDF() {
+            window.print();
+        }
+
+        function exportToCSV() {
+            const table = document.getElementById('matrix');
+            const rows = table.querySelectorAll('tr');
+            let csv = [];
+
+            rows.forEach(row => {
+                const cells = row.querySelectorAll('th, td');
+                const rowData = Array.from(cells).map(cell => {
+                    const content = cell.textContent.replace('Save', '').trim();
+                    return '"' + content.replace(/"/g, '""') + '"';
+                });
+                csv.push(rowData.join(','));
+            });
+
+            const csvContent = csv.join('\n');
+            const blob = new Blob([csvContent], { type: 'text/csv' });
+            const url = window.URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = 'competitive_analysis_matrix.csv';
+            a.click();
+            window.URL.revokeObjectURL(url);
+        }
+
+        // Export matrix data as JSON
+        function exportToJSON() {
+            const dataStr = JSON.stringify(matrixData, null, 2);
+            const blob = new Blob([dataStr], { type: 'application/json' });
+            const url = window.URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = 'matrix_data.json';
+            a.click();
+            window.URL.revokeObjectURL(url);
+        }
+
+        // Import matrix data from JSON
+        function importFromJSON() {
+            const input = document.createElement('input');
+            input.type = 'file';
+            input.accept = '.json';
+            input.onchange = function(e) {
+                const file = e.target.files[0];
+                if (file) {
+                    const reader = new FileReader();
+                    reader.onload = function(e) {
+                        try {
+                            const importedData = JSON.parse(e.target.result);
+                            const oldData = { ...matrixData };
+                            matrixData = { ...matrixData, ...importedData };
+                            
+                            // Show name prompt for import
+                            showNamePrompt({
+                                changes: [`Imported data from ${file.name}`, `Updated ${Object.keys(importedData).length} cells`],
+                                callback: function() {
+                                    saveMatrixData();
+                                    location.reload(); // Refresh to show imported data
+                                }
+                            });
+                        } catch (error) {
+                            alert('Error importing JSON file: ' + error.message);
+                        }
+                    };
+                    reader.readAsText(file);
+                }
+            };
+            input.click();
+        }
+
+        // Search functionality
+        function searchMatrix() {
+            const searchTerm = document.getElementById('searchInput').value.toLowerCase().trim();
+            if (!searchTerm) {
+                clearSearch();
+                return;
+            }
+
+            const cells = document.querySelectorAll('.matrix td');
+            searchResults = [];
+
+            cells.forEach(cell => {
+                const content = cell.textContent.toLowerCase();
+                if (content.includes(searchTerm)) {
+                    searchResults.push(cell);
+                    cell.style.backgroundColor = '#fff3cd';
+                    cell.style.border = '2px solid #ffc107';
+                } else {
+                    cell.style.backgroundColor = '';
+                    cell.style.border = '';
+                }
+            });
+
+            if (searchResults.length === 0) {
+                showMessage('No results found for "' + searchTerm + '"', 'error');
+            } else {
+                showMessage(`Found ${searchResults.length} results for "${searchTerm}"`, 'success');
+            }
+        }
+
+        function clearSearch() {
+            document.getElementById('searchInput').value = '';
+            const cells = document.querySelectorAll('.matrix td');
+            cells.forEach(cell => {
+                cell.style.backgroundColor = '';
+                cell.style.border = '';
+            });
+            searchResults = [];
+            hideMessage();
+        }
+
+        // Bulk edit functionality
+        function toggleBulkEdit() {
+            bulkEditMode = !bulkEditMode;
+            const bulkEditModeDiv = document.getElementById('bulkEditMode');
+            
+            if (bulkEditMode) {
+                bulkEditModeDiv.classList.add('active');
+                showMessage('Bulk edit mode activated. Click multiple cells to select them.', 'success');
+            } else {
+                bulkEditModeDiv.classList.remove('active');
+                selectedCells.clear();
+                updateCellSelection();
+                hideMessage();
+            }
+        }
+
+        function cancelBulkEdit() {
+            bulkEditMode = false;
+            document.getElementById('bulkEditMode').classList.remove('active');
+            selectedCells.clear();
+            updateCellSelection();
+            hideMessage();
+        }
+
+        function updateCellSelection() {
+            const cells = document.querySelectorAll('.matrix td');
+            cells.forEach(cell => {
+                const cellId = `${cell.dataset.row}-${cell.dataset.col}`;
+                if (selectedCells.has(cellId)) {
+                    cell.style.backgroundColor = '#e3f2fd';
+                    cell.style.border = '2px solid #2196f3';
+                } else {
+                    cell.style.backgroundColor = '';
+                    cell.style.border = '';
+                }
+            });
+        }
+
+        function bulkSaveChanges() {
+            if (selectedCells.size === 0) {
+                showMessage('No cells selected for bulk edit', 'error');
+                return;
+            }
+
+            showNamePrompt({
+                changes: [`Bulk edited ${selectedCells.size} cells`],
+                callback: function() {
+                    showMessage(`Successfully saved ${selectedCells.size} cells`, 'success');
+                    selectedCells.clear();
+                    updateCellSelection();
+                    cancelBulkEdit();
+                }
+            });
+        }
+
+        // Message handling
+        function showMessage(text, type) {
+            const errorDiv = document.getElementById('errorMessage');
+            const successDiv = document.getElementById('successMessage');
+            
+            if (type === 'error') {
+                errorDiv.textContent = text;
+                errorDiv.classList.add('show');
+                successDiv.classList.remove('show');
+            } else {
+                successDiv.textContent = text;
+                successDiv.classList.add('show');
+                errorDiv.classList.remove('show');
+            }
+
+            setTimeout(() => {
+                hideMessage();
+            }, 3000);
+        }
+
+        function hideMessage() {
+            document.getElementById('errorMessage').classList.remove('show');
+            document.getElementById('successMessage').classList.remove('show');
+        }
+
+        // Loading states
+        function showLoading() {
+            document.getElementById('loadingOverlay').style.display = 'flex';
+        }
+
+        function hideLoading() {
+            document.getElementById('loadingOverlay').style.display = 'none';
+        }
+
+        // Enhanced cell editing with bulk mode support
+        function makeEditable(cell) {
+            cell.addEventListener('click', function(e) {
+                if (e.target.classList.contains('edit-save-btn')) return;
+                
+                if (bulkEditMode) {
+                    const cellId = `${cell.dataset.row}-${cell.dataset.col}`;
+                    if (selectedCells.has(cellId)) {
+                        selectedCells.delete(cellId);
+                    } else {
+                        selectedCells.add(cellId);
+                    }
+                    updateCellSelection();
+                    return;
+                }
+                
+                const row = cell.dataset.row;
+                const col = cell.dataset.col;
+                const currentContent = cell.textContent.replace('Save', '').trim();
+                
+                // Create textarea for editing
+                const textarea = document.createElement('textarea');
+                textarea.className = 'edit-input';
+                textarea.value = currentContent;
+                
+                // Replace cell content with textarea
+                cell.innerHTML = '';
+                cell.appendChild(textarea);
+                cell.appendChild(document.createElement('span')).className = 'status-indicator';
+                cell.appendChild(document.createElement('button')).className = 'edit-save-btn';
+                cell.querySelector('.edit-save-btn').textContent = 'Save';
+                
+                cell.classList.add('editing');
+                textarea.focus();
+                textarea.select();
+
+                // Handle save
+                const saveBtn = cell.querySelector('.edit-save-btn');
+                const statusIndicator = cell.querySelector('.status-indicator');
+                
+                function saveContent() {
+                    const newContent = textarea.value.trim();
+                    const oldContent = currentContent;
+                    
+                    if (newContent === oldContent) {
+                        // No changes, just cancel editing
+                        cell.innerHTML = currentContent + '<span class="status-indicator"></span><button class="edit-save-btn">Save</button>';
+                        cell.classList.remove('editing');
+                        makeEditable(cell);
+                        return;
+                    }
+
+                    // Show name prompt for changes
+                    const changeDescription = `Updated ${row} (${col}): "${oldContent}" → "${newContent}"`;
+                    showNamePrompt({
+                        changes: [changeDescription],
+                        callback: function() {
+                            // Complete the save after name is entered
+                            setCellContent(row, col, newContent);
+                            
+                            // Show saving status
+                            statusIndicator.classList.add('saving');
+                            
+                            // Simulate save delay
+                            setTimeout(() => {
+                                statusIndicator.classList.remove('saving');
+                                statusIndicator.classList.add('saved');
+                                
+                                // Update cell content
+                                cell.innerHTML = newContent + '<span class="status-indicator saved"></span><button class="edit-save-btn">Save</button>';
+                                cell.classList.remove('editing');
+                                
+                                // Hide saved status after 2 seconds
+                                setTimeout(() => {
+                                    statusIndicator.classList.remove('saved');
+                                }, 2000);
+                                
+                                // Re-attach event listeners
+                                makeEditable(cell);
+                            }, 500);
+                        }
+                    });
+                }
+
+                saveBtn.addEventListener('click', saveContent);
+                
+                textarea.addEventListener('keydown', function(e) {
+                    if (e.key === 'Enter' && e.ctrlKey) {
+                        e.preventDefault();
+                        saveContent();
+                    } else if (e.key === 'Escape') {
+                        e.preventDefault();
+                        cell.innerHTML = currentContent + '<span class="status-indicator"></span><button class="edit-save-btn">Save</button>';
+                        cell.classList.remove('editing');
+                        makeEditable(cell);
+                    }
+                });
+            });
+        }
+
+        // Initialize on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            initializeMatrixData();
+            initializeEditableCells();
+            
+            // Add export buttons
+            const exportButtons = document.querySelector('.export-buttons');
+            exportButtons.innerHTML += `
+                <button class="export-btn" onclick="exportToJSON()">Export JSON</button>
+                <button class="export-btn" onclick="importFromJSON()">Import JSON</button>
+            `;
+        });
+    </script>
+</body>
+</html>

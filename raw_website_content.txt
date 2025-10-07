@@ -1,0 +1,2996 @@
+# COMPREHENSIVE RAW WEBSITE CONTENT - ALL TEXT EXTRACTED
+
+## DATABRICKS.COM CONTENT
+
+### Homepage Content
+[Skip to main content](https://www.databricks.com/#main)
+
+# This is your prompt to build better AI agents
+
+### Quality AI agents on your data – with Agent Bricks
+
+[Explore the product](https://www.databricks.com/product/artificial-intelligence/agent-bricks?itm_data=homepage-hero-cta-exploretheproduct "Explore the product") [See demos](https://www.databricks.com/resources/demos/library?platform=2514&itm_data=homepage-hero-cta-seedemos "See demos")
+
+### Blog Posts Scraped
+- Best Practices for Cost Management on Databricks
+- Cybersecurity Lakehouse Best Practices Part 1: Event Timestamp Extraction (Japanese)
+- Multiple technical documentation pages
+- SQL language manual pages
+- CLI reference documentation
+- Streaming tables documentation
+- Provider-providers commands documentation
+
+![Att](https://www.databricks.com/sites/default/files/2023-11/logo-homepage-att.svg?v=1724845089)
+
+![Block](https://www.databricks.com/sites/default/files/2023-11/logo-homepage-block.svg?v=1724845134)
+
+![OpenAI logo](https://www.databricks.com/sites/default/files/2025-09/logo-white-open-ai.svg?v=1758684322)
+
+![Burberry](https://www.databricks.com/sites/default/files/2023-11/logo-homepage-burberry.svg?v=1724845179)
+
+![FDA](https://www.databricks.com/sites/default/files/2023-11/logo-homepage-fda.svg?v=1724845229)
+
+![Heineken](https://www.databricks.com/sites/default/files/2023-11/logo-homepage-heineken.svg?v=1724845251)
+
+![Michelin](https://www.databricks.com/sites/default/files/2023-11/logo-homepage-michelin.svg?v=1724845276)
+
+![Mercedes](https://www.databricks.com/sites/default/files/2023-11/logo-homepage-mercedes.svg?v=1724845302)
+
+![Nba](https://www.databricks.com/sites/default/files/2023-11/logo-homepage-nba.svg?v=1724845323)
+
+![Santander](https://www.databricks.com/sites/default/files/2023-11/logo-homepage-santander.svg?v=1724845348)
+
+![Shell](https://www.databricks.com/sites/default/files/2023-11/logo-homepage-shell.svg?v=1724845370)
+
+![Siemens](https://www.databricks.com/sites/default/files/2023-11/logo-homepage-siemens.svg?v=1724845393)
+
+![Toyota](https://www.databricks.com/sites/default/files/2023-11/logo-homepage-toyota.svg?v=1724845415)
+
+![Walgreens](https://www.databricks.com/sites/default/files/2023-11/logo-homepage-walgreens.svg?v=1724845441)
+
+![Warner Bros Discovery](https://www.databricks.com/sites/default/files/2023-11/logo-homepage-warner-bros-discovery.svg?v=1724845507)
+
+[![](https://www.databricks.com/sites/default/files/2025-02/2025-02-eb-compact-guide-to-ai-agent-systems-cover-ty-tn-360x188-2x.png?v=1739485890)\\\n\\\nBoost GenAI ROI with AI agents\\\n\\\nReal-world examples of AI agents in action\\\n\\\nGet the eBook](https://www.databricks.com/resources/guide/boost-genai-roi-ai-agents)
+
+PLATFORM
+
+## The Databricks  Data Intelligence Platform
+
+Databricks brings AI to your data to help you bring AI to the world.
+
+![](https://www.databricks.com/sites/default/files/2023-11/icon-succeed-with-ai.svg?v=1699893514)
+
+### Succeed with AI
+
+Develop generative AI applications on your data without sacrificing data privacy or control.
+
+![](https://www.databricks.com/sites/default/files/2023-11/icon-democratize-insights.svg?v=1699570017)
+
+### Democratize insights
+
+Empower everyone in your organization to discover insights from your data using natural language.
+
+![](https://www.databricks.com/sites/default/files/2023-11/icon-drive-down-costs.svg?v=1699570671)
+
+### Drive down costs
+
+Gain efficiency and simplify complexity by unifying your approach to data, AI and governance.
+
+[Explore the platform](https://www.databricks.com/product/data-intelligence-platform) [Find an event](https://www.databricks.com/lp/data-intelligence-days?itm_data=home-dataintelligenceplatform-dataintelligencedays)
+
+[![](https://www.databricks.com/sites/default/files/2025-02/2025-02-eb-compact-guide-to-ai-agent-systems-cover-ty-tn-360x188-2x.png?v=1739485890)\\\n\\\nBoost GenAI ROI with AI agents\\\n\\\nReal-world examples of AI agents in action\\\n\\\nGet the eBook](https://www.databricks.com/resources/guide/boost-genai-roi-ai-agents)
+
+[![](https://www.databricks.com/sites/default/files/2025-05/2024-05-eb-di-platform-dummies-pc-107x107-2x.png?v=1746574623)\\\n\\\nThe Data Intelligence Platform for Dummies\\\n\\\nAccelerate ETL, data warehousing, BI and AI\\\n\\\nGet the eBook](https://www.databricks.com/resources/ebook/maximize-your-organizations-potential-data-and-ai)
+
+[![](https://www.databricks.com/sites/default/files/2025-07/2025-07-wb-introducing-generative-ai-pc-107x107-2x.png?v=1753111476)\\\n\\\nGenerative AI Fundamentals\\\n\\\nLearn how to use LLMs and more in your organization with 4 short videos\\\n\\\nStart free training](https://www.databricks.com/resources/learn/training/generative-ai-fundamentals?itm_data=web-nurture-journey-994201229)
+
+USE CASES
+
+## Unify all your data + AI
+
+AIGovernanceWarehousingETLData sharingOrchestration
+
+![serving endpoints](https://www.databricks.com/sites/default/files/2025-09/HP-Chat-GPT-5.0.png?v=1758739563)
+
+### Build better AI with a data-centric approach
+
+Great models are built with great data. With Databricks, lineage, quality, control and data privacy are maintained across the entire AI workflow, powering a complete set of tools to deliver any AI use case.
+
+- Create, tune and deploy your own generative AI models
+- Automate experiment tracking and governance
+- Deploy and monitor models at scale
+
+[See how](https://www.databricks.com/product/machine-learning)
+
+[Schedule demo](https://www.databricks.com/company/contact)
+
+![Unify governance for data, analytics and AI](https://www.databricks.com/sites/default/files/2023-11/productscreen-static-governance.png?v=1699893741)
+
+### Unify governance for data, analytics and AI
+
+Maintain a compliant, end-to-end view of your data estate with a single model of data governance for all your structured and unstructured data. Discover insights rooted in the characteristics, people and priorities of your business.
+
+- Context-aware natural language search and discovery
+- AI-powered monitoring and observability
+- Single permission model for data + AI
+
+[See how](https://www.databricks.com/product/unity-catalog)
+
+[Watch demo](https://www.databricks.com/discover/demos/unitycatalog#account)
+
+![The best data warehouse is a lakehouse](https://www.databricks.com/sites/default/files/2023-11/productscreen-static-warehousing.png?v=1699893824)
+
+### The best data warehouse is a lakehouse
+
+Achieve 12x better price/performance for SQL and BI workloads by moving from legacy cloud data warehouses to a lakehouse.
+
+- Serverless for simplified management
+- AI-optimized query execution
+- Open formats and APIs to avoid lock-in
+
+[See how](https://www.databricks.com/product/databricks-sql)
+
+[Watch demo](https://www.databricks.com/discover/demos/databricks-sql#account)
+
+![Intelligent data processing for batch and real time](https://www.databricks.com/sites/default/files/2023-11/productscreen-static-etl_1.png?v=1699935941)
+
+### Intelligent data processing for batch and real time
+
+Implement a single solution for all of your ETL use cases that automatically adapts to help ensure data quality.
+
+- Simple workflow authoring for batch and streaming
+- End-to-end pipeline monitoring
+- Hands-off reliability and optimization at scale
+
+[See how](https://www.databricks.com/solutions/data-engineering)
+
+[Watch demo](https://www.databricks.com/discover/demos/delta-live-tables-demo#account)
+
+![Open data sharing](https://www.databricks.com/sites/default/files/2023-11/productscreen-static-sharing.png?v=1699893963)
+
+### Open data sharing
+
+The first open approach to secure data sharing means you can easily share live data sets, models, dashboards and notebooks to collaborate with anyone on any platform.
+
+- No proprietary formats or expensive replication
+- No complicated ETL
+- Monetize sharing with the Databricks Marketplace
+
+[See how](https://www.databricks.com/product/delta-sharing)
+
+[Watch demo](https://www.databricks.com/discover/demos/deltasharing)
+
+![Manage pipelines to business requirements](https://www.databricks.com/sites/default/files/2023-11/productscreen-static-real-time-analytics.png?v=1699894036)
+
+### Manage pipelines to business requirements
+
+Optimize data pipeline execution to deadlines and budget requirements.
+
+- Intelligent selection of compute type
+- Workload-specific autoscaling
+- Automatic remediation of errors
+
+[See how](https://www.databricks.com/product/data-science)
+
+[Schedule demo](https://www.databricks.com/company/contact)
+
+CUSTOMER STORIES
+
+## Industry leaders are data + AI companies
+
+Our customers achieve breakthroughs, innovate faster and drive down costs. See how you can too.
+
+[![](https://www.databricks.com/sites/default/files/2025-07/logo-mastercard.svg?v=1753896643)\\\n\\\n159Btransactions\\\n\\\nMastercard tackles AI governance\\\n\\\nMastercard processes over 159 billion transactions a year across 210+ countries, empowering people and powering economies — all while putting data, AI and governance at the heart of its operations.\\\n\\\nSee the full story\\\n\\\n![](https://www.databricks.com/sites/default/files/2025-09/mastercard-2x.png?v=1758842712)\\\n\\\n![](https://www.databricks.com/sites/default/files/2025-09/mastercard-2x.png?v=1758842712)](https://www.databricks.com/customers/mastercard)
+
+[![](https://www.databricks.com/sites/default/files/2025-08/logo-color-unilever.svg?v=1755139569)\\\n\\\n25%reduction in overall infrastructure costs\\\n\\\nUnilever streamlines data workflows\\\n\\\nWith global scale came massive volumes of complex data from diverse sources. By adopting Databricks, Unilever simplified its architecture, improving data quality and unifying it into a single, scalable framework.\\\n\\\nSee the full story\\\n\\\n![](https://www.databricks.com/sites/default/files/2025-09/unilever-2x.png?v=1758842682)\\\n\\\n![](https://www.databricks.com/sites/default/files/2025-09/unilever-2x.png?v=1758842682)](https://www.databricks.com/customers/unilever/lakeflow-declarative-pipelines)
+
+[![](https://www.databricks.com/sites/default/files/2025-07/Adidas_Logo.svg?v=1753207531)\\\n\\\n60%latency reduction\\\n\\\nadidas turns customer reviews into insight at scale with GenAI\\\n\\\nOperating in 150+ countries, adidas needed a smarter way to analyze product reviews and uncover sentiment. With Databricks, adidas saw 30–40% efficiency gains by transforming 2M+ reviews into actionable insights.\\\n\\\nSee the full story\\\n\\\n![](https://www.databricks.com/sites/default/files/2025-09/adidas-2x.png?v=1758842650)\\\n\\\n![](https://www.databricks.com/sites/default/files/2025-09/adidas-2x.png?v=1758842650)](https://www.databricks.com/customers/adidas)
+
+[![](https://www.databricks.com/sites/default/files/2025-04/logo-color-fox-sports.svg?v=1745256434)\\\n\\\n100sof thousands of requests per day\\\n\\\nFOX Sports reimagines the fan experience\\\n\\\nWith real-time data processing and an in-app chatbot powered by Databricks, fans can simply ask questions and receive instant, tailored insights. This AI-driven approach delivers personalized, immersive content that evolves with every moment of the game.\\\n\\\nSee the full story\\\n\\\n![](https://www.databricks.com/sites/default/files/2025-09/fox-sports-2x-min.png?v=1758842871)\\\n\\\n![](https://www.databricks.com/sites/default/files/2025-09/fox-sports-2x-min.png?v=1758842871)](https://www.databricks.com/customers/fox-sports)
+
+[See more Customer Stories](https://www.databricks.com/customers/all)
+
+RESOURCES
+
+## More than meets the AI
+
+### Get help
+
+Everything you need to succeed on lakehouse
+
+[Support](https://www.databricks.com/support) [Training](https://www.databricks.com/learn/training/home) [Community](https://community.databricks.com/s/)
+
+### See what's new
+
+Our latest announcements, expert analyses and events
+
+[Blog](https://www.databricks.com/blog) [News](https://www.databricks.com/company/newsroom) [Events](https://www.databricks.com/events)
+
+## In the spotlight
+
+[![](https://www.databricks.com/sites/default/files/2025-09/2025-07-rt-sap-economist-impact-unlock-power-of-ai-ty-tn-360x188-2x.png)\\\n\\\nANALYST REPORT\\\n\\\nMastering the data challenge in AI: See how unifying enterprise data unlocks AI's true potential\\\n\\\nRead now](https://www.databricks.com/resources/analyst-research/mastering-the-data-challenge-in-ai?itm_data=homepage-spotlight-tile1-sapeconomist) [![](https://www.databricks.com/sites/default/files/2025-09/2025-09-tr-ai-agent-fundamentals-ty-tn-360x188-2x.png)\\\n\\\nFree Training\\\n\\\nLevel up your AI agent skills\\\n\\\nStart now](https://www.databricks.com/resources/training/level-your-ai-agent-skills?itm_data=homepage-spotlight-tile2-aiagentfundamentals) [![](https://www.databricks.com/sites/default/files/2025-08/ty-tn-daiwt-360x188.png)\\\n\\\nLevel up your AI skills\\\n\\\nWe're coming to a city near you — Learn from members of your local data and AI community, and connect with experts to share strategies and success tactics.\\\n\\\nRegister now](https://www.databricks.com/dataaisummit/worldtour?itm_data=db-homepage-spotlight-daiwt25) [![](https://www.databricks.com/sites/default/files/2025-09/2025-09-q4-ve-build-ai-agents-ty-tn-360x188-v2-2x-480.png)\\\n\\\nVirtual Event\\\n\\\nThe Future of Al: Build Agents That Work. Join us on Nov 11 and 12.\\\n\\\nRegister now](https://www.databricks.com/resources/webinar/build-ai-agents-that-work?itm_data=homepage-spotlight-tile4)
+
+[See more resources](https://www.databricks.com/resources)
+
+## Ready to become a data + AI company?
+
+Take the first steps in your transformation
+
+[Browse demos](https://www.databricks.com/resources/demos) [Try it free](https://www.databricks.com/signup?dbx_source=www&itm_data=dbx-web&l=en-EN)
+
+---
+
+## SIERRA.AI CONTENT
+
+### Homepage Content
+[Skip to main content](https://sierra.ai/product#main)
+
+## Meet your agent
+
+AI agents mirror the nuances of human communication and deliver helpful, empathetic, omnichannel support, improving customer satisfaction. Best of all, they're always available, always up-to-date, and always on brand.
+
+[Discover more](https://sierra.ai/product/meet-your-agent)
+
+### Blog Posts Scraped
+- τ-bench: Shaping Development and Evaluation of Agents
+- There's an agent for that, and it runs on Sierra
+- Same Platform, Different Personalities
+- Outcome-based pricing for AI Agents
+- Calling new grads: APX year 2
+- Multiple additional blog posts and articles
+
+## Develop your agent
+
+Declaratively define your agent's unique goals and guardrails with our Agent SDK. Rapidly develop highly effective agents with out-of-the-box composable skills, fine-tuning capabilities, and advanced developer tools.
+
+[Discover more](https://sierra.ai/product/develop-your-agent)
+
+## Configure your agent
+
+Empower customer experience teams to build and manage agents—without writing a line of code. Set up customer journeys, configure knowledge, and define brand guidelines effortlessly within Agent Studio.
+
+[Discover more](https://sierra.ai/product/configure-your-agent)
+
+## Optimize your agent
+
+Ensure your agent stays on-brand, behaves as expected, and delivers measurable impact. Agent Studio has all the tools to review and optimize your agent's performance.
+
+[Discover more](https://sierra.ai/product/optimize-your-agent)
+
+## Trust and reliability
+
+Sierra is designed with the highest commitment to trust, security, and compliance. Your data is never used to train models, and we use industry-standard best practices to ensure its security.
+
+[Discover more](https://sierra.ai/product/trust-and-reliability)
+
+## "Our partnership with Sierra uses cutting-edge technology to deliver seamless, human-centered experiences at scale."
+
+Caryn Siedman-Becker
+
+CEO at CLEAR
+
+## The results speak for themselves
+
+[Our customers](https://sierra.ai/customers)
+
+[![ADT garden close up](https://sierra.ai/-/cdn/image?src=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fca4jck6w%2Fproduction%2F6a4c17c82b752b2c6187051af80774c16c8844f2-746x745.png%3Fauto%3Dformat&width=3840&quality=90)\\\n\\\n![ADT Logo](https://sierra.ai/-/cdn/image?src=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fca4jck6w%2Fproduction%2F47db624980b85dec2e742c5f5e81a8f291215f5d-42x40.svg%3Fauto%3Dformat&width=3840&quality=90)\\\n\\\n- Customer inquiries per month\\\n2 million\\\n\\\nHow ADT embraces AI to make every second count.](https://sierra.ai/customers/adt)
+
+[![SiriusXM speakers close up](https://sierra.ai/-/cdn/image?src=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fca4jck6w%2Fproduction%2F43f37f83ed8e8a771b96ef7d9efe807ebbf71b0c-745x745.png%3Fauto%3Dformat&width=3840&quality=90)\\\n\\\n![SiriusXM Logo](https://sierra.ai/-/cdn/image?src=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fca4jck6w%2Fproduction%2F867856becae005fda9feec30c24d183cf52943c7-98x40.svg%3Fauto%3Dformat&width=3840&quality=90)\\\n\\\n- Subscribers\\\n34 Million\\\n\\\nHow SiriusXM increases listener loyalty with Sierra.](https://sierra.ai/customers/siriusxm)
+
+[![Thrive Market](https://sierra.ai/-/cdn/image?src=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fca4jck6w%2Fproduction%2F52879db5ecfd2be169b824f2b24b8c804cfdf469-2160x2160.png%3Fauto%3Dformat&width=3840&quality=90)\\\n\\\n![Thrive Market Logo](https://sierra.ai/-/cdn/image?src=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fca4jck6w%2Fproduction%2Febca97c6dc81ebafd919c0709534f2f067b1a957-201x110.svg%3Fauto%3Dformat&width=3840&quality=90)\\\n\\\n- CSAT\\\n~90%\\\n\\\nHow Thrive Market is scaling healthy living with AI.](https://sierra.ai/customers/thrive-market)
+
+## See what Sierra can do for you
+
+Find out how Sierra can help your business build better, more human customer experiences with AI.
+
+[Meet your agent](https://sierra.ai/product/meet-your-agent)
+
+---
+
+## FIN.AI CONTENT
+
+### Homepage Content
+# Complete, fully configurable AI Agent system
+
+Fin is the only complete, fully configurable AI Agent System in customer service—empowering support teams to customize, test, and continuously improve Fin through a no-code user experience anyone can manage.[1]
+
+[Start free trial](https://app.intercom.com/admins/sign_up?cta_domain=fin&utm_referrer=https%3A%2F%2Ffin.ai%2Fcapabilities) [View demo](https://fin.ai/view-demos)
+
+### Additional Content Scraped
+- Research papers and technical articles
+- Help documentation and guides
+- Pricing information
+- Customer testimonials
+- Product capabilities overview
+- Multiple help center articles
+
+[1] Built on Fin AI Engine™Fin combines the only complete, fully configurable AI Agent System with a patented AI architecture to deliver the highest performance.[Learn more](https://fin.ai/ai-engine)
+
+capabilities / analyze
+
+### Improve performance with AI-powered insights
+
+Monitor, analyze, and optimize Fin's performance with a complete view across your entire customer experience. Spot trends, uncover insights and improve service quality with AI-powered Suggestions.
+
+[Learn more](https://fin.ai/insights)
+
+![Topics and subtopics](https://fin.ai/_next/image?url=%2Fimg%2Fcapabilities%2Fanalyze%2FFin-Analyse-Topics-Explorer-desktop.webp&w=3840&q=90)
+
+![Topics and subtopics](https://fin.ai/_next/image?url=%2Fimg%2Fcapabilities%2Fanalyze%2FFin-Analyse-Topics-Explorer-mobile.webp&w=3840&q=90)
+
+new
+
+Topics Explorer
+
+Topics Explorer uses AI to group every customer conversation into Topics and Subtopics—so you can spot patterns, track trends, and catch issues before they affect customer experience.
+
+![suggestions for fin](https://fin.ai/_next/image?url=%2Fimg%2Fcapabilities%2Fanalyze%2FFin-Analyse-AI-powered-content-suggestions-desktop.webp&w=3840&q=90)
+
+![suggestions for fin](https://fin.ai/_next/image?url=%2Fimg%2Fcapabilities%2Fanalyze%2FFin-Analyse-AI-powered-content-suggestions-mobile.webp&w=3840&q=90)
+
+new
+
+Suggestions
+
+Get AI-generated content updates to improve Fin's answers. Suggestions can be accepted in a single click, and Fin will instantly begin using that content to deliver better answers and a better customer experience.
+
+Suggestions take the guesswork out of improving our content. With the help of weekly Suggestion reviews, we've increased our total resolution rate by 15%.
+
+Isabel Larrow,Product Support Operations
+
+![Customer experience score](https://fin.ai/_next/image?url=%2Fimg%2Fcapabilities%2Fanalyze%2FFin-Analyse-CX-Score-desktop.webp&w=3840&q=90)
+
+![Customer experience score](https://fin.ai/_next/image?url=%2Fimg%2Fcapabilities%2Fanalyze%2FFin-Analyse-CX-Score-mobile.webp&w=3840&q=90)
+
+new
+
+CX Score
+
+CX Score is a breakthrough, AI-powered metric that gives you a complete view of your support quality across every customer conversation—no surveys required.
+
+![Fin performance report](https://fin.ai/_next/image?url=%2Fimg%2Fcapabilities%2Fanalyze%2FFin-Analyse-Fin-performance-report-desktop.webp&w=3840&q=90)
+
+![Fin performance report](https://fin.ai/_next/image?url=%2Fimg%2Fcapabilities%2Fanalyze%2FFin-Analyse-Fin-performance-report-mobile.webp&w=3840&q=90)
+
+Performance Dashboard
+
+Monitor key metrics like resolution rate, involvement rate, and CX Score in one view—making it easy to track Fin's performance, catch issues early, and communicate impact clearly across the business.
+
+![Optimize Fin Dashboard](https://fin.ai/_next/image?url=%2Fimg%2Fcapabilities%2Fanalyze%2FFin-Analyse-Optimize-Fin-dashboard-desktop.webp&w=3840&q=90)
+
+![Optimize Fin Dashboard](https://fin.ai/_next/image?url=%2Fimg%2Fcapabilities%2Fanalyze%2FFin-Analyse-Optimize-Fin-dashboard-mobile.webp&w=3840&q=90)
+
+new
+
+Optimize Dashboard
+
+The Optimize Dashboard features AI-powered Suggestions that highlight opportunities to improve Fin's performance. Accept with one click for instant optimization.
+
+![Fin custom reporting](https://fin.ai/_next/image?url=%2Fimg%2Fcapabilities%2Fanalyze%2FFin-Analyse-Fin-custom-reporting-desktop.webp&w=3840&q=90)
+
+![Fin custom reporting](https://fin.ai/_next/image?url=%2Fimg%2Fcapabilities%2Fanalyze%2FFin-Analyse-Fin-custom-reporting-mobile.webp&w=3840&q=90)
+
+only on intercom suite
+
+Fin custom reporting
+
+Build your own Fin performance and quality reports with customizable report layouts, drag and drop charts, and advanced filters.
+
+![Conversation monitoring](https://fin.ai/_next/image?url=%2Fimg%2Fcapabilities%2Fanalyze%2FFin-Analyse-Conversation-monitoring-desktop.webp&w=3840&q=90)
+
+![Conversation monitoring](https://fin.ai/_next/image?url=%2Fimg%2Fcapabilities%2Fanalyze%2FFin-Analyse-Conversation-monitoring-mobile.webp&w=3840&q=90)
+
+Conversation monitoring
+
+Easily review Fin conversations in real time, directly from your Inbox.
+
+![Holistic reporting](https://fin.ai/_next/image?url=%2Fimg%2Fcapabilities%2Fanalyze%2FFin-Analyse-Holistic-reporting-desktop.webp&w=3840&q=90)
+
+![Holistic reporting](https://fin.ai/_next/image?url=%2Fimg%2Fcapabilities%2Fanalyze%2FFin-Analyse-Holistic-reporting-mobile.webp&w=3840&q=90)
+
+only on intercom suite
+
+Holistic reporting
+
+Get visibility into the overall health of your entire support organization with a unified view of AI and human support in one detailed report.
+
+capabilities / train
+
+### Configure Fin's behavior, tone, and actions
+
+Train Fin on your knowledge, data, procedures, and tone of voice. Fin will use all it knows to resolve your most complex, multi-step workflows with precision and reliability.
+
+![Fin tasks](https://fin.ai/_next/image?url=%2Fimg%2Fcapabilities%2Ftrain%2FFintasks-desktop.webp&w=3840&q=90)
+
+![Fin tasks](https://fin.ai/_next/image?url=%2Fimg%2Fcapabilities%2Ftrain%2FFintasks-mobile.webp&w=3840&q=90)
+
+Fin Tasks
+
+Fin can handle complex queries, like issuing refunds or canceling orders. Simply describe the task in natural language, and Fin will follow the steps: gathering details, making decisions, and taking action with human oversight when needed.
+
+[Learn more](https://fin.ai/tasks)
+
+![knowledge sources](https://fin.ai/_next/image?url=%2Fimg%2Fcapabilities%2Ftrain%2FKnowledgesources-desktop.webp&w=3840&q=90)
+
+![knowledge sources](https://fin.ai/_next/image?url=%2Fimg%2Fcapabilities%2Ftrain%2FKnowledgesources-mobile.webp&w=3840&q=90)
+
+Knowledge sources
+
+Fin instantly learns from a variety of public and private knowledge sources, including Help Center articles, internal support content, PDFs, and URLs.
+
+![fin knowledge management](https://fin.ai/_next/image?url=%2Fimg%2Fcapabilities%2Ftrain%2FFinKnowledgemanagement-desktop.webp&w=3840&q=90)
+
+![fin knowledge management](https://fin.ai/_next/image?url=%2Fimg%2Fcapabilities%2Ftrain%2FFinKnowledgemanagement-mobile.webp&w=3840&q=90)
+
+Fin knowledge management
+
+Manage all of Fin's knowledge sources in one centralized Knowledge Hub—so Fin can access all the latest information as your business changes.
+
+![fin guidance](https://fin.ai/_next/image?url=%2Fimg%2Fcapabilities%2Ftrain%2FFinguidance-desktop.webp&w=3840&q=90)
+
+![fin guidance](https://fin.ai/_next/image?url=%2Fimg%2Fcapabilities%2Ftrain%2FFinguidance-mobile.webp&w=3840&q=90)
+
+Fin Guidance
+
+Fin can learn to behave like your best agents. Set Fin's communication style and define how it clarifies, escalates, and responds according to your support team's policies.
+
+![Tone of voice](https://fin.ai/_next/image?url=%2Fimg%2Fcapabilities%2Ftrain%2FToneofvoice-desktop.webp&w=3840&q=90)
+
+![Tone of voice](https://fin.ai/_next/image?url=%2Fimg%2Fcapabilities%2Ftrain%2FToneofvoice-mobile.webp&w=3840&q=90)
+
+Tone of voice
+
+Customize Fin's tone of voice and answer length to match your brand. Set preferences or preselect options like professional, friendly, or humorous.
+
+![Multilingual](https://fin.ai/_next/image?url=%2Fimg%2Fcapabilities%2Ftrain%2FMultilingual-desktop.webp&w=3840&q=90)
+
+![Multilingual](https://fin.ai/_next/image?url=%2Fimg%2Fcapabilities%2Ftrain%2FMultilingual-mobile.webp&w=3840&q=90)
+
+Multilingual
+
+Fin will automatically detect and resolve issues in more than 45 languages, giving you full control over which languages you support.
+
+![Real-time translation](https://fin.ai/_next/image?url=%2Fimg%2Fcapabilities%2Ftrain%2FReal-timetranslations-desktop.webp&w=3840&q=90)
+
+![Real-time translation](https://fin.ai/_next/image?url=%2Fimg%2Fcapabilities%2Ftrain%2FReal-timetranslations-mobile.webp&w=3840&q=90)
+
+Real-time translation
+
+Fin can translate support content written in any language to generate replies in the customer's language—no manual localization required.
+
+![Content targeting](https://fin.ai/_next/image?url=%2Fimg%2Fcapabilities%2Ftrain%2FContenttargeting-desktop.webp&w=3840&q=90)
+
+![Content targeting](https://fin.ai/_next/image?url=%2Fimg%2Fcapabilities%2Ftrain%2FContenttargeting-mobile.webp&w=3840&q=90)
+
+Content targeting
+
+Deliver more relevant answers by targeting content based on customer attributes like plan, location, or brand.
+
+![multi-source generative answers](https://fin.ai/_next/image?url=%2Fimg%2Fcapabilities%2Ftrain%2FMulti-sourcegenerativeanswers-desktop.webp&w=3840&q=90)
+
+![multi-source generative answers](https://fin.ai/_next/image?url=%2Fimg%2Fcapabilities%2Ftrain%2FMulti-sourcegenerativeanswers-mobile.webp&w=3840&q=90)
+
+Multi-source generative answers
+
+Fin builds answers using only the most relevant information from multiple knowledge sources—creating more complete and accurate answers to even the most complex questions.
+
+![personalized answers](https://fin.ai/_next/image?url=%2Fimg%2Fcapabilities%2Ftrain%2FPersonalizedanswers-desktop.webp&w=3840&q=90)
+
+![personalized answers](https://fin.ai/_next/image?url=%2Fimg%2Fcapabilities%2Ftrain%2FPersonalizedanswers-mobile.webp&w=3840&q=90)
+
+Personalized answers
+
+Fin can retrieve information from your external systems to personalize customer interactions—surfacing details like account information, purchases, subscriptions, and more.
+
+![data connector templates](https://fin.ai/_next/image?url=%2Fimg%2Fcapabilities%2Ftrain%2FDataconnectortemplates-desktop.webp&w=3840&q=90)
+
+![data connector templates](https://fin.ai/_next/image?url=%2Fimg%2Fcapabilities%2Ftrain%2FDataconnectortemplates-mobile.webp&w=3840&q=90)
+
+Data connector templates
+
+Fin can take action across the data sources you use every day like Stripe, Shopify, Statuspage, and more. There's no code required, and AI helps prioritize which templates to set up first based on impact.
+
+![fin vision](https://fin.ai/_next/image?url=%2Fimg%2Fcapabilities%2Ftrain%2FFinvision-desktop.webp&w=3840&q=90)
+
+![fin vision](https://fin.ai/_next/image?url=%2Fimg%2Fcapabilities%2Ftrain%2FFinvision-mobile.webp&w=3840&q=90)
+
+Fin Vision
+
+Fin can read, analyze and understand images—like screenshots, invoices, and error messages—so customers can share what they see without lengthy explanations.
+
+With Fin Guidance, you're able to tell Fin to read the customer's tone and frustration levels and take different actions based on that. That's a whole new world!
+
+Justin Mann,Business Operations Manager at MyTutor
+
+capabilities / test
+
+### Evaluate Fin's answers before going live
+
+Use real customer questions to test Fin's answer quality and refine its sources and settings, so it always reflects your latest support content and policies.
+
+![Batch testing](https://fin.ai/_next/image?url=%2Fimg%2Fcapabilities%2Ftest%2FBulkanswertesting-desktop.webp&w=3840&q=90)
+
+![Batch testing](https://fin.ai/_next/image?url=%2Fimg%2Fcapabilities%2Ftest%2FBulkanswertesting-mobile.webp&w=3840&q=90)
+
+new
+
+Batch testing
+
+Test how ready your content is for Fin. Easily import conversations from your support inbox, other sources, or add them manually to evaluate Fin's accuracy and performance.
+
+![Answer rating](https://fin.ai/_next/image?url=%2Fimg%2Fcapabilities%2Ftest%2FAnswerrating-desktop.webp&w=3840&q=90)
+
+![Answer rating](https://fin.ai/_next/image?url=%2Fimg%2Fcapabilities%2Ftest%2FAnswerrating-mobile.webp&w=3840&q=90)
+
+new
+
+Answer rating
+
+Review and rate each of Fin's answers. Ratings and comments are captured in a report so you can prioritize what needs work and improve your content.
+
+![Fin preview](https://fin.ai/_next/image?url=%2Fimg%2Fcapabilities%2Ftest%2FFinpreview-desktop.webp&w=3840&q=90)
+
+![Fin preview](https://fin.ai/_next/image?url=%2Fimg%2Fcapabilities%2Ftest%2FFinpreview-mobile.webp&w=3840&q=90)
+
+Fin preview
+
+Test and refine Fin in real time. Instantly see how updates to guidance, deployment settings, or intro messages will appear to customers, helping you perfect the experience before going live.
+
+![Answer inspection](https://fin.ai/_next/image?url=%2Fimg%2Fcapabilities%2Ftest%2FAnswerinspection-desktop.webp&w=3840&q=90)
+
+![Answer inspection](https://fin.ai/_next/image?url=%2Fimg%2Fcapabilities%2Ftest%2FAnswerinspection-mobile.webp&w=3840&q=90)
+
+new
+
+Answer inspection
+
+Get full visibility into how Fin generated an answer. See exactly which sources and settings—like tone of voice and Guidance—shaped the response.
+
+![Audience Testing](https://fin.ai/_next/image?url=%2Fimg%2Fcapabilities%2Ftest%2FImpersonation-desktop.webp&w=3840&q=90)
+
+![Audience Testing](https://fin.ai/_next/image?url=%2Fimg%2Fcapabilities%2Ftest%2FImpersonation-mobile.webp&w=3840&q=90)
+
+new
+
+Audience testing
+
+Test how Fin answers for various customer types across multiple brands by simulating different audiences or personas.
+
+capabilities / deploy
+
+### Launch Fin across channels and audiences
+
+Deploy Fin across email, voice, live chat, social, and more. Fin can answer, triage, and collaborate with your team to deliver consistent experiences across channels.
+
+[Learn more](https://fin.ai/channels)
+
+![Fin Voice](https://fin.ai/_next/image?url=%2Fimg%2Fcapabilities%2Fdeploy%2FFin-Deploy-Finvoice-desktop.webp&w=3840&q=90)
+
+![Fin Voice](https://fin.ai/_next/image?url=%2Fimg%2Fcapabilities%2Fdeploy%2FFin-Deploy-Finvoice-mobile.webp&w=3840&q=90)
+
+Fin Voice
+
+AI phone support, built for real conversations. Fin Voice answers calls naturally, handles complex questions, and connects customers to human agents exactly when it needs to.
+
+[Learn more](https://fin.ai/voice)
+
+![Fin over live chat](https://fin.ai/_next/image?url=%2Fimg%2Fcapabilities%2Fdeploy%2FFin-Deploy-Finoverlivechat-desktop.webp&w=3840&q=90)
+
+![Fin over live chat](https://fin.ai/_next/image?url=%2Fimg%2Fcapabilities%2Fdeploy%2FFin-Deploy-Finoverlivechat-mobile.webp&w=3840&q=90)
+
+Fin over live chat
+
+Whether it's on your existing live chat tool, or the industry-leading Intercom Messenger—Fin delivers the best conversational support experience to your customers.
+
+![Fin over email](https://fin.ai/_next/image?url=%2Fimg%2Fcapabilities%2Fdeploy%2FFin-Deploy-Finoveremail-desktop.webp&w=3840&q=90)
+
+![Fin over email](https://fin.ai/_next/image?url=%2Fimg%2Fcapabilities%2Fdeploy%2FFin-Deploy-Finoveremail-mobile.webp&w=3840&q=90)
+
+Fin over email
+
+Fin is fully optimized for delivering support via email and can provide instant, accurate answers to customer questions, making sure to filter out phishing attempts, spam, and other threats.
+
+![Fin over API](https://fin.ai/_next/image?url=%2Fimg%2Fcapabilities%2Fdeploy%2FFin-Deploy-FinoverAPI-desktop.webp&w=3840&q=90)
+
+![Fin over API](https://fin.ai/_next/image?url=%2Fimg%2Fcapabilities%2Fdeploy%2FFin-Deploy-FinoverAPI-mobile.webp&w=3840&q=90)
+
+new
+
+Fin over API
+
+Integrate Fin almost anywhere by using an API to deliver fast, accurate answers where your customers need them—without changing your existing systems.
+
+![Fin over WhatsApp & SMS](https://fin.ai/_next/image?url=%2Fimg%2Fcapabilities%2Fdeploy%2FFin-Deploy-FinoverWhatsApp%26SMS-desktop.webp&w=3840&q=90)
+
+![Fin over WhatsApp & SMS](https://fin.ai/_next/image?url=%2Fimg%2Fcapabilities%2Fdeploy%2FFin-Deploy-FinoverWhatsApp%26SMS-mobile.webp&w=3840&q=90)
+
+Fin over WhatsApp & SMS
+
+Fin delivers conversational support across WhatsApp and SMS, to keep the customer experience consistent across all your channels.
+
+![Fin over social](https://fin.ai/_next/image?url=%2Fimg%2Fcapabilities%2Fdeploy%2FFin-Deploy-Finoversocial-desktop.webp&w=3840&q=90)
+
+![Fin over social](https://fin.ai/_next/image?url=%2Fimg%2Fcapabilities%2Fdeploy%2FFin-Deploy-Finoversocial-mobile.webp&w=3840&q=90)
+
+Fin over Social
+
+Fin can deliver conversational support experiences consistently on your social channels too, including Facebook and Instagram.
+
+![Fin over Slack](https://fin.ai/_next/image?url=%2Fimg%2Fcapabilities%2Fdeploy%2FFin-Deploy-Finoverslack-desktop.webp&w=3840&q=90)
+
+![Fin over Slack](https://fin.ai/_next/image?url=%2Fimg%2Fcapabilities%2Fdeploy%2FFin-Deploy-Finoverslack-mobile.webp&w=3840&q=90)
+
+coming soon
+
+Fin over Slack
+
+Fin delivers instant, accurate answers on Slack, scaling AI-first customer service to your busiest communities and threads.
+
+![Workflows for Fin](https://fin.ai/_next/image?url=%2Fimg%2Fcapabilities%2Fdeploy%2FFin-Deploy-WorkflowsforFin-desktop.webp&w=3840&q=90)
+
+![Workflows for Fin](https://fin.ai/_next/image?url=%2Fimg%2Fcapabilities%2Fdeploy%2FFin-Deploy-WorkflowsforFin-mobile.webp&w=3840&q=90)
+
+Workflows for Fin
+
+Add Fin to Workflow automations to triage, route, and generate answers when customers take specific actions—directly from Workflows no-code visual builder.
+
+![human handoff](https://fin.ai/_next/image?url=%2Fimg%2Fcapabilities%2Fdeploy%2FFin-Deploy-Humanhandoff-desktop.webp&w=2048&q=90)
+
+![human handoff](https://fin.ai/_next/image?url=%2Fimg%2Fcapabilities%2Fdeploy%2FFin-Deploy-Humanhandoff-mobile.webp&w=3840&q=90)
+
+Human handoff
+
+Configure how and when Fin triages conversations or hands off to your human support team. Fin will always automatically handoff when that is the safest option for the customer.
+
+![targeting & scheduling](https://fin.ai/_next/image?url=%2Fimg%2Fcapabilities%2Fdeploy%2FFin-Deploy-Targeting%26scheduling-desktop.webp&w=2048&q=90)
+
+![targeting & scheduling](https://fin.ai/_next/image?url=%2Fimg%2Fcapabilities%2Fdeploy%2FFin-Deploy-Targeting%26scheduling-mobile.webp&w=3840&q=90)
+
+Audience targeting
+
+Fin shows up for your customers how and when you decide—by audience, region, channel, and more—helping you stay in control and maintain support availability.
+
+![Usage limits and notifications](https://fin.ai/_next/image?url=%2Fimg%2Fcapabilities%2Fdeploy%2FFin-Deploy-Usagelimitsandnotifications-desktop.webp&w=2048&q=90)
+
+![Usage limits and notifications](https://fin.ai/_next/image?url=%2Fimg%2Fcapabilities%2Fdeploy%2FFin-Deploy-Usagelimitsandnotifications-mobile.webp&w=3840&q=90)
+
+Usage limits and notifications
+
+Set resolution limits and receive notifications when Fin approaches them—or automatically stop Fin delivering AI answers once limits are reached.
+
+Our team naturally communicates with customers where they are, whether that's in Zendesk or Slack. Fin now works the same way, which is key for us.
+
+Lasse Høgsholt,Senior Technical Support Engineer at Tines
+
+copilot
+
+## Increase agent efficiency with a personal AI assistant in the inbox.
+
+Copilot works directly with your agents in the inbox, delivering instant advice, insights, and answers—so your team can work smarter, move faster, and focus on what matters most: delivering truly remarkable customer experiences.
+
+[Learn more](https://www.intercom.com/suite/helpdesk/copilot)
+
+![A screenshot of the Copilot interface showcasing the tool helping to compose a message regarding a fraudalent transaction](https://fin.ai/_next/image?url=%2Fimg%2Fcapabilities%2Ffin-deploy-copilot-for-agents-desktop.webp&w=3840&q=90)
+
+![A screenshot of the Copilot interface showcasing the tool helping to compose a message regarding a fraudalent transaction](https://fin.ai/_next/image?url=%2Fimg%2Fcapabilities%2Ffin-deploy-copilot-for-agents-mobile.webp&w=3840&q=90)
+
+## Get started with the#1 AI Agent today
+
+[Start free trial](https://app.intercom.com/admins/sign_up?cta_domain=fin&utm_referrer=https%3A%2F%2Ffin.ai%2Fcapabilities) [Get a demo](https://fin.ai/contact-sales)
+
+![A decorative background depicting a solar flare in space](https://fin.ai/_next/image?url=%2Fimg%2Fhome%2Fhero.webp&w=3840&q=90)
+
+![A decorative background depicting a solar flare in space](https://fin.ai/_next/image?url=%2Fimg%2Fhome%2Fhero.webp&w=3840&q=90)
+
+---
+
+### Additional Databricks Documentation Pages
+
+#### Manage Catalogs Documentation
+[Skip to main content](https://docs.databricks.com/aws/en/catalogs/manage-catalog#__docusaurus_skipToContent_fallback)
+
+On this page
+
+This article shows how to view, update, and delete catalogs in Unity Catalog. A catalog contains schemas (databases), and a schema contains tables, views, volumes, models, and functions.
+
+For more information about catalogs, see What are catalogs in Databricks? and Create catalogs. To learn how to grant and revoke access to a catalog, see Unity Catalog privileges and securable objects.
+
+To learn how to manage a foreign catalog, a Unity Catalog object that mirrors a database in an external data system, see Manage and work with foreign catalogs.
+
+## Requirements
+
+To view, update, or delete a catalog:
+
+- You must have a Unity Catalog metastore linked to the workspace where you perform the task.
+
+- The cluster that you use to run a notebook to manage a catalog must use a Unity Catalog-compliant access mode. See Access modes.
+
+SQL warehouses always support Unity Catalog.
+
+Required permissions differ by task and are provided in each section that follows.
+
+## View catalog details
+
+Permission required: Users can see metadata for all catalogs that they own or on which they have been assigned the USE CATALOG or BROWSE permission.
+
+Users with the BROWSE privilege on a foreign catalog might see stale metadata in Catalog Explorer or when accessing metadata via the Unity Catalog API. Metadata visibility depends on when REFRESH was last run for the foreign catalog.
+
+To view information about a catalog, you can use Catalog Explorer or a SQL command.
+
+Run SHOW CATALOGS in a notebook or the SQL query editor to list all catalogs in a metastore or those that match a regular expression.
+
+Run the following SQL command to get details about a catalog. Items in brackets are optional. Replace the placeholder <catalog-name>.
+
+SQL
+
+```codeBlockLines_OxEI
+DESCRIBE CATALOG <catalog-name>;
+
+```
+
+Use CATALOG EXTENDED to get full details.
+
+For more information, see DESCRIBE CATALOG.
+
+## Update a catalog
+
+To update (or alter) a catalog, you can use Catalog Explorer or a SQL command.
+
+Permissions required: Permissions required to update a catalog depend on the update:
+
+- To change the owner, you must be the owner or have MANAGE and USE CATALOG on the catalog.
+- To rename the catalog, you must be the owner or have MANAGE and USE CATALOG on the catalog.
+- To add or update a comment or tags, you must be the owner or have MANAGE or MODIFY and USE CATALOG on the catalog.
+- To grant and revoke permissions on the catalog, you must be the catalog owner, a metastore admin, or have MANAGE and USE CATALOG on the catalog.
+
+Log into a workspace that is linked to the Unity Catalog metastore.
+Click Catalog.
+In the Catalog pane on the left, click the catalog that you want to update.
+Use the following page elements on the catalog details page to update the catalog:
+- Overview tab: update the owner, add or update tags, add or update comments. See Manage Unity Catalog object ownership, Apply tags to Unity Catalog securable objects, and Add comments to data and AI assets.
+- Permissions tab: grant and revoke privileges on the catalog. See Manage privileges in Unity Catalog.
+- The kebab menu: Rename the catalog.
+- Create schema button: add a schema to the catalog. See Create schemas.
+
+To change the owner, add or update tags, and manage predictive optimization on the tables in a catalog, run the ALTER CATALOG command in a notebook or the SQL query editor. See ALTER CATALOG.
+To grant or revoke privileges, use the GRANT or REVOKE command. See GRANT and REVOKE.
+To add schemas to the catalog, see What are schemas in Databricks?.
+To rename a catalog using SQL, you must create a new catalog and move all assets into the new catalog.
+
+## Delete a catalog
+
+To delete (or drop) a catalog, you can use Catalog Explorer or a SQL command.
+
+Do not delete the main catalog, even if it appears to be unused. Deleting it can break existing data operations that depend on it.
+
+Permission required: Catalog owner or MANAGE and USE CATALOG on the catalog.
+
+You must delete all schemas in the catalog except information_schema before you can delete a catalog. This includes the auto-created default schema.
+
+Log in to a workspace that is linked to the metastore.
+Click Catalog.
+In the Catalog pane, on the left, click the catalog you want to delete.
+In the detail pane, click the kebab menu to the left of the Create database button and select Delete.
+On the Delete catalog dialog, click Delete.
+
+Run the following SQL command in a notebook or Databricks SQL editor. Items in brackets are optional. Replace the placeholder <catalog-name>.
+
+For parameter descriptions, see DROP CATALOG.
+
+If you use DROP CATALOG without the CASCADE option, you must delete all schemas in the catalog except information_schema before you can delete the catalog. This includes the auto-created default schema.
+
+SQL
+
+```codeBlockLines_OxEI
+DROP CATALOG [ IF EXISTS ] <catalog-name> [ RESTRICT | CASCADE ]
+
+```
+
+For example, to delete a catalog named vaccine and its schemas:
+
+SQL
+
+```codeBlockLines_OxEI
+DROP CATALOG vaccine CASCADE
+
+```
+
+#### TensorBoard Documentation
+[Skip to main content](https://docs.databricks.com/aws/en/machine-learning/train-model/tensorboard#__docusaurus_skipToContent_fallback)
+
+On this page
+
+TensorBoard is a suite of visualization tools for debugging, optimizing, and understanding TensorFlow, PyTorch, Hugging Face Transformers, and other machine learning programs.
+
+## Use TensorBoard
+
+Starting TensorBoard in Databricks is no different than starting it on a Jupyter notebook on your local computer.
+
+1. Load the %tensorboard magic command and define your log directory.
+
+```codeBlockLines_OxEI
+%load_ext tensorboard
+experiment_log_dir = <log-directory>
+
+```
+
+2. Invoke the %tensorboard magic command.
+
+```codeBlockLines_OxEI
+%tensorboard --logdir $experiment_log_dir
+
+```
+
+The TensorBoard server starts and displays the user interface inline in the notebook. It also provides a link to open TensorBoard in a new tab.
+
+The following screenshot shows the TensorBoard UI started in a populated log directory.
+
+You can also start TensorBoard by using TensorBoard's notebook module directly.
+
+Python
+
+```codeBlockLines_OxEI
+from tensorboard import notebook
+notebook.start("--logdir {}".format(experiment_log_dir))
+
+```
+
+## TensorBoard logs and directories
+
+TensorBoard visualizes your machine learning programs by reading logs generated by TensorBoard callbacks and functions in TensorBoard or PyTorch. To generate logs for other machine learning libraries, you can directly write logs using TensorFlow file writers (see Module: tf.summary for TensorFlow 2.x and see Module: tf.compat.v1.summary for the older API in TensorFlow 1.x ).
+
+To make sure that your experiment logs are reliably stored, Databricks recommends writing logs to cloud storage rather than on the ephemeral cluster file system. For each experiment, start TensorBoard in a unique directory. For each run of your machine learning code in the experiment that generates logs, set the TensorBoard callback or file writer to write to a subdirectory of the experiment directory. That way, the data in the TensorBoard UI is separated into runs.
+
+Read the official TensorBoard documentation to get started using TensorBoard to log information for your machine learning program.
+
+## Manage TensorBoard processes
+
+The TensorBoard processes started within Databricks notebook are not terminated when the notebook is detached or the REPL is restarted (for example, when you clear the state of the notebook). To manually kill a TensorBoard process, send it a termination signal using %sh kill -15 pid. Improperly killed TensorBoard processes might corrupt notebook.list().
+
+To list the TensorBoard servers currently running on your cluster, with their corresponding log directories and process IDs, run notebook.list() from the TensorBoard notebook module.
+
+## Known issues
+
+- The inline TensorBoard UI is inside an iframe. Browser security features prevent external links within the UI from working unless you open the link in a new tab.
+- The --window_title option of TensorBoard is overridden on Databricks.
+- By default, TensorBoard scans a port range for selecting a port to listen to. If there are too many TensorBoard processes running on the cluster, all ports in the port range might be unavailable. You can work around this limitation by specifying a port number with the --port argument. The specified port should be between 6006 and 6106.
+- For download links to work, you must open TensorBoard in a tab.
+- When using TensorBoard 1.15.0, the Projector tab is blank. As a workaround, to visit the projector page directly, you can replace #projector in the URL by data/plugin/projector/projector_binary.html.
+- TensorBoard 2.4.0 has a known issue that might affect TensorBoard rendering if upgraded.
+- If you're logging TensorBoard-related data to DBFS or UC Volumes, you may get an error like No dashboards are active for the current data set. To overcome this error, it's advisable to call writer.flush() and writer.close() after using the writer to log data. This ensures that all logged data is properly written and available for TensorBoard to render.
+
+#### H3 Center as GeoJSON Function Documentation
+[Skip to main content](https://docs.databricks.com/aws/en/sql/language-manual/functions/h3_centerasgeojson#__docusaurus_skipToContent_fallback)
+
+On this page
+
+Applies to: Databricks SQL Databricks Runtime 11.3 LTS and above
+
+Returns the center of the input H3 cell as a point in GeoJSON format.
+
+## Syntax
+
+```codeBlockLines_OxEI
+h3_centerasgeojson ( h3CellIdExpr )
+
+```
+
+## Arguments
+
+- h3CellIdExpr: A BIGINT expression, or a hexadecimal STRING expression representing an H3 cell ID.
+
+## Returns
+
+A value of the type STRING representing the center of the input H3 cell as a point in GeoJSON format.
+
+The function returns NULL if the input expression is NULL.
+The function does partial validation regarding whether the input argument is a valid H3 cell ID. A necessary, but not sufficient condition for a valid H3 ID is that its value is between 0x08001fffffffffff and 0x08ff3b6db6db6db6.
+The behavior of the function is undefined if the input cell ID is not a valid cell ID.
+
+## Error conditions
+
+- If h3CellIdExpr is a STRING that cannot be converted to a BIGINT or corresponds to a BIGINT value that is either smaller than 0x08001fffffffffff or larger than 0x08ff3b6db6db6db6, the function returns H3_INVALID_CELL_ID.
+
+## Examples
+
+SQL
+
+```codeBlockLines_OxEI
+-- Input a BIGINT representing a hexagonal cell.
+> SELECT h3_centerasgeojson(599686042433355775);
+  {"type":"Point","coordinates":[-121.97637597255,37.345793375368]}
+
+-- Input a STRING representing a pentagonal cell.
+> SELECT h3_centerasgeojson('8009fffffffffff');
+  {"type":"Point","coordinates":[10.536199075468,64.700000127935]}
+
+-- Input is an invalid H3 cell ID.
+> SELECT h3_centerasgeojson(0);
+  [H3_INVALID_CELL_ID] 0 is not a valid H3 cell ID
+
+```
+
+## Related functions
+
+- h3_boundaryasgeojson function
+- h3_boundaryaswkb function
+- h3_boundaryaswkt function
+- h3_centeraswkb function
+- h3_centeraswkt function
+
+#### Monitor Database Instance Documentation
+[Skip to main content](https://docs.databricks.com/aws/en/oltp/instances/create/monitor#__docusaurus_skipToContent_fallback)
+
+On this page
+
+Preview
+
+This feature is in Public Preview in the following regions: us-east-1, us-west-2, eu-west-1, ap-southeast-1, ap-southeast-2, eu-central-1, us-east-2, ap-south-1.
+
+This page explains how to monitor the performance of your Lakebase database instance using the Metrics tab on the instance details page.
+
+## Access metrics
+
+To access metrics for your instance:
+
+1. Go to the instance details page for your instance. To learn how to open the instance details page, see Access a database instance.
+2. Click the Metrics tab.
+
+## Available metrics
+
+Use the following metrics to analyze performance trends, identify potential bottlenecks, and evaluate whether to optimize application usage or scale your instance:
+
+- Transactions per second: Shows committed transaction throughput. Use this to understand workload patterns and identify peak transaction periods. If this value is consistently high, consider optimizing client behavior or increasing the size of the instance.
+
+- Rows per second: Displays the number of rows fetched, returned, inserted, updated, and deleted. Rows fetched refers to the number of rows returned to clients. Rows returned refers to the number of rows read by queries. Helps diagnose the type of workload and its impact on the system. If performance is constrained, consider adding indexes or optimizing query patterns.
+
+- Open connections: Displays the number of open active connections. Connections consume instance resources. Use this to evaluate whether client-side connection pooling is needed. Refer to limits for the maximum number of allowed connections.
+
+- Storage utilization: Indicates current storage usage for the instance. If utilization approaches Public Preview limits, remove unnecessary data or indexes. Alternatively, contact support to request a quota increase.
+
+- CPU utilization (%): Measures CPU usage for the database instance. High CPU usage might indicate a computation-heavy workload. Consider application-side optimizations or increasing the size of the instance.
+
+- Page read throughput (%): Reflects how close the instance is to its page read capacity, typically caused by cache misses. If the Page read throughput value is high, reduce the workload or working set, add indexes, cache queries on the client side, or streamline the data.
+
+- Buffer cache hit rate (%): Indicates the percentage of reads served from memory. High-performance workloads should see values above 99%. Low rates suggest the workload exceeds cache capacity or could benefit from optimizations.
+
+- Local SSD cache hit rate (%): Tracks the percentage of reads served from the SSD cache after a buffer cache miss. A low value may increase page read throughput. Use similar optimizations as with buffer cache, or consider a larger instance.
+
+- Deadlocks per second: Measures how often transactions encounter deadlocks. These typically occur when multiple transactions access the same resources in conflicting order. Investigate and refactor workloads to prevent deadlocks.
+
+#### June 2020 Release Notes
+[Skip to main content](https://docs.databricks.com/aws/en/release-notes/product/2020/june#__docusaurus_skipToContent_fallback)
+
+On this page
+
+These features and Databricks platform improvements were released in June 2020.
+
+Releases are staged. Your Databricks account may not be updated until up to a week after the initial release date.
+
+## Billable usage logs delivered to your own S3 bucket (Public Preview)
+
+June 30, 2020
+
+Databricks account owners can now configure daily delivery of billable usage logs in CSV file format to an AWS S3 storage bucket, where you can make the data available for usage analysis. Databricks delivers a separate monthly CSV file for each workspace in your account. This CSV file includes detailed data about the workspace's cluster usage in Databricks Units (DBUs) by cluster ID, billing SKU, cluster creator, cluster tags, and more. For a description of each CSV file column, see Download usage as a CSV file.
+
+This file has been available for download from the Usage Overview tab in the Databricks account console, where it is accessible only by Databricks account owners. Delivery to your S3 buckets lets you give access to the users who need it and provide the data programmatically to your analysis tools, so you can view usage trends, perform chargebacks, and identify cost optimization opportunities.
+
+For more information, see Deliver and access billable usage logs (legacy).
+
+## Databricks Connect now supports Databricks Runtime 6.6
+
+June 26, 2020
+
+Databricks Connect now supports Databricks Runtime 6.6.
+
+## Databricks Runtime 7.0 ML GA
+
+Jun 22, 2020
+
+Databricks Runtime 7.0 ML is built on top of Databricks Runtime 7.0 and includes the following new features:
+
+- Notebook-scoped Python libraries and custom environments managed by conda and pip commands.
+- Updates for major Python packages including tensorflow, tensorboard, pytorch, xgboost, sparkdl, and hyperopt.
+- Newly added Python packages lightgbm, nltk, petastorm, and plotly.
+- RStudio Server Open Source v1.2.
+
+For more information, see the complete Databricks Runtime 7.0 ML (EoS) release notes.
+
+## Databricks Runtime 7.0 GA, powered by Apache Spark 3.0
+
+June 18, 2020
+
+Databricks Runtime 7.0 is powered by Apache Spark 3.0 and now supports Scala 2.12.
+
+Spark 3.0 brings many additional features and improvements, including:
+
+- Adaptive Query Execution, a flexible framework to do adaptive execution in Spark SQL and support changing the number of reducers at runtime.
+- Redesigned pandas UDFs with type hints.
+- Structured Streaming web UI.
+- Better compatibility with ANSI SQL standards.
+- Join hints.
+
+Databricks Runtime 7.0 adds:
+
+- Improved Auto Loader for processing new data files incrementally as they arrive on a cloud blob store during ETL.
+- Improved COPY INTO command for loading data into Delta Lake with idempotent retries.
+- Many improvements, library additions and upgrades, and bug fixes.
+
+For more information, see the complete Databricks Runtime 7.0 (EoS) release notes.
+
+## Databricks Runtime 7.0 for Genomics GA
+
+June 18, 2020
+
+Databricks Runtime 7.0 for Genomics is built on top of Databricks Runtime 7.0 and includes the following library changes:
+
+- The ADAM library has been updated from version 0.30.0 to 0.32.0.
+- The Hail library is not included in Databricks Runtime 7.0 for Genomics, because there is no release based on Apache Spark 3.0.
+
+## Stage-dependent access controls for MLflow models
+
+June 16-23, 2020: Version 3.22
+
+You can now assign stage-dependent access controls to users or groups, allowing them to manage MLflow Models registered in the MLflow Model Registry at the Staging or Production stage. We introduced two new permission levels, CAN MANAGE STAGING VERSIONS and CAN MANAGE PRODUCTION VERSIONS. Users with these permissions can perform transitions between stages allowed for the level.
+
+For details, see MLflow model ACLs.
+
+## Notebooks now support disabling auto-scroll
+
+June 16-23, 2020: Version 3.22
+
+When you run a notebook cell using shift+enter, the default notebook behavior is to auto-scroll to the next cell if the cell is not visible. You can now disable auto-scroll in User Settings > Editor settings. If you disable auto-scroll, on shift+enter the focus moves to the next cell, but the notebook does not scroll to that cell.
+
+## Skipping instance profile validation now available in the UI
+
+June 16-23, 2020: Version 3.22
+
+The Add Instance Profile dialog now has a checkbox that allows you to skip validation. If validation fails, you can select this checkbox to skip the validation and forcibly add the instance profile.
+
+## Account ID is displayed in account console
+
+June 16-23, 2020, Version 3.22
+
+Your Databricks account ID is now displayed on the Usage Overview tab in the account console.
+
+## Internet Explorer 11 support ends on August 15
+
+June 9, 2020
+
+In keeping with industry trends and to ensure a stable and consistent user experience for our customers, Databricks will end support for Internet Explorer 11 on August 15, 2020.
+
+## Databricks Runtime 6.2 series support ends
+
+June 3, 2020
+
+Support for Databricks Runtime 6.2, Databricks Runtime 6.2 for Machine Learning, and Databricks Runtime 6.2 for Genomics ended on June 3. See Databricks support lifecycles.
+
+## Simplify and control cluster creation using cluster policies (Public Preview)
+
+June 2-9, 2020: Version 3.21
+
+Databricks is rolling out this public preview over two releases. It may not be deployed to your workspace until the next release. Contact your Databricks account team with any questions.
+
+Cluster policies are admin-defined, reusable cluster templates that enforce rules on cluster attributes and thus ensure that users create clusters that conform to those rules. As a Databricks admin, you can now create cluster policies and give users policy permissions. By doing that, you have more control over the resources created, give users the level of flexibility they need to do their work, and considerably simplify the cluster creation experience.
+
+For details, see Create and manage compute policies.
+
+## SCIM Me endpoint now returns SCIM compliant response
+
+June 2-9, 2020: Version 3.21
+
+The SCIM Me endpoint now returns the same information as the /users/{id} endpoint, including information such as groups, entitlements, and roles.
+
+See CurrentUser API.
+
+## G4 family of GPU-accelerated EC2 instances now available for machine learning application deployments (Beta)
+
+June 2-9, 2020: Version 3.21
+
+G4 instances are optimized for deploying machine learning models in production. To use TensorRT on these instance types with the current releases of Databricks Runtime for Machine Learning (as of June 2, 2020), you must manually install libnvinfer using an init script. We anticipate that future GPU-enabled versions of Databricks Runtime ML will contain this package.
+
+## Deploy multiple workspaces in your Databricks account (Public Preview)
+
+June 1, 2020
+
+The new Multi-workspace API (renamed Account API on September 1, 2020) introduces an administrative and management layer (the account layer) on top of Databricks workspaces that gives an account owner a single pane of glass to create, configure, and manage multiple workspaces for your organization. Use the API to create one or more workspaces for each team in your organization that needs to use Databricks, or one workspace for each of your dev, staging, and production environments. Databricks provisions a ready-to-use workspace within minutes. Workspaces are completely isolated from each other. You can choose to deploy a workspace in the same underlying AWS account or in different AWS accounts, depending on your operational plan. The Multi-workspace API (Account API) is available on the accounts.cloud.databricks.com endpoint.
+
+For more information, see Create a workspace using the Account API.
+
+Contact your Databricks account team to request access to this public preview.
+
+## Deploy Databricks workspaces in your own VPC (Public Preview)
+
+June 1, 2020
+
+By default, clusters are created in a single AWS VPC (Virtual Private Cloud) that Databricks creates and configures in your AWS account. Now you have the option to create your Databricks workspaces in your own VPC, a feature known as customer-managed VPC, which can allow you to exercise more control over the infrastructure and help you comply with specific cloud security and governance standards your organization may require. You simply provide your VPC ID, security group ID and subnet IDs when you create your workspace using the Multi-workspace API (Account API).
+
+For more information, see Configure a customer-managed VPC.
+
+This feature is available only on E2 version of the Databricks platform, not on the existing enterprise platform.
+
+## Secure cluster connectivity with no open ports on your VPCs and no public IP addresses on Databricks workers (Public Preview)
+
+June 1, 2020
+
+With the release of the E2 version of the Databricks platform, Databricks is providing a new network architecture for connectivity between the Databricks control plane (delivered as SaaS) and the compute plane (your own AWS VPC). With this new architecture, you no longer have to open inbound ports on cluster VMs: cluster VMs launched in your customer-managed-VPC now initiate an outbound TLS 1.2 connection to the Databricks control plane. Not only is this architecture compliant with common InfoSec requirements, but it eliminates the need for VPC peering and gives you more flexibility in how you connect your environment to the Databricks control plane.
+
+For more information, see What is secure cluster connectivity?.
+
+Contact your Databricks account team to request access to this public preview.
+
+## Restrict access to Databricks using IP access lists (Public Preview)
+
+June 1, 2020
+
+Databricks workspaces can now be configured so that users connect to the service only through existing corporate networks with a secure perimeter. Databricks admins can use the IP Access List API to define a set of approved IP addresses, including allow and block lists. All incoming access to the web application and REST APIs requires that the user connect from an authorized IP address, guaranteeing that workspaces cannot be accessed from a public network like a coffee shop or an airport unless your users use VPN.
+
+This feature is not available on all Databricks subscriptions. Contact your Databricks account team with any questions about access for your account.
+
+For more information, see Configure IP access lists for workspaces.
+
+## Encrypt locally attached disks (Public Preview)
+
+June 1, 2020
+
+Some instance types you use to run clusters may have locally attached disks. Databricks may store shuffle data or ephemeral data on these locally attached disks. To ensure that all data at rest is encrypted for all storage types, including shuffle data that is stored temporarily on your cluster's local disks, you can now enable local disk encryption using the Clusters API. See Local disk encryption.
+
+---
+
+### Additional Sierra.ai Blog Posts
+
+#### Five Ways to Use AI Agents: Financial Services
+[Skip to main content](https://sierra.ai/blog/five-ways-to-use-ai-agents-financial-services#main)
+
+Services like banking and insurance play a critical role in our lives, and whatever the issue—whether you're locked out of your account, disputing a charge, trying to find the right tax information or making a claim—you want to know you're in the best hands. And that's where AI agents can really help.
+
+## 1. Finding exactly the right product or service
+
+Choosing a credit card, mortgage, or investment account can be overwhelming. There's so much information, so many choices, and everyone has different needs. An AI agent can simplify all that, quickly understanding a customer's needs and helping to identify what's right for them.
+
+A leading U.S. mortgage lender built an agent on Sierra that pulls together all the key information for prospective borrowers—like their income, the purchase price of the property, and their credit—to manage the pre-qualification process. The agent then transfers the customer, along with all their details, to a licensed broker. This lightens the load on the prospective borrower, and enables the mortgage teams to focus on what they do best: finding the right product for that person so they can convert leads into applicants.
+
+## 2. Taking the annoyance out of basic account management
+
+Tasks like checking a balance, resetting a password, or updating an address shouldn't take human help. Yet, so many financial institutions still transfer basic requests to call centers—forcing customers to hold on the line, and tying up valuable customer support resources. An AI agent can help solve these routine issues, taking less of their customers' time and freeing up support teams to focus on higher value work.
+
+A large fintech that offers online banking services built an agent on Sierra to help customers through voice, chat, and in-app messaging—with questions ranging from replacing lost cards to checking the status of a transaction. It's so fast and empathetic that its NPS scores and resolution rates are higher than the live agent.
+
+## 3. Getting to solutions faster
+
+Billing issues—like disputed charges, missed payments, or unfamiliar fees—are a frequent source of frustration for customers. AI agents can handle these conversations quickly and with less effort by pulling transaction records, clarifying details, and now even initiating the dispute process.
+
+A consumer fintech built an agent on Sierra to help its customers get to solutions much faster. For example, someone disputing a charge describes the situation to the AI agent, which then locates the relevant transaction, explains any fees, and, if needed, files a dispute.
+
+## 4. Keeping the customers you have
+
+Companies lose customers for lots of different reasons. But a thoughtful response to concerns can make all the difference between losing someone for good and restoring the relationship. AI agents can offer personalized options—such as adjusted rates, temporary holds, or upgraded services—to address common pain points.
+
+A leading car insurance company built an agent on Sierra to reach out to customers who disable the autorenew option in their mobile app. By asking a few relevant questions, the agent uncovers what's really of concern to that customer and can propose relevant adjustments or discounts. This approach has cut cancellations and increased overall satisfaction.
+
+## 5. Responding quickly to suspected fraud
+
+Getting a call about potential fraud can be stressful—and when customers are worried about their money, they want help fast. But for financial institutions, having a customer support agent call with every alert can overwhelm contact center teams, causing delays and frustration. AI agents can jump in right away, verifying identity, reviewing suspicious activity, and escalating when necessary.
+
+One global payments provider built an agent on Sierra to handle outbound fraud calls. When potential fraud is detected, the AI agent reaches out immediately, confirms the cardholder's identity, and helps determine whether the charge is legitimate. It's fast, secure, and effective—giving customers peace of mind and freeing up fraud teams to focus on more complex investigations.
+
+## Build on Sierra
+
+For decades, financial services companies have struggled with the trade-off between the cost and quality of their customer service. Sierra helps solve that trade-off—enabling companies to build better, more human customer experiences with AI.
+
+Just one year since launch, our platform is already powering millions of conversations between the leading insurance and banking companies and their customers. Sierra combines the speed and innovation of a start-up with the expertise of an established enterprise, maintaining the highest industry standards of trust, safety, and compliance in this incredibly important industry.
+
+Learn more about how to build on Sierra.
+
+#### Five Ways to Use AI Agents: Healthcare
+[Skip to main content](https://sierra.ai/blog/five-ways-to-use-ai-agents-healthcare#main)
+
+Decisions about healthcare are some of the most important and stressful in our lives—even when it's not an emergency. Yet the process is so often slow and hard to navigate. And while healthcare providers and payers are working to improve the quality of that support, they're also grappling with rising costs and increased regulation. In the year since Sierra's launch, we've seen how AI can help deliver better, more human care while also reducing costs for the industry.
+
+## 1. Understanding Benefits & Eligibility
+
+Understanding coverage is hard, from deductibles to co-pays, prior authorizations, in-network restrictions and referral requirements. AI can process enormous amounts of information almost instantly—enabling it to answer complex questions like "is my physical therapy covered?" or "what's my out-of-pocket cost for this procedure?" much more quickly.
+
+A major health insurance network is using Sierra's platform to manage high call volumes, navigate fragmented internal systems, reduce administrative costs, and deliver more personalized care. Its agent handles detailed questions like "what's my co-pay for a primary care visit?" and "how many physical therapy sessions do I have left?" (with high CSAT scores). It can also verify eligibility in real-time and answer questions about coverage, plan details, and dependent enrollment. Members can get instant clarity on deductibles, out-of-pocket maximums, provider networks, and more—improving patient satisfaction while streamlining operational overhead.
+
+## 2. Finding the right provider
+
+It shouldn't take research and a round of phone calls to locate a provider that's accepting patients in your insurance network. But all too often it does. AI can search provider directories, checking availability almost instantly, while also taking factors like location, specialty, and patient preferences into account. By eliminating the guesswork, it can help connect patients with the right provider from the get-go.
+
+A major nonprofit provider has built both voice and chat agents on Sierra to make the process of finding the right provider far easier, while also reducing the strain on its call centers. These agents help people identify in-network specialists, check availability, and find providers based on specialty or location. Replacing rigid IVR flows and manual inputs with AI has meant a faster, more consistent and patient-friendly experience, while also improving access to healthcare.
+
+## 3. Simplifying appointment scheduling
+
+Once patients find the right provider, booking an appointment shouldn't require multiple phone calls to juggle calendars. AI is great at handling logistics, easily identifying open slots and scheduling, and when patients need to reschedule, the agent handles it instantly—reducing no-shows and ensuring that people stay on track with their healthcare.
+
+A leading multi-site primary and urgent care provider selected Sierra to power voice automation across its 30+ clinics. The agent answers common questions and manages appointments, improving the consistency and speed of support across a high volume of inbound calls. This gives patients faster access to care, and also significantly reduces the administrative load on clinic staff.
+
+## 4. Streamlining patient intake
+
+Pre-visit paperwork (often referred to as patient intake) can be a barrier to people getting the care they need, especially when it's lengthy and confusing. AI can guide patients through what to expect and why specific services or tests are needed—closing critical gaps in patient education, reducing uncertainty, and improving both satisfaction and clinical efficiency by ensuring essential information is gathered before the appointment.
+
+A healthcare diagnostics company has built an agent with Sierra to collect patient information, replacing a 30 to 40 question pre-visit intake form that previously had to be filled out on paper. It's boosted pre-visit intake conversion rates, which are critical to providing the best care, and reduced operational time in the clinic.
+
+## 5. Resolving billing issues with empathy
+
+Few things increase stress levels and erode trust more quickly than billing that's opaque. Billing issues—like disputed charges, payment questions, or insurance claim status—are a frequent source of frustration for patients. AI can handle these conversations quickly and factually by retrieving claims information instantly, explaining any charges, and even initiating dispute processes when needed.
+
+A leading healthcare financial platform built an agent with Sierra to help patients with billing questions over the phone. It enables them to more easily understand their payment status, explanations of benefits, and financial assistance eligibility. It is also HIPAA and privacy compliant, while delivering faster resolution times, measurable handle time savings, and placing a lower administrative burden on staff.
+
+## The future of healthcare customer experience
+
+Creating more human customer experiences is arguably more important in healthcare than any other area of our life. Agents built on Sierra are already helping leading payers and providers improve patient interactions across the care journey. Unlike previous automation, AI isn't just effective, it's surprisingly good at the things people and patients value. AI makes the complex simple. It's fast and efficient. It has the information at its fingertips. It's patient and listens. And we seem to say things to AI we wouldn't say to another person, either because it's less embarrassing, or because we don't feel the need to make things up to look better.
+
+If you're as excited about the potential of AI in healthcare as we are, please get in touch. Let's invent the future together.
+
+#### What is an AI Agent?
+[Skip to main content](https://sierra.ai/blog/what-is-an-AI-agent-why-does-my-business-need-one#main)
+
+What is an AI agent? This is the first question I'm often asked when talking to new customers.
+
+Put simply, agents are software that can complete tasks on their own, i.e. without supervision, just like a human. And they're called agents because well, they have agency. This ability to think through problems and take action independently stems from the large language models (like those that underpin ChatGPT) on which agents are built. It's a very different, far superior approach to the rigid, rules-based software we grew up with.
+
+Which leads to the second question: why does my business need an AI agent? Because AI agents solve the age-old tension between better experiences and higher costs—so you can serve more customers, more often, and in more meaningful ways.
+
+When the Internet started, businesses got websites—a digital business card—and when mobile came along, many added an app. These improved the experience but still left customers doing most of the heavy lifting: from finding just the right pants from hundreds of different options to the complexities of navigating a refund or setting up an exchange, all on a clunky website.
+
+In a world of artificial intelligence, AI agents—not customers—can do that leg work. Now, if that sounds like the promise of enterprise software through the ages, here are five real life examples of how real agents are helping real brands and their customers today:
+
+- Send a refresh signal to a satellite radio. SiriusXM's agent, Harmony, can do exactly that, helping subscribers find a favorite radio show while she's at it.
+- Fit a bra. In fact, ThirdLove finds that its customers share more information with Barbra, their brand's AI agent, than they would during an in-person fitting as the experience feels more personal and private.
+- Fix a faulty alarm panel. Ever woken up in the middle of the night and not been able to figure out what's beeping and why, only to be put on hold? With ADT, customers can now call their agent 24/7 with no wait time to solve the problem.
+- Pick the perfect pillow. Casper helps customers find the right fit based on sleep position, material preferences, and features like cooling or extra support.
+- Prevent a customer from churning. Turns out AI agents can be even more effective than call center agents at saving customers—helping drive long term revenue for their business.
+
+Sierra-powered agents have proven so effective, companies are now using them across every moment of the customer journey that matters—from product advice and recommendations to account set-up and management, loyalty programs, returns or exchanges, and technical support.
+
+Better customer experiences are built on Sierra. Want to learn more? Let's talk.
+
+#### Introducing Sierra
+[Skip to main content](https://sierra.ai/blog/introducing-sierra#main)
+
+## Strike up a new type of conversation
+
+Since the advent of the Internet, technology has transformed how businesses interact with their customers. A company's website in 1995 may have simply been a digital business card, directing customers to a phone number or retail location. Today, that same site likely encompasses the entire customer experience – from commerce to support.
+
+Each wave of new technology since has dramatically changed consumer behavior and expanded companies' digital footprint. Social networks enabled consumer brands to connect with customers via their profile page. Later, as smartphones became ubiquitous, many companies' mobile apps became their primary customer experience.
+
+We're now in the midst of the most important and rapid consumer technology shift in a generation – conversational AI. ChatGPT reached 100 million users in just two months, faster than any consumer product in history. The advances in AI that power ChatGPT have for the first time enabled software that can reason, create, and understand language, transforming software from the rigid, rule-based systems that we associate with computers to flexible and creative experiences that are already enjoyed by millions of people around the world.
+
+Conversational AI is so intuitive and frictionless, we believe it will have an impact on your customer experience on par with the Internet. In the age of conversational AI, the best customer experience is not installing an app or clicking a link, but simply having a conversation.
+
+To enable conversational AI for your business, you need a new type of software: an AI agent.
+
+## Every company needs an agent
+
+Agents are autonomous, AI-powered software systems that can interact directly with consumers to solve problems and take action on their behalf. The concept of an agent has its roots in academia, but for consumer brands, agents represent something simple: an opportunity to create an always-on, delightful, conversational customer experience for everything from support to retail, recommendations, subscription management, and more.
+
+At Sierra, we're building the conversational AI platform for businesses, enabling every company – including yours – to build their own agent.
+
+We've had the privilege of partnering with some of the world's leading consumer brands to build the Sierra platform, including WeightWatchers, SiriusXM, Sonos, and OluKai.
+
+Sima Sistani, CEO, WeightWatchers
+
+"We're going to grow in ways that resonate with a more digitally forward consumer, and a key part of that will be embracing AI to help improve the member experience."
+
+Sima Sistani, CEO, WeightWatchers
+
+WeightWatchers is a global leader in weight health, creating a worldwide community connected by healthy habits. The WeightWatchers agent has become an extension of the WeightWatchers team, helping members make informed meal choices, manage memberships, and more. The WeightWatchers agent is already successfully handling almost 70% of customer sessions – with a remarkable 4.6/5 customer satisfaction score.
+
+Kerry Konrady, Chief Marketing Officer, OluKai
+
+"Sierra enables us to scale and reach more customers, all while using our voice, delivering white glove service, and creating the Aloha experience."
+
+Kerry Konrady Chief Marketing Officer, Olukai
+
+Founded in 2005, OluKai stands out as the only Hawaiian-inspired brand crafting lifestyle and footwear for discerning, active consumers. OluKai's agent was up and running in time for the Black Friday and Cyber Monday holiday surge, enabling OluKai to scale their trademark Aloha Experience at their busiest time of year – handling over half of all customer cases with empathy, authenticity, and care.
+
+We could not be more excited to release the Sierra platform widely and enable every company in the world to elevate their customer experience with this remarkable new technology.
+
+## AI that is sophisticated, authentic, and trustworthy
+
+Putting conversational AI in front of your customers is no easy task. Large language models can hallucinate, misrepresent your brand, and misguide your customers. Meeting compliance standards requires additional tooling for auditing, inspection, and protecting personally identifiable information. And customers want more than just answers to questions. They want to track their package, recover their account, or exchange a product – which requires securely integrating with your order management system, your CRM, and all the other systems of record that power your customer experience.
+
+These are the problems we're solving at Sierra. Our enterprise-grade platform is powerful, easy to deploy, and capable of creating AI agents that are sophisticated, authentic, and trustworthy.
+
+Sophisticated — Sierra agents can do so much more than just answer questions. They take action using your systems, from upgrading a subscription in your customer database to managing the complexities of a furniture delivery in your order management system. Agents can reason, problem solve, and make decisions. With Sierra, you set goals to guide your agent towards the right solutions and guardrails to ensure your agent stays on-point and aligned with your policies. No workflow or process is too complex.
+
+Authentic — Sierra agents use natural language and sophisticated reasoning to create conversational interactions that are authentic, satisfying, and on-brand. Agents understand jargon, typos, and context to communicate in language with consideration and empathy, adapting to each customer's specific needs and emotions. And Sierra agents can communicate effortlessly in the language of your customers' choice for experiences that are personalized and inclusive.
+
+Trustworthy — The Sierra platform includes powerful auditing and quality assurance tools to ensure that you can understand the reasoning behind every interaction. When a Sierra agent accesses any system of record, those interactions are deterministic, ensuring your agent always adheres to your security policies and access controls. The Sierra platform also enforces strict data governance, protecting your customers personal information, and ensuring that your company's data stays your own.
+
+The Sierra platform enables you to build an AI agent that represents your company at its best. Your agent will craft a personalized experience for every customer, answering nuanced questions about your products and services. Your agent will help customers navigate complexity, make better decisions, and solve problems. And it will be available to anyone, at a moment's notice, every hour, every day of the year.
+
+## Partner with us
+
+Sierra exists for one purpose: to empower you to delight your customers with conversational AI. We are so grateful to the companies that took a leap of faith to partner with us to build this platform. We would love the opportunity to bring the delight we've seen in WeightWatchers members, SiriusXM listeners, Sonos customers, and the OluKai Ohana to your customers.
+
+If you'd like to learn more, check out our website, sierra.ai, or reach out directly to set up a demo.
+
+To our families, mentors, friends, colleagues, partners, and customers, thank you.
+
+Bret & Clay
+
+#### Meet the AI Agent Engineer
+[Skip to main content](https://sierra.ai/blog/meet-the-ai-agent-engineer#main)
+
+At Sierra, we enable companies to build their own branded, customer-facing AI agents for customer service, commerce, and more. Sierra's agents are intricate software systems that simulate a human type of reasoning, decision-making, and creativity. Our agents can solve a wide range of real-world problems, assisting people with tasks that range from the mundanely logistical (like exchanging too-tight shoes) to the surprisingly complex (such as navigating the acoustic idiosyncrasies of setting up premium speakers).
+
+There's an enormous difference between building a demo and deploying an AI agent at scale. An engineer can build a demo showcasing the potential of agents over the course of an hour. In fact, ChatGPT can do so with a fairly well-directed prompt. But enabling agents to operate at scale consistently - across millions of conversations - proves much more challenging.
+
+We've found that building and shipping delightful agents requires not only a new software development approach, but also a new type of software engineer.
+
+## Meet the agent engineer
+
+At Sierra, we've built a team of agent engineers – individuals who work with our customers to design, build, and ship agents using Sierra's platform: Agent OS.
+
+We see our agent engineers as a part of the broader AI Engineering sub-discipline. These engineers work at the forefront of what's possible with AI and are amongst the first to productionize LLMs to solve consumer problems at scale.
+
+I, myself, am one of these agent engineers. While building and shipping agents, I've had the opportunity to see many businesses up close and apply frontier AI technology to their thorniest problems. There's a particular thrill in the moments that you see the AI you've designed solve a problem so efficiently that it leaves a customer delighted.
+
+Taking an example from my own work with Sonos to accelerate "time to music," I helped build an AI agent that can troubleshoot speaker connection issues. The process involved comprehensive scoping with our technical counterparts to understand the details of the Sonos product portfolio. Then, we translated our understanding of the problem into an AI agent that could solve it repeatedly, for nearly any customer.
+
+Other agent engineers at Sierra have designed and deployed agents that tackled similarly complex problems. For example:
+
+- Refreshing your SiriusXM radio, which requires sending a signal from a satellite to your vehicle.
+- Helping you choose a pair of OluKai shoes to wear to your next event or on your next vacation.
+- Scheduling a furniture delivery, navigating door codes and the complexity of fitting an expensive sofa through your apartment door.
+
+Agent engineers need to be strong software engineers, but their role differs from other engineering roles in key ways. AI agents are nondeterministic and built on tools uncommon in modern software stacks. In addition to programming, Agent engineers must master a modern AI stack, developing expertise in:
+
+- Large Language Models: Frontier models like GPT-4o, Claude 3.5 Sonnet, and Gemini, alongside smaller, more specialized models.
+- Vector Databases: Data stores for semantic retrieval of relevant context.
+- Prompt Engineering: Standard techniques like few-shot prompting, in-context learning, and self-consistency.
+- Agent Architecture: Tool-calling optimizations like Toolformer or reasoning improvements from processes like Reflexion (authored by Sierra's own Noah Shinn).
+- AI Orchestration Engines: Tools like LangChain, Flowise, or Sierra's Agent SDK, which help coordinate different tools and models.
+
+Agent engineers hone the performance of agents with the rigorous training and selection of underlying models, the authoring of thoughtful and domain-specific prompts, the implementation of agent orchestration layers, and the integration of relevant tools and external APIs.
+
+Beyond technical competence, agent engineers need to possess innate curiosity and respect for the complexity of their customers' challenges. Their role requires understanding and applying expertise in a given domain to the development of an AI agent.
+
+## Agent engineering in practice
+
+To capture the types of technical challenges agent engineers face in building and deploying agents, we've detailed below three areas our agent engineers think about frequently: Interacting with Systems, Agent Supervision, and Agent Extensibility. These are the tip of the iceberg for the evolving role of Agent Engineer, but they provide a flavor for the type of work our team does.
+
+### Interacting with systems: "How can my agent know where a customer's package is?"
+
+Simplistic AI agents in the market today are built solely on Retrieval-Augmented Generation (RAG), an approach that relies on selected customer documents to respond to a user's query. At its simplest, RAG helps an agent answer questions like: "What is your return policy?" using a company's actual written return policy.
+
+But regardless of how advanced a RAG solution or an underlying LLM might be, a solution without system integrations can't return your package or cancel your account. Without access to the underlying APIs and systems of record necessary to complete the transaction, a service experience ends at question and answer. You can't change your flight, return your shoes, or change your subscription plan.
+
+But even with access to systems via APIs, agents with simplistic architectures don't achieve the consistency necessary to deploy agents in production. In practice, most workflows require agents to orchestrate multiple API calls in a particular order to achieve a desired outcome. Function calling and more advanced techniques like ReAct remain the public state of the art, but they don't perform sufficiently for production workflows.
+
+To address these shortcomings, we developed the Sierra Agent SDK. The Agent SDK is a powerful framework that enables Agent Engineers to construct agents by stacking composable skills and enforcing deterministic API Interactions. The Agent SDK powers the orchestration necessary to manage agent control flow, ensuring that Sierra's agents access the right systems of record at the right time.
+
+Compose skills with the Agent SDK
+
+This configurability extends all the way to the agent responding to complex user-specific rules, such as regional regulations or plan-specific policies. In many customer service settings, a user from the UK might be subject to different rules or require the use of different APIs than one from the US. Agent engineers work with our customers to understand the relevant policies across regions and interact with the right systems of record.
+
+### Agent supervision: "How do I make the agent safe to deploy at scale?"
+
+One challenge of deploying AI agents at scale is the unbounded nature of language. In production, a customer could say anything to the agent. The challenge is ensuring that the agent always responds appropriately given the context.
+
+One answer to the problem of unbounded inputs and nondeterministic outputs is to layer more AI on top of the existing agent.
+
+To explore a simplified example, imagine that an agent outputs the correct answer 90% of the time, and in the remaining 10% of the time, the agent gets something wrong in its response. If we have a second model, a supervisor, that can verify the output of the first with 90% accuracy and revise, the combined accuracy of the two models can skyrocket to 99%.
+
+At Sierra, we have developed built-in supervisors to ensure that agents perform appropriately. Depending on the context, agent engineers may build custom supervisors for customers, particularly in heavily regulated environments like healthcare or financial services.
+
+In addition to real-time agent oversight, Sierra's Agent SDK gives agent engineers the flexibility to tune agent creativity and determinism according to the context. In certain cases, for example canceling an account or offering a promotion, higher levels of determinism may be warranted.
+
+For example, particular regulatory requirements might necessitate that in certain scenarios, an agent responds with precise language. In such cases, Sierra's Agent SDK makes it possible to selectively bypass an LLM to achieve the necessary consistency.
+
+### Agent extensibility: "How can I increase the speed of developing agents?"
+
+Some approaches to agent development lead to more flexibility than others. For example, fine-tuning an LLM to a particular use case creates a model that may be well-suited to a particular task, but which also lacks the flexibility or extensibility most agents require.
+
+In contrast, our agent engineers use our Agent SDK to define agent behavior, composing skills that are expressed using a declarative programming language. By building abstractions on common agent behavior, agent engineers create higher order components to further accelerate agent development.
+
+In other words, we're building with lego bricks instead of pouring concrete. This composability makes agents quicker to build and deploy. It also makes agents much more durable. Over time, new components are developed, added, and extended to modify the agent, enabling it to handle a greater variety of scenarios and tasks.
+
+On the agent engineering team, we build canonical versions of these higher order components and extend them to meet our needs. Our goal is to establish the world-class implementation of each skill to accelerate our customer deployments and build agents of exceptional quality.
+
+## Building the future
+
+The role of agent engineering is dynamic. Each day is less a repeat performance and more a re-invention of what it means to build and deploy agents in production. The work itself blends theory with engineering practice – agent engineers must apply frontier technologies to our customers' most important business challenges.
+
+When successfully developed and deployed, an AI agent becomes more than a tool; it morphs into an integral part of a company's identity, a cornerstone of its brand, and a key element of its competitive advantage. Tactically, Sierra's AI agents often double or even triple the resolution rate of existing solutions while increasing customer satisfaction. But this is only the start - agents are able to create delightful, personalized experiences that were the realm of sci-fi only a few years ago.
+
+For those interacting with Sierra's agents each day, we may be powering their first interaction with this generation of AI. Agent engineers build systems that can surprise and delight customers, delivering the magic that many of us felt when we first interacted with ChatGPT.
+
+## A view from the arena
+
+The role of agent engineer isn't one size fits all. I myself came to the role of agent engineer through an interdisciplinary approach to software engineering. I've worked as an infrastructure engineer at Palantir, founded a company, and graduated from business school.
+
+Members of our team have similarly varied experiences and backgrounds. My colleagues have founded companies, led teams as staff engineers, or spent time perfecting their skiing. While non-traditional experiences are not a prerequisite for success, a combination of engineering expertise, customer obsession, and business curiosity define some of the most successful agent engineers.
+
+We are participating in the advent of a new type of engineering, and we expect the role of agent engineer to grow in importance over the coming decade.
+
+If our agent engineers sound like you, and you're interested in deploying AI agents at scale, we're hiring and we'd love to hear from you.
+
+---
+
+### Additional Databricks Security Documentation
+
+#### IP Access Lists for Workspaces
+[Skip to main content](https://docs.databricks.com/aws/en/security/network/front-end/ip-access-list-workspace#__docusaurus_skipToContent_fallback)
+
+On this page
+
+This article describes how to configure IP access lists for Databricks workspaces. This article discusses the most common tasks you can perform using the Databricks CLI.
+
+You can also use the IP Access Lists API.
+
+## Requirements
+
+- This feature requires the Enterprise pricing tier.
+
+- IP access lists support only Internet Protocol version 4 (IPv4) addresses.
+
+- Any public IPs that the compute plane uses to access the control plane must either be added to an allow list or you must configure back-end PrivateLink. Otherwise, classic compute resources cannot launch.
+
+For example, when you configure a customer-managed VPC, subnets must have outbound access to the public network using a NAT gateway or a similar approach. Those public IPs must be present in an allow list. See Subnets. Alternatively, if you use a Databricks-managed VPC and you configure the managed NAT gateway to access public IPs, those IPs must be present in an allow list. For more information, see the Databricks Community post.
+
+## Check if your workspace has the IP access list feature enabled
+
+To check if your workspace has the IP access list feature enabled:
+
+Bash
+
+```codeBlockLines_OxEI
+databricks workspace-conf get-status enableIpAccessLists
+
+```
+
+## Enable or disable the IP access list feature for a workspace
+
+In a JSON request body, specify `enableIpAccessLists` as `true` (enabled) or `false` (disabled).
+
+Bash
+
+```codeBlockLines_OxEI
+databricks workspace-conf set-status --json '{
+  "enableIpAccessLists": "true"
+}'
+
+```
+
+## Add an IP access list
+
+When the IP access lists feature is enabled and there are no allow lists or block lists for the workspace, all IP addresses are allowed. Adding IP addresses to the allow list blocks all IP addresses that are not on the list. Review the changes carefully to avoid unintended access restrictions.
+
+Any public IPs that the compute plane uses to access the control plane should be added to an allow list.
+
+IP access lists have a label, which is a name for the list, and a list type. The list type is either `ALLOW` (allow list) or `BLOCK` (a block list, which means exclude even if in allow list).
+
+For example, to add an allow list:
+
+Bash
+
+```codeBlockLines_OxEI
+databricks ip-access-lists create --json '{
+  "label": "office",
+  "list_type": "ALLOW",
+  "ip_addresses": [\
+    "1.1.1.0/24",\
+    "2.2.2.2/32"\
+  ]
+}'
+
+```
+
+## List IP access lists
+
+Bash
+
+```codeBlockLines_OxEI
+databricks ip-access-lists list
+
+```
+
+## Update an IP access list
+
+Specify at least one of the following values to update:
+
+- `label` — Label for this list.
+- `list_type` — Either `ALLOW` (allow list) or `BLOCK` (block list, which means exclude even if in allow list).
+- `ip_addresses` — A JSON array of IP addresses and CIDR ranges, as String values.
+- `enabled` — Specifies whether this list is enabled. Pass `true` or `false`.
+
+The response is a copy of the object that you passed in with additional fields for the ID and modification dates.
+
+For example, to disable a list:
+
+Bash
+
+```codeBlockLines_OxEI
+databricks  ip-access-lists update <list-id> --json '{
+  "enabled": false
+}'
+
+```
+
+## Delete an IP access list
+
+To delete an IP access:
+
+Bash
+
+```codeBlockLines_OxEI
+databricks  ip-access-lists delete <list-id>
+
+```
+
+## What's next
+
+- **Configure IP access lists for the account console**: Set up IP restrictions for account console access to control which networks can access account-level settings and APIs. See Configure IP access lists for the account console.
+- **Configure private connectivity**: Use PrivateLink to establish secure and isolated access to AWS services from your virtual network, bypassing the public internet. See Enable private connectivity using AWS PrivateLink.
+- **Set up customer-managed VPC**: Configure your own VPC with proper NAT gateway settings to ensure IP access list compatibility. See Configure a customer-managed VPC.
+
+#### Customer-Managed VPC Documentation
+[Skip to main content](https://docs.databricks.com/aws/en/security/network/classic/customer-managed-vpc#__docusaurus_skipToContent_fallback)
+
+On this page
+
+This page describes the benefits and implementation of a customer-managed VPC.
+
+## Overview
+
+By default, Databricks clusters are created in a single AWS Virtual Private Cloud (VPC) that Databricks creates and configures within your AWS account.
+
+Alternatively, you can create your Databricks workspaces within your own VPC. This feature is known as a **customer-managed VPC**.
+
+Use a customer-managed VPC for:
+
+- **Enhanced control:** Exercise more control over your network configurations.
+- **Compliance:** Comply with specific cloud security and governance standards required by your organization.
+- **Internal policies:** Adhere to security policies that prevent providers from creating VPCs in your AWS account.
+- **Clear approval processes:** Align with internal approval processes where VPCs must be configured and secured by your own teams (For example, information security, cloud engineering).
+- **AWS PrivateLink:** Using a customer-managed VPC is **required** if you need to configure AWS PrivateLink for any type of connection.
+
+Benefits include:
+
+- **Lower privilege level:** Maintain more control over your AWS account. Databricks requires fewer permissions using its cross-account IAM role compared to the default setup, which can simplify internal approvals.
+
+- **Simplified network operations:** Achieve better network space utilization by configuring smaller subnets for a workspace compared to the default /16 CIDR. Avoid potentially complex VPC peering configurations.
+- **Consolidated VPCs:** Multiple Databricks workspaces can share a single classic compute plane VPC, which is often preferred for billing and instance management.
+- **Limit outgoing connections:** Use an egress firewall or proxy appliance to to limit outbound traffic to a list of allowed internal or external data sources.
+
+To take advantage of a customer-managed VPC, you must specify a VPC when you first create the Databricks workspace. You cannot move an existing workspace with a Databricks-managed VPC to use a customer-managed VPC. You can, however, move an existing workspace with a customer-managed VPC from one VPC to another VPC by updating the workspace configuration's network configuration object. See Update a running or failed workspace.
+
+To deploy a workspace in your own VPC, you must:
+
+1. Create the VPC following the requirements enumerated in VPC requirements.
+
+2. Reference your VPC network configuration with Databricks when you create the workspace.
+
+   - Use the account console and choose the configuration by name
+   - Use the Account API and choose the configuration by its ID
+
+You must provide the VPC ID, subnet IDs, and security group ID when you register the VPC with Databricks.
+
+## VPC requirements
+
+Your VPC must meet the requirements described in this section in order to host a Databricks workspace.
+
+**Requirements:**
+
+- VPC region
+- VPC sizing
+- VPC IP address ranges
+- DNS
+- Subnets
+- Security groups
+- Subnet-level network ACLs
+- AWS PrivateLink support
+
+### VPC region
+
+For a list of AWS regions that support customer-managed VPC, see Features with limited regional availability.
+
+### VPC sizing
+
+You can share one VPC with multiple workspaces in a single AWS account. However, Databricks recommends using unique subnets and security groups for each workspace. Be sure to size your VPC and subnets accordingly. Databricks assigns two IP addresses per node, one for management traffic and one for Apache Spark applications. The total number of instances for each subnet is equal to half the number of IP addresses that are available. Learn more in Subnets.
+
+### VPC IP address ranges
+
+Databricks doesn't limit netmasks for the workspace VPC, but each workspace subnet must have a netmask between `/17` and `/26`. This means that if your workspace has two subnets and both have a netmask of `/26`, then the netmask for your workspace VPC must be `/25` or smaller.
+
+important
+
+If you have configured secondary CIDR blocks for your VPC, make sure that the subnets for the Databricks workspace are configured with the same VPC CIDR block.
+
+### DNS
+
+The VPC must have DNS hostnames and DNS resolution enabled.
+
+### Subnets
+
+Databricks must have access to at least _two subnets for each workspace_, with each subnet in a different availability zone. You cannot specify more than one Databricks workspace subnet per Availability Zone in the Create network configuration API call. You can have more than one subnet per availability zone as part of your network setup, but you can choose only one subnet per Availability Zone for the Databricks workspace.
+
+You can choose to share one subnet across multiple workspaces or both subnets across workspaces. For example, you can have two workspaces that share the same VPC. One workspace can use subnets `A` and `B` and another workspaces can use subnets `A` and `C`. If you plan to share subnets across multiple workspaces, be sure to size your VPC and subnets to be large enough to scale with usage.
+
+Databricks assigns two IP addresses per node, one for management traffic and one for Spark applications. The total number of instances for each subnet is equal to half of the number of IP addresses that are available.
+
+Each subnet must have a netmask between `/17` and `/26`.
+
+#### Additional subnet requirements
+
+- Subnets must be private.
+- Subnets must have outbound access to the public network using a NAT gateway and internet gateway, or other similar customer-managed appliance infrastructure.
+- The NAT gateway must be set up in its own subnet that routes quad-zero ( `0.0.0.0/0`) traffic to an internet gateway or other customer-managed appliance infrastructure.
+
+important
+
+Workspaces must have outbound access from the VPC to the public network. If you configure IP access lists, those public networks must be added to an allow list. See Configure IP access lists for workspaces.
+
+#### Subnet route table
+
+The route table for workspace subnets must have quad-zero ( `0.0.0.0/0`) traffic that targets the appropriate network device. Quad-zero traffic must target a NAT Gateway or your own managed NAT device or proxy appliance.
+
+important
+
+Databricks requires subnets to add `0.0.0.0/0` to your allow list. This must be the first rule prioritized. To control egress traffic, use an egress firewall or proxy appliance to block most traffic but allow the URLs that Databricks needs to connect to. See Configure a firewall and outbound access.
+
+This is a base guideline only. Your configuration requirements may differ. For questions, contact your Databricks account team.
+
+### Security groups
+
+A Databricks workspace must have access to at least one AWS security group and no more than five security groups. You can reuse existing security groups rather than create new ones. However, Databricks recommends using unique subnets and security groups for each workspace.
+
+Security groups must have the following rules:
+
+**Egress (outbound):**
+
+- Allow all TCP and UDP access to the workspace security group (for internal traffic)
+- Allow TCP access to `0.0.0.0/0` for these ports:
+  - 443: for Databricks infrastructure, cloud data sources, and library repositories
+  - 3306: for the metastore
+  - 53: for DNS resolution when you use custom DNS
+  - 6666: for secure cluster connectivity. This is only required if you use PrivateLink.
+  - 2443: Supports FIPS encryption. Only required if you enable the compliance security profile.
+  - 8443: for internal calls from the Databricks compute plane to the Databricks control plane API.
+  - 8444: for Unity Catalog logging and lineage data streaming into Databricks.
+  - 8445 through 8451: Future extendability.
+
+**Ingress (inbound):** Required for all workspaces (these can be separate rules or combined into one):
+
+- Allow TCP on all ports when traffic source uses the same security group
+- Allow UDP on all ports when traffic source uses the same security group
+
+### Subnet-level network ACLs
+
+Subnet-level network ACLs must not deny ingress or egress to any traffic. Databricks validates for the following rules while creating the workspace:
+
+**Egress (outbound):**
+
+- Allow all traffic to the workspace VPC CIDR, for internal traffic
+  - Allow TCP access to `0.0.0.0/0` for these ports:
+    - 443: for Databricks infrastructure, cloud data sources, and library repositories
+    - 3306: for the metastore
+    - 6666: only required if you use PrivateLink
+    - 8443: for internal calls from the Databricks compute plane to the Databricks control plane API
+    - 8444: for Unity Catalog logging and lineage data streaming into Databricks
+    - 8445 through 8451: Future extendability
+
+important
+
+If you configure additional `ALLOW` or `DENY` rules for outbound traffic, set the rules required by Databricks to the highest priority (the lowest rule numbers), so that they take precedence.
+
+**Ingress (inbound):**
+
+- `ALLOW ALL from Source 0.0.0.0/0`. This rule must be prioritized.
+
+note
+
+Databricks requires subnet-level network ACLs to add `0.0.0.0/0` to your allow list. To control egress traffic, use an egress firewall or proxy appliance to block most traffic but allow the URLs that Databricks needs to connect to. See Configure a firewall and outbound access.
+
+### AWS PrivateLink support
+
+If you plan to enabled AWS PrivateLink on the workspace with this VPC:
+
+- On the VPC, ensure that you enable both of the settings **DNS Hostnames** and **DNS resolution**.
+- Review the article Enable private connectivity using AWS PrivateLink for guidance about creating an extra subnet for VPC endpoints (recommended but not required) and creating an extra security group for VPC endpoints.
+
+## Create a VPC
+
+To create VPCs you can use various tools:
+
+- AWS console
+- AWS CLI
+- Terraform
+- AWS Quickstart (create a new customer-managed VPC and a new workspace)
+
+To use AWS Console, the basic instructions for creating and configuring a VPC and related objects are listed below. For complete instructions, see the AWS documentation.
+
+note
+
+These basic instructions might not apply to all organizations. Your configuration requirements may differ. This section does not cover all possible ways to configure NATs, firewalls, or other network infrastructure. If you have questions, contact your Databricks account team before proceeding.
+
+01. Go to the VPCs page in AWS.
+
+02. See the region picker in the upper-right. If needed, switch to the region for your workspace.
+
+03. In the upper-right corner, click the orange button **Create VPC**.
+
+04. Click **VPC and more**.
+
+05. In the **Name tag auto-generation** type a name for your workspace. Databricks recommends including the region in the name.
+
+06. For VPC address range, optionally change it if desired.
+
+07. For public subnets, click `2`. Those subnets aren't used directly by your Databricks workspace, but they are required to enable NATs in this editor.
+
+08. For private subnets, click `2` for the minimum for workspace subnets. You can add more if desired.
+
+    Your Databricks workspace needs at least two private subnets. To resize them, click **Customize subnet CIDR blocks**.
+
+09. For NAT gateways, click **In 1 AZ**.
+
+10. Ensure the following fields at the bottom are enabled: **Enable DNS hostnames** and **Enable DNS resolution**.
+
+11. Click **Create VPC**.
+
+12. When viewing your new VPC, click on the left navigation items to update related settings on the VPC. To make it easier to find related objects, in the **Filter by VPC** field, select your new VPC.
+
+13. Click **Subnets** and what AWS calls the **private** subnets labeled 1 and 2, which are the ones you will use to configure your main workspace subnets. Modify the subnets as specified in VPC requirements.
+
+    If you created an extra private subnet for use with PrivateLink, configure private subnet 3 as specified in Enable private connectivity using AWS PrivateLink.
+
+14. Click **Security groups** and modify the security group as specified in Security groups.
+
+    If you will use back-end PrivateLink connectivity, create an additional security group with inbound and outbound rules as specified in the PrivateLink article in the section Step 1: Configure AWS network objects.
+
+15. Click **Network ACLs** and modify the network ACLs as specified in Subnet-level network ACLs.
+
+16. Choose whether to perform the optional configurations that are specified later in this article.
+
+17. Register your VPC with Databricks to create a network configuration using the account console or by using the Account API.
+
+#### Compute Configuration Documentation
+[Skip to main content](https://docs.databricks.com/aws/en/compute/configure#__docusaurus_skipToContent_fallback)
+
+On this page
+
+note
+
+The organization of this article assumes you are using the simple form compute UI (Public Preview). For an overview of the simple form updates, see Use the simple form to manage compute.
+
+This article explains the configuration settings available when creating a new all-purpose or job compute resource. Most users create compute resources using their assigned policies, which limits the configurable settings. If you don't see a particular setting in your UI, it's because the policy you've selected does not allow you to configure that setting.
+
+For recommendations on configuring compute for your workload, see Compute configuration recommendations.
+
+The configurations and management tools described in this article apply to both all-purpose and job compute. For more considerations on configuring job compute, see Configure compute for jobs.
+
+## Create a new all-purpose compute resource
+
+To create a new all-purpose compute resource:
+
+1. In the workspace sidebar, click **Compute**.
+2. Click the **Create compute** button.
+3. Configure the compute resource.
+4. Click **Create**.
+
+You new compute resource will automatically start spinning up and be ready to use shortly.
+
+## Compute policy
+
+Policies are a set of rules used to limit the configuration options available to users when they create compute resources. If a user doesn't have the **Unrestricted cluster creation** entitlement, then they can only create compute resources using their granted policies.
+
+To create compute resources according to a policy, select a policy from the **Policy** drop-down menu.
+
+By default, all users have access to the **Personal Compute** policy, allowing them to create single-machine compute resources. If you need access to Personal Compute or any additional policies, reach out to your workspace admin.
+
+## Performance settings
+
+The following settings appear under the **Performance** section of the simple form compute UI:
+
+- Databricks Runtime versions
+- Use Photon acceleration
+- Worker node type
+- Single-node compute
+- Enable autoscaling
+- Advanced performance settings
+
+### Databricks Runtime versions
+
+Databricks Runtime is the set of core components that run on your compute. Select the runtime using the **Databricks Runtime Version** drop-down menu. For details on specific Databricks Runtime versions, see Databricks Runtime release notes versions and compatibility. All versions include Apache Spark. Databricks recommends the following:
+
+- For all-purpose compute, use the most current version to ensure you have the latest optimizations and the most up-to-date compatibility between your code and preloaded packages.
+- For job compute running operational workloads, consider using the Long Term Support (LTS) Databricks Runtime version. Using the LTS version will ensure you don't run into compatibility issues and can thoroughly test your workload before upgrading.
+- For data science and machine learning use cases, consider Databricks Runtime ML version.
+
+### Use Photon acceleration
+
+Photon is enabled by default on compute running Databricks Runtime 9.1 LTS and above.
+
+To enable or disable Photon acceleration, select the **Use Photon Acceleration** checkbox. To learn more about Photon, see What is Photon?.
+
+### Worker node type
+
+A compute resource consists of one driver node and zero or more worker nodes. You can pick separate cloud provider instance types for the driver and worker nodes, although by default the driver node uses the same instance type as the worker node. The driver node setting is underneath the **Advanced performance** section.
+
+Different families of instance types fit different use cases, such as memory-intensive or compute-intensive workloads. You can also select a pool to use as the worker or driver node.
+
+important
+
+Do not use a pool with spot instances as your driver type. Select an on-demand driver type to prevent your driver from being reclaimed. See Connect to pools.
+
+In multi-node compute, worker nodes run the Spark executors and other services required for a properly functioning compute resource. When you distribute your workload with Spark, all of the distributed processing happens on worker nodes. Databricks runs one executor per worker node. Therefore, the terms executor and worker are used interchangeably in the context of the Databricks architecture.
+
+tip
+
+To run a Spark job, you need at least one worker node. If the compute resource has zero workers, you can run non-Spark commands on the driver node, but Spark commands will fail.
+
+#### Worker node IP addresses
+
+Databricks launches worker nodes with two private IP addresses each. The node's primary private IP address hosts Databricks internal traffic. The secondary private IP address is used by the Spark container for intra-cluster communication. This model allows Databricks to provide isolation between multiple compute resources in the same workspace.
+
+#### GPU instance types
+
+For computationally challenging tasks that demand high performance, like those associated with deep learning, Databricks supports compute resources that are accelerated with graphics processing units (GPUs). For more information, see GPU-enabled compute.
+
+Databricks no longer supports spinning up compute using Amazon EC2 P2 instances.
+
+#### AWS Graviton instance types
+
+Databricks supports AWS Graviton instances. These instances use AWS-designed Graviton processors that are built on top of the Arm64 instruction set architecture. AWS claims that instance types with these processors have the best price-to-performance ratio of any instance type on Amazon EC2. To use Graviton instance types, select one of the available AWS Graviton instance type for the **Worker type**, **Driver type**, or both.
+
+Databricks supports AWS Graviton-enabled compute:
+
+- On Databricks Runtime 9.1 LTS and above for non- Photon, and Databricks Runtime 10.2 (EoS) and above for Photon.
+- On Databricks Runtime 15.4 LTS for Machine Learning for Databricks Runtime for Machine Learning.
+- In all AWS Regions. Note, however, that not all instance types are available in all Regions. If you select an instance type that is not available in the Region for a workspace, you get compute creation failure.
+- For AWS Graviton2 and Graviton3 processors.
+
+note
+
+Lakeflow Declarative Pipelines is not supported on Graviton-enabled compute.
+
+#### ARM64 ISA limitations
+
+- Floating point precision changes: typical operations like adding, subtracting, multiplying, and dividing have no change in precision. For single triangle functions such as `sin` and `cos`, the upper bound on the precision difference to Intel instances is `1.11e-16`.
+- Third party support: the change in ISA may have some impact on support for third-party tools and libraries.
+- Mixed-instance compute: Databricks does not support mixing AWS Graviton and non-AWS Graviton instance types, as each type requires a different Databricks Runtime.
+
+#### Graviton limitations
+
+The following features do not support AWS Graviton instance types:
+
+- Python UDFs (Python UDFs are available on Databricks Runtime 15.2 and above)
+- Databricks Container Services
+- Lakeflow Declarative Pipelines
+- Databricks SQL
+- Databricks on AWS GovCloud
+- Access to workspace files, including those in Git folders, from web terminals
+
+#### AWS Fleet instance types
+
+note
+
+If your workspace was created before May 2023, its IAM role's permissions might need to be updated to allow access to fleet instance types. For more information, see Enable fleet instance types.
+
+A fleet instance type is a variable instance type that automatically resolves to the best available instance type of the same size.
+
+For example, if you select the fleet instance type `m-fleet.xlarge`, your node will resolve to whichever `.xlarge`, general purpose instance type has the best spot capacity and price at that moment. The instance type your compute resource resolves to will always have the same memory and number of cores as the fleet instance type you chose.
+
+Fleet instance types use AWS's Spot Placement Score API to choose the best and most likely to succeed availability zone for your compute resource at startup time.
+
+#### Fleet limitations
+
+- If you update the spot instance bid percentage using the API or JSON, it has no effect when the worker node type is set to a fleet instance type. This is because there is no single on-demand instance to use as a reference point for the spot price.
+- Fleet instances do not support GPU instances.
+- A small percentage of older workspaces do not yet support fleet instance types. If this is the case for your workspace, you'll see an error indicating this when attempting to create compute or an instance pool using a fleet instance type. We're working to bring support to these remaining workspaces.
+
+### Single-node compute
+
+The **Single node** checkbox allows you to create a single node compute resource.
+
+Single node compute is intended for jobs that use small amounts of data or non-distributed workloads such as single-node machine learning libraries. Multi-node compute should be used for larger jobs with distributed workloads.
+
+#### Single node properties
+
+A single node compute resource has the following properties:
+
+- Runs Spark locally.
+- Driver acts as both master and worker, with no worker nodes.
+- Spawns one executor thread per logical core in the compute resource, minus 1 core for the driver.
+- Saves all `stderr`, `stdout`, and `log4j` log outputs in the driver log.
+- Can't be converted to a multi-node compute resource.
+
+#### Selecting single or multi node
+
+Consider your use case when deciding between single or multi-node compute:
+
+- Large-scale data processing will exhaust the resources on a single node compute resource. For these workloads, Databricks recommends using multi-node compute.
+
+- A multi-node compute resource can't be scaled to 0 workers. Use single node compute instead.
+
+- GPU scheduling is not enabled on single node compute.
+
+- On single-node compute, Spark cannot read Parquet files with a UDT column. The following error message results:
+
+Console
+
+```codeBlockLines_OxEI
+The Spark driver has stopped unexpectedly and is restarting. Your notebook will be automatically reattached.
+
+```
+
+To work around this problem, disable the native Parquet reader:
+
+Python
+
+```codeBlockLines_OxEI
+spark.conf.set("spark.databricks.io.parquet.nativeReader.enabled", False)
+
+```
+
+### Enable autoscaling
+
+When **Enable autoscaling** is checked, you can provide a minimum and maximum number of workers for the compute resource. Databricks then chooses the appropriate number of workers required to run your job.
+
+To set the minimum and the maximum number of workers your compute resource will autoscale between, use the **Min** and **Max** fields next to the **Worker type** dropdown.
+
+If you don't enable autoscaling, you must enter a fixed number of workers in the **Workers** field next to the **Worker type** dropdown.
+
+note
+
+When the compute resource is running, the compute details page displays the number of allocated workers. You can compare number of allocated workers with the worker configuration and make adjustments as needed.
+
+#### Benefits of autoscaling
+
+With autoscaling, Databricks dynamically reallocates workers to account for the characteristics of your job. Certain parts of your pipeline may be more computationally demanding than others, and Databricks automatically adds additional workers during these phases of your job (and removes them when they're no longer needed).
+
+Autoscaling makes it easier to achieve high utilization because you don't need to provision the compute to match a workload. This applies especially to workloads whose requirements change over time (like exploring a dataset during the course of a day), but it can also apply to a one-time shorter workload whose provisioning requirements are unknown. Autoscaling thus offers two advantages:
+
+- Workloads can run faster compared to a constant-sized under-provisioned compute resource.
+- Autoscaling can reduce overall costs compared to a statically-sized compute resource.
+
+Depending on the constant size of the compute resource and the workload, autoscaling gives you one or both of these benefits at the same time. The compute size can go below the minimum number of workers selected when the cloud provider terminates instances. In this case, Databricks continuously retries to re-provision instances in order to maintain the minimum number of workers.
+
+note
+
+Autoscaling is not available for `spark-submit` jobs.
+
+note
+
+Compute auto-scaling has limitations scaling down cluster size for Structured Streaming workloads. Databricks recommends using Lakeflow Declarative Pipelines with enhanced autoscaling for streaming workloads. See Optimize the cluster utilization of Lakeflow Declarative Pipelines with Autoscaling.
+
+#### How autoscaling behaves
+
+Workspace on the Premium plan or above use optimized autoscaling. Workspaces on the standard pricing plan use standard autoscaling.
+
+Optimized autoscaling has the following characteristics:
+
+- Scales up from min to max in 2 steps.
+- Can scale down, even if the compute resource is not idle, by looking at the shuffle file state.
+- Scales down based on a percentage of current nodes.
+- On job compute, scales down if the compute resource is underutilized over the last 40 seconds.
+- On all-purpose compute, scales down if the compute resource is underutilized over the last 150 seconds.
+- The `spark.databricks.aggressiveWindowDownS` Spark configuration property specifies in seconds how often the compute makes down-scaling decisions. Increasing the value causes the compute to scale down more slowly. The maximum value is 600.
+
+Standard autoscaling is used in standard plan workspaces. Standard autoscaling has the following characteristics:
+
+- Starts by adding 8 nodes. Then scales up exponentially, taking as many steps as required to reach the max.
+- Scales down when 90% of the nodes are not busy for 10 minutes and the compute has been idle for at least 30 seconds.
+- Scales down exponentially, starting with 1 node.
+
+#### Autoscaling with pools
+
+If you are attaching your compute resource to a pool, consider the following:
+
+- Make sure the compute size requested is less than or equal to the minimum number of idle instances in the pool. If it is larger, compute startup time will be equivalent to compute that doesn't use a pool.
+
+- Make sure the maximum compute size is less than or equal to the maximum capacity of the pool. If it is larger, the compute creation will fail.
+
+#### Autoscaling example
+
+If you reconfigure a static compute resource to autoscale, Databricks immediately resizes the compute resource within the minimum and maximum bounds and then starts autoscaling. As an example, the following table demonstrates what happens to a compute resource with a certain initial size if you reconfigure the compute resource to autoscale between 5 and 10 nodes.
+
+| Initial size | Size after reconfiguration |
+| --- | --- |
+| 6 | 6 |
+| 12 | 10 |
+| 3 | 5 |
+
+### Advanced performance settings
+
+The following setting appear under the **Advanced performance** section in the simple form compute UI.
+
+- Spot instances
+- Automatic termination
+- Driver type
+
+#### Spot instances
+
+You can specify whether to use spot instances by checking the **Use spot instance** checkbox under **Advanced performance**. See AWS spot pricing.
+
+The first instance will always be on-demand (the driver node is always on-demand) and subsequent instances will be spot instances.
+
+#### Automatic termination
+
+You can set auto termination for compute under the **Advanced performance** section. During compute creation, specify an inactivity period in minutes after which you want the compute resource to terminate.
+
+If the difference between the current time and the last command run on the compute resource is more than the inactivity period specified, Databricks automatically terminates that compute resource. For more information on compute termination, see Terminate a compute.
+
+#### Driver type
+
+You can select the driver type under the **Advanced performance** section. The driver node maintains state information of all notebooks attached to the compute resource. The driver node also maintains the SparkContext, interprets all the commands you run from a notebook or a library on the compute resource, and runs the Apache Spark master that coordinates with the Spark executors.
+
+The default value of the driver node type is the same as the worker node type. You can choose a larger driver node type with more memory if you are planning to `collect()` a lot of data from Spark workers and analyze them in the notebook.
+
+tip
+
+Since the driver node maintains all of the state information of the notebooks attached, make sure to detach unused notebooks from the driver node.
+
+## Tags
+
+Tags allow you to easily monitor the cost of compute resources used by various groups in your organization. Specify tags as key-value pairs when you create compute, and Databricks applies these tags to cloud resources like VMs and disk volumes, as well as the Databricks usage logs.
+
+For compute launched from pools, the custom tags are only applied to DBU usage reports and do not propagate to cloud resources.
+
+For detailed information about how pool and compute tag types work together, see Use tags to attribute and track usage
+
+To add tags to your compute resource:
+
+1. In the **Tags** section, add a key-value pair for each custom tag.
+2. Click **Add**.
+
+## Advanced settings
+
+The following settings appear under the **Advanced** section of the simple form compute UI:
+
+- Access modes
+- Instance profiles
+- Availability zones
+- Enable autoscaling local storage
+- EBS volumes
+- Local disk encryption
+- Spark configuration
+- Environment variables
+- Compute log delivery
+
+### Access modes
+
+Access mode is a security feature that determines who can use the compute resource and the data they can access using the compute resource. Every compute resource in Databricks has an access mode. Access mode settings are found under the **Advanced** section of the simple form compute UI.
+
+Access mode selection is **Auto** by default, meaning the access mode is automatically chosen for you based on your selected Databricks Runtime. Auto defaults to **Standard** unless a machine learning runtime or a Databricks Runtimes lower than 14.3 is selected, in which case **Dedicated** is used.
+
+Databricks recommends that you use standard access mode unless your required functionality is not supported.
+
+| Access Mode | Description | Supported Languages |
+| --- | --- | --- |
+| Standard | Can be used by multiple users with data isolation among users. | Python, SQL, Scala |
+| Dedicated | Can be assigned to and used by a single user or group. | Python, SQL, Scala, R |
+
+For detailed information about the functionality support for each of these access modes, see Standard compute requirements and limitations and Dedicated compute requirements and limitations.
+
+note
+
+In Databricks Runtime 13.3 LTS and above, init scripts and libraries are supported by all access modes. Requirements and levels of support vary. See Where can init scripts be installed? and Compute-scoped libraries.
+
+### Instance profiles
+
+note
+
+Databricks recommends using Unity Catalog external locations to connect to S3 instead of instance profiles. Unity Catalog simplifies the security and governance of your data by providing a central place to administer and audit data access across multiple workspaces in your account. See Connect to cloud object storage using Unity Catalog.
+
+To securely access AWS resources without using AWS keys, you can launch Databricks compute with instance profiles. See Tutorial: Configure S3 access with an instance profile for information about how to create and configure instance profiles. Once you have created an instance profile, you select it in the **Instance Profile** drop-down list.
+
+After you launch your compute resource, verify that you can access the S3 bucket using the following command. If the command succeeds, that compute resource can access the S3 bucket.
+
+Python
+
+```codeBlockLines_OxEI
+ dbutils.fs.ls("s3a://<s3-bucket-name>/")
+
+```
+
+warning
+
+Once a compute resource launches with an instance profile, anyone who has attach permissions to this compute resource can access the underlying resources controlled by this role. To guard against unwanted access, use Compute permissions to restrict permissions to the compute resource.
+
+### Availability zones
+
+To find the availability zone setting, open the **Advanced** section and click the **Instances** tab. This setting lets you specify which availability zone (AZ) you want the compute resource to use. By default, this setting is set to **auto**, where the AZ is automatically selected based on available IPs in the workspace subnets. Auto-AZ retries in other availability zones if AWS returns insufficient capacity errors.
+
+Auto-AZ works only at compute startup. After the compute resource launches, all the nodes stay in the original availability zone until the compute resource is terminated or restarted.
+
+Choosing a specific AZ for the compute resource is useful primarily if your organization has purchased reserved instances in specific availability zones. Read more about AWS availability zones in the AWS documentation.
+
+note
+
+**HA** (high availability zone) is a deprecated AZ setting. HA resolves to **auto** in the background.
+
+### Enable autoscaling local storage
+
+To configure **Enable autoscaling local storage**, open the **Advanced** section and click the **Instances** tab.
+
+If you don't want to allocate a fixed number of EBS volumes at compute creation time, use autoscaling local storage. With autoscaling local storage, Databricks monitors the amount of free disk space available on your compute's Spark workers. If a worker begins to run too low on disk, Databricks automatically attaches a new EBS volume to the worker before it runs out of disk space. EBS volumes are attached up to a limit of 5 TB of total disk space per instance (including the instance's local storage).
+
+The EBS volumes attached to an instance are detached only when the instance is returned to AWS. That is, EBS volumes are never detached from an instance as long as it is part of a running compute. To scale down EBS usage, Databricks recommends using this feature in compute configured with autoscaling compute or automatic termination.
+
+note
+
+Databricks uses Amazon EBS GP3 volumes to extend the local storage of an instance. The default AWS capacity limit for these volumes is 50 TiB. To avoid hitting this limit, administrators should request an increase in this limit based on their usage requirements.
+
+### EBS volumes
+
+This section describes the default EBS volume settings for worker nodes, how to add shuffle volumes, and how to configure compute so that Databricks automatically allocates EBS volumes.
+
+To configure EBS volumes, your compute must not be enabled for autoscaling local storage. Click the **Instances** tab under **Advanced** in the compute configuration and select an option in the **EBS Volume Type** dropdown list.
+
+#### Default EBS volumes
+
+Databricks provisions EBS volumes for every worker node as follows:
+
+- A 30 GB encrypted EBS instance root volume used by the host operating system and Databricks internal services.
+- A 150 GB encrypted EBS container root volume used by the Spark worker. This hosts Spark services and logs.
+- (HIPAA only) a 75 GB encrypted EBS worker log volume that stores logs for Databricks internal services.
+
+#### Add EBS shuffle volumes
+
+To add shuffle volumes, select **General Purpose SSD** in the **EBS Volume Type** dropdown list.
+
+By default, Spark shuffle outputs go to the instance local disk. For instance types that do not have a local disk, or if you want to increase your Spark shuffle storage space, you can specify additional EBS volumes.
+This is particularly useful to prevent out-of-disk space errors when you run Spark jobs that produce large shuffle outputs.
+
+Databricks encrypts these EBS volumes for both on-demand and spot instances. Read more about AWS EBS volumes.
+
+#### Optionally encrypt Databricks EBS volumes with a customer-managed key
+
+Optionally, you can encrypt compute EBS volumes with a customer-managed key.
+
+See Customer-managed keys for encryption.
+
+#### AWS EBS limits
+
+Ensure that your AWS EBS limits are high enough to satisfy the runtime requirements for all workers in all your deployed compute.
+For information on the default EBS limits and how to change them, see Amazon Elastic Block Store (EBS) Limits.
+
+#### AWS EBS SSD volume type
+
+Select either gp2 or gp3 for your AWS EBS SSD volume type. To do this, see Manage SSD storage. Databricks recommends you switch to gp3 for its cost savings compared to gp2.
+
+note
+
+By default, the Databricks configuration sets the gp3 volume's IOPS and throughput IOPS to match the maximum performance of a gp2 volume with the same volume size.
+
+For technical information about gp2 and gp3, see Amazon EBS volume types.
+
+### Local disk encryption
+
+Preview
+
+This feature is in Public Preview.
+
+Some instance types you use to run compute may have locally attached disks. Databricks may store shuffle data or ephemeral data on these locally attached disks. To ensure that all data at rest is encrypted for all storage types, including shuffle data that is stored temporarily on your compute resource's local disks, you can enable local disk encryption.
+
+important
+
+Your workloads may run more slowly because of the performance impact of reading and writing encrypted data to and from local volumes.
+
+When local disk encryption is enabled, Databricks generates an encryption key locally that is unique to each compute node and is used to encrypt all data stored on local disks. The scope of the key is local to each compute node and is destroyed along with the compute node itself. During its lifetime, the key resides in memory for encryption and decryption and is stored encrypted on the disk.
+
+To enable local disk encryption, you must use the Clusters API. During compute creation or edit, set `enable_local_disk_encryption` to `true`.
+
+### Spark configuration
+
+To fine-tune Spark jobs, you can provide custom Spark configuration properties.
+
+1. On the compute configuration page, click the **Advanced** toggle.
+
+2. Click the **Spark** tab.
+
+In **Spark config**, enter the configuration properties as one key-value pair per line.
+
+When you configure compute using the Clusters API, set Spark properties in the `spark_conf` field in the create cluster API or Update cluster API.
+
+To enforce Spark configurations on compute, workspace admins can use compute policies.
+
+#### Retrieve a Spark configuration property from a secret
+
+Databricks recommends storing sensitive information, such as passwords, in a secret instead of plaintext. To reference a secret in the Spark configuration, use the following syntax:
+
+ini
+
+```codeBlockLines_OxEI
+spark.<property-name> {{secrets/<scope-name>/<secret-name>}}
+
+```
+
+For example, to set a Spark configuration property called `password` to the value of the secret stored in `secrets/acme_app/password`:
+
+ini
+
+```codeBlockLines_OxEI
+spark.password {{secrets/acme-app/password}}
+
+```
+
+For more information, see Manage secrets.
+
+### Environment variables
+
+Configure custom environment variables that you can access from init scripts running on the compute resource. Databricks also provides predefined environment variables that you can use in init scripts. You cannot override these predefined environment variables.
+
+1. On the compute configuration page, click the **Advanced** toggle.
+
+2. Click the **Spark** tab.
+
+3. Set the environment variables in the **Environment variables** field.
+
+You can also set environment variables using the `spark_env_vars` field in the Create cluster API or Update cluster API.
+
+### Compute log delivery
+
+When you create an all-purpose or jobs compute, you can specify a location to deliver the cluster logs for the Spark driver node, worker nodes, and events. Logs are delivered every five minutes and archived hourly in your chosen destination. Databricks will deliver all logs generated up until the compute resource is terminated.
+
+To configure the log delivery location:
+
+1. On the compute page, click the **Advanced** toggle.
+2. Click the **Logging** tab.
+3. Select a destination type.
+4. Enter the **Log path**.
+
+To store the logs, Databricks creates a subfolder in your chosen log path named after the compute's `cluster_id`.
+
+For example, if the specified log path is `/Volumes/catalog/schema/volume`, logs for `06308418893214` are delivered to
+`/Volumes/catalog/schema/volume/06308418893214`.
+
+note
+
+Delivering logs to volumes is in Public Preview and is only supported on Unity Catalog-enabled compute with **Standard** access mode or **Dedicated** access mode assigned to a user. This feature is not supported on compute with **Dedicated** access mode assigned to a group. If you select a volume as the path, ensure you have the `READ VOLUME` and `WRITE VOLUME` permissions on the volume. See Privileges for Unity Catalog volumes.
+
+#### S3 bucket destinations
+
+If you choose an S3 destination, you must configure the compute resource with an instance profile that can access the bucket.
+This instance profile must have both the `PutObject` and `PutObjectAcl` permissions. An example instance profile
+has been included for your convenience. See Tutorial: Configure S3 access with an instance profile for instructions on how to set up an instance profile.
+
+JSON
+
+```codeBlockLines_OxEI
+{
+  "Version": "2012-10-17",
+  "Statement": [\
+    {\
+      "Effect": "Allow",\
+      "Action": ["s3:ListBucket"],\
+      "Resource": ["arn:aws:s3:::<my-s3-bucket>"]\
+    },\
+    {\
+      "Effect": "Allow",\
+      "Action": ["s3:PutObject", "s3:PutObjectAcl", "s3:GetObject", "s3:DeleteObject"],\
+      "Resource": ["arn:aws:s3:::<my-s3-bucket>/*"]\
+    }\
+  ]
+}
+
+```
+
+note
+
+This feature is also available in the REST API. See the Clusters API.
+
+#### MLflow Models Documentation
+[Skip to main content](https://docs.databricks.com/aws/en/mlflow/models#__docusaurus_skipToContent_fallback)
+
+On this page
+
+An MLflow Model is a standard format for packaging machine learning models that can be used in a variety of downstream tools—for example, batch inference on Apache Spark or real-time serving through a REST API. The format defines a convention that lets you save a model in different flavors (python-function, pytorch, sklearn, and so on), that can be understood by different model serving and inference platforms.
+
+To learn how to log and score a streaming model, see How to save and load a streaming model.
+
+MLflow 3 introduces significant enhancements to MLflow models by introducing a new, dedicated `LoggedModel` object with its own metadata such as metrics and parameters. For more details, see Track and compare models using MLflow Logged Models.
+
+## Log and load models
+
+When you log a model, MLflow automatically logs `requirements.txt` and `conda.yaml` files. You can use these files to recreate the model development environment and reinstall dependencies using `virtualenv` (recommended) or `conda`.
+
+important
+
+Anaconda Inc. updated their terms of service for anaconda.org channels. Based on the new terms of service you may require a commercial license if you rely on Anaconda's packaging and distribution. See Anaconda Commercial Edition FAQ for more information. Your use of any Anaconda channels is governed by their terms of service.
+
+MLflow models logged before v1.18 (Databricks Runtime 8.3 ML or earlier) were by default logged with the conda `defaults` channel ( https://repo.anaconda.com/pkgs/) as a dependency. Because of this license change, Databricks has stopped the use of the `defaults` channel for models logged using MLflow v1.18 and above. The default channel logged is now `conda-forge`, which points at the community managed https://conda-forge.org/.
+
+If you logged a model before MLflow v1.18 without excluding the `defaults` channel from the conda environment for the model, that model may have a dependency on the `defaults` channel that you may not have intended.
+To manually confirm whether a model has this dependency, you can examine `channel` value in the `conda.yaml` file that is packaged with the logged model. For example, a model's `conda.yaml` with a `defaults` channel dependency may look like this:
+
+YAML
+
+```codeBlockLines_OxEI
+channels:
+- defaults
+dependencies:
+- python=3.8.8
+- pip
+- pip:
+    - mlflow
+    - scikit-learn==0.23.2
+    - cloudpickle==1.6.0
+      name: mlflow-env
+
+```
+
+Because Databricks can not determine whether your use of the Anaconda repository to interact with your models is permitted under your relationship with Anaconda, Databricks is not forcing its customers to make any changes. If your use of the Anaconda.com repo through the use of Databricks is permitted under Anaconda's terms, you do not need to take any action.
+
+If you would like to change the channel used in a model's environment, you can re-register the model to the model registry with a new `conda.yaml`. You can do this by specifying the channel in the `conda_env` parameter of `log_model()`.
+
+For more information on the `log_model()` API, see the MLflow documentation for the model flavor you are working with, for example, log_model for scikit-learn.
+
+For more information on `conda.yaml` files, see the MLflow documentation.
+
+### API commands
+
+To log a model to the MLflow tracking server, use `mlflow.<model-type>.log_model(model, ...)`.
+
+To load a previously logged model for inference or further development, use `mlflow.<model-type>.load_model(modelpath)`, where `modelpath` is one of the following:
+
+- a model path (such as `models:/{model_id}`) ( MLflow 3 only)
+- a run-relative path (such as `runs:/{run_id}/{model-path}`)
+- a Unity Catalog volumes path (such as `dbfs:/Volumes/catalog_name/schema_name/volume_name/{path_to_artifact_root}/{model_path}`)
+- an MLflow-managed artifact storage path beginning with `dbfs:/databricks/mlflow-tracking/`
+- a registered model path (such as `models:/{model_name}/{model_stage}`).
+
+For a complete list of options for loading MLflow models, see Referencing Artifacts in the MLflow documentation.
+
+For Python MLflow models, an additional option is to use `mlflow.pyfunc.load_model()` to load the model as a generic Python function.
+
+You can use the following code snippet to load the model and score data points.
+
+Python
+
+```codeBlockLines_OxEI
+model = mlflow.pyfunc.load_model(model_path)
+model.predict(model_input)
+
+```
+
+As an alternative, you can export the model as an Apache Spark UDF to use for scoring on a Spark cluster,
+either as a batch job or as a real-time Spark Streaming job.
+
+Python
+
+```codeBlockLines_OxEI
+# load input data table as a Spark DataFrame
+input_data = spark.table(input_table_name)
+model_udf = mlflow.pyfunc.spark_udf(spark, model_path)
+df = input_data.withColumn("prediction", model_udf())
+
+```
+
+### Log model dependencies
+
+To accurately load a model, you should make sure the model dependencies are loaded with the correct versions into the notebook environment. In Databricks Runtime 10.5 ML and above, MLflow warns you if a mismatch is detected between the current environment and the model's dependencies.
+
+Additional functionality to simplify restoring model dependencies is included in Databricks Runtime 11.0 ML and above. In Databricks Runtime 11.0 ML and above, for `pyfunc` flavor models, you can call `mlflow.pyfunc.get_model_dependencies` to retrieve and download the model dependencies. This function returns a path to the dependencies file which you can then install by using `%pip install <file-path>`. When you load a model as a PySpark UDF, specify `env_manager="virtualenv"` in the `mlflow.pyfunc.spark_udf` call. This restores model dependencies in the context of the PySpark UDF and does not affect the outside environment.
+
+You can also use this functionality in Databricks Runtime 10.5 or below by manually installing MLflow version 1.25.0 or above:
+
+Python
+
+```codeBlockLines_OxEI
+%pip install "mlflow>=1.25.0"
+
+```
+
+For additional information on how to log model dependencies (Python and non-Python) and artifacts, see Log model dependencies.
+
+Learn how to log model dependencies and custom artifacts for model serving:
+
+- Deploy models with dependencies
+- Use custom Python libraries with Model Serving
+- Package custom artifacts for Model Serving
+
+- Log model dependencies
+- Databricks Autologging
+
+### Automatically generated code snippets in the MLflow UI
+
+When you log a model in a Databricks notebook, Databricks automatically generates code snippets that you can copy and use to load and run the model. To view these code snippets:
+
+1. Navigate to the Runs screen for the run that generated the model. (See View notebook experiment for how to display the Runs screen.)
+2. Scroll to the **Artifacts** section.
+3. Click the name of the logged model. A panel opens to the right showing code you can use to load the logged model and make predictions on Spark or pandas DataFrames.
+
+### Examples
+
+For examples of logging models, see the examples in Track machine learning training runs examples.
+
+## Register models in the Model Registry
+
+You can register models in the MLflow Model Registry, a centralized model store that provides a UI and set of APIs to manage the full lifecycle of MLflow Models. For instructions on how to use the Model Registry to manage models in Databricks Unity Catalog, see Manage model lifecycle in Unity Catalog. To use the Workspace Model Registry, see Manage model lifecycle using the Workspace Model Registry (legacy).
+
+When models created with MLflow 3 are registered to the Unity Catalog model registry, you can view data such as parameters and metrics in one central location, across all experiments and workspaces. For information, see Model Registry improvements with MLflow 3.
+
+To register a model using the API, use the following command:
+
+- MLflow 3
+- MLflow 2.x
+
+Python
+
+```codeBlockLines_OxEI
+mlflow.register_model("models:/{model_id}", "{registered_model_name}")
+
+```
+
+Python
+
+```codeBlockLines_OxEI
+mlflow.register_model("runs:/{run_id}/{model-path}", "{registered-model-name}")
+
+```
+
+## Save models to Unity Catalog volumes
+
+To save a model locally, use `mlflow.<model-type>.save_model(model, modelpath)`. `modelpath` must be a Unity Catalog volumes path. For example, if you use a Unity Catalog volumes location `dbfs:/Volumes/catalog_name/schema_name/volume_name/my_project_models` to store your project work, you must use the model path `/dbfs/Volumes/catalog_name/schema_name/volume_name/my_project_models`:
+
+Python
+
+```codeBlockLines_OxEI
+modelpath = "/dbfs/Volumes/catalog_name/schema_name/volume_name/my_project_models/model-%f-%f" % (alpha, l1_ratio)
+mlflow.sklearn.save_model(lr, modelpath)
+
+```
+
+For MLlib models, use ML Pipelines.
+
+## Download model artifacts
+
+You can download the logged model artifacts (such as model files, plots, and metrics) for a registered model with various APIs.
+
+Python API example:
+
+Python
+
+```codeBlockLines_OxEI
+mlflow.set_registry_uri("databricks-uc")
+mlflow.artifacts.download_artifacts(f"models:/{model_name}/{model_version}")
+
+```
+
+Java API example:
+
+Java
+
+```codeBlockLines_OxEI
+MlflowClient mlflowClient = new MlflowClient();
+// Get the model URI for a registered model version.
+String modelURI = mlflowClient.getModelVersionDownloadUri(modelName, modelVersion);
+
+// Or download the model artifacts directly.
+File modelFile = mlflowClient.downloadModelVersion(modelName, modelVersion);
+
+```
+
+CLI command example:
+
+```codeBlockLines_OxEI
+mlflow artifacts download --artifact-uri models:/<name>/<version|stage>
+
+```
+
+## Deploy models for online serving
+
+note
+
+Prior to deploying your model, it is beneficial to verify that the model is capable of being served. See the MLflow documentation for how you can use `mlflow.models.predict` to validate models before deployment.
+
+Use Mosaic AI Model Serving to host machine learning models registered in Unity Catalog model registry as REST endpoints. These endpoints are updated automatically based on the availability of model versions.
+
+- Log and load models
+  - API commands
+  - Log model dependencies
+  - Automatically generated code snippets in the MLflow UI
+  - Examples
+- Register models in the Model Registry
+- Save models to Unity Catalog volumes
+- Download model artifacts
+- Deploy models for online serving
+
+#### Access Control Lists Documentation
+[Skip to main content](https://docs.databricks.com/aws/en/security/auth/access-control/#__docusaurus_skipToContent_fallback)
+
+On this page
+
+This page describes details about the permissions available for the different workspace objects.
+
+note
+
+Access control requires the Premium plan or above.
+
+Access control settings are disabled by default on workspaces that are upgraded from the Standard plan to the Premium plan or above. Once an access control setting is enabled, it can not be disabled. For more information, see Access controls lists can be enabled on upgraded workspaces.
+
+## Access control lists overview
+
+In Databricks, you can use access control lists (ACLs) to configure permission to access workspace level objects. Workspace admins have the CAN MANAGE permission on all objects in their workspace, which gives them the ability to manage permissions on all objects in their workspaces. Users automatically have the CAN MANAGE permission for objects that they create.
+
+For an example of how to map typical personas to workspace-level permissions, see the Proposal for Getting Started With Databricks Groups and Permissions.
+
+### Manage access control lists with folders
+
+You can manage workspace object permissions by adding objects to folders. Objects in a folder inherit all permissions settings of that folder. For example, a user that has the CAN RUN permission on a folder has CAN RUN permission on the alerts in that folder.
+
+If you grant a user access to an object inside the folder, they can view the parent folder's name, even if they do not have permissions on the parent folder. For example, a notebook named `test1.py` is in a folder named `Workflows`. If you grant a user CAN VIEW on `test1.py` and no permissions on `Workflows`, the user can see that the parent folder is named `Workflows`. The user cannot view or access any other objects in the `Workflows` folder unless they have been granted permissions on them.
+
+To learn about organizing objects into folders, see Workspace browser.
+
+## Alerts ACLs
+
+| Ability | NO PERMISSIONS | CAN RUN | CAN MANAGE |
+| --- | --- | --- | --- |
+| See in alert list |  | x | x |
+| View alert and result |  | x | x |
+| Manually trigger alert run |  | x | x |
+| Subscribe to notifications |  | x | x |
+| Edit alert |  |  | x |
+| Modify permissions |  |  | x |
+| Delete alert |  |  | x |
+
+## Compute ACLs
+
+important
+
+On compute resources that use the legacy access mode **No isolation shared**, users with CAN ATTACH TO permissions can view the service account
+keys in the log4j file. Use caution when granting this permission. For more detail on this mode and how to restrict it, see What are no isolation shared clusters?.
+
+| Ability | NO PERMISSIONS | CAN ATTACH TO | CAN RESTART | CAN MANAGE |
+| --- | --- | --- | --- | --- |
+| Attach notebook to compute |  | x | x | x |
+| View Spark UI |  | x | x | x |
+| View compute metrics |  | x | x | x |
+| Terminate compute |  |  | x | x |
+| Start and restart compute |  |  | x | x |
+| View driver logs |  |  |  | x [(see note)](https://docs.databricks.com/aws/en/security/auth/access-control/#log-access-note) |
+| Edit compute |  |  |  | x |
+| Attach library to compute |  |  |  | x |
+| Resize compute |  |  |  | x |
+| Modify permissions |  |  |  | x |
+
+note
+
+Secrets are not redacted from a cluster's Spark driver log `stdout` and `stderr` streams. To protect sensitive data, by default, Spark driver logs are viewable only by users with CAN MANAGE permission on job, dedicated access mode, and standard access mode clusters. To allow users with CAN ATTACH TO or CAN RESTART permission to view the logs on these clusters, set the following Spark configuration property in the cluster configuration: `spark.databricks.acl.needAdminPermissionToViewLogs false`.
+
+On No Isolation Shared access mode clusters, the Spark driver logs can be viewed by users with CAN ATTACH TO, CAN RESTART, or CAN MANAGE permission. To limit who can read the logs to only users with the CAN MANAGE permission, set `spark.databricks.acl.needAdminPermissionToViewLogs` to `true`.
+
+See Spark configuration to learn how to add Spark properties to a cluster configuration.
+
+## Dashboard ACLs
+
+| Ability | NO PERMISSIONS | CAN VIEW/CAN RUN | CAN EDIT | CAN MANAGE |
+| --- | --- | --- | --- | --- |
+| View dashboard and results |  | x | x | x |
+| Interact with widgets |  | x | x | x |
+| Refresh the dashboard |  | x | x | x |
+| Edit dashboard |  |  | x | x |
+| Clone dashboard |  | x | x | x |
+| Publish dashboard snapshot |  |  | x | x |
+| Modify permissions |  |  |  | x |
+| Delete dashboard |  |  |  | x |
+
+## Legacy dashboard ACLs
+
+| Ability | NO PERMISSIONS | CAN VIEW | CAN RUN | CAN EDIT | CAN MANAGE |
+| --- | --- | --- | --- | --- | --- |
+| See in dashboard list |  | x | x | x | x |
+| View dashboard and results |  | x | x | x | x |
+| Refresh query results in the dashboard (or choose different parameters) |  |  | x | x | x |
+| Edit dashboard |  |  |  | x | x |
+| Modify permissions |  |  |  |  | x |
+| Delete dashboard |  |  |  |  | x |
+
+Editing a legacy dashboard requires the **Run as viewer** sharing setting. See Refresh behavior and execution context.
+
+## Database instance ACLs
+
+| Ability | NO PERMISSIONS | CAN CREATE | CAN USE | CAN MANAGE |
+| --- | --- | --- | --- | --- |
+| Get database instance |  | x | x | x |
+| List database instances |  | x | x | x |
+| Create database instance |  | x | x | x |
+| Create synced table |  |  | x | x |
+| Create Unity Catalog database catalog |  |  |  | x |
+| Modify Postgres roles |  |  |  | x |
+| Delete database instance |  |  |  | x |
+| Modify permissions |  |  |  | x |
+| Pause database instance |  |  |  | x |
+| Resume database instance |  |  |  | x |
+
+note
+
+- All workspace users inherit the **CAN CREATE** permission.
+- When performing operations that interact withUnity Catalogyou need to have permissions on theUnity Catalogobject:
+  - **Create Unity Catalog database catalog**: Requires **CREATE CATALOG** on the Unity Catalog metastore.
+  - **Create synced table**: Requires Unity Catalog permissions to read the source table, write to the destination schema, and write to the pipeline storage schema.
+
+## Lakeflow Declarative Pipelines ACLs
+
+| Ability | NO PERMISSIONS | CAN VIEW | CAN RUN | CAN MANAGE | IS OWNER |
+| --- | --- | --- | --- | --- | --- |
+| View pipeline details and list pipeline |  | x | x | x | x |
+| View Spark UI and driver logs |  | x | x | x | x |
+| Start and stop a pipeline update |  |  | x | x | x |
+| Stop pipeline clusters directly |  |  | x | x | x |
+| Edit pipeline settings |  |  |  | x | x |
+| Delete the pipeline |  |  |  | x | x |
+| Purge runs and experiments |  |  |  | x | x |
+| Modify permissions |  |  |  | x | x |
+
+## Feature tables ACLs
+
+This table describes how to control access to feature tables in workspaces that are not enabled for Unity Catalog. If your workspace is enabled for Unity Catalog, use Unity Catalog privileges instead.
+
+note
+
+- Feature Store access control does not govern access to the underlying Delta table, which is governed by table access control.
+- For more information about workspace feature table permissions, see Control access to feature tables in Workspace Feature Store (legacy).
+
+| Ability | CAN VIEW METADATA | CAN EDIT METADATA | CAN MANAGE |
+| --- | --- | --- | --- |
+| Read feature table | X | X | X |
+| Search feature table | X | X | X |
+| Publish feature table to online store | X | X | X |
+| Write features to feature table |  | X | X |
+| Update description of feature table |  | X | X |
+| Modify permissions |  |  | X |
+| Delete feature table |  |  | X |
+
+## File ACLs
+
+| Ability | NO PERMISSIONS | CAN VIEW | CAN RUN | CAN EDIT | CAN MANAGE |
+| --- | --- | --- | --- | --- | --- |
+| Read file |  | x | x | x | x |
+| Comment |  | x | x | x | x |
+| Attach and detach file |  |  | x | x | x |
+| Run file interactively |  |  | x | x | x |
+| Edit file |  |  |  | x | x |
+| Modify permissions |  |  |  |  | x |
+
+note
+
+The workspace UI refers to view-only access as CAN VIEW, while the Permissions API uses CAN READ to represent the same level of access.
+
+## Folder ACLs
+
+| Ability | NO PERMISSIONS | CAN VIEW | CAN EDIT | CAN RUN | CAN MANAGE |
+| --- | --- | --- | --- | --- | --- |
+| List objects in folder | x | x | x | x | x |
+| View objects in folder |  | x | x | x | x |
+| Clone and export items |  |  | x | x | x |
+| Run objects in the folder |  |  |  | x | x |
+| Create, import, and delete items |  |  |  |  | x |
+| Move and rename items |  |  |  |  | x |
+| Modify permissions |  |  |  |  | x |
+
+note
+
+The workspace UI refers to view-only access as CAN VIEW, while the Permissions API uses CAN READ to represent the same level of access.
+
+## Genie space ACLs
+
+| Ability | NO PERMISSIONS | CAN VIEW/CAN RUN | CAN EDIT | CAN MANAGE |
+| --- | --- | --- | --- | --- |
+| See in Genie space list |  | x | x | x |
+| Ask Genie questions |  | x | x | x |
+| Provide response feedback |  | x | x | x |
+| Add or edit Genie instructions |  |  | x | x |
+| Add or edit sample questions |  |  | x | x |
+| Add or remove included tables |  |  | x | x |
+| Monitor a space |  |  |  | x |
+| Modify permissions |  |  |  | x |
+| Delete space |  |  |  | x |
+| View other users' conversations |  |  |  | x |
+
+## Git folder ACLs
+
+| Ability | NO PERMISSIONS | CAN READ | CAN RUN | CAN EDIT | CAN MANAGE |
+| --- | --- | --- | --- | --- | --- |
+| List assets in a folder | x | x | x | x | x |
+| View assets in a folder |  | x | x | x | x |
+| Clone and export assets |  | x | x | x | x |
+| Run executable assets in folder |  |  | x | x | x |
+| Edit and rename assets in a folder |  |  |  | x | x |
+| Create a branch in a folder |  |  |  |  | x |
+| Switch branches in a folder |  |  |  |  | x |
+| Pull or push a branch into a folder |  |  |  |  | x |
+| Create, import, delete, and move assets |  |  |  |  | x |
+| Modify permissions |  |  |  |  | x |
+
+## Job ACLs
+
+| Ability | NO PERMISSIONS | CAN VIEW | CAN MANAGE RUN | IS OWNER | CAN MANAGE |
+| --- | --- | --- | --- | --- | --- |
+| View job details and settings |  | x | x | x | x |
+| View results |  | x | x | x | x |
+| View Spark UI, logs of a job run |  |  | x | x | x |
+| Run now |  |  | x | x | x |
+| Cancel run |  |  | x | x | x |
+| Edit job settings |  |  |  | x | x |
+| Delete job |  |  |  | x | x |
+| Modify permissions |  |  |  | x | x |
+
+note
+
+- The creator of a job has the IS OWNER permission by default.
+
+- A job cannot have more than one owner.
+
+- A group cannot be assigned the Is Owner permission as an owner.
+
+- Jobs triggered through **Run Now** assume the permissions of the job owner and not the user who issued **Run Now**.
+
+- Jobs access control applies to jobs displayed in the Lakeflow Jobs UI and their runs. It doesn't apply to:
+  - Notebook workflows that run modular or linked code. These use the permissions of the notebook itself. If the notebook comes from Git, a new copy is created and its files inherit the permissions of the user who triggered the run.
+
+- Jobs submitted by API. These use the notebook's default permissions unless you explicitly set the `access_control_list` in the API request.
+
+## MLflow experiment ACLs
+
+MLflow experiment ACLs are different for notebook experiments and workspace experiments. Notebook experiments cannot be managed independently of the notebook that created them, so the permissions are similar to notebook permissions.
+
+To learn more about the two types of experiments, see Organize training runs with MLflow experiments.
+
+### ACLs for notebook experiments
+
+Changing these permissions also modifies the permissions on the notebook that corresponds to the experiment.
+
+| Ability | NO PERMISSIONS | CAN READ | CAN RUN | CAN EDIT | CAN MANAGE |
+| --- | --- | --- | --- | --- | --- |
+| View notebook |  | x | x | x | x |
+| Comment on notebook |  | x | x | x | x |
+| Attach/detach notebook to compute |  |  | x | x | x |
+| Run commands in the notebook |  |  | x | x | x |
+| Edit notebook |  |  |  | x | x |
+| Modify permissions |  |  |  |  | x |
+
+### ACLs for workspace experiments
+
+| Ability | NO PERMISSIONS | CAN READ | CAN EDIT | CAN MANAGE |
+| --- | --- | --- | --- | --- |
+| View experiment |  | x | x | x |
+| Log runs to the experiment |  |  | x | x |
+| Edit the experiment |  |  | x | x |
+| Delete the experiment |  |  |  | x |
+| Modify permissions |  |  |  | x |
+
+## MLflow model ACLs
+
+This table describes how to control access to registered models in workspaces that are not enabled for Unity Catalog. If your workspace is enabled for Unity Catalog, use Unity Catalog privileges instead.
+
+| Ability | NO PERMISSIONS | CAN READ | CAN EDIT | CAN MANAGE STAGING VERSIONS | CAN MANAGE PRODUCTION VERSIONS | CAN MANAGE |
+| --- | --- | --- | --- | --- | --- | --- |
+| View model details, versions, stage transition requests, activities, and artifact download URIs |  | x | x | x | x | x |
+| Request a model version stage transition |  | x | x | x | x | x |
+| Add a version to a model |  |  | x | x | x | x |
+| Update model and version description |  |  | x | x | x | x |
+| Add or edit tags |  |  | x | x | x | x |
+| Transition model version between stages |  |  |  | x | x | x |
+| Approve a transition request |  |  |  | x | x | x |
+| Cancel a transition request |  |  |  |  |  | x |
+| Rename model |  |  |  |  |  | x |
+| Modify permissions |  |  |  |  |  | x |
+| Delete model and model versions |  |  |  |  |  | x |
+
+## Notebook ACLs
+
+| Ability | NO PERMISSIONS | CAN VIEW | CAN RUN | CAN EDIT | CAN MANAGE |
+| --- | --- | --- | --- | --- | --- |
+| View cells |  | x | x | x | x |
+| Comment |  | x | x | x | x |
+| Run using %run or notebook workflows |  | x | x | x | x |
+| Attach and detach notebooks |  |  | x | x | x |
+| Run commands |  |  | x | x | x |
+| Edit cells |  |  |  | x | x |
+| Modify permissions |  |  |  |  | x |
+
+note
+
+The workspace UI refers to view-only access as CAN VIEW, while the Permissions API uses CAN READ to represent the same level of access.
+
+## Pool ACLs
+
+| Ability | NO PERMISSIONS | CAN ATTACH TO | CAN MANAGE |
+| --- | --- | --- | --- |
+| Attach cluster to pool |  | x | x |
+| Delete pool |  |  | x |
+| Edit pool |  |  | x |
+| Modify permissions |  |  | x |
+
+## Query ACLs
+
+| Ability | NO PERMISSIONS | CAN VIEW | CAN RUN | CAN EDIT | CAN MANAGE |
+| --- | --- | --- | --- | --- | --- |
+| View own queries |  | x | x | x | x |
+| See in query list |  | x | x | x | x |
+| View query text |  | x | x | x | x |
+| View query result |  | x | x | x | x |
+| Refresh query result (or choose different parameters) |  |  | x | x | x |
+| Include the query in a dashboard |  |  | x | x | x |
+| Change SQL warehouse or data source |  |  | x | x | x |
+| Edit query text |  |  |  | x | x |
+| Modify permissions |  |  |  |  | x |
+| Delete query |  |  |  |  | x |
+
+## Legacy SQL editor query ACLs
+
+| Ability | NO PERMISSIONS | CAN VIEW | CAN RUN | CAN EDIT | CAN MANAGE |
+| --- | --- | --- | --- | --- | --- |
+| View own queries |  | x | x | x | x |
+| See in query list |  | x | x | x | x |
+| View query text |  | x | x | x | x |
+| View query result |  | x | x | x | x |
+| Refresh query result (or choose different parameters) |  |  | x | x | x |
+| Include the query in a dashboard |  |  | x | x | x |
+| Edit query text |  |  |  | x | x |
+| Change SQL warehouse or data source |  |  |  |  | x |
+| Modify permissions |  |  |  |  | x |
+| Delete query |  |  |  |  | x |
+
+## Secret ACLs
+
+| Ability | READ | WRITE | MANAGE |
+| --- | --- | --- | --- |
+| Read the secret scope | x | x | x |
+| List secrets in the scope | x | x | x |
+| Write to the secret scope |  | x | x |
+| Modify permissions |  |  | x |
+
+## Serving endpoint ACLs
+
+| Ability | NO PERMISSIONS | CAN VIEW | CAN QUERY | CAN MANAGE |
+| --- | --- | --- | --- | --- |
+| Get endpoint |  | x | x | x |
+| List endpoint |  | x | x | x |
+| Query endpoint |  |  | x | x |
+| Update endpoint config |  |  |  | x |
+| Delete endpoint |  |  |  | x |
+| Modify permissions |  |  |  | x |
+
+## SQL warehouse ACLs
+
+| Ability | NO PERMISSIONS | CAN VIEW | CAN MONITOR | CAN USE | IS OWNER | CAN MANAGE |
+| --- | --- | --- | --- | --- | --- | --- |
+| Start the warehouse |  |  | x | x | x | x |
+| View warehouse details |  | x | x | x | x | x |
+| View warehouse queries |  | x | x |  | x | x |
+| Run queries |  |  | x | x | x | x |
+| View warehouse monitoring tab |  | x | x |  | x | x |
+| Stop the warehouse |  |  |  |  | x | x |
+| Delete the warehouse |  |  |  |  | x | x |
+| Edit the warehouse |  |  |  |  | x | x |
+| Modify permissions |  |  |  |  | x | x |
+
+## Vector search endpoint ACLs
+
+| Ability | NO PERMISSIONS | CAN CREATE | CAN USE | CAN MANAGE |
+| --- | --- | --- | --- | --- |
+| Get endpoint |  | x | x | x |
+| List endpoints |  | x | x | x |
+| Create endpoint |  | x | x | x |
+| Use endpoint (create index) |  |  | x | x |
+| Delete endpoint |  |  |  | x |
+| Modify permissions |  |  |  | x |
+
+=== NICE.COM CONTENT ===
+
+NICE customer experiences start here. See how CXone Mpower connects every workflow, agent, and answer—so customers get what they need, without the wait. Be more profitable, more efficient, more loved. At NICE, every team, workflow, and touchpoint connects. One platform. One experience. All working beautifully together.
+
+Company Overview
+NICE Ltd. is a global leader in AI-driven customer service automation solutions. Founded in 1986, NICE has grown to serve thousands of enterprises worldwide. The company is publicly traded on NASDAQ (NICE) and has established itself as a dominant force in the contact center and customer experience market.
+
+Financial Information
+- Public company (NASDAQ: NICE)
+- Market capitalization: Over $10 billion
+- Revenue: Over $2 billion annually
+- Global workforce: 8,000+ employees
+- Serves 25,000+ organizations worldwide
+- Powers 15+ billion customer interactions annually
+
+Customer Experience (CX) AI Platform
+CXone Mpower Platform
+Platform Overview: Complete AI platform for customer service automation
+Purpose-built AI for CX: Powering smarter CX with AI-driven insights and automation
+Cloud Architecture: Innovative cloud-native foundation to rapidly scale extraordinary CX
+Voice as a Service (VaaS): Crystal-clear, scalable voice interactions for effortless interactions
+Dashboards & Reporting: Gain a full operational picture of your contact center, with enhanced visualization of real-time and historical insights
+Integrations: Seamlessly connect your business systems with our platform
+Trust & Compliance: Securing your trust with every interaction
+
+Workflow Orchestration
+Evolve from interaction management to workflow orchestration across the entire organization
+Omnichannel Routing: Reduce wait times and boost conversions with smart customer-agent matching
+Proactive Engagement: Generate more revenue, minimize hang-ups, and proactively connect to reduce friction
+Workflow Orchestrator: Unify and optimize every customer service workflow from intent to fulfillment
+Agent Desktop Workspace: Connect front and back office teams with data, conversations, and workflows together in one place
+
+Workforce Augmentation
+Move beyond tools to empower employees with real-time, actionable intelligence that elevates performance
+Specialized AI Copilots: Elevate human performance with specialized AI copilots for every role
+Workforce Engagement Management: Elevate employees, adapt to flexible work, and meet expectations - without compromise
+Automated Summary: Instantly summarize interactions to accelerate resolution times and efficiency
+Voice of the Customer: Unlock customer insights to enhance experiences, drive loyalty, and boost business growth
+Interaction Analytics: Gain AI-powered insights from 100% of interactions to drive continuous improvement
+
+Service Automation
+Go beyond answering questions to fully automate customer intent through fulfillment
+Intelligent Virtual Agent: Boost self-service satisfaction and conversion with conversational AI agents
+Experience Optimization (XO): Synthesize real customer conversations to identify your top automation opportunities
+AI Agents: Instantly create no-code AI agents powered by your data—build once, deploy everywhere
+Proactive AI Agent: Keep customers engaged in conversation from onboarding to installation, service, and retention
+Knowledge Management: Activate AI-powered enterprise knowledge to increase self-resolution rates and loyalty
+
+Customer Success Stories
+Toyota Group: 75% increase in customer satisfaction
+Sony Electronics: 40% automation potential for customers, 34% increase in customer satisfaction
+Various Clients: Saves over $1 million in first eight months with NICE EEM and VRS
+
+Market Position
+91% of customers recommend NICE as a preferred CCaaS vendor
+Gartner® named NICE the only Customers' Choice CCaaS vendor in its 2024 Peer Insights™ "Voice of the Customer for Contact Center as a Service" report
+Named a Leader - Furthest in Completeness of Vision. Highest in Ability to Execute
+Gartner® Magic Quadrant™ Leader for Contact Center as a Service for the 11th consecutive year
+
+Platform Architecture
+AI at the core: Take care of customers from first ask to final answer with domain-specific AI that truly gets it
+Scale in the cloud: Run customer service on one smart, secure platform built to scale and simplify as you grow
+Seamless integrations: Get connected fast with pre-built integrations, open APIs, and simple tools that keep your business moving
+Dashboards & Reporting: Get one source of truth for real-time and historical insights, so every decision is data-driven
+
+Global Reach
+The world's best brands trust NICE to power 15B+ interactions a year. One platform. Endless possibilities. Every NICE solution runs on the same smart, secure platform — built to scale, connect, and evolve with you.
+
+=== SNOWFLAKE.COM CONTENT ===
+
+Snowflake provides the AI Data Cloud, a platform that enables organizations to consolidate data into a single source of truth. Their AI Data Cloud facilitates meaningful business insights, data application development, and data sharing.
+
+Company Overview
+Snowflake Inc. is a cloud-based data platform company founded in 2012. The company went public in 2020 and has become one of the fastest-growing software companies in history. Snowflake serves thousands of organizations globally, including many Fortune 500 companies.
+
+Financial Information
+- Public company (NYSE: SNOW)
+- Market capitalization: Over $50 billion
+- Revenue: Over $2 billion annually
+- Global workforce: 7,000+ employees
+- Serves 8,000+ customers worldwide
+- Powers data-driven applications for enterprises across all industries
+
+Core Platform Features
+Data Warehousing: Provides scalable storage and processing for large datasets
+Data Sharing: Facilitates secure and efficient data sharing across organizations
+Data Engineering: Supports data transformation and integration processes
+Data Science: Offers tools and environments for building and deploying machine learning models
+Data Applications: Enables the development of data-driven applications
+
+AI Data Cloud Capabilities
+Centralized Data Management: Consolidate data into a single source of truth
+Real-time Analytics: Enable real-time querying and analysis without complex ETL processes
+AI-Powered Insights: Transform service interactions into enterprise intelligence
+Secure Data Sharing: Governed access to extensive interaction data
+Cross-Platform Integration: Seamless integration with enterprise systems
+
+Strategic Partnerships
+NICE Partnership: Strategic collaboration with NICE Ltd. to enhance enterprise-wide customer experience automation
+CXone Mpower Data Lake Integration: Consolidates structured and unstructured CX data into a governed Snowflake environment
+Enterprise Integration: Enables real-time analytics, reporting, and automation across various business functions
+
+Customer Benefits
+Automated Service Workflows: Real-time interaction data can trigger AI agents and workflows
+Strategic Insights: Live CX data reveals friction points and performance gaps
+Continuous Optimization: Drive continuous optimization of processes and product innovation
+Enterprise Intelligence: Transform service interactions into enterprise intelligence
+
+Market Position
+Serves various industries including financial services, retail, healthcare, and technology
+Cloud-based data platform enabling organizations to leverage their data assets for informed decision-making and innovation
+Strategic partner in enterprise AI and data management solutions
+
+Technical Architecture
+Cloud-Native Platform: Built for scale, security, and performance
+Governed Data Access: Secure, controlled access to enterprise data
+Real-time Processing: Enable real-time analytics and decision-making
+Cross-Platform Compatibility: Integrates with existing enterprise systems and workflows
+
+END OF RAW CONTENT

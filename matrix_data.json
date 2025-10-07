@@ -1,0 +1,144 @@
+{
+  "competitors": {
+    "sierra": {
+      "name": "Sierra.ai",
+      "strategic": {
+        "targetMarket": "Enterprise customer experience teams",
+        "valueProposition": "AI agents that mirror human communication, deliver empathetic omnichannel support with personalization",
+        "pricingModel": "Outcome-based pricing for AI agents (not publicly disclosed)",
+        "customerStories": ["ADT (2M inquiries/month)", "SiriusXM (34M subscribers)", "Thrive Market (~90% CSAT)", "CLEAR", "Sonos", "CDW"]
+      },
+      "technical": {
+        "evalLineage": "τ-bench for agent development and evaluation",
+        "memoryContext": "Personalized to business and customers, always up-to-date, on-brand",
+        "dataSovereignty": "Claims: Your data never used to train models",
+        "securityModel": "Industry-standard best practices, trust and reliability focus",
+        "customization": "High - Agent SDK, Agent Studio, declarative goals and guardrails"
+      },
+      "gtm": {
+        "useCases": ["Customer experience", "Omnichannel support", "Customer satisfaction improvement"],
+        "channelStrategy": "Direct enterprise sales, agent-first positioning",
+        "evidencePoints": "Real-world customer metrics, CEO endorsements"
+      },
+      "investor": {
+        "marketPosition": "Leading AI agent platform for customer experience",
+        "differentiation": "Human-centered experiences at scale, composable skills, fine-tuning"
+      },
+      "quotes": {
+        "ceo": "Our partnership with Sierra uses cutting-edge technology to deliver seamless, human-centered experiences at scale. - Caryn Siedman-Becker, CEO at CLEAR"
+      }
+    },
+    "fin": {
+      "name": "Fin.ai (Intercom)",
+      "strategic": {
+        "targetMarket": "Customer service teams, support organizations",
+        "valueProposition": "Complete, fully configurable AI Agent System for customer service",
+        "pricingModel": "$0.99 per resolution (hybrid: consumption + seat-based)",
+        "customerStories": ["Isabel Larrow testimonial: 15% increase in resolution rate"]
+      },
+      "technical": {
+        "evalLineage": "Built-in performance dashboard, Topics Explorer, CX Score (AI-powered metric)",
+        "memoryContext": "AI-powered Suggestions, learns from conversations, continuous improvement",
+        "dataSovereignty": "Part of Intercom ecosystem",
+        "securityModel": "Fin AI Engine (patented architecture)",
+        "customization": "Low - No-code configuration, plug-and-play for customer service"
+      },
+      "gtm": {
+        "useCases": ["Customer service only", "Help desk", "Support automation"],
+        "channelStrategy": "Intercom integration, built into unified support platform",
+        "evidencePoints": "Performance metrics, resolution rates, CX Score"
+      },
+      "investor": {
+        "marketPosition": "Leading AI agent for customer service vertical",
+        "differentiation": "Highest performance via patented AI Engine, complete configurability"
+      },
+      "quotes": {
+        "customer": "Suggestions take the guesswork out of improving our content. With the help of weekly Suggestion reviews, we've increased our total resolution rate by 15%. - Isabel Larrow, Product Support Operations"
+      }
+    },
+    "databricks": {
+      "name": "Databricks",
+      "strategic": {
+        "targetMarket": "Enterprise data teams, ML/AI infrastructure",
+        "valueProposition": "Data Intelligence Platform - AI on your data for building AI applications",
+        "pricingModel": "Enterprise licensing, consumption-based compute",
+        "customerStories": ["ATT", "Block", "OpenAI", "Burberry", "FDA", "Heineken", "Michelin", "Mercedes", "NBA", "Santander", "Shell", "Siemens", "Toyota", "Walgreens", "Warner Bros Discovery"]
+      },
+      "technical": {
+        "evalLineage": "MLflow experiment tracking, model registry, data lineage capabilities",
+        "memoryContext": "Unity Catalog for metadata management, governance across workspaces",
+        "dataSovereignty": "Customer-managed VPC, private connectivity via AWS PrivateLink",
+        "securityModel": "Enterprise-grade: IP access lists, VPC isolation, access control lists, encryption at rest/transit, local disk encryption",
+        "customization": "High infrastructure flexibility, requires significant technical resources"
+      },
+      "gtm": {
+        "useCases": ["AI/ML infrastructure", "Data warehousing", "ETL", "GenAI model development", "Agent Bricks for AI agents"],
+        "channelStrategy": "AWS partnership, cloud marketplace, enterprise direct sales",
+        "evidencePoints": "Extensive technical documentation, enterprise security certifications"
+      },
+      "investor": {
+        "marketPosition": "Public company, leading data platform",
+        "differentiation": "Complete data + AI platform, lakehouse architecture, Unity Catalog governance"
+      },
+      "quotes": {
+        "positioning": "Databricks brings AI to your data to help you bring AI to the world"
+      }
+    }
+  },
+  "yourProduct": {
+    "name": "Your Product",
+    "strategic": {
+      "targetMarket": "[BLANK - Define: Enterprise? Mid-market? Vertical-specific?]",
+      "valueProposition": "Sovereign data compute platform for AI agents",
+      "pricingModel": "[BLANK - Define pricing strategy]",
+      "customerStories": "[BLANK - Design partners needed]"
+    },
+    "technical": {
+      "evalLineage": "Built-in eval and data lineage (KEY DIFFERENTIATOR)",
+      "memoryContext": "Evolving AI agents with long-term memory, privacy-preserving (KEY DIFFERENTIATOR)",
+      "dataSovereignty": "Sovereign security built from ground up (KEY DIFFERENTIATOR)",
+      "securityModel": "[BLANK - Detail security architecture]",
+      "customization": "[BLANK - Configuration vs. code approach?]"
+    },
+    "gtm": {
+      "useCases": "[BLANK - Beyond customer service? Enterprise workflows?]",
+      "channelStrategy": "AWS partner potential (from transcript)",
+      "evidencePoints": "[BLANK - Case studies, benchmarks needed]"
+    },
+    "investor": {
+      "marketPosition": "Pre-seed stage",
+      "differentiation": "Eval/lineage + memory/privacy + sovereign security foundation",
+      "fundingContext": "AI dominates Series A/B, SF valuations 2x higher, longer rounds (24+ months)"
+    },
+    "transcriptInsights": {
+      "competitivePosition": "Positioned between Sierra/Fin (agent layer) and Databricks (infrastructure layer)",
+      "marketGaps": "Salesforce model broken ($50-100k integration), Databricks requires big teams/resources",
+      "investorExpectations": "Series A team size ~10-15, triple-triple-quad-quad revenue growth",
+      "keyTrends": "Sovereignty dominates, eval critical, memory/context wrapped with security"
+    }
+  },
+  "competitiveMoat": {
+    "memoryPersistence": "Long-term memory that evolves with every customer interaction",
+    "semanticUnderstanding": "[BLANK - How does this differ from competitors?]",
+    "emotionalLockIn": "[BLANK - What creates customer stickiness?]",
+    "sovereignAgents": "Sovereign AI agents with data control and privacy built-in"
+  },
+  "marketOpportunity": {
+    "fundingTrends": "2H 2024 tracking $130-140B, recovery from 2023 lows",
+    "seriesAMetrics": "AI-dominated, 2x SF valuations vs. national average",
+    "teamSizeAtSeriesA": "Average team size expectations (from Carter data)",
+    "growthCurve": "Triple-triple-quad-quad for traditional, higher for AI infrastructure"
+  },
+  "acquisitionReadiness": {
+    "potentialAcquirers": "[BLANK - AWS? Snowflake? Databricks? Sierra?]",
+    "strategicFit": "[BLANK - What makes you M&A attractive?]",
+    "valuationScenarios": "[BLANK - Revenue multiples, comparables]"
+  },
+  "metadata": {
+    "dataSource": "raw_website_content.txt (scraped 10/7/2025)",
+    "transcriptDate": "Meeting 10/7/2025",
+    "lastUpdated": "2025-10-07",
+    "version": "1.0"
+  }
+}
+
