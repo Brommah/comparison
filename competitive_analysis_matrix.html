@@ -313,6 +313,78 @@
             z-index: 999;
         }
 
+        .cef-custom-input {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: white;
+            border: 2px solid #007bff;
+            border-radius: 8px;
+            padding: 15px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+            z-index: 1001;
+            min-width: 300px;
+            max-width: 500px;
+        }
+
+        .cef-custom-input h3 {
+            margin: 0 0 10px 0;
+            color: #007bff;
+            font-size: 16px;
+        }
+
+        .cef-custom-input textarea {
+            width: 100%;
+            min-height: 100px;
+            border: 1px solid #dee2e6;
+            border-radius: 4px;
+            padding: 10px;
+            font-family: inherit;
+            font-size: 14px;
+            resize: vertical;
+            margin-bottom: 10px;
+        }
+
+        .cef-custom-input button {
+            background: #007bff;
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-right: 10px;
+        }
+
+        .cef-custom-input button:hover {
+            background: #0056b3;
+        }
+
+        .cef-custom-input button.secondary {
+            background: #6c757d;
+        }
+
+        .cef-custom-input button.secondary:hover {
+            background: #545b62;
+        }
+
+        .cef-toggle-btn {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 6px;
+            cursor: pointer;
+            z-index: 1000;
+            font-size: 14px;
+        }
+
+        .cef-toggle-btn:hover {
+            background: #0056b3;
+        }
+
         .status-indicator {
             position: absolute;
             top: 2px;
@@ -915,6 +987,7 @@
             <button class="btn" onclick="filterMatrix('gtm')">Go-to-Market</button>
             <button class="btn" onclick="filterMatrix('investor')">Investor</button>
             <button class="btn" onclick="toggleBulkEdit()">Bulk Edit</button>
+            <button class="cef-toggle-btn" onclick="toggleCefCustomInput()">CEF Input</button>
         </div>
 
         <!-- Bulk Edit Mode -->
@@ -1600,6 +1673,7 @@
         let currentEditingCell = null;
         let formattingTextarea = null;
         let expandedCell = null;
+        let cefCustomInputVisible = false;
 
         // Initialize matrix data from localStorage or create default
         function initializeMatrixData() {
@@ -1821,6 +1895,78 @@
                 // Restore body scroll
                 document.body.style.overflow = '';
             }
+        }
+
+        // Function to toggle CEF custom input
+        function toggleCefCustomInput() {
+            if (cefCustomInputVisible) {
+                hideCefCustomInput();
+            } else {
+                showCefCustomInput();
+            }
+        }
+
+        // Function to show CEF custom input
+        function showCefCustomInput() {
+            const inputDiv = document.createElement('div');
+            inputDiv.className = 'cef-custom-input';
+            inputDiv.innerHTML = `
+                <h3>CEF Custom Input</h3>
+                <textarea id="cefCustomTextarea" placeholder="Enter CEF content for the matrix..."></textarea>
+                <button onclick="addCefContent()">Add to Matrix</button>
+                <button class="secondary" onclick="hideCefCustomInput()">Cancel</button>
+            `;
+            
+            document.body.appendChild(inputDiv);
+            cefCustomInputVisible = true;
+            
+            // Focus textarea
+            document.getElementById('cefCustomTextarea').focus();
+        }
+
+        // Function to hide CEF custom input
+        function hideCefCustomInput() {
+            const inputDiv = document.querySelector('.cef-custom-input');
+            if (inputDiv) {
+                inputDiv.remove();
+            }
+            cefCustomInputVisible = false;
+        }
+
+        // Function to add CEF content to matrix
+        function addCefContent() {
+            const textarea = document.getElementById('cefCustomTextarea');
+            const content = textarea.value.trim();
+            
+            if (!content) {
+                alert('Please enter some content first.');
+                return;
+            }
+
+            // Find all CEF cells and add the content
+            const cefCells = document.querySelectorAll('td[data-col="CEF"]');
+            cefCells.forEach(cell => {
+                const row = cell.dataset.row;
+                const currentContent = cell.textContent.replace('Save', '').trim();
+                
+                // Add content to existing cell or create new content
+                const newContent = currentContent ? `${currentContent}\n\n${content}` : content;
+                
+                // Update cell content
+                cell.innerHTML = newContent + '<span class="status-indicator"></span><button class="edit-save-btn">Save</button>';
+                
+                // Update matrix data
+                setCellContent(row, 'CEF', newContent);
+                
+                // Re-attach event listeners
+                makeEditable(cell);
+            });
+
+            // Show success message
+            alert('CEF content added to all CEF cells in the matrix!');
+            
+            // Hide input
+            hideCefCustomInput();
         }
 
         // Formatting functions

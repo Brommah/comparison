@@ -2993,4 +2993,173 @@ Governed Data Access: Secure, controlled access to enterprise data
 Real-time Processing: Enable real-time analytics and decision-making
 Cross-Platform Compatibility: Integrates with existing enterprise systems and workflows
 
+# CEF.com Content
+
+CEF Logo
+Book a demo
+-+
+for Vision
+Multi-agent Solutions
+for
+Video Security & Robotics Fleets
+Dynamically deployed multi-agents working autonomously yet collectively on specific goals managaging large areas and fleets
+More on Vision
+Book a demo
+A New Data Compute Platform built from the ground up for multi-agents.
+Secure, owned and customized models that evolve with your business.
+Production ready on 100% sovereign data infrastructure.
+The Gap
+AI Adoption Challenges
+Black-box AI → No control, accountability, or transparency. Lacks auditability and oversight.
+
+Data Privacy & Security → Exposing sensitive data to third-party models you don't own creates major risks.
+
+Risky Integrations → Complex, fragile, and costly to stitch together siloed, outdated systems into a functional AI data flow.
+
+CEF Solution
+Own the Entire Stack
+Full Control → Real-time dynamic agent orchestration with secure and fully auditable execution at every step.
+
+Dedicated Data Infrastructure → Out-of-the-box, optimized for speed and cost. On-prem, edge, or hybrid deployments.
+
+Open Source Models → Models you own and tune to your business needs. Continuously evolving with your data and your use cases.
+
+Pick Your Journey
+Outcome-first Starter Packs
+Pre-built solutions designed for real-world impact. Deploy enterprise-grade AI agents that deliver measurable results from day one.
+
+Computer Vision: Actionable Real-time Insights Dashboard
+Computer Vision: Actionable Real-time Insights
+From Security Anomalies to Managing Robotic Fleets
+Dynamically deployed multi-agents working autonomously yet collectively on specific goals - processing video streams in parallel to detect anomalies or threats, or monitoring autonomous robotics across the fleet and responding to exceptions; all running on-prem (or dedicated hybrid cluster) and generating real-time feedback loops.
+
+Triggers
+Parallel Frame ingest/processing, illegal dumping/parking, railyard events, object/zone breaches, infrastructure degradations, power/signal status, mission reports
+
+Key Metrics
+Long-term context
+Dynamic Agent Data
+Time-to-alert, Detection accuracy
+On-Prem Infrastructure
+View starter pack
+Gaming: Player Retention & Trust/Safety Dashboard
+Gaming: Player Retention & Trust/Safety
+Concierge Agents for Every Player
+A set of AI Agents tuned and deployed specifically to your games and players, unlocking what analytics couldn't do before: react to users while learning faster to adapt, all in real-time. These open-source models can evolve with your games/players, adapt to individual gameplay from dynamic and tunable data stream signals, not reports. Quickly detect frustration and toxic signals to escalate to your gaming services.
+
+Triggers
+Rage-quit streaks, loss spirals, chat/speech patterns vs toxic spikes, churn-risk signals vs. gaming journey, Discord/social sentiment
+
+Key Metrics
+Churn delta
+Session recovery rate
+Abuse reports
+Post-session CSAT
+View starter pack
+Support: Conversation Intelligence Dashboard
+Support: Conversation Intelligence
+Customer feedback without the surveys
+Customer feedback without the surveys. AI agents learn from every conversation in real time, correlating customer requests with the customer journey, long-term history/context, along with the agent's responses. They detect frustration, misalignment, or compliance risks, escalate when needed, and adapt to improve outcomes. Real-time emotion and intent understanding enables quick escalation and automated happiness tracking.
+
+Triggers
+Long handle times, Repeat contacts, VIP churn risks, Compliance term violations, Escalation or emotional distress signals
+
+Key Metrics
+Time to resolution
+Escalation accuracy
+Customer satisfaction
+Agent performance insights
+View starter pack
+Book a demo
+What Early Adopters are Saying
+See how teams are using CEF to transform their operations by maximizing their AI Agility.
+
+"CEF.AI solutions bring real-time intelligence in the form of Robotics and Computer Vision Agents directly into the live data stream hosted on our dedicated on-prem clusters. This allowed us to quickly launch our aerial fleet-management features, in addition to speeding up the processing of massive video streams every day to quickly escalate security to our clients."
+
+John H.
+John H.
+
+CTO
+
+NG / Ex-Space-X
+
+"CEF's multi-agent native data platform is a very much needed technology innovation in many industry sectors that I work with. Data security and data agility are key to AI security and enterprise AI adoption. More importantly, every agentic workflow is transparent and auditable, which is a critical feature for consumer businesses."
+
+Steven C.
+Steven C.
+
+Founder - GTM Consultancy
+
+"Many of the companies we work with at AWS are constantly looking for improved data agility and data interoperability in their AI transformation efforts. CEF platform features a brand new customer data methodology, which unlocks a lot of opportunities that are just not possible with established data platforms."
+
+Nelson B.
+Nelson B.
+
+AWS Group Manager GTM
+
+AWS
+
+Join these adopters!
+Built for sovereignty and audit
+Governed by design
+Full sovereignty, complete auditability, and transparent cost tracking built into every decision.
+
+Sovereign by design
+Your infrastructure, your controls, your models
+
+On-prem
+VPC
+Cloud
+Hybrid ready
+Lineage & RBAC
+Full traceability; policy-aware access and audit trails
+
+Replay sandbox
+Test new logic on real data safely
+
+Cost/compute transparency
+Per-run usage and attribution
+
+Jobs At CEF
+Work directly on cutting‑edge AI infrastructure in a global, distributed team environment. Shape the future of data sovereignty while receiving competitive compensation and benefits. We support individuals who demonstrate ownership, adaptability, and a drive to make an impact in the decentralized AI space.
+
+All
+Marketing
+Design
+Developer
+Founder's Associate
+Location
+Europe/Berlin
+Arrangement
+Full-time
+Learn More!
+AI Innovator
+Location
+Europe/SF
+Arrangement
+Full-time
+Learn More!
+Principal Software Engineer
+Location
+Europe / US
+Arrangement
+Full-time
+Learn More!
+Own your AI. Replace the black box.
+See CEF in Action
+Explore starter packs
+CEF Logo
+Ship AI Like Software
+Test, version, and ship multi‑agent AI on your dedicated stack. Replays, KPI‑gated promotions, instant rollback, and full audit—open‑source models only, no data leaves your infra.
+
+Platform
+Journeys
+Replay
+How it works
+Governance
+Contact
+Book a demo
+Talk to an engineer
+© 2024 CEF • Privacy • Terms
+
 END OF RAW CONTENT
