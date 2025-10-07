@@ -128,6 +128,78 @@
             font-weight: bold;
         }
 
+        /* Company Selection Styles */
+        .company-selection {
+            margin: 20px 0;
+            padding: 15px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #e0e0e0;
+        }
+
+        .company-selection h3 {
+            margin: 0 0 15px 0;
+            font-size: 16px;
+            color: #333;
+        }
+
+        .checkbox-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .checkbox-label {
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            font-size: 14px;
+            color: #333;
+            user-select: none;
+        }
+
+        .checkbox-label input[type="checkbox"] {
+            display: none;
+        }
+
+        .checkmark {
+            width: 18px;
+            height: 18px;
+            border: 2px solid #ddd;
+            border-radius: 3px;
+            margin-right: 8px;
+            position: relative;
+            background: white;
+            transition: all 0.2s ease;
+        }
+
+        .checkbox-label input[type="checkbox"]:checked + .checkmark {
+            background: #2196f3;
+            border-color: #2196f3;
+        }
+
+        .checkbox-label input[type="checkbox"]:checked + .checkmark::after {
+            content: '';
+            position: absolute;
+            left: 5px;
+            top: 2px;
+            width: 4px;
+            height: 8px;
+            border: solid white;
+            border-width: 0 2px 2px 0;
+            transform: rotate(45deg);
+        }
+
+        .checkbox-label:hover .checkmark {
+            border-color: #2196f3;
+        }
+
+        /* Hidden column styles */
+        .matrix th.hidden,
+        .matrix td.hidden {
+            display: none;
+        }
+
         .matrix th {
             background: #f8f8f8;
             padding: 12px 8px;
@@ -931,6 +1003,43 @@
             <button class="cef-toggle-btn" onclick="toggleCefCustomInput()">CEF Input</button>
         </div>
 
+        <!-- Company Selection -->
+        <div class="company-selection">
+            <h3>📊 Select Companies to Compare</h3>
+            <div class="checkbox-container">
+                <label class="checkbox-label">
+                    <input type="checkbox" id="cef-checkbox" checked onchange="toggleColumn('cef')">
+                    <span class="checkmark"></span>
+                    CEF
+                </label>
+                <label class="checkbox-label">
+                    <input type="checkbox" id="databricks-checkbox" checked onchange="toggleColumn('databricks')">
+                    <span class="checkmark"></span>
+                    Databricks
+                </label>
+                <label class="checkbox-label">
+                    <input type="checkbox" id="sierra-checkbox" checked onchange="toggleColumn('sierra')">
+                    <span class="checkmark"></span>
+                    Sierra.ai
+                </label>
+                <label class="checkbox-label">
+                    <input type="checkbox" id="fin-checkbox" checked onchange="toggleColumn('fin')">
+                    <span class="checkmark"></span>
+                    Fin.ai
+                </label>
+                <label class="checkbox-label">
+                    <input type="checkbox" id="nice-checkbox" checked onchange="toggleColumn('nice')">
+                    <span class="checkmark"></span>
+                    NICE
+                </label>
+                <label class="checkbox-label">
+                    <input type="checkbox" id="snowflake-checkbox" checked onchange="toggleColumn('snowflake')">
+                    <span class="checkmark"></span>
+                    Snowflake
+                </label>
+            </div>
+        </div>
+
 
         <!-- Error/Success Messages -->
         <div class="error-message" id="errorMessage"></div>
@@ -951,12 +1060,12 @@
             <thead>
                 <tr>
                     <th style="width: 200px;">Dimension</th>
-                    <th style="width: 200px;">CEF</th>
-                    <th style="width: 200px;">Databricks</th>
-                    <th style="width: 200px;">Sierra.ai</th>
-                    <th style="width: 200px;">Fin.ai</th>
-                    <th style="width: 200px;">NICE</th>
-                    <th style="width: 200px;">Snowflake</th>
+                    <th style="width: 200px;" data-col="cef">CEF</th>
+                    <th style="width: 200px;" data-col="databricks">Databricks</th>
+                    <th style="width: 200px;" data-col="sierra">Sierra.ai</th>
+                    <th style="width: 200px;" data-col="fin">Fin.ai</th>
+                    <th style="width: 200px;" data-col="nice">NICE</th>
+                    <th style="width: 200px;" data-col="snowflake">Snowflake</th>
                 </tr>
             </thead>
             <tbody>
@@ -1898,6 +2007,52 @@
             
             // Hide input
             hideCefCustomInput();
+        }
+
+        // Function to toggle column visibility
+        function toggleColumn(columnName) {
+            const checkbox = document.getElementById(columnName + '-checkbox');
+            const isChecked = checkbox.checked;
+            
+            // Toggle header
+            const headerCell = document.querySelector(`th[data-col="${columnName}"]`);
+            if (headerCell) {
+                headerCell.classList.toggle('hidden', !isChecked);
+            }
+            
+            // Toggle all data cells in this column
+            const dataCells = document.querySelectorAll(`td[data-col="${columnName}"]`);
+            dataCells.forEach(cell => {
+                cell.classList.toggle('hidden', !isChecked);
+            });
+            
+            // Update colspan for section headers
+            updateSectionHeaderColspans();
+        }
+
+        // Function to update section header colspans based on visible columns
+        function updateSectionHeaderColspans() {
+            const visibleColumns = getVisibleColumnCount();
+            const sectionHeaders = document.querySelectorAll('.section-header td');
+            
+            sectionHeaders.forEach(header => {
+                header.setAttribute('colspan', visibleColumns);
+            });
+        }
+
+        // Function to count visible columns
+        function getVisibleColumnCount() {
+            const companies = ['cef', 'databricks', 'sierra', 'fin', 'nice', 'snowflake'];
+            let visibleCount = 1; // Always include Dimension column
+            
+            companies.forEach(company => {
+                const checkbox = document.getElementById(company + '-checkbox');
+                if (checkbox && checkbox.checked) {
+                    visibleCount++;
+                }
+            });
+            
+            return visibleCount;
         }
 
         // Formatting functions
