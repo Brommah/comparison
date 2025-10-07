@@ -148,6 +148,8 @@
             outline: none;
             padding: 0;
             margin: 0;
+            box-sizing: border-box;
+            overflow: hidden;
         }
 
         .edit-save-btn {
@@ -1954,10 +1956,27 @@
                 const col = cell.dataset.col;
                 const currentContent = cell.textContent.replace('Save', '').trim();
                 
+                // Find the tallest cell in this row to match height
+                const currentRow = cell.closest('tr');
+                const cellsInRow = currentRow.querySelectorAll('td');
+                let maxHeight = 0;
+                
+                cellsInRow.forEach(cellInRow => {
+                    if (cellInRow !== cell) {
+                        const cellHeight = cellInRow.offsetHeight;
+                        maxHeight = Math.max(maxHeight, cellHeight);
+                    }
+                });
+                
                 // Create textarea for editing
                 const textarea = document.createElement('textarea');
                 textarea.className = 'edit-input';
                 textarea.value = currentContent;
+                
+                // Set minimum height based on tallest cell in row
+                if (maxHeight > 0) {
+                    textarea.style.minHeight = maxHeight + 'px';
+                }
                 
                 // Replace cell content with textarea
                 cell.innerHTML = '';
@@ -1969,6 +1988,12 @@
                 cell.classList.add('editing');
                 textarea.focus();
                 textarea.select();
+                
+                // Auto-resize textarea as user types
+                textarea.addEventListener('input', function() {
+                    this.style.height = 'auto';
+                    this.style.height = Math.max(this.scrollHeight, maxHeight) + 'px';
+                });
 
                 // Handle save
                 const saveBtn = cell.querySelector('.edit-save-btn');
