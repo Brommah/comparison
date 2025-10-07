@@ -235,6 +235,82 @@
             resize: vertical;
         }
 
+        .cell-expanded {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: white;
+            border: 2px solid #007bff;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+            z-index: 1000;
+            max-width: 80vw;
+            max-height: 80vh;
+            overflow-y: auto;
+            cursor: default;
+        }
+
+        .cell-expanded-content {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #333;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+        }
+
+        .cell-expanded-header {
+            font-weight: bold;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #dee2e6;
+            color: #007bff;
+        }
+
+        .cell-expanded-close {
+            position: absolute;
+            top: 10px;
+            right: 15px;
+            background: none;
+            border: none;
+            font-size: 24px;
+            cursor: pointer;
+            color: #666;
+        }
+
+        .cell-expanded-close:hover {
+            color: #333;
+        }
+
+        .cell-preview {
+            max-height: 3em;
+            overflow: hidden;
+            position: relative;
+            cursor: pointer;
+        }
+
+        .cell-preview::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 1em;
+            background: linear-gradient(transparent, white);
+            pointer-events: none;
+        }
+
+        .cell-expanded-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0,0,0,0.5);
+            z-index: 999;
+        }
+
         .status-indicator {
             position: absolute;
             top: 2px;
@@ -1521,6 +1597,7 @@
         let currentUserName = '';
         let currentEditingCell = null;
         let formattingTextarea = null;
+        let expandedCell = null;
 
         // Initialize matrix data from localStorage or create default
         function initializeMatrixData() {
@@ -1699,6 +1776,51 @@
             });
         });
 
+        // Function to expand cell content
+        function expandCell(cell) {
+            if (expandedCell) {
+                closeExpandedCell();
+            }
+            
+            const cellContent = cell.innerHTML;
+            const cellText = cell.textContent || cell.innerText || '';
+            
+            // Create overlay
+            const overlay = document.createElement('div');
+            overlay.className = 'cell-expanded-overlay';
+            overlay.onclick = closeExpandedCell;
+            
+            // Create expanded cell
+            const expandedDiv = document.createElement('div');
+            expandedDiv.className = 'cell-expanded';
+            expandedDiv.innerHTML = `
+                <button class="cell-expanded-close" onclick="closeExpandedCell()">&times;</button>
+                <div class="cell-expanded-header">Full Content</div>
+                <div class="cell-expanded-content">${cellContent}</div>
+            `;
+            
+            document.body.appendChild(overlay);
+            document.body.appendChild(expandedDiv);
+            
+            expandedCell = expandedDiv;
+            
+            // Prevent body scroll
+            document.body.style.overflow = 'hidden';
+        }
+        
+        // Function to close expanded cell
+        function closeExpandedCell() {
+            if (expandedCell) {
+                const overlay = document.querySelector('.cell-expanded-overlay');
+                if (overlay) overlay.remove();
+                expandedCell.remove();
+                expandedCell = null;
+                
+                // Restore body scroll
+                document.body.style.overflow = '';
+            }
+        }
+
         // Formatting functions
         function openFormattingToolbar(cell) {
             currentEditingCell = cell;
@@ -1799,10 +1921,34 @@
             saveMatrixData();
         }
 
-        // Make cell editable
+        // Make cell editable with preview mode
         function makeEditable(cell) {
+            // Remove any existing event listeners
+            cell.replaceWith(cell.cloneNode(true));
+            cell = document.querySelector(`[data-row="${cell.dataset.row}"][data-col="${cell.dataset.col}"]`);
+            
+            // Add preview wrapper if content is long
+            const cellContent = cell.innerHTML;
+            const textContent = cell.textContent.replace('Save', '').trim();
+            
+            if (textContent.length > 100) {
+                // Wrap content in preview div
+                const previewDiv = document.createElement('div');
+                previewDiv.className = 'cell-preview';
+                previewDiv.innerHTML = cellContent;
+                cell.innerHTML = '';
+                cell.appendChild(previewDiv);
+            }
+            
             cell.addEventListener('click', function(e) {
                 if (e.target.classList.contains('edit-save-btn')) return;
+                if (e.target.classList.contains('cell-expanded-close')) return;
+                
+                // Check if we're in preview mode (long content)
+                if (textContent.length > 100) {
+                    expandCell(cell);
+                    return;
+                }
                 
                 const row = cell.dataset.row;
                 const col = cell.dataset.col;
@@ -1892,6 +2038,13 @@
         function initializeEditableCells() {
             const editableCells = document.querySelectorAll('.editable');
             editableCells.forEach(makeEditable);
+            
+            // Add escape key handler for expanded cells
+            document.addEventListener('keydown', function(e) {
+                if (e.key === 'Escape' && expandedCell) {
+                    closeExpandedCell();
+                }
+            });
         }
 
         // Filter matrix function
