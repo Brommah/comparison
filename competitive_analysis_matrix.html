@@ -104,6 +104,30 @@
             border: 1px solid #e0e0e0;
         }
 
+        .matrix-container {
+            overflow-x: auto;
+            overflow-y: auto;
+            max-height: 80vh;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        .matrix thead th {
+            position: sticky;
+            top: 0;
+            z-index: 10;
+            background: #f8f8f8;
+        }
+
+        .matrix .section-header td {
+            position: sticky;
+            top: 40px;
+            z-index: 9;
+            background: #f0f0f0;
+            font-weight: bold;
+        }
+
         .matrix th {
             background: #f8f8f8;
             padding: 12px 8px;
@@ -675,7 +699,7 @@
 
         .parity {
             background: #ffffff;
-            border-left: 4px solid #e0e0e0;
+            border-left: 4px solid #ffc107;
             position: relative;
         }
 
@@ -684,7 +708,7 @@
             position: absolute;
             top: 5px;
             right: 8px;
-            color: #666666;
+            color: #ffc107;
             font-weight: bold;
             font-size: 14px;
         }
@@ -724,13 +748,13 @@
         }
 
         .data-source-initial {
-            background: #ffffff;
-            border-left: 4px solid #e0e0e0;
+            background: #e3f2fd;
+            border-left: 4px solid #2196f3;
         }
 
         .data-source-deep {
-            background: #ffffff;
-            border-left: 4px solid #e0e0e0;
+            background: #fff3e0;
+            border-left: 4px solid #ff9800;
         }
 
         .data-source-badge {
@@ -745,11 +769,11 @@
         }
 
         .data-source-badge.initial {
-            background: #666666;
+            background: #2196f3;
         }
 
         .data-source-badge.deep {
-            background: #999999;
+            background: #ff9800;
         }
 
 
@@ -760,16 +784,16 @@
         }
 
         .data-source-initial {
-            background: #ffffff;
-            border-left: 4px solid #e0e0e0;
+            background: #e3f2fd;
+            border-left: 4px solid #2196f3;
             padding: 8px;
             border-radius: 4px;
             position: relative;
         }
 
         .data-source-deep {
-            background: #ffffff;
-            border-left: 4px solid #e0e0e0;
+            background: #fff3e0;
+            border-left: 4px solid #ff9800;
             padding: 8px;
             border-radius: 4px;
             position: relative;
@@ -787,11 +811,11 @@
         }
 
         .data-source-badge.initial {
-            background: #666666;
+            background: #2196f3;
         }
 
         .data-source-badge.deep {
-            background: #999999;
+            background: #ff9800;
         }
 
         .tooltip {
@@ -922,7 +946,8 @@
             <button class="export-btn" onclick="exportToCSV()">Export to CSV</button>
         </div>
 
-        <table class="matrix" id="matrix">
+        <div class="matrix-container">
+            <table class="matrix" id="matrix">
             <thead>
                 <tr>
                     <th style="width: 200px;">Dimension</th>
@@ -940,7 +965,7 @@
                 </tr>
                 <tr>
                     <td class="company-header">Eval & Lineage</td>
-                    <td class="parity data-source-initial editable" data-row="eval-lineage" data-col="cef">Lineage & RBAC: Full traceability; policy-aware access and audit trails. Replay sandbox: Test new logic on real data safely. Cost/compute transparency: Per-run usage and attribution<span class="data-source-badge initial">INITIAL</span><span class="status-indicator"></span><button class="edit-save-btn">Save</button></td>
+                    <td class="parity data-source-initial editable" data-row="eval-lineage" data-col="cef">Test, version, and ship multi‑agent AI on your dedicated stack. Replays, KPI‑gated promotions, instant rollback, and full audit—open‑source models only, no data leaves your infra.<span class="data-source-badge initial">INITIAL</span><span class="status-indicator"></span><button class="edit-save-btn">Save</button></td>
                     <td class="parity data-source-initial editable" data-row="eval-lineage" data-col="databricks">MLflow Model Registry: A centralized model store that provides a UI and set of APIs to manage the full lifecycle of MLflow Models. MLflow models logged with comprehensive metadata including metrics and parameters<span class="data-source-badge initial">INITIAL</span><span class="status-indicator"></span><button class="edit-save-btn">Save</button></td>
                     <td class="parity data-source-deep editable" data-row="eval-lineage" data-col="sierra">"Agent Studio" provides tools to review agent performance against business metrics and audit the reasoning behind actions by viewing knowledge sources accessed.<span class="data-source-badge deep">DEEP</span><span class="status-indicator"></span><button class="edit-save-btn">Save</button></td>
                     <td class="parity data-source-deep editable" data-row="eval-lineage" data-col="fin">Topics Explorer: Uses AI to group every customer conversation into Topics and Subtopics to spot patterns, track trends, and catch issues before they affect customer experience<span class="data-source-badge deep">DEEP</span><span class="status-indicator"></span><button class="edit-save-btn">Save</button></td>
@@ -969,7 +994,7 @@
                 </tr>
                 <tr>
                     <td class="company-header">Memory/Context</td>
-                    <td class="parity data-source-initial editable" data-row="memory-context" data-col="cef">Evolving, secure context management system governed by granular, policy-based access controls to enforce data retention and privacy rules<span class="data-source-badge initial">INITIAL</span><span class="status-indicator"></span><button class="edit-save-btn">Save</button></td>
+                    <td class="parity data-source-initial editable" data-row="memory-context" data-col="cef">AI agents learn from every conversation in real time, correlating customer requests with the customer journey, long-term history/context, along with the agent's responses. They detect frustration, misalignment, or compliance risks, escalate when needed, and adapt to improve outcomes.<span class="data-source-badge initial">INITIAL</span><span class="status-indicator"></span><button class="edit-save-btn">Save</button></td>
                     <td class="parity data-source-deep editable" data-row="memory-context" data-col="databricks">Delta Lake provides data versioning, enabling time-travel queries and reproducible data states for models.<span class="data-source-badge deep">DEEP</span><span class="status-indicator"></span><button class="edit-save-btn">Save</button></td>
                     <td class="parity data-source-initial editable" data-row="memory-context" data-col="sierra">Context management for agents to maintain conversational flow and personalization across interactions<span class="data-source-badge initial">INITIAL</span><span class="status-indicator"></span><button class="edit-save-btn">Save</button></td>
                     <td class="parity data-source-deep editable" data-row="memory-context" data-col="fin">Basic conversation memory integrated with the Intercom helpdesk context and customer interaction history<span class="data-source-badge deep">DEEP</span><span class="status-indicator"></span><button class="edit-save-btn">Save</button></td>
@@ -998,7 +1023,7 @@
                 </tr>
                 <tr>
                     <td class="company-header">Data Sovereignty</td>
-                    <td class="parity data-source-initial editable" data-row="data-sovereignty" data-col="cef">Sovereign by design: Your infrastructure, your controls, your models. On-prem, VPC, Cloud, Hybrid ready<span class="data-source-badge initial">INITIAL</span><span class="status-indicator"></span><button class="edit-save-btn">Save</button></td>
+                    <td class="parity data-source-initial editable" data-row="data-sovereignty" data-col="cef">Production ready on 100% sovereign data infrastructure. Dedicated Data Infrastructure → Out-of-the-box, optimized for speed and cost. On-prem, edge, or hybrid deployments.<span class="data-source-badge initial">INITIAL</span><span class="status-indicator"></span><button class="edit-save-btn">Save</button></td>
                     <td class="parity data-source-deep editable" data-row="data-sovereignty" data-col="databricks">High degree of control. Supports deployment in customer's own VPC and customer-managed encryption keys, enabling full data sovereignty.<span class="data-source-badge deep">DEEP</span><span class="status-indicator"></span><button class="edit-save-btn">Save</button></td>
                     <td class="parity data-source-deep editable" data-row="data-sovereignty" data-col="sierra">High commitment to data governance; customer data is never used to train models and is segregated. Extensive compliance portfolio (GDPR, HIPAA).<span class="data-source-badge deep">DEEP</span><span class="status-indicator"></span><button class="edit-save-btn">Save</button></td>
                     <td class="parity data-source-deep editable" data-row="data-sovereignty" data-col="fin">Inherits Intercom's infrastructure with options for regional data hosting. Enterprise-grade security through Intercom platform<span class="data-source-badge deep">DEEP</span><span class="status-indicator"></span><button class="edit-save-btn">Save</button></td>
@@ -1017,7 +1042,7 @@
                 </tr>
                 <tr>
                     <td class="company-header">Security Model</td>
-                    <td class="parity data-source-initial editable" data-row="security-model" data-col="cef">Zero-Trust, "model-to-data" architecture. Models are deployed within the customer's sovereign environment, and all interactions are recorded in an immutable audit trail<span class="data-source-badge initial">INITIAL</span><span class="status-indicator"></span><button class="edit-save-btn">Save</button></td>
+                    <td class="parity data-source-initial editable" data-row="security-model" data-col="cef">Black-box AI → No control, accountability, or transparency. Lacks auditability and oversight. Data Privacy & Security → Exposing sensitive data to third-party models you don't own creates major risks.<span class="data-source-badge initial">INITIAL</span><span class="status-indicator"></span><button class="edit-save-btn">Save</button></td>
                     <td class="parity editable" data-row="security-model" data-col="databricks">
                         <div class="data-source-section">
                             <div class="data-source-initial">
@@ -1060,7 +1085,7 @@
                 </tr>
                 <tr>
                     <td class="company-header">Customization</td>
-                    <td class="parity data-source-initial editable" data-row="customization" data-col="cef">Governed Flexibility: Provides a powerful SDK and APIs for customization, but with mandatory, built-in policy-as-code guardrails to enforce security and compliance<span class="data-source-badge initial">INITIAL</span><span class="status-indicator"></span><button class="edit-save-btn">Save</button></td>
+                    <td class="parity data-source-initial editable" data-row="customization" data-col="cef">Open Source Models → Models you own and tune to your business needs. Continuously evolving with your data and your use cases.<span class="data-source-badge initial">INITIAL</span><span class="status-indicator"></span><button class="edit-save-btn">Save</button></td>
                     <td class="parity data-source-deep editable" data-row="customization" data-col="databricks">Extremely High: As a foundational platform, it offers maximum flexibility via multiple languages, notebooks, and APIs to build any custom AI application.<span class="data-source-badge deep">DEEP</span><span class="status-indicator"></span><button class="edit-save-btn">Save</button></td>
                     <td class="parity editable" data-row="customization" data-col="sierra">
                         <div class="data-source-section">
@@ -1114,7 +1139,7 @@
                 </tr>
                 <tr>
                     <td class="company-header">Core Value Proposition</td>
-                    <td class="parity data-source-initial editable" data-row="value-prop" data-col="cef">A New Data Compute Platform built from the ground up for multi-agents. Secure, owned and customized models that evolve with your business. Production ready on 100% sovereign data infrastructure. Own the Entire Stack: Full Control → Real-time dynamic agent orchestration with secure and fully auditable execution at every step<span class="data-source-badge initial">INITIAL</span><span class="status-indicator"></span><button class="edit-save-btn">Save</button></td>
+                    <td class="parity data-source-initial editable" data-row="value-prop" data-col="cef">A New Data Compute Platform built from the ground up for multi-agents. Secure, owned and customized models that evolve with your business. Production ready on 100% sovereign data infrastructure.<span class="data-source-badge initial">INITIAL</span><span class="status-indicator"></span><button class="edit-save-btn">Save</button></td>
                     <td class="parity editable" data-row="value-prop" data-col="databricks">
                         <div class="data-source-section">
                             <div class="data-source-initial">
@@ -1309,7 +1334,7 @@
                 </tr>
                 <tr>
                     <td class="company-header">Use Cases</td>
-                    <td class="parity data-source-initial editable" data-row="use-cases" data-col="cef">Multi-agent Solutions for Video Security & Robotics Fleets: Dynamically deployed multi-agents working autonomously yet collectively on specific goals managing large areas and fleets. Gaming: Player Retention & Trust/Safety - Concierge Agents for Every Player. Support: Conversation Intelligence - Customer feedback without the surveys<span class="data-source-badge initial">INITIAL</span><span class="status-indicator"></span><button class="edit-save-btn">Save</button></td>
+                    <td class="parity data-source-initial editable" data-row="use-cases" data-col="cef">High-risk, high-value use cases in regulated industries: AI-driven compliance checks, secure patient data interaction, and auditable citizen services<span class="data-source-badge initial">INITIAL</span><span class="status-indicator"></span><button class="edit-save-btn">Save</button></td>
                     <td class="parity editable" data-row="use-cases" data-col="databricks">
                         <div class="data-source-section">
                             <div class="data-source-initial">
@@ -1516,6 +1541,7 @@
                 </tr>
             </tbody>
         </table>
+        </div>
 
         <div class="summary">
             <h3>Key Insights from Transcript</h3>
@@ -2239,6 +2265,94 @@
             document.getElementById('loadingOverlay').style.display = 'none';
         }
 
+        // Enhanced cell editing
+        function makeEditable(cell) {
+            cell.addEventListener('click', function(e) {
+                if (e.target.classList.contains('edit-save-btn')) return;
+                
+                const row = cell.dataset.row;
+                const col = cell.dataset.col;
+                const currentContent = cell.textContent.replace('Save', '').trim();
+                
+                // Create textarea for editing
+                const textarea = document.createElement('textarea');
+                textarea.className = 'edit-input';
+                textarea.value = currentContent;
+                
+                // Replace cell content with textarea
+                cell.innerHTML = '';
+                cell.appendChild(textarea);
+                cell.appendChild(document.createElement('span')).className = 'status-indicator';
+                cell.appendChild(document.createElement('button')).className = 'edit-save-btn';
+                cell.querySelector('.edit-save-btn').textContent = 'Save';
+                
+                cell.classList.add('editing');
+                textarea.focus();
+                textarea.select();
+
+                // Handle save
+                const saveBtn = cell.querySelector('.edit-save-btn');
+                const statusIndicator = cell.querySelector('.status-indicator');
+                
+                function saveContent() {
+                    const newContent = textarea.value.trim();
+                    const oldContent = currentContent;
+                    
+                    if (newContent === oldContent) {
+                        // No changes, just cancel editing
+                        cell.innerHTML = currentContent + '<span class="status-indicator"></span><button class="edit-save-btn">Save</button>';
+                        cell.classList.remove('editing');
+                        makeEditable(cell);
+                        return;
+                    }
+
+                    // Show name prompt for changes
+                    const changeDescription = `Updated ${row} (${col}): "${oldContent}" → "${newContent}"`;
+                    showNamePrompt({
+                        changes: [changeDescription],
+                        callback: function() {
+                            // Complete the save after name is entered
+                            setCellContent(row, col, newContent);
+                            
+                            // Show saving status
+                            statusIndicator.classList.add('saving');
+                            
+                            // Simulate save delay
+                            setTimeout(() => {
+                                statusIndicator.classList.remove('saving');
+                                statusIndicator.classList.add('saved');
+                                
+                                // Update cell content
+                                cell.innerHTML = newContent + '<span class="status-indicator saved"></span><button class="edit-save-btn">Save</button>';
+                                cell.classList.remove('editing');
+                                
+                                // Hide saved status after 2 seconds
+                                setTimeout(() => {
+                                    statusIndicator.classList.remove('saved');
+                                }, 2000);
+                                
+                                // Re-attach event listeners
+                                makeEditable(cell);
+                            }, 500);
+                        }
+                    });
+                }
+
+                saveBtn.addEventListener('click', saveContent);
+                
+                textarea.addEventListener('keydown', function(e) {
+                    if (e.key === 'Enter' && e.ctrlKey) {
+                        e.preventDefault();
+                        saveContent();
+                    } else if (e.key === 'Escape') {
+                        e.preventDefault();
+                        cell.innerHTML = currentContent + '<span class="status-indicator"></span><button class="edit-save-btn">Save</button>';
+                        cell.classList.remove('editing');
+                        makeEditable(cell);
+                    }
+                });
+            });
+        }
 
         // Initialize on page load
         document.addEventListener('DOMContentLoaded', function() {
