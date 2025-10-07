@@ -1,0 +1,20 @@
+{
+  "version": 2,
+  "name": "competitive-analysis-matrix",
+  "builds": [
+    {
+      "src": "competitive_analysis_matrix.html",
+      "use": "@vercel/static"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/",
+      "dest": "/competitive_analysis_matrix.html"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/$1"
+    }
+  ]
+}
