@@ -747,12 +747,12 @@
             font-size: 14px;
         }
 
-        .data-source-initial {
+        .data-source-web {
             background: #e3f2fd;
             border-left: 4px solid #2196f3;
         }
 
-        .data-source-deep {
+        .data-source-ai {
             background: #fff3e0;
             border-left: 4px solid #ff9800;
         }
@@ -768,11 +768,11 @@
             color: #ffffff;
         }
 
-        .data-source-badge.initial {
+        .data-source-badge.web {
             background: #2196f3;
         }
 
-        .data-source-badge.deep {
+        .data-source-badge.ai {
             background: #ff9800;
         }
 
@@ -783,7 +783,7 @@
             gap: 8px;
         }
 
-        .data-source-initial {
+        .data-source-web {
             background: #e3f2fd;
             border-left: 4px solid #2196f3;
             padding: 8px;
@@ -791,7 +791,7 @@
             position: relative;
         }
 
-        .data-source-deep {
+        .data-source-ai {
             background: #fff3e0;
             border-left: 4px solid #ff9800;
             padding: 8px;
@@ -810,11 +810,11 @@
             color: #ffffff;
         }
 
-        .data-source-badge.initial {
+        .data-source-badge.web {
             background: #2196f3;
         }
 
-        .data-source-badge.deep {
+        .data-source-badge.ai {
             background: #ff9800;
         }
 
@@ -911,8 +911,8 @@
             </p>
             <div style="margin-top: 15px; padding: 10px; background: #f8f9fa; border-radius: 4px; border-left: 4px solid #007bff;">
                 <strong>📊 Data Sources:</strong>
-                <span style="background: #e3f2fd; padding: 2px 6px; border-radius: 3px; font-size: 11px;">INITIAL</span> = Website data extraction
-                <span style="background: #fff3e0; padding: 2px 6px; border-radius: 3px; font-size: 11px; margin-left: 8px;">DEEP</span> = Strategic intelligence report
+                <span style="background: #e3f2fd; padding: 2px 6px; border-radius: 3px; font-size: 11px;">WEB</span> = Website data extraction
+                <span style="background: #fff3e0; padding: 2px 6px; border-radius: 3px; font-size: 11px; margin-left: 8px;">AI</span> = AI analysis
                 <span style="background: linear-gradient(90deg, #e3f2fd 50%, #fff3e0 50%); padding: 2px 6px; border-radius: 3px; font-size: 11px; margin-left: 8px;">BOTH</span> = Combined sources
             </div>
             
@@ -965,28 +965,28 @@
                 </tr>
                 <tr>
                     <td class="company-header">Eval & Lineage</td>
-                    <td class="parity data-source-initial editable" data-row="eval-lineage" data-col="cef">Test, version, and ship multi‑agent AI on your dedicated stack. Replays, KPI‑gated promotions, instant rollback, and full audit—open‑source models only, no data leaves your infra.<span class="data-source-badge initial">INITIAL</span><span class="status-indicator"></span><button class="edit-save-btn">Save</button></td>
-                    <td class="parity data-source-initial editable" data-row="eval-lineage" data-col="databricks">MLflow Model Registry: A centralized model store that provides a UI and set of APIs to manage the full lifecycle of MLflow Models. MLflow models logged with comprehensive metadata including metrics and parameters<span class="data-source-badge initial">INITIAL</span><span class="status-indicator"></span><button class="edit-save-btn">Save</button></td>
-                    <td class="parity data-source-deep editable" data-row="eval-lineage" data-col="sierra">"Agent Studio" provides tools to review agent performance against business metrics and audit the reasoning behind actions by viewing knowledge sources accessed.<span class="data-source-badge deep">DEEP</span><span class="status-indicator"></span><button class="edit-save-btn">Save</button></td>
-                    <td class="parity data-source-deep editable" data-row="eval-lineage" data-col="fin">Topics Explorer: Uses AI to group every customer conversation into Topics and Subtopics to spot patterns, track trends, and catch issues before they affect customer experience<span class="data-source-badge deep">DEEP</span><span class="status-indicator"></span><button class="edit-save-btn">Save</button></td>
+                    <td class="parity data-source-web editable" data-row="eval-lineage" data-col="cef">Test, version, and ship multi‑agent AI on your dedicated stack. Replays, KPI‑gated promotions, instant rollback, and full audit—open‑source models only, no data leaves your infra.<span class="data-source-badge web">WEB</span><span class="status-indicator"></span><button class="edit-save-btn">Save</button></td>
+                    <td class="parity data-source-web editable" data-row="eval-lineage" data-col="databricks">MLflow Model Registry: A centralized model store that provides a UI and set of APIs to manage the full lifecycle of MLflow Models. MLflow models logged with comprehensive metadata including metrics and parameters<span class="data-source-badge web">WEB</span><span class="status-indicator"></span><button class="edit-save-btn">Save</button></td>
+                    <td class="parity data-source-ai editable" data-row="eval-lineage" data-col="sierra">"Agent Studio" provides tools to review agent performance against business metrics and audit the reasoning behind actions by viewing knowledge sources accessed.<span class="data-source-badge ai">AI</span><span class="status-indicator"></span><button class="edit-save-btn">Save</button></td>
+                    <td class="parity data-source-ai editable" data-row="eval-lineage" data-col="fin">Topics Explorer: Uses AI to group every customer conversation into Topics and Subtopics to spot patterns, track trends, and catch issues before they affect customer experience<span class="data-source-badge ai">AI</span><span class="status-indicator"></span><button class="edit-save-btn">Save</button></td>
                     <td class="parity data-source-mixed editable" data-row="eval-lineage" data-col="nice">
                         <div class="data-source-section">
-                            <div class="data-source-initial">
-                                Interaction Analytics: Gain AI-powered insights from 100% of interactions to drive continuous improvement. Dashboards & Reporting: Get one source of truth for real-time and historical insights, so every decision is data-driven<span class="data-source-badge initial">INITIAL</span>
+                            <div class="data-source-web">
+                                Interaction Analytics: Gain AI-powered insights from 100% of interactions to drive continuous improvement. Dashboards & Reporting: Get one source of truth for real-time and historical insights, so every decision is data-driven<span class="data-source-badge web">WEB</span>
                             </div>
-                            <div class="data-source-deep">
-                                Enlighten Actions: Generative AI-powered analytics interface for CX leaders using natural language to query interaction data, automatically identify trends and root causes<span class="data-source-badge deep">DEEP</span>
+                            <div class="data-source-ai">
+                                Enlighten Actions: Generative AI-powered analytics interface for CX leaders using natural language to query interaction data, automatically identify trends and root causes<span class="data-source-badge ai">AI</span>
                             </div>
                         </div>
                         <span class="status-indicator"></span><button class="edit-save-btn">Save</button>
                     </td>
                     <td class="parity data-source-mixed editable" data-row="eval-lineage" data-col="snowflake">
                         <div class="data-source-section">
-                            <div class="data-source-initial">
-                                Data Science: Offers tools and environments for building and deploying machine learning models. Snowsight: Provides a unified experience for working with your Snowflake data by using SQL or Python<span class="data-source-badge initial">INITIAL</span>
+                            <div class="data-source-web">
+                                Data Science: Offers tools and environments for building and deploying machine learning models. Snowsight: Provides a unified experience for working with your Snowflake data by using SQL or Python<span class="data-source-badge web">WEB</span>
                             </div>
-                            <div class="data-source-deep">
-                                Snowflake ML: Comprehensive MLOps framework with Feature Store, Model Registry, distributed training, and model observability. Snowflake Horizon provides unified governance<span class="data-source-badge deep">DEEP</span>
+                            <div class="data-source-ai">
+                                Snowflake ML: Comprehensive MLOps framework with Feature Store, Model Registry, distributed training, and model observability. Snowflake Horizon provides unified governance<span class="data-source-badge ai">AI</span>
                             </div>
                         </div>
                         <span class="status-indicator"></span><button class="edit-save-btn">Save</button>
@@ -994,28 +994,28 @@
                 </tr>
                 <tr>
                     <td class="company-header">Memory/Context</td>
-                    <td class="parity data-source-initial editable" data-row="memory-context" data-col="cef">AI agents learn from every conversation in real time, correlating customer requests with the customer journey, long-term history/context, along with the agent's responses. They detect frustration, misalignment, or compliance risks, escalate when needed, and adapt to improve outcomes.<span class="data-source-badge initial">INITIAL</span><span class="status-indicator"></span><button class="edit-save-btn">Save</button></td>
-                    <td class="parity data-source-deep editable" data-row="memory-context" data-col="databricks">Delta Lake provides data versioning, enabling time-travel queries and reproducible data states for models.<span class="data-source-badge deep">DEEP</span><span class="status-indicator"></span><button class="edit-save-btn">Save</button></td>
-                    <td class="parity data-source-initial editable" data-row="memory-context" data-col="sierra">Context management for agents to maintain conversational flow and personalization across interactions<span class="data-source-badge initial">INITIAL</span><span class="status-indicator"></span><button class="edit-save-btn">Save</button></td>
-                    <td class="parity data-source-deep editable" data-row="memory-context" data-col="fin">Basic conversation memory integrated with the Intercom helpdesk context and customer interaction history<span class="data-source-badge deep">DEEP</span><span class="status-indicator"></span><button class="edit-save-btn">Save</button></td>
+                    <td class="parity data-source-web editable" data-row="memory-context" data-col="cef">AI agents learn from every conversation in real time, correlating customer requests with the customer journey, long-term history/context, along with the agent's responses. They detect frustration, misalignment, or compliance risks, escalate when needed, and adapt to improve outcomes.<span class="data-source-badge web">WEB</span><span class="status-indicator"></span><button class="edit-save-btn">Save</button></td>
+                    <td class="parity data-source-ai editable" data-row="memory-context" data-col="databricks">Delta Lake provides data versioning, enabling time-travel queries and reproducible data states for models.<span class="data-source-badge ai">AI</span><span class="status-indicator"></span><button class="edit-save-btn">Save</button></td>
+                    <td class="parity data-source-web editable" data-row="memory-context" data-col="sierra">Context management for agents to maintain conversational flow and personalization across interactions<span class="data-source-badge web">WEB</span><span class="status-indicator"></span><button class="edit-save-btn">Save</button></td>
+                    <td class="parity data-source-ai editable" data-row="memory-context" data-col="fin">Basic conversation memory integrated with the Intercom helpdesk context and customer interaction history<span class="data-source-badge ai">AI</span><span class="status-indicator"></span><button class="edit-save-btn">Save</button></td>
                     <td class="parity data-source-mixed editable" data-row="memory-context" data-col="nice">
                         <div class="data-source-section">
-                            <div class="data-source-initial">
-                                Automated Summary: Instantly summarize interactions to accelerate resolution times and efficiency. Voice of the Customer: Unlock customer insights to enhance experiences, drive loyalty, and boost business growth<span class="data-source-badge initial">INITIAL</span>
+                            <div class="data-source-web">
+                                Automated Summary: Instantly summarize interactions to accelerate resolution times and efficiency. Voice of the Customer: Unlock customer insights to enhance experiences, drive loyalty, and boost business growth<span class="data-source-badge web">WEB</span>
                             </div>
-                            <div class="data-source-deep">
-                                Enlighten XM (Experience Memory): Creates persistent, unified memory graph for each customer, capturing interaction history, preferences, sentiment, and behavior across all touchpoints<span class="data-source-badge deep">DEEP</span>
+                            <div class="data-source-ai">
+                                Enlighten XM (Experience Memory): Creates persistent, unified memory graph for each customer, capturing interaction history, preferences, sentiment, and behavior across all touchpoints<span class="data-source-badge ai">AI</span>
                             </div>
                         </div>
                         <span class="status-indicator"></span><button class="edit-save-btn">Save</button>
                     </td>
                     <td class="parity data-source-mixed editable" data-row="memory-context" data-col="snowflake">
                         <div class="data-source-section">
-                            <div class="data-source-initial">
-                                Centralized Data Management: Consolidate data into a single source of truth. Real-time Analytics: Enable real-time querying and analysis without complex ETL processes<span class="data-source-badge initial">INITIAL</span>
+                            <div class="data-source-web">
+                                Centralized Data Management: Consolidate data into a single source of truth. Real-time Analytics: Enable real-time querying and analysis without complex ETL processes<span class="data-source-badge web">WEB</span>
                             </div>
-                            <div class="data-source-deep">
-                                Snowpark: Developer framework allowing Python, Java, Scala execution within Snowflake's compute engine, pushing computation to data while maintaining security perimeter<span class="data-source-badge deep">DEEP</span>
+                            <div class="data-source-ai">
+                                Snowpark: Developer framework allowing Python, Java, Scala execution within Snowflake's compute engine, pushing computation to data while maintaining security perimeter<span class="data-source-badge ai">AI</span>
                             </div>
                         </div>
                         <span class="status-indicator"></span><button class="edit-save-btn">Save</button>
@@ -1023,18 +1023,18 @@
                 </tr>
                 <tr>
                     <td class="company-header">Data Sovereignty</td>
-                    <td class="parity data-source-initial editable" data-row="data-sovereignty" data-col="cef">Production ready on 100% sovereign data infrastructure. Dedicated Data Infrastructure → Out-of-the-box, optimized for speed and cost. On-prem, edge, or hybrid deployments.<span class="data-source-badge initial">INITIAL</span><span class="status-indicator"></span><button class="edit-save-btn">Save</button></td>
-                    <td class="parity data-source-deep editable" data-row="data-sovereignty" data-col="databricks">High degree of control. Supports deployment in customer's own VPC and customer-managed encryption keys, enabling full data sovereignty.<span class="data-source-badge deep">DEEP</span><span class="status-indicator"></span><button class="edit-save-btn">Save</button></td>
-                    <td class="parity data-source-deep editable" data-row="data-sovereignty" data-col="sierra">High commitment to data governance; customer data is never used to train models and is segregated. Extensive compliance portfolio (GDPR, HIPAA).<span class="data-source-badge deep">DEEP</span><span class="status-indicator"></span><button class="edit-save-btn">Save</button></td>
-                    <td class="parity data-source-deep editable" data-row="data-sovereignty" data-col="fin">Inherits Intercom's infrastructure with options for regional data hosting. Enterprise-grade security through Intercom platform<span class="data-source-badge deep">DEEP</span><span class="status-indicator"></span><button class="edit-save-btn">Save</button></td>
-                    <td class="parity data-source-initial editable" data-row="data-sovereignty" data-col="nice">Trust & Compliance: Securing your trust with every interaction. Global reach, local precision: Operate with speed, security, and scale while delivering experiences that resonate with your customers, wherever they are<span class="data-source-badge initial">INITIAL</span><span class="status-indicator"></span><button class="edit-save-btn">Save</button></td>
+                    <td class="parity data-source-web editable" data-row="data-sovereignty" data-col="cef">Production ready on 100% sovereign data infrastructure. Dedicated Data Infrastructure → Out-of-the-box, optimized for speed and cost. On-prem, edge, or hybrid deployments.<span class="data-source-badge web">WEB</span><span class="status-indicator"></span><button class="edit-save-btn">Save</button></td>
+                    <td class="parity data-source-ai editable" data-row="data-sovereignty" data-col="databricks">High degree of control. Supports deployment in customer's own VPC and customer-managed encryption keys, enabling full data sovereignty.<span class="data-source-badge ai">AI</span><span class="status-indicator"></span><button class="edit-save-btn">Save</button></td>
+                    <td class="parity data-source-ai editable" data-row="data-sovereignty" data-col="sierra">High commitment to data governance; customer data is never used to train models and is segregated. Extensive compliance portfolio (GDPR, HIPAA).<span class="data-source-badge ai">AI</span><span class="status-indicator"></span><button class="edit-save-btn">Save</button></td>
+                    <td class="parity data-source-ai editable" data-row="data-sovereignty" data-col="fin">Inherits Intercom's infrastructure with options for regional data hosting. Enterprise-grade security through Intercom platform<span class="data-source-badge ai">AI</span><span class="status-indicator"></span><button class="edit-save-btn">Save</button></td>
+                    <td class="parity data-source-web editable" data-row="data-sovereignty" data-col="nice">Trust & Compliance: Securing your trust with every interaction. Global reach, local precision: Operate with speed, security, and scale while delivering experiences that resonate with your customers, wherever they are<span class="data-source-badge web">WEB</span><span class="status-indicator"></span><button class="edit-save-btn">Save</button></td>
                     <td class="parity data-source-mixed editable" data-row="data-sovereignty" data-col="snowflake">
                         <div class="data-source-section">
-                            <div class="data-source-initial">
-                                Governed Data Access: Secure, controlled access to enterprise data. Secure Data Sharing: Governed access to extensive interaction data<span class="data-source-badge initial">INITIAL</span>
+                            <div class="data-source-web">
+                                Governed Data Access: Secure, controlled access to enterprise data. Secure Data Sharing: Governed access to extensive interaction data<span class="data-source-badge web">WEB</span>
                             </div>
-                            <div class="data-source-deep">
-                                Tri-Secret Secure: customer-managed encryption keys. Multi-cloud deployment across AWS, Azure, GCP. Data sovereignty controls for GDPR compliance with regional deployment options<span class="data-source-badge deep">DEEP</span>
+                            <div class="data-source-ai">
+                                Tri-Secret Secure: customer-managed encryption keys. Multi-cloud deployment across AWS, Azure, GCP. Data sovereignty controls for GDPR compliance with regional deployment options<span class="data-source-badge ai">AI</span>
                             </div>
                         </div>
                         <span class="status-indicator"></span><button class="edit-save-btn">Save</button>
@@ -1042,15 +1042,15 @@
                 </tr>
                 <tr>
                     <td class="company-header">Security Model</td>
-                    <td class="parity data-source-initial editable" data-row="security-model" data-col="cef">Black-box AI → No control, accountability, or transparency. Lacks auditability and oversight. Data Privacy & Security → Exposing sensitive data to third-party models you don't own creates major risks.<span class="data-source-badge initial">INITIAL</span><span class="status-indicator"></span><button class="edit-save-btn">Save</button></td>
+                    <td class="parity data-source-web editable" data-row="security-model" data-col="cef">Black-box AI → No control, accountability, or transparency. Lacks auditability and oversight. Data Privacy & Security → Exposing sensitive data to third-party models you don't own creates major risks.<span class="data-source-badge web">WEB</span><span class="status-indicator"></span><button class="edit-save-btn">Save</button></td>
                     <td class="parity editable" data-row="security-model" data-col="databricks">
                         <div class="data-source-section">
-                            <div class="data-source-initial">
-                                <span class="data-source-badge initial">INITIAL</span>
+                            <div class="data-source-web">
+                                <span class="data-source-badge web">WEB</span>
                                 Customer-managed VPC (provide your VPC ID, security group ID and subnet IDs), IP access lists for workspaces, customer-managed keys, audit logs, enterprise compliance. Develop generative AI applications on your data without sacrificing data privacy or control.
                             </div>
-                            <div class="data-source-deep">
-                                <span class="data-source-badge deep">DEEP</span>
+                            <div class="data-source-ai">
+                                <span class="data-source-badge ai">AI</span>
                                 Customer-managed security at the network (VPC, IP lists) and data (customer-managed keys) levels, providing granular control.
                             </div>
                         </div>
@@ -1058,26 +1058,26 @@
                     </td>
                     <td class="parity editable" data-row="security-model" data-col="sierra">
                         <div class="data-source-section">
-                            <div class="data-source-initial">
-                                <span class="data-source-badge initial">INITIAL</span>
+                            <div class="data-source-web">
+                                <span class="data-source-badge web">WEB</span>
                                 Sierra is designed with the highest commitment to trust, security, and compliance. Your data is never used to train models, and we use industry-standard best practices to ensure its security.
                             </div>
-                            <div class="data-source-deep">
-                                <span class="data-source-badge deep">DEEP</span>
+                            <div class="data-source-ai">
+                                <span class="data-source-badge ai">AI</span>
                                 Enterprise-grade security with a full suite of compliance certifications (SOC 2, ISO 27001). Wraps LLMs in "supervisory layers" to control outputs.
                             </div>
                         </div>
                         <span class="status-indicator"></span><button class="edit-save-btn">Save</button>
                     </td>
-                    <td class="parity data-source-deep editable" data-row="security-model" data-col="fin">Inherits Intercom's established enterprise security infrastructure and protocols. Built on Fin AI Engine™ with patented AI architecture<span class="data-source-badge deep">DEEP</span><span class="status-indicator"></span><button class="edit-save-btn">Save</button></td>
-                    <td class="parity data-source-initial editable" data-row="security-model" data-col="nice">Cloud Architecture: Innovative cloud-native foundation to rapidly scale extraordinary CX. Scale in the cloud: Run customer service on one smart, secure platform built to scale and simplify as you grow<span class="data-source-badge initial">INITIAL</span><span class="status-indicator"></span><button class="edit-save-btn">Save</button></td>
+                    <td class="parity data-source-ai editable" data-row="security-model" data-col="fin">Inherits Intercom's established enterprise security infrastructure and protocols. Built on Fin AI Engine™ with patented AI architecture<span class="data-source-badge ai">AI</span><span class="status-indicator"></span><button class="edit-save-btn">Save</button></td>
+                    <td class="parity data-source-web editable" data-row="security-model" data-col="nice">Cloud Architecture: Innovative cloud-native foundation to rapidly scale extraordinary CX. Scale in the cloud: Run customer service on one smart, secure platform built to scale and simplify as you grow<span class="data-source-badge web">WEB</span><span class="status-indicator"></span><button class="edit-save-btn">Save</button></td>
                     <td class="parity data-source-mixed editable" data-row="security-model" data-col="snowflake">
                         <div class="data-source-section">
-                            <div class="data-source-initial">
-                                Cloud-Native Platform: Built for scale, security, and performance. Cross-Platform Compatibility: Integrates with existing enterprise systems and workflows<span class="data-source-badge initial">INITIAL</span>
+                            <div class="data-source-web">
+                                Cloud-Native Platform: Built for scale, security, and performance. Cross-Platform Compatibility: Integrates with existing enterprise systems and workflows<span class="data-source-badge web">WEB</span>
                             </div>
-                            <div class="data-source-deep">
-                                Snowflake Horizon: unified governance with RBAC, dynamic data masking, object tagging, comprehensive data lineage. End-to-end encryption, private networking, customer-managed keys<span class="data-source-badge deep">DEEP</span>
+                            <div class="data-source-ai">
+                                Snowflake Horizon: unified governance with RBAC, dynamic data masking, object tagging, comprehensive data lineage. End-to-end encryption, private networking, customer-managed keys<span class="data-source-badge ai">AI</span>
                             </div>
                         </div>
                         <span class="status-indicator"></span><button class="edit-save-btn">Save</button>
@@ -1085,30 +1085,30 @@
                 </tr>
                 <tr>
                     <td class="company-header">Customization</td>
-                    <td class="parity data-source-initial editable" data-row="customization" data-col="cef">Open Source Models → Models you own and tune to your business needs. Continuously evolving with your data and your use cases.<span class="data-source-badge initial">INITIAL</span><span class="status-indicator"></span><button class="edit-save-btn">Save</button></td>
-                    <td class="parity data-source-deep editable" data-row="customization" data-col="databricks">Extremely High: As a foundational platform, it offers maximum flexibility via multiple languages, notebooks, and APIs to build any custom AI application.<span class="data-source-badge deep">DEEP</span><span class="status-indicator"></span><button class="edit-save-btn">Save</button></td>
+                    <td class="parity data-source-web editable" data-row="customization" data-col="cef">Open Source Models → Models you own and tune to your business needs. Continuously evolving with your data and your use cases.<span class="data-source-badge web">WEB</span><span class="status-indicator"></span><button class="edit-save-btn">Save</button></td>
+                    <td class="parity data-source-ai editable" data-row="customization" data-col="databricks">Extremely High: As a foundational platform, it offers maximum flexibility via multiple languages, notebooks, and APIs to build any custom AI application.<span class="data-source-badge ai">AI</span><span class="status-indicator"></span><button class="edit-save-btn">Save</button></td>
                     <td class="parity editable" data-row="customization" data-col="sierra">
                         <div class="data-source-section">
-                            <div class="data-source-initial">
-                                <span class="data-source-badge initial">INITIAL</span>
+                            <div class="data-source-web">
+                                <span class="data-source-badge web">WEB</span>
                                 High - Declaratively define your agent's unique goals and guardrails with our Agent SDK. Rapidly develop highly effective agents with out-of-the-box composable skills, fine-tuning capabilities, and advanced developer tools. Empower customer experience teams to build and manage agents—without writing a line of code. Set up customer journeys, configure knowledge, and define brand guidelines effortlessly within Agent Studio.
                             </div>
-                            <div class="data-source-deep">
-                                <span class="data-source-badge deep">DEEP</span>
+                            <div class="data-source-ai">
+                                <span class="data-source-badge ai">AI</span>
                                 High: Offers both a developer-focused Agent SDK for deep configuration and a no-code Agent Studio for business users.
                             </div>
                         </div>
                         <span class="status-indicator"></span><button class="edit-save-btn">Save</button>
                     </td>
-                    <td class="parity data-source-deep editable" data-row="customization" data-col="fin">Complete, fully configurable AI Agent System with no-code user experience anyone can manage. Customize, test, and continuously improve Fin<span class="data-source-badge deep">DEEP</span><span class="status-indicator"></span><button class="edit-save-btn">Save</button></td>
-                    <td class="parity data-source-initial editable" data-row="customization" data-col="nice">AI Agents: Instantly create no-code AI agents powered by your data—build once, deploy everywhere. Seamless integrations: Get connected fast with pre-built integrations, open APIs, and simple tools that keep your business moving<span class="data-source-badge initial">INITIAL</span><span class="status-indicator"></span><button class="edit-save-btn">Save</button></td>
+                    <td class="parity data-source-ai editable" data-row="customization" data-col="fin">Complete, fully configurable AI Agent System with no-code user experience anyone can manage. Customize, test, and continuously improve Fin<span class="data-source-badge ai">AI</span><span class="status-indicator"></span><button class="edit-save-btn">Save</button></td>
+                    <td class="parity data-source-web editable" data-row="customization" data-col="nice">AI Agents: Instantly create no-code AI agents powered by your data—build once, deploy everywhere. Seamless integrations: Get connected fast with pre-built integrations, open APIs, and simple tools that keep your business moving<span class="data-source-badge web">WEB</span><span class="status-indicator"></span><button class="edit-save-btn">Save</button></td>
                     <td class="parity data-source-mixed editable" data-row="customization" data-col="snowflake">
                         <div class="data-source-section">
-                            <div class="data-source-initial">
-                                Data Applications: Enables the development of data-driven applications. Developer Resources: Step-by-step guides and architectures that offer insights into how Snowflake can be used to create data applications<span class="data-source-badge initial">INITIAL</span>
+                            <div class="data-source-web">
+                                Data Applications: Enables the development of data-driven applications. Developer Resources: Step-by-step guides and architectures that offer insights into how Snowflake can be used to create data applications<span class="data-source-badge web">WEB</span>
                             </div>
-                            <div class="data-source-deep">
-                                Snowflake Cortex: managed LLM services for business users. Snowflake ML: full MLOps suite for data scientists. Snowpark: Python/Java/Scala execution framework<span class="data-source-badge deep">DEEP</span>
+                            <div class="data-source-ai">
+                                Snowflake Cortex: managed LLM services for business users. Snowflake ML: full MLOps suite for data scientists. Snowpark: Python/Java/Scala execution framework<span class="data-source-badge ai">AI</span>
                             </div>
                         </div>
                         <span class="status-indicator"></span><button class="edit-save-btn">Save</button>
@@ -1120,18 +1120,18 @@
                 </tr>
                 <tr>
                     <td class="company-header">Target Market</td>
-                    <td class="parity data-source-initial editable" data-row="target-market" data-col="cef">Enterprises in highly regulated industries (Finance, Healthcare, Government) with stringent security, compliance, and data sovereignty requirements<span class="data-source-badge initial">INITIAL</span><span class="status-indicator"></span><button class="edit-save-btn">Save</button></td>
-                    <td class="parity data-source-deep editable" data-row="target-market" data-col="databricks">Enterprise data teams (engineers, scientists, analysts) across all industries requiring a foundational platform for data and AI workloads<span class="data-source-badge deep">DEEP</span><span class="status-indicator"></span><button class="edit-save-btn">Save</button></td>
-                    <td class="parity data-source-deep editable" data-row="target-market" data-col="sierra">Enterprise clients with high-volume, complex customer interactions (e.g., customer service, commerce) across various industries<span class="data-source-badge deep">DEEP</span><span class="status-indicator"></span><button class="edit-save-btn">Save</button></td>
-                    <td class="parity data-source-deep editable" data-row="target-market" data-col="fin">Primarily existing and new Intercom customers, from startups to enterprises, seeking integrated customer service automation<span class="data-source-badge deep">DEEP</span><span class="status-indicator"></span><button class="edit-save-btn">Save</button></td>
-                    <td class="parity data-source-initial editable" data-row="target-market" data-col="nice">Enterprise contact centers and customer service organizations across all industries. Serves 25,000+ organizations worldwide, powers 15+ billion customer interactions annually<span class="data-source-badge initial">INITIAL</span><span class="status-indicator"></span><button class="edit-save-btn">Save</button></td>
+                    <td class="parity data-source-web editable" data-row="target-market" data-col="cef">Enterprises in highly regulated industries (Finance, Healthcare, Government) with stringent security, compliance, and data sovereignty requirements<span class="data-source-badge web">WEB</span><span class="status-indicator"></span><button class="edit-save-btn">Save</button></td>
+                    <td class="parity data-source-ai editable" data-row="target-market" data-col="databricks">Enterprise data teams (engineers, scientists, analysts) across all industries requiring a foundational platform for data and AI workloads<span class="data-source-badge ai">AI</span><span class="status-indicator"></span><button class="edit-save-btn">Save</button></td>
+                    <td class="parity data-source-ai editable" data-row="target-market" data-col="sierra">Enterprise clients with high-volume, complex customer interactions (e.g., customer service, commerce) across various industries<span class="data-source-badge ai">AI</span><span class="status-indicator"></span><button class="edit-save-btn">Save</button></td>
+                    <td class="parity data-source-ai editable" data-row="target-market" data-col="fin">Primarily existing and new Intercom customers, from startups to enterprises, seeking integrated customer service automation<span class="data-source-badge ai">AI</span><span class="status-indicator"></span><button class="edit-save-btn">Save</button></td>
+                    <td class="parity data-source-web editable" data-row="target-market" data-col="nice">Enterprise contact centers and customer service organizations across all industries. Serves 25,000+ organizations worldwide, powers 15+ billion customer interactions annually<span class="data-source-badge web">WEB</span><span class="status-indicator"></span><button class="edit-save-btn">Save</button></td>
                     <td class="parity data-source-mixed editable" data-row="target-market" data-col="snowflake">
                         <div class="data-source-section">
-                            <div class="data-source-initial">
-                                Organizations requiring data consolidation and analytics across financial services, retail, healthcare, and technology. Serves 8,000+ customers worldwide, including many Fortune 500 companies<span class="data-source-badge initial">INITIAL</span>
+                            <div class="data-source-web">
+                                Organizations requiring data consolidation and analytics across financial services, retail, healthcare, and technology. Serves 8,000+ customers worldwide, including many Fortune 500 companies<span class="data-source-badge web">WEB</span>
                             </div>
-                            <div class="data-source-deep">
-                                751 Forbes Global 2000 companies. Founded 2012, $3.63B revenue, 8,575 employees. Transitioning from data warehouse to AI Data Cloud platform<span class="data-source-badge deep">DEEP</span>
+                            <div class="data-source-ai">
+                                751 Forbes Global 2000 companies. Founded 2012, $3.63B revenue, 8,575 employees. Transitioning from data warehouse to AI Data Cloud platform<span class="data-source-badge ai">AI</span>
                             </div>
                         </div>
                         <span class="status-indicator"></span><button class="edit-save-btn">Save</button>
@@ -1139,15 +1139,15 @@
                 </tr>
                 <tr>
                     <td class="company-header">Core Value Proposition</td>
-                    <td class="parity data-source-initial editable" data-row="value-prop" data-col="cef">A New Data Compute Platform built from the ground up for multi-agents. Secure, owned and customized models that evolve with your business. Production ready on 100% sovereign data infrastructure.<span class="data-source-badge initial">INITIAL</span><span class="status-indicator"></span><button class="edit-save-btn">Save</button></td>
+                    <td class="parity data-source-web editable" data-row="value-prop" data-col="cef">A New Data Compute Platform built from the ground up for multi-agents. Secure, owned and customized models that evolve with your business. Production ready on 100% sovereign data infrastructure.<span class="data-source-badge web">WEB</span><span class="status-indicator"></span><button class="edit-save-btn">Save</button></td>
                     <td class="parity editable" data-row="value-prop" data-col="databricks">
                         <div class="data-source-section">
-                            <div class="data-source-initial">
-                                <span class="data-source-badge initial">INITIAL</span>
+                            <div class="data-source-web">
+                                <span class="data-source-badge web">WEB</span>
                                 Databricks brings AI to your data to help you bring AI to the world.
                             </div>
-                            <div class="data-source-deep">
-                                <span class="data-source-badge deep">DEEP</span>
+                            <div class="data-source-ai">
+                                <span class="data-source-badge ai">AI</span>
                                 A unified Data Intelligence Platform (Lakehouse) that brings AI to a company's existing data, enabling them to build their own custom AI applications.
                             </div>
                         </div>
@@ -1155,12 +1155,12 @@
                     </td>
                     <td class="parity editable" data-row="value-prop" data-col="sierra">
                         <div class="data-source-section">
-                            <div class="data-source-initial">
-                                <span class="data-source-badge initial">INITIAL</span>
+                            <div class="data-source-web">
+                                <span class="data-source-badge web">WEB</span>
                                 AI agents mirror the nuances of human communication and deliver helpful, empathetic, omnichannel support, improving customer satisfaction. Best of all, they're always available, always up-to-date, and always on brand.
                             </div>
-                            <div class="data-source-deep">
-                                <span class="data-source-badge deep">DEEP</span>
+                            <div class="data-source-ai">
+                                <span class="data-source-badge ai">AI</span>
                                 AI agents that mirror human communication to deliver empathetic, omnichannel support, representing a company's entire customer experience.
                             </div>
                         </div>
@@ -1168,25 +1168,25 @@
                     </td>
                     <td class="parity editable" data-row="value-prop" data-col="fin">
                         <div class="data-source-section">
-                            <div class="data-source-initial">
-                                <span class="data-source-badge initial">INITIAL</span>
+                            <div class="data-source-web">
+                                <span class="data-source-badge web">WEB</span>
                                 Fin is the only complete, fully configurable AI Agent System in customer service—empowering support teams to customize, test, and continuously improve Fin through a no-code user experience anyone can manage.
                             </div>
-                            <div class="data-source-deep">
-                                <span class="data-source-badge deep">DEEP</span>
+                            <div class="data-source-ai">
+                                <span class="data-source-badge ai">AI</span>
                                 A complete, fully configurable AI agent system seamlessly integrated into the Intercom helpdesk, manageable via a no-code UX for ease of adoption.
                             </div>
                         </div>
                         <span class="status-indicator"></span><button class="edit-save-btn">Save</button>
                     </td>
-                    <td class="parity data-source-initial editable" data-row="value-prop" data-col="nice">CXone Mpower Platform: Complete AI platform for customer service automation. Unify customer engagement across digital, voice, and AI<span class="data-source-badge initial">INITIAL</span><span class="status-indicator"></span><button class="edit-save-btn">Save</button></td>
+                    <td class="parity data-source-web editable" data-row="value-prop" data-col="nice">CXone Mpower Platform: Complete AI platform for customer service automation. Unify customer engagement across digital, voice, and AI<span class="data-source-badge web">WEB</span><span class="status-indicator"></span><button class="edit-save-btn">Save</button></td>
                     <td class="parity data-source-mixed editable" data-row="value-prop" data-col="snowflake">
                         <div class="data-source-section">
-                            <div class="data-source-initial">
-                                AI Data Cloud: Platform that enables organizations to consolidate data into a single source of truth. Snowflake delivers the Data Cloud — mobilize your data with near-unlimited scale and performance<span class="data-source-badge initial">INITIAL</span>
+                            <div class="data-source-web">
+                                AI Data Cloud: Platform that enables organizations to consolidate data into a single source of truth. Snowflake delivers the Data Cloud — mobilize your data with near-unlimited scale and performance<span class="data-source-badge web">WEB</span>
                             </div>
-                            <div class="data-source-deep">
-                                AI Data Cloud: unified platform for all data and AI workloads. Bring AI to data philosophy with decoupled storage/compute architecture ideal for AI workloads<span class="data-source-badge deep">DEEP</span>
+                            <div class="data-source-ai">
+                                AI Data Cloud: unified platform for all data and AI workloads. Bring AI to data philosophy with decoupled storage/compute architecture ideal for AI workloads<span class="data-source-badge ai">AI</span>
                             </div>
                         </div>
                         <span class="status-indicator"></span><button class="edit-save-btn">Save</button>
@@ -1194,18 +1194,18 @@
                 </tr>
                 <tr>
                     <td class="company-header">Pricing Model</td>
-                    <td class="parity data-source-initial editable" data-row="pricing" data-col="cef">Tiered Subscription with Sovereignty Premium: Predictable subscription tiers for core functionality, with a premium tier/add-on for sovereign deployment (VPC/on-prem) and advanced compliance features<span class="data-source-badge initial">INITIAL</span><span class="status-indicator"></span><button class="edit-save-btn">Save</button></td>
-                    <td class="parity data-source-deep editable" data-row="pricing" data-col="databricks">Consumption-based (pay-for-what-you-use compute) plus enterprise-level licensing agreements for the platform.<span class="data-source-badge deep">DEEP</span><span class="status-indicator"></span><button class="edit-save-btn">Save</button></td>
-                    <td class="parity data-source-deep editable" data-row="pricing" data-col="sierra">Hybrid Model: Primarily outcome-based (pay-per-resolution) layered on top of a high-cost annual subscription (starts ~$150k) and significant implementation fees ($50k-$200k). Not publicly disclosed.<span class="data-source-badge deep">DEEP</span><span class="status-indicator"></span><button class="edit-save-btn">Save</button></td>
-                    <td class="parity data-source-deep editable" data-row="pricing" data-col="fin">Transactional pricing model integrated with Intercom subscription. Accessible pricing for startups to enterprises<span class="data-source-badge deep">DEEP</span><span class="status-indicator"></span><button class="edit-save-btn">Save</button></td>
-                    <td class="parity data-source-initial editable" data-row="pricing" data-col="nice">Enterprise pricing model for CCaaS platform with consumption-based components. Public company (NASDAQ: NICE) with over $2 billion annual revenue<span class="data-source-badge initial">INITIAL</span><span class="status-indicator"></span><button class="edit-save-btn">Save</button></td>
+                    <td class="parity data-source-web editable" data-row="pricing" data-col="cef">Tiered Subscription with Sovereignty Premium: Predictable subscription tiers for core functionality, with a premium tier/add-on for sovereign deployment (VPC/on-prem) and advanced compliance features<span class="data-source-badge web">WEB</span><span class="status-indicator"></span><button class="edit-save-btn">Save</button></td>
+                    <td class="parity data-source-ai editable" data-row="pricing" data-col="databricks">Consumption-based (pay-for-what-you-use compute) plus enterprise-level licensing agreements for the platform.<span class="data-source-badge ai">AI</span><span class="status-indicator"></span><button class="edit-save-btn">Save</button></td>
+                    <td class="parity data-source-ai editable" data-row="pricing" data-col="sierra">Hybrid Model: Primarily outcome-based (pay-per-resolution) layered on top of a high-cost annual subscription (starts ~$150k) and significant implementation fees ($50k-$200k). Not publicly disclosed.<span class="data-source-badge ai">AI</span><span class="status-indicator"></span><button class="edit-save-btn">Save</button></td>
+                    <td class="parity data-source-ai editable" data-row="pricing" data-col="fin">Transactional pricing model integrated with Intercom subscription. Accessible pricing for startups to enterprises<span class="data-source-badge ai">AI</span><span class="status-indicator"></span><button class="edit-save-btn">Save</button></td>
+                    <td class="parity data-source-web editable" data-row="pricing" data-col="nice">Enterprise pricing model for CCaaS platform with consumption-based components. Public company (NASDAQ: NICE) with over $2 billion annual revenue<span class="data-source-badge web">WEB</span><span class="status-indicator"></span><button class="edit-save-btn">Save</button></td>
                     <td class="parity data-source-mixed editable" data-row="pricing" data-col="snowflake">
                         <div class="data-source-section">
-                            <div class="data-source-initial">
-                                Consumption-based pricing for data storage, compute, and data sharing. Public company (NYSE: SNOW) with over $2 billion annual revenue<span class="data-source-badge initial">INITIAL</span>
+                            <div class="data-source-web">
+                                Consumption-based pricing for data storage, compute, and data sharing. Public company (NYSE: SNOW) with over $2 billion annual revenue<span class="data-source-badge web">WEB</span>
                             </div>
-                            <div class="data-source-deep">
-                                Consumption-based model: compute credits per second, storage per TB/month. Pay-as-you-go with 125% net revenue retention indicating strong land-and-expand<span class="data-source-badge deep">DEEP</span>
+                            <div class="data-source-ai">
+                                Consumption-based model: compute credits per second, storage per TB/month. Pay-as-you-go with 125% net revenue retention indicating strong land-and-expand<span class="data-source-badge ai">AI</span>
                             </div>
                         </div>
                         <span class="status-indicator"></span><button class="edit-save-btn">Save</button>
@@ -1213,30 +1213,30 @@
                 </tr>
                 <tr>
                     <td class="company-header">Funding Stage</td>
-                    <td class="parity data-source-initial editable" data-row="funding" data-col="cef">Pre-seed, with a Seed round planned to build out the core engineering and GTM team<span class="data-source-badge initial">INITIAL</span><span class="status-indicator"></span><button class="edit-save-btn">Save</button></td>
+                    <td class="parity data-source-web editable" data-row="funding" data-col="cef">Pre-seed, with a Seed round planned to build out the core engineering and GTM team<span class="data-source-badge web">WEB</span><span class="status-indicator"></span><button class="edit-save-btn">Save</button></td>
                     <td class="parity editable" data-row="funding" data-col="databricks">
                         <div class="data-source-section">
-                            <div class="data-source-initial">
-                                <span class="data-source-badge initial">INITIAL</span>
+                            <div class="data-source-web">
+                                <span class="data-source-badge web">WEB</span>
                                 Databricks is raising a Series K Investment at >$100 billion valuation
                             </div>
-                            <div class="data-source-deep">
-                                <span class="data-source-badge deep">DEEP</span>
+                            <div class="data-source-ai">
+                                <span class="data-source-badge ai">AI</span>
                                 Private / Pre-IPO (Series K). Valued at over $100B, making it one of the world's most valuable private tech companies. More than 15,000 organizations worldwide including 60% of Fortune 500 rely on Databricks.
                             </div>
                         </div>
                         <span class="status-indicator"></span><button class="edit-save-btn">Save</button>
                     </td>
-                    <td class="parity data-source-deep editable" data-row="funding" data-col="sierra">Series A (Launched 2024). Well-capitalized with significant backing.<span class="data-source-badge deep">DEEP</span><span class="status-indicator"></span><button class="edit-save-btn">Save</button></td>
-                    <td class="parity data-source-deep editable" data-row="funding" data-col="fin">Acquired by Intercom. Operates as an integrated product line within a mature, profitable company<span class="data-source-badge deep">DEEP</span><span class="status-indicator"></span><button class="edit-save-btn">Save</button></td>
-                    <td class="parity data-source-initial editable" data-row="funding" data-col="nice">Public company (NASDAQ: NICE) with market capitalization over $10 billion. Founded in 1986, established market leader<span class="data-source-badge initial">INITIAL</span><span class="status-indicator"></span><button class="edit-save-btn">Save</button></td>
+                    <td class="parity data-source-ai editable" data-row="funding" data-col="sierra">Series A (Launched 2024). Well-capitalized with significant backing.<span class="data-source-badge ai">AI</span><span class="status-indicator"></span><button class="edit-save-btn">Save</button></td>
+                    <td class="parity data-source-ai editable" data-row="funding" data-col="fin">Acquired by Intercom. Operates as an integrated product line within a mature, profitable company<span class="data-source-badge ai">AI</span><span class="status-indicator"></span><button class="edit-save-btn">Save</button></td>
+                    <td class="parity data-source-web editable" data-row="funding" data-col="nice">Public company (NASDAQ: NICE) with market capitalization over $10 billion. Founded in 1986, established market leader<span class="data-source-badge web">WEB</span><span class="status-indicator"></span><button class="edit-save-btn">Save</button></td>
                     <td class="parity data-source-mixed editable" data-row="funding" data-col="snowflake">
                         <div class="data-source-section">
-                            <div class="data-source-initial">
-                                Public company (NYSE: SNOW) with market capitalization over $50 billion. Founded in 2012, went public in 2020, one of the fastest-growing software companies in history<span class="data-source-badge initial">INITIAL</span>
+                            <div class="data-source-web">
+                                Public company (NYSE: SNOW) with market capitalization over $50 billion. Founded in 2012, went public in 2020, one of the fastest-growing software companies in history<span class="data-source-badge web">WEB</span>
                             </div>
-                            <div class="data-source-deep">
-                                Public company (NYSE: SNOW), $79.65B market cap. 2020 IPO was largest software IPO in history. Sridhar Ramaswamy CEO transition signals AI focus<span class="data-source-badge deep">DEEP</span>
+                            <div class="data-source-ai">
+                                Public company (NYSE: SNOW), $79.65B market cap. 2020 IPO was largest software IPO in history. Sridhar Ramaswamy CEO transition signals AI focus<span class="data-source-badge ai">AI</span>
                             </div>
                         </div>
                         <span class="status-indicator"></span><button class="edit-save-btn">Save</button>
@@ -1244,30 +1244,30 @@
                 </tr>
                 <tr>
                     <td class="company-header">Team Size</td>
-                    <td class="parity data-source-initial editable" data-row="team-size" data-col="cef">Plan to scale to a core team of ~20-30 post-Seed round, focusing on senior security and governance engineering talent<span class="data-source-badge initial">INITIAL</span><span class="status-indicator"></span><button class="edit-save-btn">Save</button></td>
-                    <td class="parity data-source-deep editable" data-row="team-size" data-col="databricks">~6,000-8,200 employees globally, reflecting its status as a dominant enterprise software platform.<span class="data-source-badge deep">DEEP</span><span class="status-indicator"></span><button class="edit-save-btn">Save</button></td>
+                    <td class="parity data-source-web editable" data-row="team-size" data-col="cef">Plan to scale to a core team of ~20-30 post-Seed round, focusing on senior security and governance engineering talent<span class="data-source-badge web">WEB</span><span class="status-indicator"></span><button class="edit-save-btn">Save</button></td>
+                    <td class="parity data-source-ai editable" data-row="team-size" data-col="databricks">~6,000-8,200 employees globally, reflecting its status as a dominant enterprise software platform.<span class="data-source-badge ai">AI</span><span class="status-indicator"></span><button class="edit-save-btn">Save</button></td>
                     <td class="parity editable" data-row="team-size" data-col="sierra">
                         <div class="data-source-section">
-                            <div class="data-source-initial">
-                                <span class="data-source-badge initial">INITIAL</span>
+                            <div class="data-source-web">
+                                <span class="data-source-badge web">WEB</span>
                                 Bret Taylor: Co-Founder, previously Co-CEO of Salesforce, founded Quip, CTO of Facebook, co-created Google Maps. Clay Bavor: Co-Founder, spent 18 years at Google, led Google Labs, started Google's AR/VR effort.
                             </div>
-                            <div class="data-source-deep">
-                                <span class="data-source-badge deep">DEEP</span>
+                            <div class="data-source-ai">
+                                <span class="data-source-badge ai">AI</span>
                                 Startup team of ~150-170 employees, indicating significant investment and operational scale for a new company.
                             </div>
                         </div>
                         <span class="status-indicator"></span><button class="edit-save-btn">Save</button>
                     </td>
-                    <td class="parity data-source-deep editable" data-row="team-size" data-col="fin">An integrated "AI Group" within Intercom. Supported by Intercom's broader organization and professional services team<span class="data-source-badge deep">DEEP</span><span class="status-indicator"></span><button class="edit-save-btn">Save</button></td>
-                    <td class="parity data-source-initial editable" data-row="team-size" data-col="nice">Global workforce: 8,000+ employees serving enterprises worldwide. Established company with 38+ years of experience<span class="data-source-badge initial">INITIAL</span><span class="status-indicator"></span><button class="edit-save-btn">Save</button></td>
+                    <td class="parity data-source-ai editable" data-row="team-size" data-col="fin">An integrated "AI Group" within Intercom. Supported by Intercom's broader organization and professional services team<span class="data-source-badge ai">AI</span><span class="status-indicator"></span><button class="edit-save-btn">Save</button></td>
+                    <td class="parity data-source-web editable" data-row="team-size" data-col="nice">Global workforce: 8,000+ employees serving enterprises worldwide. Established company with 38+ years of experience<span class="data-source-badge web">WEB</span><span class="status-indicator"></span><button class="edit-save-btn">Save</button></td>
                     <td class="parity data-source-mixed editable" data-row="team-size" data-col="snowflake">
                         <div class="data-source-section">
-                            <div class="data-source-initial">
-                                Global workforce: 7,000+ employees supporting enterprise data platform. Rapidly growing company with 12+ years of experience<span class="data-source-badge initial">INITIAL</span>
+                            <div class="data-source-web">
+                                Global workforce: 7,000+ employees supporting enterprise data platform. Rapidly growing company with 12+ years of experience<span class="data-source-badge web">WEB</span>
                             </div>
-                            <div class="data-source-deep">
-                                8,575 employees: 35% Engineering, 32% Sales. Technical and commercial focus reflecting dual innovation and market expansion strategy<span class="data-source-badge deep">DEEP</span>
+                            <div class="data-source-ai">
+                                8,575 employees: 35% Engineering, 32% Sales. Technical and commercial focus reflecting dual innovation and market expansion strategy<span class="data-source-badge ai">AI</span>
                             </div>
                         </div>
                         <span class="status-indicator"></span><button class="edit-save-btn">Save</button>
@@ -1279,15 +1279,15 @@
                 </tr>
                 <tr>
                     <td class="company-header">Customer Stories</td>
-                    <td class="parity data-source-initial editable" data-row="customer-stories" data-col="cef">Plan to build foundational case studies with design partners in finance and healthcare, focusing on risk reduction and compliance acceleration<span class="data-source-badge initial">INITIAL</span><span class="status-indicator"></span><button class="edit-save-btn">Save</button></td>
+                    <td class="parity data-source-web editable" data-row="customer-stories" data-col="cef">Plan to build foundational case studies with design partners in finance and healthcare, focusing on risk reduction and compliance acceleration<span class="data-source-badge web">WEB</span><span class="status-indicator"></span><button class="edit-save-btn">Save</button></td>
                     <td class="parity editable" data-row="customer-stories" data-col="databricks">
                         <div class="data-source-section">
-                            <div class="data-source-initial">
-                                <span class="data-source-badge initial">INITIAL</span>
+                            <div class="data-source-web">
+                                <span class="data-source-badge web">WEB</span>
                                 Mastercard (159 billion transactions a year across 210+ countries), Unilever (25% reduction in overall infrastructure costs), Adidas (30–40% efficiency gains by transforming 2M+ reviews into actionable insights), FOX Sports (Real-time data processing and in-app chatbot powered by Databricks), HSBC, TD Bank
                             </div>
-                            <div class="data-source-deep">
-                                <span class="data-source-badge deep">DEEP</span>
+                            <div class="data-source-ai">
+                                <span class="data-source-badge ai">AI</span>
                                 Over 60% of the Fortune 500, including Mastercard, Unilever, and HSBC, using the platform for a wide range of data, analytics, and AI workloads.
                             </div>
                         </div>
@@ -1295,12 +1295,12 @@
                     </td>
                     <td class="parity editable" data-row="customer-stories" data-col="sierra">
                         <div class="data-source-section">
-                            <div class="data-source-initial">
-                                <span class="data-source-badge initial">INITIAL</span>
+                            <div class="data-source-web">
+                                <span class="data-source-badge web">WEB</span>
                                 ADT (Customer inquiries per month: 2 million), SiriusXM (Subscribers: 34 Million), Thrive Market (CSAT: ~90%), CLEAR (4.7/5 customer satisfaction), Sonos (15 million customers), CDW (250,000 customers), WeightWatchers, OluKai
                             </div>
-                            <div class="data-source-deep">
-                                <span class="data-source-badge deep">DEEP</span>
+                            <div class="data-source-ai">
+                                <span class="data-source-badge ai">AI</span>
                                 High-profile enterprise clients like ADT, SiriusXM, and CLEAR, focused on large-scale customer service and commerce automation.
                             </div>
                         </div>
@@ -1308,25 +1308,25 @@
                     </td>
                     <td class="parity editable" data-row="customer-stories" data-col="fin">
                         <div class="data-source-section">
-                            <div class="data-source-initial">
-                                <span class="data-source-badge initial">INITIAL</span>
+                            <div class="data-source-web">
+                                <span class="data-source-badge web">WEB</span>
                                 Anthropic: "If you're debating whether to build your own AI solution or buy one, my advice would be to buy – and specifically, buy Fin." Monday.com: "We have been able to close of 50% of conversations with AI and keep an 85% CSAT score." Culture Amp: "Using Fin at RB2B has saved us $30k since April"
                             </div>
-                            <div class="data-source-deep">
-                                <span class="data-source-badge deep">DEEP</span>
+                            <div class="data-source-ai">
+                                <span class="data-source-badge ai">AI</span>
                                 The vast Intercom customer base, primarily focused on customer support automation within SaaS and tech companies.
                             </div>
                         </div>
                         <span class="status-indicator"></span><button class="edit-save-btn">Save</button>
                     </td>
-                    <td class="parity data-source-initial editable" data-row="customer-stories" data-col="nice">Toyota Group: 75% increase in customer satisfaction. Sony Electronics: 40% automation potential for customers, 34% increase in customer satisfaction. Various Clients: Saves over $1 million in first eight months with NICE EEM and VRS<span class="data-source-badge initial">INITIAL</span><span class="status-indicator"></span><button class="edit-save-btn">Save</button></td>
+                    <td class="parity data-source-web editable" data-row="customer-stories" data-col="nice">Toyota Group: 75% increase in customer satisfaction. Sony Electronics: 40% automation potential for customers, 34% increase in customer satisfaction. Various Clients: Saves over $1 million in first eight months with NICE EEM and VRS<span class="data-source-badge web">WEB</span><span class="status-indicator"></span><button class="edit-save-btn">Save</button></td>
                     <td class="parity data-source-mixed editable" data-row="customer-stories" data-col="snowflake">
                         <div class="data-source-section">
-                            <div class="data-source-initial">
-                                Strategic partnership with NICE for CXone Mpower Data Lake integration. Serves thousands of organizations globally, including many Fortune 500 companies<span class="data-source-badge initial">INITIAL</span>
+                            <div class="data-source-web">
+                                Strategic partnership with NICE for CXone Mpower Data Lake integration. Serves thousands of organizations globally, including many Fortune 500 companies<span class="data-source-badge web">WEB</span>
                             </div>
-                            <div class="data-source-deep">
-                                Massive customer base including 751 Forbes Global 2000. High net revenue retention (125%) demonstrates successful land-and-expand model<span class="data-source-badge deep">DEEP</span>
+                            <div class="data-source-ai">
+                                Massive customer base including 751 Forbes Global 2000. High net revenue retention (125%) demonstrates successful land-and-expand model<span class="data-source-badge ai">AI</span>
                             </div>
                         </div>
                         <span class="status-indicator"></span><button class="edit-save-btn">Save</button>
@@ -1334,15 +1334,15 @@
                 </tr>
                 <tr>
                     <td class="company-header">Use Cases</td>
-                    <td class="parity data-source-initial editable" data-row="use-cases" data-col="cef">High-risk, high-value use cases in regulated industries: AI-driven compliance checks, secure patient data interaction, and auditable citizen services<span class="data-source-badge initial">INITIAL</span><span class="status-indicator"></span><button class="edit-save-btn">Save</button></td>
+                    <td class="parity data-source-web editable" data-row="use-cases" data-col="cef">High-risk, high-value use cases in regulated industries: AI-driven compliance checks, secure patient data interaction, and auditable citizen services<span class="data-source-badge web">WEB</span><span class="status-indicator"></span><button class="edit-save-btn">Save</button></td>
                     <td class="parity editable" data-row="use-cases" data-col="databricks">
                         <div class="data-source-section">
-                            <div class="data-source-initial">
-                                <span class="data-source-badge initial">INITIAL</span>
+                            <div class="data-source-web">
+                                <span class="data-source-badge web">WEB</span>
                                 AI Governance, Warehousing, ETL, Data sharing, Orchestration. Create, tune and deploy your own generative AI models. Automate experiment tracking and governance. Deploy and monitor models at scale. Accelerate ETL, data warehousing, BI and AI.
                             </div>
-                            <div class="data-source-deep">
-                                <span class="data-source-badge deep">DEEP</span>
+                            <div class="data-source-ai">
+                                <span class="data-source-badge ai">AI</span>
                                 Broad platform use cases: AI Governance, Data Warehousing, ETL, Data Sharing, and building custom GenAI models and applications.
                             </div>
                         </div>
@@ -1350,26 +1350,26 @@
                     </td>
                     <td class="parity editable" data-row="use-cases" data-col="sierra">
                         <div class="data-source-section">
-                            <div class="data-source-initial">
-                                <span class="data-source-badge initial">INITIAL</span>
+                            <div class="data-source-web">
+                                <span class="data-source-badge web">WEB</span>
                                 Customer service, commerce, and more. Sierra's agents are intricate software systems that simulate a human type of reasoning, decision-making, and creativity. Our agents can solve a wide range of real-world problems, assisting people with tasks that range from the mundanely logistical (like exchanging too-tight shoes) to the surprisingly complex (such as navigating the acoustic idiosyncrasies of setting up premium speakers).
                             </div>
-                            <div class="data-source-deep">
-                                <span class="data-source-badge deep">DEEP</span>
+                            <div class="data-source-ai">
+                                <span class="data-source-badge ai">AI</span>
                                 Customer service automation, e-commerce assistance, and complex task resolution (e.g., subscription management, troubleshooting).
                             </div>
                         </div>
                         <span class="status-indicator"></span><button class="edit-save-btn">Save</button>
                     </td>
-                    <td class="parity data-source-deep editable" data-row="use-cases" data-col="fin">Customer service automation, conversation analysis, AI-powered insights. Monitor, analyze, and optimize Fin's performance with complete view across customer experience<span class="data-source-badge deep">DEEP</span><span class="status-indicator"></span><button class="edit-save-btn">Save</button></td>
-                    <td class="parity data-source-initial editable" data-row="use-cases" data-col="nice">Workflow Orchestration, Omnichannel Routing, Proactive Engagement, Intelligent Virtual Agent, AI Copilots, Workforce Engagement Management<span class="data-source-badge initial">INITIAL</span><span class="status-indicator"></span><button class="edit-save-btn">Save</button></td>
+                    <td class="parity data-source-ai editable" data-row="use-cases" data-col="fin">Customer service automation, conversation analysis, AI-powered insights. Monitor, analyze, and optimize Fin's performance with complete view across customer experience<span class="data-source-badge ai">AI</span><span class="status-indicator"></span><button class="edit-save-btn">Save</button></td>
+                    <td class="parity data-source-web editable" data-row="use-cases" data-col="nice">Workflow Orchestration, Omnichannel Routing, Proactive Engagement, Intelligent Virtual Agent, AI Copilots, Workforce Engagement Management<span class="data-source-badge web">WEB</span><span class="status-indicator"></span><button class="edit-save-btn">Save</button></td>
                     <td class="parity data-source-mixed editable" data-row="use-cases" data-col="snowflake">
                         <div class="data-source-section">
-                            <div class="data-source-initial">
-                                Data Warehousing, Data Sharing, Data Engineering, Data Science, Data Applications. Powers data-driven applications for enterprises across all industries<span class="data-source-badge initial">INITIAL</span>
+                            <div class="data-source-web">
+                                Data Warehousing, Data Sharing, Data Engineering, Data Science, Data Applications. Powers data-driven applications for enterprises across all industries<span class="data-source-badge web">WEB</span>
                             </div>
-                            <div class="data-source-deep">
-                                Custom model development, RAG applications, unstructured data processing, predictive analytics, generative AI apps across any industry<span class="data-source-badge deep">DEEP</span>
+                            <div class="data-source-ai">
+                                Custom model development, RAG applications, unstructured data processing, predictive analytics, generative AI apps across any industry<span class="data-source-badge ai">AI</span>
                             </div>
                         </div>
                         <span class="status-indicator"></span><button class="edit-save-btn">Save</button>
@@ -1377,30 +1377,30 @@
                 </tr>
                 <tr>
                     <td class="company-header">Channel Strategy</td>
-                    <td class="parity data-source-initial editable" data-row="channel-strategy" data-col="cef">Direct, consultative sales approach targeting CISOs and CCOs. Develop partnerships with security consulting firms specializing in regulated industries<span class="data-source-badge initial">INITIAL</span><span class="status-indicator"></span><button class="edit-save-btn">Save</button></td>
+                    <td class="parity data-source-web editable" data-row="channel-strategy" data-col="cef">Direct, consultative sales approach targeting CISOs and CCOs. Develop partnerships with security consulting firms specializing in regulated industries<span class="data-source-badge web">WEB</span><span class="status-indicator"></span><button class="edit-save-btn">Save</button></td>
                     <td class="parity editable" data-row="channel-strategy" data-col="databricks">
                         <div class="data-source-section">
-                            <div class="data-source-initial">
-                                <span class="data-source-badge initial">INITIAL</span>
+                            <div class="data-source-web">
+                                <span class="data-source-badge web">WEB</span>
                                 AWS/Cloud partnerships, direct enterprise sales, partner ecosystem, Data Intelligence Days events
                             </div>
-                            <div class="data-source-deep">
-                                <span class="data-source-badge deep">DEEP</span>
+                            <div class="data-source-ai">
+                                <span class="data-source-badge ai">AI</span>
                                 Multi-channel: Direct enterprise sales, deep strategic partnerships with major cloud providers (AWS, Azure, GCP), and a vast consulting partner ecosystem.
                             </div>
                         </div>
                         <span class="status-indicator"></span><button class="edit-save-btn">Save</button>
                     </td>
-                    <td class="parity data-source-deep editable" data-row="channel-strategy" data-col="sierra">Primarily a direct, high-touch enterprise sales force, supported by founder-led thought leadership and content marketing.<span class="data-source-badge deep">DEEP</span><span class="status-indicator"></span><button class="edit-save-btn">Save</button></td>
-                    <td class="parity data-source-deep editable" data-row="channel-strategy" data-col="fin">Leverages Intercom's powerful existing GTM engine: direct sales, extensive partner network, and strong brand recognition<span class="data-source-badge deep">DEEP</span><span class="status-indicator"></span><button class="edit-save-btn">Save</button></td>
-                    <td class="parity data-source-initial editable" data-row="channel-strategy" data-col="nice">Direct enterprise sales with global reach and partner ecosystem. Serves 25,000+ organizations worldwide with comprehensive support<span class="data-source-badge initial">INITIAL</span><span class="status-indicator"></span><button class="edit-save-btn">Save</button></td>
+                    <td class="parity data-source-ai editable" data-row="channel-strategy" data-col="sierra">Primarily a direct, high-touch enterprise sales force, supported by founder-led thought leadership and content marketing.<span class="data-source-badge ai">AI</span><span class="status-indicator"></span><button class="edit-save-btn">Save</button></td>
+                    <td class="parity data-source-ai editable" data-row="channel-strategy" data-col="fin">Leverages Intercom's powerful existing GTM engine: direct sales, extensive partner network, and strong brand recognition<span class="data-source-badge ai">AI</span><span class="status-indicator"></span><button class="edit-save-btn">Save</button></td>
+                    <td class="parity data-source-web editable" data-row="channel-strategy" data-col="nice">Direct enterprise sales with global reach and partner ecosystem. Serves 25,000+ organizations worldwide with comprehensive support<span class="data-source-badge web">WEB</span><span class="status-indicator"></span><button class="edit-save-btn">Save</button></td>
                     <td class="parity data-source-mixed editable" data-row="channel-strategy" data-col="snowflake">
                         <div class="data-source-section">
-                            <div class="data-source-initial">
-                                Strategic partnerships with enterprise software providers like NICE. Direct enterprise sales with cloud marketplace presence<span class="data-source-badge initial">INITIAL</span>
+                            <div class="data-source-web">
+                                Strategic partnerships with enterprise software providers like NICE. Direct enterprise sales with cloud marketplace presence<span class="data-source-badge web">WEB</span>
                             </div>
-                            <div class="data-source-deep">
-                                Sales-led GTM with 50%+ revenue investment in sales/marketing. Targets technical buyers: CIOs, CDOs, data scientists, ML engineers<span class="data-source-badge deep">DEEP</span>
+                            <div class="data-source-ai">
+                                Sales-led GTM with 50%+ revenue investment in sales/marketing. Targets technical buyers: CIOs, CDOs, data scientists, ML engineers<span class="data-source-badge ai">AI</span>
                             </div>
                         </div>
                         <span class="status-indicator"></span><button class="edit-save-btn">Save</button>
@@ -1412,15 +1412,15 @@
                 </tr>
                 <tr>
                     <td class="company-header">Market Position</td>
-                    <td class="parity data-source-initial editable" data-row="market-position" data-col="cef">The creator of the "Sovereign AI Governance" category, enabling safe and compliant AI adoption in the world's most critical industries<span class="data-source-badge initial">INITIAL</span><span class="status-indicator"></span><button class="edit-save-btn">Save</button></td>
+                    <td class="parity data-source-web editable" data-row="market-position" data-col="cef">The creator of the "Sovereign AI Governance" category, enabling safe and compliant AI adoption in the world's most critical industries<span class="data-source-badge web">WEB</span><span class="status-indicator"></span><button class="edit-save-btn">Save</button></td>
                     <td class="parity editable" data-row="market-position" data-col="databricks">
                         <div class="data-source-section">
-                            <div class="data-source-initial">
-                                <span class="data-source-badge initial">INITIAL</span>
+                            <div class="data-source-web">
+                                <span class="data-source-badge web">WEB</span>
                                 Market leader in unified data analytics and AI platform. The Databricks Data Intelligence Platform brings AI to your data to help you bring AI to the world.
                             </div>
-                            <div class="data-source-deep">
-                                <span class="data-source-badge deep">DEEP</span>
+                            <div class="data-source-ai">
+                                <span class="data-source-badge ai">AI</span>
                                 The market-leading unified Data Intelligence Platform, providing the foundational infrastructure for all enterprise data and AI.
                             </div>
                         </div>
@@ -1428,26 +1428,26 @@
                     </td>
                     <td class="parity editable" data-row="market-position" data-col="sierra">
                         <div class="data-source-section">
-                            <div class="data-source-initial">
-                                <span class="data-source-badge initial">INITIAL</span>
+                            <div class="data-source-web">
+                                <span class="data-source-badge web">WEB</span>
                                 At Sierra, we enable companies to build their own branded, customer-facing AI agents for customer service, commerce, and more.
                             </div>
-                            <div class="data-source-deep">
-                                <span class="data-source-badge deep">DEEP</span>
+                            <div class="data-source-ai">
+                                <span class="data-source-badge ai">AI</span>
                                 A premium provider of bespoke, human-like AI agents for complex enterprise challenges.
                             </div>
                         </div>
                         <span class="status-indicator"></span><button class="edit-save-btn">Save</button>
                     </td>
-                    <td class="parity data-source-deep editable" data-row="market-position" data-col="fin">The leading integrated AI agent for the dominant Intercom customer service ecosystem. Only complete, fully configurable AI Agent System<span class="data-source-badge deep">DEEP</span><span class="status-indicator"></span><button class="edit-save-btn">Save</button></td>
-                    <td class="parity data-source-initial editable" data-row="market-position" data-col="nice">Gartner® Magic Quadrant™ Leader for Contact Center as a Service for the 11th consecutive year. 91% of customers recommend NICE as preferred CCaaS vendor<span class="data-source-badge initial">INITIAL</span><span class="status-indicator"></span><button class="edit-save-btn">Save</button></td>
+                    <td class="parity data-source-ai editable" data-row="market-position" data-col="fin">The leading integrated AI agent for the dominant Intercom customer service ecosystem. Only complete, fully configurable AI Agent System<span class="data-source-badge ai">AI</span><span class="status-indicator"></span><button class="edit-save-btn">Save</button></td>
+                    <td class="parity data-source-web editable" data-row="market-position" data-col="nice">Gartner® Magic Quadrant™ Leader for Contact Center as a Service for the 11th consecutive year. 91% of customers recommend NICE as preferred CCaaS vendor<span class="data-source-badge web">WEB</span><span class="status-indicator"></span><button class="edit-save-btn">Save</button></td>
                     <td class="parity data-source-mixed editable" data-row="market-position" data-col="snowflake">
                         <div class="data-source-section">
-                            <div class="data-source-initial">
-                                Leading cloud-based data platform enabling enterprise data consolidation. One of the fastest-growing software companies in history<span class="data-source-badge initial">INITIAL</span>
+                            <div class="data-source-web">
+                                Leading cloud-based data platform enabling enterprise data consolidation. One of the fastest-growing software companies in history<span class="data-source-badge web">WEB</span>
                             </div>
-                            <div class="data-source-deep">
-                                Horizontal foundational data platform. Aiming to become center of gravity for all enterprise data and AI workloads<span class="data-source-badge deep">DEEP</span>
+                            <div class="data-source-ai">
+                                Horizontal foundational data platform. Aiming to become center of gravity for all enterprise data and AI workloads<span class="data-source-badge ai">AI</span>
                             </div>
                         </div>
                         <span class="status-indicator"></span><button class="edit-save-btn">Save</button>
@@ -1455,15 +1455,15 @@
                 </tr>
                 <tr>
                     <td class="company-header">Competitive Advantage</td>
-                    <td class="parity data-source-initial editable" data-row="competitive-advantage" data-col="cef">A unique security architecture built for verifiable trust, providing the essential governance layer required for AI adoption in regulated enterprises<span class="data-source-badge initial">INITIAL</span><span class="status-indicator"></span><button class="edit-save-btn">Save</button></td>
+                    <td class="parity data-source-web editable" data-row="competitive-advantage" data-col="cef">A unique security architecture built for verifiable trust, providing the essential governance layer required for AI adoption in regulated enterprises<span class="data-source-badge web">WEB</span><span class="status-indicator"></span><button class="edit-save-btn">Save</button></td>
                     <td class="parity editable" data-row="competitive-advantage" data-col="databricks">
                         <div class="data-source-section">
-                            <div class="data-source-initial">
-                                <span class="data-source-badge initial">INITIAL</span>
+                            <div class="data-source-web">
+                                <span class="data-source-badge web">WEB</span>
                                 Unified platform, 12x better price/performance for SQL and BI workloads by moving from legacy cloud data warehouses to a lakehouse, enterprise-grade security and compliance. Great models are built with great data. With Databricks, lineage, quality, control and data privacy are maintained across the entire AI workflow.
                             </div>
-                            <div class="data-source-deep">
-                                <span class="data-source-badge deep">DEEP</span>
+                            <div class="data-source-ai">
+                                <span class="data-source-badge ai">AI</span>
                                 A unified, open-core platform (Lakehouse) that eliminates data silos and provides superior price/performance for all data and AI workloads.
                             </div>
                         </div>
@@ -1471,26 +1471,26 @@
                     </td>
                     <td class="parity editable" data-row="competitive-advantage" data-col="sierra">
                         <div class="data-source-section">
-                            <div class="data-source-initial">
-                                <span class="data-source-badge initial">INITIAL</span>
+                            <div class="data-source-web">
+                                <span class="data-source-badge web">WEB</span>
                                 Sierra's agents are intricate software systems that simulate a human type of reasoning, decision-making, and creativity. Our agents can solve a wide range of real-world problems.
                             </div>
-                            <div class="data-source-deep">
-                                <span class="data-source-badge deep">DEEP</span>
+                            <div class="data-source-ai">
+                                <span class="data-source-badge ai">AI</span>
                                 Sophisticated, human-like conversational quality and reasoning capabilities, delivered via a multi-model architecture.
                             </div>
                         </div>
                         <span class="status-indicator"></span><button class="edit-save-btn">Save</button>
                     </td>
-                    <td class="parity data-source-deep editable" data-row="competitive-advantage" data-col="fin">Seamless, native integration into the Intercom platform, creating powerful moat and lowest friction for massive existing user base<span class="data-source-badge deep">DEEP</span><span class="status-indicator"></span><button class="edit-save-btn">Save</button></td>
-                    <td class="parity data-source-initial editable" data-row="competitive-advantage" data-col="nice">91% of customers recommend NICE as a preferred CCaaS vendor. Named a Leader - Furthest in Completeness of Vision. Highest in Ability to Execute<span class="data-source-badge initial">INITIAL</span><span class="status-indicator"></span><button class="edit-save-btn">Save</button></td>
+                    <td class="parity data-source-ai editable" data-row="competitive-advantage" data-col="fin">Seamless, native integration into the Intercom platform, creating powerful moat and lowest friction for massive existing user base<span class="data-source-badge ai">AI</span><span class="status-indicator"></span><button class="edit-save-btn">Save</button></td>
+                    <td class="parity data-source-web editable" data-row="competitive-advantage" data-col="nice">91% of customers recommend NICE as a preferred CCaaS vendor. Named a Leader - Furthest in Completeness of Vision. Highest in Ability to Execute<span class="data-source-badge web">WEB</span><span class="status-indicator"></span><button class="edit-save-btn">Save</button></td>
                     <td class="parity data-source-mixed editable" data-row="competitive-advantage" data-col="snowflake">
                         <div class="data-source-section">
-                            <div class="data-source-initial">
-                                AI Data Cloud facilitating meaningful business insights and data application development. Near-unlimited scale and performance for data mobilization<span class="data-source-badge initial">INITIAL</span>
+                            <div class="data-source-web">
+                                AI Data Cloud facilitating meaningful business insights and data application development. Near-unlimited scale and performance for data mobilization<span class="data-source-badge web">WEB</span>
                             </div>
-                            <div class="data-source-deep">
-                                Unified multi-cloud architecture, robust governance framework, broad ecosystem with data sharing marketplace and partner network<span class="data-source-badge deep">DEEP</span>
+                            <div class="data-source-ai">
+                                Unified multi-cloud architecture, robust governance framework, broad ecosystem with data sharing marketplace and partner network<span class="data-source-badge ai">AI</span>
                             </div>
                         </div>
                         <span class="status-indicator"></span><button class="edit-save-btn">Save</button>
@@ -1498,15 +1498,15 @@
                 </tr>
                 <tr>
                     <td class="company-header">Differentiation</td>
-                    <td class="parity data-source-initial editable" data-row="differentiation" data-col="cef">Differentiates from performance-focused agent platforms by leading on trust, security, and sovereignty, addressing the primary barrier to enterprise AI adoption<span class="data-source-badge initial">INITIAL</span><span class="status-indicator"></span><button class="edit-save-btn">Save</button></td>
+                    <td class="parity data-source-web editable" data-row="differentiation" data-col="cef">Differentiates from performance-focused agent platforms by leading on trust, security, and sovereignty, addressing the primary barrier to enterprise AI adoption<span class="data-source-badge web">WEB</span><span class="status-indicator"></span><button class="edit-save-btn">Save</button></td>
                     <td class="parity editable" data-row="differentiation" data-col="databricks">
                         <div class="data-source-section">
-                            <div class="data-source-initial">
-                                <span class="data-source-badge initial">INITIAL</span>
+                            <div class="data-source-web">
+                                <span class="data-source-badge web">WEB</span>
                                 Databricks brings AI to your data to help you bring AI to the world vs point solutions. The best data warehouse is a lakehouse - achieve 12x better price/performance for SQL and BI workloads.
                             </div>
-                            <div class="data-source-deep">
-                                <span class="data-source-badge deep">DEEP</span>
+                            <div class="data-source-ai">
+                                <span class="data-source-badge ai">AI</span>
                                 Differentiates from point solutions and legacy data warehouses by offering a single, unified platform for all data and AI, from ETL to GenAI.
                             </div>
                         </div>
@@ -1514,26 +1514,26 @@
                     </td>
                     <td class="parity editable" data-row="differentiation" data-col="sierra">
                         <div class="data-source-section">
-                            <div class="data-source-initial">
-                                <span class="data-source-badge initial">INITIAL</span>
+                            <div class="data-source-web">
+                                <span class="data-source-badge web">WEB</span>
                                 AI agents mirror the nuances of human communication and deliver helpful, empathetic, omnichannel support vs traditional chatbots
                             </div>
-                            <div class="data-source-deep">
-                                <span class="data-source-badge deep">DEEP</span>
+                            <div class="data-source-ai">
+                                <span class="data-source-badge ai">AI</span>
                                 Differentiates from traditional chatbots through empathetic, omnichannel support and complex reasoning.
                             </div>
                         </div>
                         <span class="status-indicator"></span><button class="edit-save-btn">Save</button>
                     </td>
-                    <td class="parity data-source-deep editable" data-row="differentiation" data-col="fin">Built on Fin AI Engine™ with patented AI architecture. Complete, fully configurable system vs standalone solutions<span class="data-source-badge deep">DEEP</span><span class="status-indicator"></span><button class="edit-save-btn">Save</button></td>
-                    <td class="parity data-source-initial editable" data-row="differentiation" data-col="nice">One platform connecting every workflow, agent, and answer for seamless customer experiences. The world's best brands trust NICE to power 15B+ interactions a year<span class="data-source-badge initial">INITIAL</span><span class="status-indicator"></span><button class="edit-save-btn">Save</button></td>
+                    <td class="parity data-source-ai editable" data-row="differentiation" data-col="fin">Built on Fin AI Engine™ with patented AI architecture. Complete, fully configurable system vs standalone solutions<span class="data-source-badge ai">AI</span><span class="status-indicator"></span><button class="edit-save-btn">Save</button></td>
+                    <td class="parity data-source-web editable" data-row="differentiation" data-col="nice">One platform connecting every workflow, agent, and answer for seamless customer experiences. The world's best brands trust NICE to power 15B+ interactions a year<span class="data-source-badge web">WEB</span><span class="status-indicator"></span><button class="edit-save-btn">Save</button></td>
                     <td class="parity data-source-mixed editable" data-row="differentiation" data-col="snowflake">
                         <div class="data-source-section">
-                            <div class="data-source-initial">
-                                Consolidates data into single source of truth with secure data sharing capabilities. Snowflake delivers the Data Cloud — mobilize your data with near-unlimited scale and performance<span class="data-source-badge initial">INITIAL</span>
+                            <div class="data-source-web">
+                                Consolidates data into single source of truth with secure data sharing capabilities. Snowflake delivers the Data Cloud — mobilize your data with near-unlimited scale and performance<span class="data-source-badge web">WEB</span>
                             </div>
-                            <div class="data-source-deep">
-                                Horizontal platform vs vertical applications. Provides flexible building blocks for any AI use case rather than pre-packaged solutions<span class="data-source-badge deep">DEEP</span>
+                            <div class="data-source-ai">
+                                Horizontal platform vs vertical applications. Provides flexible building blocks for any AI use case rather than pre-packaged solutions<span class="data-source-badge ai">AI</span>
                             </div>
                         </div>
                         <span class="status-indicator"></span><button class="edit-save-btn">Save</button>
