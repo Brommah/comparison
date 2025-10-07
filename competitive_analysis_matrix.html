@@ -553,79 +553,7 @@
             display: none;
         }
 
-        .search-container {
-            margin-bottom: 20px;
-            display: flex;
-            gap: 10px;
-            align-items: center;
-            flex-wrap: wrap;
-        }
 
-        .search-input {
-            flex: 1;
-            min-width: 200px;
-            padding: 8px 12px;
-            border: 1px solid #cccccc;
-            border-radius: 4px;
-            font-size: 14px;
-        }
-
-        .search-clear {
-            padding: 8px 12px;
-            border: 1px solid #cccccc;
-            background: #ffffff;
-            color: #333333;
-            cursor: pointer;
-            border-radius: 4px;
-            font-size: 14px;
-        }
-
-        .search-clear:hover {
-            background: #f5f5f5;
-        }
-
-        .bulk-edit-mode {
-            background: #fff3cd;
-            border: 2px solid #ffc107;
-            padding: 10px;
-            margin-bottom: 20px;
-            border-radius: 4px;
-            display: none;
-        }
-
-        .bulk-edit-mode.active {
-            display: block;
-        }
-
-        .bulk-edit-controls {
-            display: flex;
-            gap: 10px;
-            align-items: center;
-            flex-wrap: wrap;
-        }
-
-        .bulk-edit-btn {
-            padding: 6px 12px;
-            border: 1px solid #333333;
-            background: #333333;
-            color: #ffffff;
-            cursor: pointer;
-            border-radius: 4px;
-            font-size: 12px;
-        }
-
-        .bulk-edit-btn:hover {
-            background: #555555;
-        }
-
-        .bulk-edit-btn.cancel {
-            background: #dc3545;
-            border-color: #dc3545;
-        }
-
-        .bulk-edit-btn.cancel:hover {
-            background: #c82333;
-        }
 
         .loading-overlay {
             position: fixed;
@@ -975,30 +903,10 @@
         </div>
 
         <!-- Search and Filter Controls -->
-        <div class="search-container">
-            <input type="text" class="search-input" id="searchInput" placeholder="Search across all content..." onkeyup="searchMatrix()">
-            <button class="search-clear" onclick="clearSearch()">Clear</button>
-        </div>
-
         <div class="controls">
-            <button class="btn active" onclick="filterMatrix('all')">All Sections</button>
-            <button class="btn" onclick="filterMatrix('strategic')">Strategic</button>
-            <button class="btn" onclick="filterMatrix('technical')">Technical</button>
-            <button class="btn" onclick="filterMatrix('gtm')">Go-to-Market</button>
-            <button class="btn" onclick="filterMatrix('investor')">Investor</button>
-            <button class="btn" onclick="toggleBulkEdit()">Bulk Edit</button>
             <button class="cef-toggle-btn" onclick="toggleCefCustomInput()">CEF Input</button>
         </div>
 
-        <!-- Bulk Edit Mode -->
-        <div class="bulk-edit-mode" id="bulkEditMode">
-            <strong>Bulk Edit Mode Active</strong>
-            <div class="bulk-edit-controls">
-                <span>Select multiple cells to edit them together</span>
-                <button class="bulk-edit-btn" onclick="bulkSaveChanges()">Save All Changes</button>
-                <button class="bulk-edit-btn cancel" onclick="cancelBulkEdit()">Cancel</button>
-            </div>
-        </div>
 
         <!-- Error/Success Messages -->
         <div class="error-message" id="errorMessage"></div>
@@ -1664,9 +1572,6 @@
         let matrixData = {};
         let versionLog = [];
         let pendingChange = null;
-        let bulkEditMode = false;
-        let selectedCells = new Set();
-        let searchResults = [];
 
         // Global user name variable
         let currentUserName = '';
@@ -2224,28 +2129,6 @@
             });
         }
 
-        // Filter matrix function
-        function filterMatrix(section) {
-            const buttons = document.querySelectorAll('.btn');
-            buttons.forEach(btn => btn.classList.remove('active'));
-            event.target.classList.add('active');
-
-            const rows = document.querySelectorAll('#matrix tbody tr');
-            rows.forEach(row => {
-                if (section === 'all') {
-                    row.style.display = '';
-                } else if (row.classList.contains('section-header')) {
-                    const text = row.textContent.toLowerCase();
-                    if (text.includes(section)) {
-                        row.style.display = '';
-                    } else {
-                        row.style.display = 'none';
-                    }
-                } else {
-                    row.style.display = '';
-                }
-            });
-        }
 
         // Export functions
         function exportToPDF() {
@@ -2321,101 +2204,6 @@
             input.click();
         }
 
-        // Search functionality
-        function searchMatrix() {
-            const searchTerm = document.getElementById('searchInput').value.toLowerCase().trim();
-            if (!searchTerm) {
-                clearSearch();
-                return;
-            }
-
-            const cells = document.querySelectorAll('.matrix td');
-            searchResults = [];
-
-            cells.forEach(cell => {
-                const content = cell.textContent.toLowerCase();
-                if (content.includes(searchTerm)) {
-                    searchResults.push(cell);
-                    cell.style.backgroundColor = '#fff3cd';
-                    cell.style.border = '2px solid #ffc107';
-                } else {
-                    cell.style.backgroundColor = '';
-                    cell.style.border = '';
-                }
-            });
-
-            if (searchResults.length === 0) {
-                showMessage('No results found for "' + searchTerm + '"', 'error');
-            } else {
-                showMessage(`Found ${searchResults.length} results for "${searchTerm}"`, 'success');
-            }
-        }
-
-        function clearSearch() {
-            document.getElementById('searchInput').value = '';
-            const cells = document.querySelectorAll('.matrix td');
-            cells.forEach(cell => {
-                cell.style.backgroundColor = '';
-                cell.style.border = '';
-            });
-            searchResults = [];
-            hideMessage();
-        }
-
-        // Bulk edit functionality
-        function toggleBulkEdit() {
-            bulkEditMode = !bulkEditMode;
-            const bulkEditModeDiv = document.getElementById('bulkEditMode');
-            
-            if (bulkEditMode) {
-                bulkEditModeDiv.classList.add('active');
-                showMessage('Bulk edit mode activated. Click multiple cells to select them.', 'success');
-            } else {
-                bulkEditModeDiv.classList.remove('active');
-                selectedCells.clear();
-                updateCellSelection();
-                hideMessage();
-            }
-        }
-
-        function cancelBulkEdit() {
-            bulkEditMode = false;
-            document.getElementById('bulkEditMode').classList.remove('active');
-            selectedCells.clear();
-            updateCellSelection();
-            hideMessage();
-        }
-
-        function updateCellSelection() {
-            const cells = document.querySelectorAll('.matrix td');
-            cells.forEach(cell => {
-                const cellId = `${cell.dataset.row}-${cell.dataset.col}`;
-                if (selectedCells.has(cellId)) {
-                    cell.style.backgroundColor = '#e3f2fd';
-                    cell.style.border = '2px solid #2196f3';
-                } else {
-                    cell.style.backgroundColor = '';
-                    cell.style.border = '';
-                }
-            });
-        }
-
-        function bulkSaveChanges() {
-            if (selectedCells.size === 0) {
-                showMessage('No cells selected for bulk edit', 'error');
-                return;
-            }
-
-            showNamePrompt({
-                changes: [`Bulk edited ${selectedCells.size} cells`],
-                callback: function() {
-                    showMessage(`Successfully saved ${selectedCells.size} cells`, 'success');
-                    selectedCells.clear();
-                    updateCellSelection();
-                    cancelBulkEdit();
-                }
-            });
-        }
 
         // Message handling
         function showMessage(text, type) {
@@ -2451,21 +2239,10 @@
             document.getElementById('loadingOverlay').style.display = 'none';
         }
 
-        // Enhanced cell editing with bulk mode support
+        // Enhanced cell editing
         function makeEditable(cell) {
             cell.addEventListener('click', function(e) {
                 if (e.target.classList.contains('edit-save-btn')) return;
-                
-                if (bulkEditMode) {
-                    const cellId = `${cell.dataset.row}-${cell.dataset.col}`;
-                    if (selectedCells.has(cellId)) {
-                        selectedCells.delete(cellId);
-                    } else {
-                        selectedCells.add(cellId);
-                    }
-                    updateCellSelection();
-                    return;
-                }
                 
                 const row = cell.dataset.row;
                 const col = cell.dataset.col;
