@@ -70,7 +70,7 @@
       "technical": {
         "evalLineage": "MLflow experiment tracking, model registry, data lineage capabilities",
         "memoryContext": "Unity Catalog for metadata management, governance across workspaces",
-        "dataSovereignty": "Customer-managed VPC, private connectivity via AWS PrivateLink",
+        "dataSovereignty": "Customer-managed VPC deployment with enhanced control over network configurations and compliance with cloud security standards. Maintains data privacy and control across AI workflows with IP access lists, PrivateLink connectivity, and customer-managed encryption keys.",
         "securityModel": "Enterprise-grade: IP access lists, VPC isolation, access control lists, encryption at rest/transit, local disk encryption",
         "customization": "High infrastructure flexibility, requires significant technical resources"
       },
