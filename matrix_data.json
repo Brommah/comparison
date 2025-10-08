@@ -9,6 +9,7 @@
         "customerStories": ["ADT (2M inquiries/month)", "SiriusXM (34M subscribers)", "Thrive Market (~90% CSAT)", "CLEAR", "Sonos", "CDW"]
       },
       "technical": {
+        "tagline": "The Sierra platform enables you to build an AI agent that represents your company at its best.",
         "evalLineage": "τ-bench for agent development and evaluation",
         "memoryContext": "Personalized to business and customers, always up-to-date, on-brand",
         "dataSovereignty": "Claims: Your data never used to train models",
@@ -37,6 +38,7 @@
         "customerStories": ["Isabel Larrow testimonial: 15% increase in resolution rate"]
       },
       "technical": {
+        "tagline": "Complete, fully configurable AI Agent System in customer service.",
         "evalLineage": "Built-in performance dashboard, Topics Explorer, CX Score (AI-powered metric)",
         "memoryContext": "AI-powered Suggestions, learns from conversations, continuous improvement",
         "dataSovereignty": "Part of Intercom ecosystem",
@@ -65,6 +67,7 @@
         "customerStories": ["ATT", "Block", "OpenAI", "Burberry", "FDA", "Heineken", "Michelin", "Mercedes", "NBA", "Santander", "Shell", "Siemens", "Toyota", "Walgreens", "Warner Bros Discovery"]
       },
       "technical": {
+        "tagline": "Databricks brings AI to your data to help you bring AI to the world.",
         "evalLineage": "MLflow experiment tracking, model registry, data lineage capabilities",
         "memoryContext": "Unity Catalog for metadata management, governance across workspaces",
         "dataSovereignty": "Customer-managed VPC, private connectivity via AWS PrivateLink",
@@ -83,6 +86,58 @@
       "quotes": {
         "positioning": "Databricks brings AI to your data to help you bring AI to the world"
       }
+    },
+    "nice": {
+      "name": "NICE",
+      "strategic": {
+        "targetMarket": "Enterprise contact centers and customer service organizations",
+        "valueProposition": "AI-driven customer service automation solutions",
+        "pricingModel": "Enterprise pricing model for CCaaS platform",
+        "customerStories": ["25,000+ organizations worldwide", "85 of the Fortune 100 companies"]
+      },
+      "technical": {
+        "tagline": "Gartner® Magic Quadrant™ Leader for Contact Center as a Service for the 11th consecutive year.",
+        "evalLineage": "Interaction Analytics: Gain AI-powered insights from 100% of interactions",
+        "memoryContext": "Automated Summary: Instantly summarize interactions to accelerate resolution times",
+        "dataSovereignty": "Trust & Compliance: Securing your trust with every interaction",
+        "securityModel": "Cloud Architecture: Innovative cloud-native foundation to rapidly scale extraordinary CX",
+        "customization": "Enterprise-grade customization for contact center operations"
+      },
+      "gtm": {
+        "useCases": ["Contact Center as a Service", "Customer experience management", "Workforce engagement"],
+        "channelStrategy": "Direct enterprise sales, global reach with local precision",
+        "evidencePoints": "Gartner recognition, customer testimonials, industry leadership"
+      },
+      "investor": {
+        "marketPosition": "Public company (NASDAQ: NICE), $2+ billion annual revenue",
+        "differentiation": "11 consecutive years as Gartner Magic Quadrant Leader"
+      }
+    },
+    "snowflake": {
+      "name": "Snowflake",
+      "strategic": {
+        "targetMarket": "Enterprise data teams across all industries",
+        "valueProposition": "AI Data Cloud platform for data consolidation and insights",
+        "pricingModel": "Consumption-based pricing with enterprise licensing",
+        "customerStories": ["751 of the Forbes Global 2000 companies"]
+      },
+      "technical": {
+        "tagline": "Snowflake provides the AI Data Cloud, a platform that enables organizations to consolidate data into a single source of truth.",
+        "evalLineage": "Data Science: Offers tools and environments for building and deploying machine learning models",
+        "memoryContext": "Snowsight: Provides a unified experience for working with your Snowflake data",
+        "dataSovereignty": "Multi-cloud architecture with data residency controls",
+        "securityModel": "Enterprise-grade security with governance framework",
+        "customization": "Extremely High: Multiple programming languages, notebooks, and APIs"
+      },
+      "gtm": {
+        "useCases": ["Data warehousing", "AI/ML development", "Data sharing", "Analytics"],
+        "channelStrategy": "Multi-cloud partnerships, direct enterprise sales",
+        "evidencePoints": "Market leadership, customer success stories, technical documentation"
+      },
+      "investor": {
+        "marketPosition": "Public company (NYSE: SNOW), $79+ billion market cap",
+        "differentiation": "Unified AI Data Cloud platform with multi-cloud architecture"
+      }
     }
   },
   "yourProduct": {
@@ -94,6 +149,7 @@
       "customerStories": "[BLANK - Design partners needed]"
     },
     "technical": {
+      "tagline": "Ship AI Like Software. Own your AI. Replace the black box.",
       "evalLineage": "Built-in eval and data lineage (KEY DIFFERENTIATOR)",
       "memoryContext": "Evolving AI agents with long-term memory, privacy-preserving (KEY DIFFERENTIATOR)",
       "dataSovereignty": "Sovereign security built from ground up (KEY DIFFERENTIATOR)",
