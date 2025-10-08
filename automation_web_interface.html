@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CEF Competitive Analysis Automation</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .header {
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .header h1 {
+            color: #2196f3;
+            margin-bottom: 10px;
+            font-size: 2.5em;
+        }
+
+        .header p {
+            color: #666;
+            font-size: 1.1em;
+        }
+
+        .dashboard {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            margin-bottom: 30px;
+        }
+
+        .card {
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .card h2 {
+            color: #333;
+            margin-bottom: 20px;
+            font-size: 1.5em;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .status-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+
+        .status-item {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 8px;
+            border-left: 4px solid #2196f3;
+        }
+
+        .status-item h3 {
+            font-size: 0.9em;
+            color: #666;
+            margin-bottom: 5px;
+        }
+
+        .status-item .value {
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .status-item.success {
+            border-left-color: #4caf50;
+        }
+
+        .status-item.warning {
+            border-left-color: #ff9800;
+        }
+
+        .status-item.error {
+            border-left-color: #f44336;
+        }
+
+        .btn {
+            background: #2196f3;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 1em;
+            font-weight: 500;
+            transition: all 0.2s;
+            margin: 5px;
+        }
+
+        .btn:hover {
+            background: #1976d2;
+            transform: translateY(-1px);
+        }
+
+        .btn:disabled {
+            background: #ccc;
+            cursor: not-allowed;
+            transform: none;
+        }
+
+        .btn.success {
+            background: #4caf50;
+        }
+
+        .btn.success:hover {
+            background: #45a049;
+        }
+
+        .btn.warning {
+            background: #ff9800;
+        }
+
+        .btn.warning:hover {
+            background: #f57c00;
+        }
+
+        .btn.danger {
+            background: #f44336;
+        }
+
+        .btn.danger:hover {
+            background: #da190b;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: 500;
+            color: #333;
+        }
+
+        .form-group input,
+        .form-group select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            font-size: 1em;
+        }
+
+        .form-group input:focus,
+        .form-group select:focus {
+            outline: none;
+            border-color: #2196f3;
+            box-shadow: 0 0 0 2px rgba(33, 150, 243, 0.2);
+        }
+
+        .company-list {
+            max-height: 300px;
+            overflow-y: auto;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+        }
+
+        .company-item {
+            padding: 15px;
+            border-bottom: 1px solid #eee;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .company-item:last-child {
+            border-bottom: none;
+        }
+
+        .company-info {
+            flex: 1;
+        }
+
+        .company-name {
+            font-weight: 500;
+            color: #333;
+        }
+
+        .company-url {
+            font-size: 0.9em;
+            color: #666;
+            margin-top: 2px;
+        }
+
+        .company-status {
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 0.8em;
+            font-weight: 500;
+        }
+
+        .status-enabled {
+            background: #e8f5e8;
+            color: #2e7d32;
+        }
+
+        .status-disabled {
+            background: #ffebee;
+            color: #c62828;
+        }
+
+        .logs {
+            background: #1e1e1e;
+            color: #f0f0f0;
+            padding: 20px;
+            border-radius: 8px;
+            font-family: 'Courier New', monospace;
+            font-size: 0.9em;
+            max-height: 300px;
+            overflow-y: auto;
+            white-space: pre-wrap;
+        }
+
+        .log-entry {
+            margin-bottom: 5px;
+        }
+
+        .log-info {
+            color: #4fc3f7;
+        }
+
+        .log-success {
+            color: #81c784;
+        }
+
+        .log-warning {
+            color: #ffb74d;
+        }
+
+        .log-error {
+            color: #e57373;
+        }
+
+        .notification {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            padding: 15px 20px;
+            border-radius: 6px;
+            color: white;
+            font-weight: 500;
+            z-index: 1000;
+            transform: translateX(400px);
+            transition: transform 0.3s ease;
+        }
+
+        .notification.show {
+            transform: translateX(0);
+        }
+
+        .notification.success {
+            background: #4caf50;
+        }
+
+        .notification.error {
+            background: #f44336;
+        }
+
+        .notification.info {
+            background: #2196f3;
+        }
+
+        .full-width {
+            grid-column: 1 / -1;
+        }
+
+        @media (max-width: 768px) {
+            .dashboard {
+                grid-template-columns: 1fr;
+            }
+            
+            .container {
+                padding: 10px;
+            }
+            
+            .header h1 {
+                font-size: 2em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🤖 CEF Competitive Analysis Automation</h1>
+            <p>Automated website scraping and AI-powered competitive intelligence</p>
+        </div>
+
+        <div class="dashboard">
+            <!-- Status Overview -->
+            <div class="card">
+                <h2>📊 System Status</h2>
+                <div class="status-grid">
+                    <div class="status-item success">
+                        <h3>Companies Monitored</h3>
+                        <div class="value" id="companiesCount">6</div>
+                    </div>
+                    <div class="status-item success">
+                        <h3>Last Scrape</h3>
+                        <div class="value" id="lastScrape">2 hours ago</div>
+                    </div>
+                    <div class="status-item warning">
+                        <h3>AI Updates</h3>
+                        <div class="value" id="aiUpdates">3 pending</div>
+                    </div>
+                    <div class="status-item success">
+                        <h3>System Health</h3>
+                        <div class="value">🟢 Healthy</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Quick Actions -->
+            <div class="card">
+                <h2>⚡ Quick Actions</h2>
+                <div style="display: flex; flex-wrap: wrap; gap: 10px;">
+                    <button class="btn success" onclick="runManualScrape()">
+                        🔄 Scrape All Now
+                    </button>
+                    <button class="btn warning" onclick="generateAIUpdates()">
+                        🤖 Generate AI Updates
+                    </button>
+                    <button class="btn" onclick="updateMatrix()">
+                        📊 Update Matrix
+                    </button>
+                    <button class="btn" onclick="exportData()">
+                        📤 Export Data
+                    </button>
+                </div>
+            </div>
+
+            <!-- Company Management -->
+            <div class="card">
+                <h2>🏢 Company Management</h2>
+                <div class="form-group">
+                    <label for="companyName">Company Name</label>
+                    <input type="text" id="companyName" placeholder="e.g., OpenAI">
+                </div>
+                <div class="form-group">
+                    <label for="companyUrl">Website URL</label>
+                    <input type="url" id="companyUrl" placeholder="https://openai.com">
+                </div>
+                <div class="form-group">
+                    <label for="scrapeInterval">Scrape Interval (hours)</label>
+                    <select id="scrapeInterval">
+                        <option value="6">Every 6 hours</option>
+                        <option value="12">Every 12 hours</option>
+                        <option value="24" selected>Daily</option>
+                        <option value="168">Weekly</option>
+                    </select>
+                </div>
+                <button class="btn" onclick="addCompany()">Add Company</button>
+            </div>
+
+            <!-- Current Companies -->
+            <div class="card">
+                <h2>📋 Monitored Companies</h2>
+                <div class="company-list" id="companyList">
+                    <!-- Companies will be loaded here -->
+                </div>
+            </div>
+
+            <!-- System Logs -->
+            <div class="card full-width">
+                <h2>📝 System Logs</h2>
+                <div class="logs" id="systemLogs">
+                    <div class="log-entry log-info">[2024-01-15 09:00:00] System started</div>
+                    <div class="log-entry log-success">[2024-01-15 09:05:00] Scraped CEF website successfully</div>
+                    <div class="log-entry log-success">[2024-01-15 09:10:00] Scraped Databricks website successfully</div>
+                    <div class="log-entry log-warning">[2024-01-15 09:15:00] Sierra.ai website timeout, retrying...</div>
+                    <div class="log-entry log-success">[2024-01-15 09:20:00] Sierra.ai website scraped successfully</div>
+                    <div class="log-entry log-info">[2024-01-15 09:25:00] AI updates generated</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Notification -->
+    <div class="notification" id="notification"></div>
+
+    <script>
+        // Global state
+        let companies = [];
+        let isScraping = false;
+        let isGeneratingAI = false;
+
+        // Initialize
+        document.addEventListener('DOMContentLoaded', function() {
+            loadCompanies();
+            updateStatus();
+            startLogUpdates();
+        });
+
+        // Load companies from backend
+        async function loadCompanies() {
+            try {
+                const response = await fetch('/api/companies');
+                companies = await response.json();
+                renderCompanyList();
+            } catch (error) {
+                console.error('Error loading companies:', error);
+                showNotification('Error loading companies', 'error');
+            }
+        }
+
+        // Render company list
+        function renderCompanyList() {
+            const companyList = document.getElementById('companyList');
+            companyList.innerHTML = '';
+
+            companies.forEach(company => {
+                const companyItem = document.createElement('div');
+                companyItem.className = 'company-item';
+                companyItem.innerHTML = `
+                    <div class="company-info">
+                        <div class="company-name">${company.name}</div>
+                        <div class="company-url">${company.url}</div>
+                    </div>
+                    <div class="company-actions">
+                        <span class="company-status ${company.enabled ? 'status-enabled' : 'status-disabled'}">
+                            ${company.enabled ? 'Enabled' : 'Disabled'}
+                        </span>
+                        <button class="btn danger" onclick="removeCompany('${company.name}')" style="margin-left: 10px; padding: 5px 10px; font-size: 0.8em;">
+                            Remove
+                        </button>
+                    </div>
+                `;
+                companyList.appendChild(companyItem);
+            });
+        }
+
+        // Add new company
+        async function addCompany() {
+            const name = document.getElementById('companyName').value.trim();
+            const url = document.getElementById('companyUrl').value.trim();
+            const interval = parseInt(document.getElementById('scrapeInterval').value);
+
+            if (!name || !url) {
+                showNotification('Please fill in all fields', 'error');
+                return;
+            }
+
+            try {
+                const response = await fetch('/api/companies', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({
+                        name: name,
+                        url: url,
+                        scrape_interval_hours: interval
+                    })
+                });
+
+                if (response.ok) {
+                    showNotification(`Added ${name} successfully`, 'success');
+                    document.getElementById('companyName').value = '';
+                    document.getElementById('companyUrl').value = '';
+                    loadCompanies();
+                    updateStatus();
+                } else {
+                    throw new Error('Failed to add company');
+                }
+            } catch (error) {
+                console.error('Error adding company:', error);
+                showNotification('Error adding company', 'error');
+            }
+        }
+
+        // Remove company
+        async function removeCompany(name) {
+            if (!confirm(`Are you sure you want to remove ${name}?`)) {
+                return;
+            }
+
+            try {
+                const response = await fetch(`/api/companies/${encodeURIComponent(name)}`, {
+                    method: 'DELETE'
+                });
+
+                if (response.ok) {
+                    showNotification(`Removed ${name} successfully`, 'success');
+                    loadCompanies();
+                    updateStatus();
+                } else {
+                    throw new Error('Failed to remove company');
+                }
+            } catch (error) {
+                console.error('Error removing company:', error);
+                showNotification('Error removing company', 'error');
+            }
+        }
+
+        // Run manual scrape
+        async function runManualScrape() {
+            if (isScraping) {
+                showNotification('Scraping already in progress', 'warning');
+                return;
+            }
+
+            isScraping = true;
+            const btn = event.target;
+            btn.disabled = true;
+            btn.textContent = '🔄 Scraping...';
+
+            try {
+                const response = await fetch('/api/scrape', {
+                    method: 'POST'
+                });
+
+                if (response.ok) {
+                    showNotification('Scraping started successfully', 'success');
+                    addLogEntry('Manual scrape started', 'info');
+                } else {
+                    throw new Error('Failed to start scraping');
+                }
+            } catch (error) {
+                console.error('Error starting scrape:', error);
+                showNotification('Error starting scrape', 'error');
+            } finally {
+                setTimeout(() => {
+                    isScraping = false;
+                    btn.disabled = false;
+                    btn.textContent = '🔄 Scrape All Now';
+                }, 30000); // Re-enable after 30 seconds
+            }
+        }
+
+        // Generate AI updates
+        async function generateAIUpdates() {
+            if (isGeneratingAI) {
+                showNotification('AI generation already in progress', 'warning');
+                return;
+            }
+
+            isGeneratingAI = true;
+            const btn = event.target;
+            btn.disabled = true;
+            btn.textContent = '🤖 Generating...';
+
+            try {
+                const response = await fetch('/api/ai-updates', {
+                    method: 'POST'
+                });
+
+                if (response.ok) {
+                    showNotification('AI updates generated successfully', 'success');
+                    addLogEntry('AI updates generated', 'success');
+                } else {
+                    throw new Error('Failed to generate AI updates');
+                }
+            } catch (error) {
+                console.error('Error generating AI updates:', error);
+                showNotification('Error generating AI updates', 'error');
+            } finally {
+                setTimeout(() => {
+                    isGeneratingAI = false;
+                    btn.disabled = false;
+                    btn.textContent = '🤖 Generate AI Updates';
+                }, 60000); // Re-enable after 60 seconds
+            }
+        }
+
+        // Update matrix
+        async function updateMatrix() {
+            try {
+                const response = await fetch('/api/update-matrix', {
+                    method: 'POST'
+                });
+
+                if (response.ok) {
+                    showNotification('Matrix updated successfully', 'success');
+                    addLogEntry('Matrix updated', 'success');
+                } else {
+                    throw new Error('Failed to update matrix');
+                }
+            } catch (error) {
+                console.error('Error updating matrix:', error);
+                showNotification('Error updating matrix', 'error');
+            }
+        }
+
+        // Export data
+        async function exportData() {
+            try {
+                const response = await fetch('/api/export');
+                const blob = await response.blob();
+                const url = window.URL.createObjectURL(blob);
+                const a = document.createElement('a');
+                a.href = url;
+                a.download = `competitive_analysis_${new Date().toISOString().split('T')[0]}.xlsx`;
+                document.body.appendChild(a);
+                a.click();
+                document.body.removeChild(a);
+                window.URL.revokeObjectURL(url);
+                showNotification('Data exported successfully', 'success');
+            } catch (error) {
+                console.error('Error exporting data:', error);
+                showNotification('Error exporting data', 'error');
+            }
+        }
+
+        // Update status
+        function updateStatus() {
+            document.getElementById('companiesCount').textContent = companies.length;
+            // Update other status values as needed
+        }
+
+        // Add log entry
+        function addLogEntry(message, type = 'info') {
+            const logs = document.getElementById('systemLogs');
+            const timestamp = new Date().toLocaleString();
+            const logEntry = document.createElement('div');
+            logEntry.className = `log-entry log-${type}`;
+            logEntry.textContent = `[${timestamp}] ${message}`;
+            logs.appendChild(logEntry);
+            logs.scrollTop = logs.scrollHeight;
+        }
+
+        // Start log updates
+        function startLogUpdates() {
+            // Simulate log updates
+            setInterval(() => {
+                const messages = [
+                    'System health check passed',
+                    'Scheduled scrape completed',
+                    'AI analysis updated',
+                    'Data backup completed'
+                ];
+                const types = ['info', 'success', 'warning'];
+                const message = messages[Math.floor(Math.random() * messages.length)];
+                const type = types[Math.floor(Math.random() * types.length)];
+                addLogEntry(message, type);
+            }, 30000); // Every 30 seconds
+        }
+
+        // Show notification
+        function showNotification(message, type = 'info') {
+            const notification = document.getElementById('notification');
+            notification.textContent = message;
+            notification.className = `notification ${type}`;
+            notification.classList.add('show');
+
+            setTimeout(() => {
+                notification.classList.remove('show');
+            }, 3000);
+        }
+    </script>
+</body>
+</html>

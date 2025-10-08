@@ -1,0 +1,50 @@
+{
+  "companies": [
+    {
+      "name": "CEF",
+      "url": "https://cef.ai",
+      "enabled": true,
+      "scrape_interval_hours": 24
+    },
+    {
+      "name": "Databricks",
+      "url": "https://www.databricks.com",
+      "enabled": true,
+      "scrape_interval_hours": 24
+    },
+    {
+      "name": "Sierra.ai",
+      "url": "https://www.sierra.ai",
+      "enabled": true,
+      "scrape_interval_hours": 24
+    },
+    {
+      "name": "Fin.ai",
+      "url": "https://fin.ai",
+      "enabled": true,
+      "scrape_interval_hours": 24
+    },
+    {
+      "name": "NICE",
+      "url": "https://www.nice.com",
+      "enabled": true,
+      "scrape_interval_hours": 24
+    },
+    {
+      "name": "Snowflake",
+      "url": "https://www.snowflake.com",
+      "enabled": true,
+      "scrape_interval_hours": 24
+    }
+  ],
+  "ai_update_settings": {
+    "model": "gpt-4",
+    "max_tokens": 2000,
+    "temperature": 0.3
+  },
+  "notification_settings": {
+    "email_enabled": false,
+    "slack_webhook": null,
+    "discord_webhook": null
+  }
+}
