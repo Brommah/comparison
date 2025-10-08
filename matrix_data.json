@@ -3,7 +3,7 @@
     "sierra": {
       "name": "Sierra.ai",
       "strategic": {
-        "tagline": "Better customer experiences. Built on Sierra.",
+        "tagline": "Better customer experiences are built on Sierra.",
         "targetMarket": "Enterprise customer experience teams",
         "valueProposition": "AI agents that mirror human communication, deliver empathetic omnichannel support with personalization",
         "pricingModel": "Outcome-based pricing for AI agents (not publicly disclosed)",
@@ -61,7 +61,7 @@
     "databricks": {
       "name": "Databricks",
       "strategic": {
-        "tagline": "Databricks brings AI to your data to help you bring AI to the world.",
+        "tagline": "This is your prompt to build better AI agents.",
         "targetMarket": "Enterprise data teams, ML/AI infrastructure",
         "valueProposition": "Data Intelligence Platform - AI on your data for building AI applications",
         "pricingModel": "Enterprise licensing, consumption-based compute",
